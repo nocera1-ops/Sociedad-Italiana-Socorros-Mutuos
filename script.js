@@ -28,7 +28,7 @@ const I18N = {
     fbTitle: "Facebook", igTitle: "Instagram", viewPage: "Ver página", followUs: "Seguinos",
     comments: "comentarios", author: "Sociedad Italiana",
     footAbout: "Trabajamos desde hace generaciones por la comunidad ítalo-argentina.",
-    fNav: "Navegación", fHist: "Historia", fCons: "Consulado y voto", fCult: "Cultura",
+    fNav: "Navegación", fHist: "Historia", fCons: "Consulado y voto", fCult: "Cultura italiana",
     fNews: "Noticias", fAbout: "Sobre nosotros", fContact: "Contacto",
     fAddress: "Dirección de la sociedad, Ciudad, Argentina", fPhone: "Tel: (011) 0000-0000",
     fFollow: "Seguinos", fSugg: "Dejá una sugerencia",
@@ -143,7 +143,9 @@ function applyStatic(){
   document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t(el.dataset.i18n));
   document.querySelectorAll("[data-i18n-html]").forEach(el => el.innerHTML = t(el.dataset.i18nHtml));
 
-  document.querySelectorAll("[data-flag]").forEach(f => f.hidden = f.dataset.flag !== lang);
+  document.querySelectorAll("[data-flag]").forEach(f => {
+    f.style.display = (f.dataset.flag === lang) ? "" : "none";
+  });
   $("#lang-btn").setAttribute("aria-label", `Cambiar idioma. Actual: ${LANG_NAMES[lang]}`);
   $("#burger").setAttribute("aria-label", t("moreNav"));
 
