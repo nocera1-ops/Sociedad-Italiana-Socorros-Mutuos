@@ -33,7 +33,10 @@ const I18N = {
     fAddress: "Dirección de la sociedad, Ciudad, Argentina", fPhone: "Tel: (011) 0000-0000",
     fFollow: "Seguinos", fSugg: "Dejá una sugerencia",
     copy: "© 2026 Sociedad Italiana de Socorros Mutuos. Todos los derechos reservados.",
-    moreNav: "Más opciones"
+    moreNav: "Más opciones",
+    worksEyebrow: "Nuestros proyectos",
+    worksTitle: "¿En qué estamos trabajando?",
+    worksSub: "Para lograr la habilitación de La Galería y el Microcine, la nueva gestión lleva adelante obras de infraestructura fundamental:"
   },
   en: {
     skip: "Skip to content",
@@ -57,7 +60,10 @@ const I18N = {
     fAddress: "Society address, City, Argentina", fPhone: "Phone: (011) 0000-0000",
     fFollow: "Follow us", fSugg: "Leave a suggestion",
     copy: "© 2026 Italian Mutual Aid Society. All rights reserved.",
-    moreNav: "More options"
+    moreNav: "More options",
+    worksEyebrow: "Our projects",
+    worksTitle: "What are we working on?",
+    worksSub: "To open La Galería and the Microcine, the new leadership is carrying out essential infrastructure works:"
   },
   it: {
     skip: "Vai al contenuto",
@@ -81,7 +87,10 @@ const I18N = {
     fAddress: "Indirizzo della società, Città, Argentina", fPhone: "Tel: (011) 0000-0000",
     fFollow: "Seguici", fSugg: "Lascia un suggerimento",
     copy: "© 2026 Società Italiana di Mutuo Soccorso. Tutti i diritti riservati.",
-    moreNav: "Altre opzioni"
+    moreNav: "Altre opzioni",
+    worksEyebrow: "I nostri progetti",
+    worksTitle: "A cosa stiamo lavorando?",
+    worksSub: "Per l'apertura de La Galería e del Microcine, la nuova gestione sta portando avanti lavori di infrastruttura fondamentali:"
   }
 };
 
@@ -124,6 +133,48 @@ const IG_POSTS = [
   { g:"#5b1020", img:"", caption:{ es:"Vino y tradición", en:"Wine and tradition", it:"Vino e tradizione" } },
   { g:"#2b5ea8", img:"", caption:{ es:"Día de la familia", en:"Family day", it:"Giornata della famiglia" } },
   { g:"#2e5e3a", img:"", caption:{ es:"Nuestra sede", en:"Our headquarters", it:"La nostra sede" } }
+];
+
+const WORK_ICONS = {
+  techos: '<path d="M3 11 12 4l9 7"/><path d="M5 10v9a1 1 0 0 0 1 1h3v-5h6v5h3a1 1 0 0 0 1-1v-9"/>',
+  banos: '<rect x="7" y="3" width="10" height="18" rx="1.5"/><circle cx="13.3" cy="12" r=".9" fill="currentColor" stroke="none"/>',
+  cloacas: '<path d="M12 3s6 7 6 11a6 6 0 1 1-12 0c0-4 6-11 6-11Z"/>',
+  electrica: '<path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/>',
+  pisos: '<rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/>',
+  aporte: '<path d="M12 21s-7.5-4.35-10-8.8C.3 8.4 2.8 5 6.3 5c2 0 3.7 1.1 5.7 3.2C14 6.1 15.7 5 17.7 5c3.5 0 6 3.4 4.3 7.2C19.5 16.65 12 21 12 21Z"/>'
+};
+
+const WORKS = [
+  { icon:"techos", label:{ es:"Obra", en:"Works", it:"Lavori" },
+    title:{ es:"Renovación de Techos", en:"Roof Renovation", it:"Rinnovo dei Tetti" },
+    text:{ es:"Reparación e impermeabilización para frenar filtraciones y proteger el edificio.",
+           en:"Repair and waterproofing to stop leaks and protect the building.",
+           it:"Riparazione e impermeabilizzazione per fermare le infiltrazioni e proteggere l'edificio." } },
+  { icon:"banos", label:{ es:"Obra", en:"Works", it:"Lavori" },
+    title:{ es:"Baños Nuevos", en:"New Restrooms", it:"Nuovi Bagni" },
+    text:{ es:"Construcción e instalación completa de sanitarios modernos e higiénicos.",
+           en:"Full construction and installation of modern, hygienic restrooms.",
+           it:"Costruzione e installazione completa di servizi igienici moderni." } },
+  { icon:"cloacas", label:{ es:"Obra", en:"Works", it:"Lavori" },
+    title:{ es:"Red de Cloacas", en:"Sewage Network", it:"Rete Fognaria" },
+    text:{ es:"Reinstalación completa del sistema de desagües sanitarios y cloacales.",
+           en:"Complete reinstallation of the sanitary and sewage drainage system.",
+           it:"Reinstallazione completa del sistema di scarico sanitario e fognario." } },
+  { icon:"electrica", label:{ es:"Obra", en:"Works", it:"Lavori" },
+    title:{ es:"Instalación Eléctrica", en:"Electrical Wiring", it:"Impianto Elettrico" },
+    text:{ es:"Nuevo cableado, tableros e iluminación segura adaptada a eventos.",
+           en:"New wiring, panels and safe lighting adapted for events.",
+           it:"Nuovo cablaggio, quadri e illuminazione sicura adatta agli eventi." } },
+  { icon:"pisos", label:{ es:"Obra", en:"Works", it:"Lavori" },
+    title:{ es:"Restauración de Pisos", en:"Floor Restoration", it:"Restauro dei Pavimenti" },
+    text:{ es:"Nivelación y colocación de nuevos revestimientos para circulación continua.",
+           en:"Leveling and new flooring for smooth, continuous circulation.",
+           it:"Livellamento e nuova pavimentazione per una circolazione continua." } },
+  { icon:"aporte", label:{ es:"Bonus", en:"Bonus", it:"Bonus" },
+    title:{ es:"Tu Aporte Suma", en:"Your Contribution Counts", it:"Il Tuo Contributo Conta" },
+    text:{ es:"Cada cuota social o donación se destina directamente a la compra de materiales.",
+           en:"Every membership fee or donation goes directly to buying materials.",
+           it:"Ogni quota sociale o donazione viene destinata direttamente all'acquisto di materiali." } }
 ];
 
 /* ===== Estado y utilidades ===== */
@@ -191,11 +242,28 @@ function renderSocial(){
   }).join("");
 }
 
+function renderWorks(){
+  $("#works-grid").innerHTML = WORKS.map(w => `
+    <article class="ticket">
+      <span class="notch notch-top" aria-hidden="true"></span>
+      <span class="notch notch-bottom" aria-hidden="true"></span>
+      <div class="t-stub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${WORK_ICONS[w.icon]}</svg>
+        <span>${L(w.label)}</span>
+      </div>
+      <div class="t-body">
+        <h3>${L(w.title)}</h3>
+        <p>${L(w.text)}</p>
+      </div>
+    </article>`).join("");
+}
+
 function render(){
   applyStatic();
   renderFilters();
   renderNews();
   renderSocial();
+  renderWorks();
 }
 
 /* ===== Eventos ===== */
@@ -234,3 +302,156 @@ try {
 } catch(_) {}
 
 render();
+
+
+const navTabs = [...document.querySelectorAll('.nav-tab')];
+const languageButtons = [...document.querySelectorAll('.language')];
+const description = document.getElementById('description');
+const headline = document.getElementById('headline');
+const exploreLabel = document.getElementById('explore-label');
+const notice = document.getElementById('notice');
+const exploreButton = document.getElementById('explore');
+let noticeTimer;
+let activeSection = 'greens';
+let currentLanguage = 'es';
+
+const translations = {
+  es: {
+    sections: {
+      greens: 'Greens.',
+      historia: 'Historia',
+      consulado: 'Consulado',
+      cultura: 'Cultura',
+      colabora: 'Colaborá'
+    },
+    pages: {
+      greens: {
+        description: 'Golf Club es el lugar donde<br>el deporte, la comodidad y la naturaleza<br>se encuentran a la perfección.',
+        headline: '<span class="accent-red">G</span><span class="ink">olf</span><br><span class="ink">cl</span><span class="accent-green">ub.</span>',
+        cta: 'Explorar',
+        notice: 'Descubrí el espíritu de Greens.'
+      },
+      historia: {
+        description: 'Una historia de encuentro, raíces y compromiso que sigue creciendo generación tras generación.',
+        headline: '<span class="accent-red">His</span><span class="ink">to</span><br><span class="ink">ri</span><span class="accent-green">a.</span>',
+        cta: 'Conocé más',
+        notice: 'Pronto vas a poder conocer nuestra historia.'
+      },
+      consulado: {
+        description: 'Información y orientación para acercarte a los trámites y servicios consulares italianos.',
+        headline: '<span class="accent-red">Con</span><span class="ink">su</span><br><span class="ink">la</span><span class="accent-green">do.</span>',
+        cta: 'Ver información',
+        notice: 'Consultá los canales oficiales del Consulado Italiano para información actualizada.'
+      },
+      cultura: {
+        description: 'Celebramos la lengua, las tradiciones, el arte y las historias que mantienen viva la cultura italiana.',
+        headline: '<span class="accent-red">Cul</span><span class="ink">tu</span><br><span class="ink">ra</span><span class="accent-green">.</span>',
+        cta: 'Descubrir',
+        notice: 'Pronto vas a encontrar acá nuestras actividades culturales.'
+      },
+      colabora: {
+        description: 'Cada aporte cuenta. Sumate a una comunidad que crece gracias a la participación de todos.',
+        headline: '<span class="accent-red">Co</span><span class="ink">la</span><br><span class="ink">bo</span><span class="accent-green">rá.</span>',
+        cta: 'Sumarme',
+        notice: 'Gracias por tu interés. Muy pronto vas a poder conocer las formas de colaborar.'
+      }
+    }
+  },
+  it: {
+    sections: {
+      greens: 'Greens.',
+      historia: 'Storia',
+      consulado: 'Consolato',
+      cultura: 'Cultura',
+      colabora: 'Collabora'
+    },
+    pages: {
+      greens: {
+        description: 'Golf Club è il luogo dove<br>sport, comfort e natura<br>si incontrano alla perfezione.',
+        headline: '<span class="accent-red">G</span><span class="ink">olf</span><br><span class="ink">cl</span><span class="accent-green">ub.</span>',
+        cta: 'Scopri',
+        notice: 'Scopri lo spirito di Greens.'
+      },
+      historia: {
+        description: 'Una storia di incontro, radici e impegno che continua a crescere di generazione in generazione.',
+        headline: '<span class="accent-red">Sto</span><span class="ink">ri</span><br><span class="ink">a</span><span class="accent-green">.</span>',
+        cta: 'Scopri di più',
+        notice: 'Presto potrai conoscere la nostra storia.'
+      },
+      consulado: {
+        description: 'Informazioni e orientamento per avvicinarti alle pratiche e ai servizi consolari italiani.',
+        headline: '<span class="accent-red">Con</span><span class="ink">so</span><br><span class="ink">la</span><span class="accent-green">to.</span>',
+        cta: 'Informazioni',
+        notice: 'Consulta i canali ufficiali del Consolato Italiano per informazioni aggiornate.'
+      },
+      cultura: {
+        description: 'Celebriamo la lingua, le tradizioni, l’arte e le storie che mantengono viva la cultura italiana.',
+        headline: '<span class="accent-red">Cul</span><span class="ink">tu</span><br><span class="ink">ra</span><span class="accent-green">.</span>',
+        cta: 'Scopri',
+        notice: 'Presto troverai qui le nostre attività culturali.'
+      },
+      colabora: {
+        description: 'Ogni contributo conta. Unisciti a una comunità che cresce grazie alla partecipazione di tutti.',
+        headline: '<span class="accent-red">Col</span><span class="ink">la</span><br><span class="ink">bo</span><span class="accent-green">ra.</span>',
+        cta: 'Partecipa',
+        notice: 'Grazie per il tuo interesse. Presto scoprirai come collaborare.'
+      }
+    }
+  }
+};
+
+function showNotice(message) {
+  notice.textContent = message;
+  notice.classList.add('visible');
+  window.clearTimeout(noticeTimer);
+  noticeTimer = window.setTimeout(() => notice.classList.remove('visible'), 3200);
+}
+
+function renderSection(sectionKey) {
+  const language = translations[currentLanguage];
+  const page = language.pages[sectionKey];
+  activeSection = sectionKey;
+
+  navTabs.forEach((tab) => {
+    const selected = tab.dataset.section === sectionKey;
+    tab.classList.toggle('active', selected);
+    tab.setAttribute('aria-pressed', String(selected));
+  });
+
+  description.innerHTML = page.description;
+  headline.innerHTML = page.headline;
+  exploreLabel.textContent = page.cta;
+  notice.textContent = page.notice;
+}
+
+navTabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    renderSection(tab.dataset.section);
+    // Keep navigation responsive while giving a small preview of the selected section.
+    showNotice(translations[currentLanguage].pages[tab.dataset.section].notice);
+  });
+});
+
+languageButtons.forEach((button) => {
+  button.setAttribute('aria-pressed', String(button.dataset.lang === currentLanguage));
+  button.addEventListener('click', () => {
+    currentLanguage = button.dataset.lang;
+    languageButtons.forEach((item) => {
+      const selected = item === button;
+      item.classList.toggle('active', selected);
+      item.setAttribute('aria-pressed', String(selected));
+    });
+
+    document.documentElement.lang = currentLanguage;
+    document.querySelectorAll('[data-label]').forEach((label) => {
+      const key = label.dataset.label;
+      label.textContent = translations[currentLanguage].sections[key];
+    });
+    renderSection(activeSection);
+    notice.classList.remove('visible');
+  });
+});
+
+exploreButton.addEventListener('click', () => {
+  showNotice(translations[currentLanguage].pages[activeSection].notice);
+});
