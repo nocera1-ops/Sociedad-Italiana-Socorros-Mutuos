@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script src="script.js?v=2" defer></script>
+<script src="news-instagram-layout.js?v=1" defer></script>
 </head>
 <body>
 
@@ -37,7 +38,7 @@
         </button>
         <button class="nav-tab" type="button" data-section="colabora" aria-pressed="false">
           <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.1-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.7A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.8 2.5Z"/><path d="M7 12h3l1.3-2 2.1 4 1.3-2H18"/></svg>
-          <span data-label="colabora">Colaborá</span>
+          <a href="contacto.html" data-i18n="fHist">Colaborá</a></li>
         </button>
         <div class="languages" aria-label="Idioma">
           <button class="language" type="button" data-lang="it" aria-label="Italiano">It</button>
@@ -82,29 +83,31 @@
     </div>
   </section>
 
-  <!-- NOTICIAS -->
-  <section class="news-sec wrap" id="noticias">
-    <div class="sec-head">
-      <div>
-        <p class="eyebrow" data-i18n="newsEyebrow">Comunidad</p>
-        <h2 class="big" data-i18n="newsTitle">Nuestras redes y noticias relevantes de Italia</h2>
-      </div>
-      <div class="filters" id="filters"></div>
-    </div>
-    <div class="rows" id="news"></div>
-  </section>
-
-  <section class="social wrap">
-    <div class="social-grid">
-      <div>
-        <div class="panel-head">
-          <h3 data-i18n="igTitle">Instagram</h3>
-          <a class="follow" id="ig-link" href="#" target="_blank" rel="noopener" data-i18n="followUs">Seguinos</a>
+  <!-- NOTICIAS E INSTAGRAM: dos columnas relacionadas -->
+  <div class="community-layout wrap" aria-label="Noticias e Instagram">
+    <section class="news-sec" id="noticias">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow" data-i18n="newsEyebrow">Comunidad</p>
+          <h2 class="big" data-i18n="newsTitle">Noticias de Italia</h2>
         </div>
-        <div class="ig-grid" id="ig-grid"></div>
+        <div class="filters" id="filters"></div>
       </div>
-    </div>
-  </section>
+      <div class="rows" id="news"></div>
+    </section>
+
+    <section class="social" aria-labelledby="instagram-title">
+      <div class="social-grid">
+        <div>
+          <div class="panel-head">
+            <h3 id="instagram-title" data-i18n="igTitle">Instagram</h3>
+            <a class="follow" id="ig-link" href="#" target="_blank" rel="noopener" data-i18n="followUs">Seguinos</a>
+          </div>
+          <div class="ig-grid" id="ig-grid"></div>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- EN QUÉ ESTAMOS TRABAJANDO -->
   <section class="works wrap">
