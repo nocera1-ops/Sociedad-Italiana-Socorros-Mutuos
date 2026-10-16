@@ -92,7 +92,7 @@ body {
   transition: background-color .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
 }
 
-.nav-tab:nth-child(1) { width: 125px; }
+.nav-tab:nth-child(1) { width: 90px; }
 .nav-tab:nth-child(2) { width: 120px; }
 .nav-tab:nth-child(3) { width: 120px; }
 .nav-tab:nth-child(4) { width: 110px; }
@@ -138,7 +138,10 @@ background-color:#d8543f;}
   stroke-linejoin: round;
 }
 
-
+.icon-logo {
+  height: 30px;
+  width: 30px;
+}
 
 .languages {
   display: flex;
