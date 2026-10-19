@@ -1,6 +1,6 @@
 /* ===== Configuración: reemplazar por los datos reales ===== */
 const SITE = {
-  fb: "https://www.facebook.com/",
+  fb: "https://www.facebook.com/TeatroMarconiGalvezItaliaUnida/?locale=es_LA",
   ig: "https://www.instagram.com/sociedaditalianagalvez/"
 };
 
@@ -90,22 +90,9 @@ const I18N = {
 
 /* ===== Noticias de ejemplo ===== */
 const NEWS = [
-  { src:"ANSA", url:"https://www.ansa.it", date:"2026-10-02",
-    title:{ es:"Italia refuerza los programas de cooperación con América Latina",
-            en:"Italy strengthens cooperation programs with Latin America",
-            it:"L'Italia rafforza i programmi di cooperazione con l'America Latina" } },
-  { src:"Corriere", url:"https://www.corriere.it", date:"2026-10-02",
-    title:{ es:"El turismo de otoño supera las previsiones",
-            en:"Autumn tourism beats expectations",
-            it:"Il turismo autunnale supera le previsioni" } },
-  { src:"Repubblica", url:"https://www.repubblica.it", date:"2026-10-01",
-    title:{ es:"Elecciones regionales: así se perfila el escenario",
-            en:"Regional elections: the outlook so far",
-            it:"Elezioni regionali: lo scenario che si delinea" } },
-  { src:"Il Post", url:"https://www.ilpost.it", date:"2026-09-30",
-    title:{ es:"La gastronomía italiana, entre tradición e innovación",
-            en:"Italian cuisine between tradition and innovation",
-            it:"La cucina italiana tra tradizione e innovazione" } }
+ {src:"Reuters",url:"https://www.reuters.com/business/italy-prolongs-schengen-suspension-with-spain-by-another-week-2026-10-16/",date:"2026-10-16",image:"https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=85",summary:{es:"Una mirada a las medidas fronterizas en Europa y a las conversaciones entre los países involucrados.",en:"A look at border measures in Europe and talks between the countries involved.",it:"Uno sguardo alle misure di frontiera in Europa e ai colloqui tra i paesi coinvolti."},title:{es:"Italia y España prolongan los controles fronterizos",en:"Italy and Spain extend border controls",it:"Italia e Spagna prolungano i controlli alle frontiere"}},
+ {src:"Reuters",url:"https://www.reuters.com/business/italy-exit-eu-budget-procedure-risk-due-deficit-increase-central-bank-warns-2026-10-12/",date:"2026-10-12",image:"https://images.unsplash.com/photo-1525874684015-58379d421a52?auto=format&fit=crop&w=1000&q=85",summary:{es:"El banco central italiano analiza los desafíos fiscales y las metas presupuestarias de los próximos años.",en:"Italy's central bank examines fiscal challenges and budget targets for the coming years.",it:"La banca centrale italiana analizza le sfide fiscali e gli obiettivi di bilancio dei prossimi anni."},title:{es:"El Banco de Italia advierte sobre los objetivos fiscales",en:"Bank of Italy warns over fiscal targets",it:"La Banca d'Italia avverte sugli obiettivi fiscali"}},
+ {src:"Reuters",url:"https://www.reuters.com/world/europe/italy-scales-back-defence-spending-hike-new-budget-plan-2026-10-02/",date:"2026-10-02",image:"https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1000&q=85",summary:{es:"El nuevo plan presupuestario italiano contempla cambios en las previsiones de gasto público.",en:"Italy's new budget plan includes changes to public spending projections.",it:"Il nuovo piano di bilancio italiano prevede modifiche alle stime della spesa pubblica."},title:{es:"Italia presenta cambios en su plan presupuestario",en:"Italy revises its budget plan",it:"L'Italia rivede il suo piano di bilancio"}}
 ];
 
 /* img: opcional. Si ponés una ruta (ej. "img/ig1.jpg") la foto reemplaza el color de fondo */
@@ -186,41 +173,41 @@ function applyStatic(){
 
   const igLink = $("#ig-link");
   if (igLink) igLink.href = SITE.ig;
+  const fbFollow = $("#fb-follow");
+  if (fbFollow) fbFollow.href = SITE.fb;
   document.querySelectorAll("[data-link='fb']").forEach(a => a.href = SITE.fb);
   document.querySelectorAll("[data-link='ig']").forEach(a => a.href = SITE.ig);
 }
 
 function renderFilters(){
   const keys = ["all", ...new Set(NEWS.map(n => n.src))];
-  $("#filters").innerHTML = keys.map(k =>
+  const filters = $("#filters");
+  if (!filters) return;
+  filters.innerHTML = keys.map(k =>
     `<button type="button" data-src="${k}" aria-pressed="${k === filter}">${k === "all" ? t("filterAll") : k}</button>`
   ).join("");
 }
 
 function renderNews(){
+  const container = $("#news");
+  if (!container) return;
   const items = NEWS.filter(n => filter === "all" || n.src === filter);
-  $("#news").innerHTML = items.map(n => {
-    const d = new Date(n.date + "T12:00:00");
-    const day = d.getDate();
-    const month = d.toLocaleDateString(LOCALES[lang], { month:"short" }).replace(".", "");
-    return `
+  container.innerHTML = items.map(n => `
     <a class="row" href="${n.url}" target="_blank" rel="noopener" aria-label="${t("readIn")} ${n.src}">
-      <div class="dt"><span class="date-n">${day}</span><span class="date-m">${month}</span></div>
-      <div><p class="meta">${n.src}</p><h3 class="row-t">${L(n.title)}</h3></div>
-      <span class="arr" aria-hidden="true">${ARROW}</span>
-    </a>`;
-  }).join("");
+      <img class="news-thumb" src="${n.image}" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="news-card-body"><p class="meta">${n.src} · ${fmtDate(n.date)}</p><h3 class="row-t">${L(n.title)}</h3><p class="news-summary">${L(n.summary)}</p><span class="read-more">${t("readIn")} ${n.src} ↗</span></div>
+    </a>`).join("");
 }
 
 function renderSocial(){
-  $("#ig-grid").innerHTML = IG_POSTS.map(p => {
-    const bg = p.img ? `url('${p.img}') center/cover no-repeat` : p.g;
-    return `<a class="ig" href="${SITE.ig}" target="_blank" rel="noopener" style="background:${bg}"><span>${L(p.caption)}</span></a>`;
-  }).join("");
+  // Las redes se muestran mediante los iframes oficiales incluidos en index.html.
+  // No buscar #ig-grid: esa cuadrícula antigua ya no existe en esta versión.
 }
 
 function renderWorks(){
-  $("#works-grid").innerHTML = WORKS.map(w => `
+  const worksGrid = $("#works-grid");
+  if (!worksGrid) return;
+  worksGrid.innerHTML = WORKS.map(w => `
     <article class="ticket">
       <div class="t-stub">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${WORK_ICONS[w.icon]}</svg>
@@ -264,13 +251,16 @@ document.querySelectorAll(".language").forEach(btn => {
   });
 });
 
-$("#filters").addEventListener("click", e => {
-  const btn = e.target.closest("[data-src]");
-  if(!btn) return;
-  filter = btn.dataset.src;
-  renderFilters();
-  renderNews();
-});
+const filterContainer = $("#filters");
+if (filterContainer) {
+  filterContainer.addEventListener("click", e => {
+    const btn = e.target.closest("[data-src]");
+    if (!btn) return;
+    filter = btn.dataset.src;
+    renderFilters();
+    renderNews();
+  });
+}
 
 $("#explore").addEventListener("click", () => {
   window.scrollTo({ top: document.getElementById("accesos").offsetTop - 20, behavior: "smooth" });
@@ -283,83 +273,3 @@ try {
 } catch(_) {}
 
 render();
-
-
-/* Añade miniaturas y diseño de tarjeta a las noticias generadas por script.js.
-   No reemplaza el contenido o los filtros existentes: mejora las filas que ya se renderizan. */
-(() => {
-  const imageChoices = {
-    history: 'img/cosmos_1830981906.webp',
-    culture: 'img/cosmos_593252605.webp',
-    local: 'img/1540202352200.jpg',
-    default: 'img/cosmos_84277699.webp'
-  };
-
-  function chooseImage(row, index) {
-    const text = (row.innerText || '').toLocaleLowerCase('es');
-    if (/historia|archivo|memoria|aniversario|fundaci[oó]n|or[ií]genes/.test(text)) return imageChoices.history;
-    if (/cultura|tradici[oó]n|idioma|arte|m[uú]sica|gastronom[ií]a|italian/.test(text)) return imageChoices.culture;
-    if (/sociedad|comunidad|noticia|evento|consulado|voto|socio/.test(text)) return imageChoices.local;
-    return [imageChoices.local, imageChoices.culture, imageChoices.history][index % 3] || imageChoices.default;
-  }
-
-  function enhanceNews() {
-    const news = document.getElementById('news');
-    if (!news) return;
-
-    news.querySelectorAll('.row').forEach((row, index) => {
-      if (row.dataset.imageCard === 'true') return;
-      const title = row.querySelector('.row-t');
-      if (!title) return;
-
-      const date = row.querySelector('.dt');
-      const arrow = row.querySelector('.arr');
-      const children = Array.from(row.children);
-      const content = children.find(child => child !== date && child !== arrow && child.contains(title));
-      if (!content) return;
-
-      const image = document.createElement('img');
-      image.className = 'news-thumb';
-      image.loading = 'lazy';
-      image.alt = '';
-      image.setAttribute('aria-hidden', 'true');
-      image.src = chooseImage(row, index);
-      image.addEventListener('error', () => {
-        if (!image.dataset.fallbackTried) {
-          image.dataset.fallbackTried = '1';
-          image.src = imageChoices.default;
-        } else {
-          image.removeAttribute('src');
-          image.classList.add('news-thumb-fallback');
-        }
-      }, { once: false });
-
-      const body = document.createElement('div');
-      body.className = 'news-card-body';
-      if (date) body.appendChild(date);
-      body.appendChild(content);
-
-      // Preserve any other useful content/metadata the site's script has added.
-      children.forEach(child => {
-        if (child !== date && child !== arrow && child !== content && child.parentElement === row) body.appendChild(child);
-      });
-
-      row.replaceChildren(image, body);
-      if (arrow) row.appendChild(arrow);
-      row.dataset.imageCard = 'true';
-      row.setAttribute('aria-label', (title.textContent || 'Noticia').trim());
-    });
-  }
-
-  function init() {
-    enhanceNews();
-    const news = document.getElementById('news');
-    if (news) {
-      const observer = new MutationObserver(() => enhanceNews());
-      observer.observe(news, { childList: true, subtree: true });
-    }
-  }
-
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
-  else init();
-})();

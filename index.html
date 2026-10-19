@@ -10,7 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script src="script.js?v=2" defer></script>
-<script src="news-instagram-layout.js?v=1" defer></script>
 </head>
 <body>
 
@@ -31,10 +30,10 @@
 <svg class="nav-icon nav-icon--consulate" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-6 9 6"/><path d="M4 10h16M5 10v9M9 10v9M15 10v9M19 10v9M3 21h18M2 19h20"/></svg>          <span data-label="consulado">Consulado</span>
         </button>
         <button class="nav-tab" type="button" data-section="cultura" aria-pressed="false">
-<svg class="nav-icon nav-icon--culture" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11"/><path d="M8 12h8M8 15h8"/><path d="M9 20v-2a3 3 0 0 1 6 0v2"/></svg>          <span data-label="cultura">Cultura</span>
+<svg class="nav-icon nav-icon--culture" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="7" r=".8" fill="currentColor" stroke="none"/></svg>          <span data-label="cultura">Cultura</span>
         </button>
                   <button class="nav-tab" type="button" data-section="colabora" aria-pressed="false">
-          <svg class="nav-icon nav-icon--collab" viewBox="0 0 24 24" aria-hidden="true"><path d="m11 17 2 2a2 2 0 0 0 3-1l1-1"/><path d="m8 14 5 5a2 2 0 0 0 3-1"/><path d="m3 11 5-5 4 1 2-1 7 5-7 7a2 2 0 0 1-3 0l-3-3"/><path d="m3 11-1-1 5-5 3 1M21 11l2-2-5-4-3 1"/></svg>          
+          <svg class="nav-icon nav-icon--collab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.35-9-9.2C1.5 8.2 3.8 5 7.2 5c2 0 3.4 1.1 4.8 2.8C13.4 6.1 14.8 5 16.8 5 20.2 5 22.5 8.2 21 11.8 19 16.65 12 21 12 21Z"/><path d="M3 13h4l2-3 3 5 2-3h7"/></svg>          
           <span data-i18n="navCollab">Colaborá</span>
           </button>
 
@@ -83,31 +82,26 @@
     </div>
   </section>
 
-  <!-- NOTICIAS E INSTAGRAM: dos columnas relacionadas -->
-  <div class="community-layout wrap" aria-label="Noticias e Instagram">
-    <section class="news-sec" id="noticias">
-      <div class="sec-head">
-        <div>
-          <p class="eyebrow" data-i18n="newsEyebrow">Comunidad</p>
-          <h2 class="big" data-i18n="newsTitle">Noticias de Italia</h2>
-        </div>
-        <div class="filters" id="filters"></div>
-      </div>
-      <div class="rows" id="news"></div>
-    </section>
+  <!-- REDES SOCIALES: Facebook e Instagram en columnas paralelas -->
+  <section class="social-section wrap" id="redes-sociales" aria-label="Redes sociales">
+    <div class="section-heading"><p class="eyebrow">Comunidad</p><h2 class="big">Nuestras redes</h2></div>
+    <div class="social-columns">
+      <section class="social-panel" aria-labelledby="facebook-title">
+        <div class="panel-head"><h3 id="facebook-title">Facebook</h3><a class="follow" id="fb-follow" href="https://www.facebook.com/TeatroMarconiGalvezItaliaUnida/?locale=es_LA" target="_blank" rel="noopener">Seguinos</a></div>
+        <div class="social-embed social-embed--facebook"><iframe title="Publicaciones de Facebook: Teatro Marconi Gálvez Italia Unida" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTeatroMarconiGalvezItaliaUnida%2F%3Flocale%3Des_LA&tabs=timeline&width=500&height=520&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" width="500" height="520" style="border:none;overflow:hidden;width:100%;max-width:500px" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><a href="https://www.facebook.com/TeatroMarconiGalvezItaliaUnida/?locale=es_LA" target="_blank" rel="noopener">Ver Facebook <span aria-hidden="true">↗</span></a></div>
+      </section>
+      <section class="social-panel" aria-labelledby="instagram-title">
+        <div class="panel-head"><h3 id="instagram-title">Instagram</h3><a class="follow" id="ig-link" href="https://www.instagram.com/sociedaditalianagalvez/" target="_blank" rel="noopener">Seguinos</a></div>
+        <div class="social-embed social-embed--instagram"><iframe title="Perfil de Instagram de Sociedad Italiana Gálvez" src="https://www.instagram.com/sociedaditalianagalvez/embed" width="400" height="520" style="border:0;width:100%;max-width:400px" frameborder="0" scrolling="no" allowtransparency="true"></iframe><a href="https://www.instagram.com/sociedaditalianagalvez/" target="_blank" rel="noopener">Ver Instagram <span aria-hidden="true">↗</span></a></div>
+      </section>
+    </div>
+  </section>
 
-    <section class="social" aria-labelledby="instagram-title">
-      <div class="social-grid">
-        <div>
-          <div class="panel-head">
-            <h3 id="instagram-title" data-i18n="igTitle">Instagram</h3>
-            <a class="follow" id="ig-link" href="#" target="_blank" rel="noopener" data-i18n="followUs">Seguinos</a>
-          </div>
-          <div class="ig-grid" id="ig-grid"></div>
-        </div>
-      </div>
-    </section>
-  </div>
+  <!-- NOTICIAS DE ITALIA: sección independiente debajo de las redes -->
+  <section class="news-sec news-section wrap" id="noticias">
+    <div class="sec-head"><div><p class="eyebrow">Actualidad</p><h2 class="big">Noticias de Italia</h2><p class="news-intro">Una selección de temas de actualidad, cultura y sociedad italiana.</p></div></div>
+    <div class="news-cards" id="news"></div>
+  </section>
 
   <!-- EN QUÉ ESTAMOS TRABAJANDO -->
   <section class="works wrap">
