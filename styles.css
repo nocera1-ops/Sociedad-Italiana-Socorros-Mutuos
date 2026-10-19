@@ -512,11 +512,12 @@ width: 30px;
   gap: 8px;
   font-size: clamp(10px, .85vw, 12px);
 }
-.navigation > .nav-tab:nth-child(1) { flex: 0 0 86px; padding-inline: 8px; }
-.navigation > .nav-tab:nth-child(2) { flex: 0 0 132px; }
-.navigation > .nav-tab:nth-child(3) { flex: 0 0 148px; }
-.navigation > .nav-tab:nth-child(4) { flex: 0 0 124px; }
-.navigation > .nav-tab:nth-child(5) { flex: 0 0 140px; }
+.navigation > .nav-tab:nth-child(1) { flex: 0 1 86px; min-width: 54px; padding-inline: 8px; }
+.navigation > .nav-tab:nth-child(2) { flex: 1 1 132px; }
+.navigation > .nav-tab:nth-child(3) { flex: 1 1 148px; }
+.navigation > .nav-tab:nth-child(4) { flex: 1 1 124px; }
+.navigation > .nav-tab:nth-child(5) { flex: 1 1 140px; }
+.navigation > .languages { margin-left: clamp(14px, 1.8vw, 28px); }
 .nav-icon {
   width: 20px; height: 20px; flex: 0 0 20px;
   fill: none; stroke: currentColor; stroke-width: 1.8;
@@ -891,3 +892,93 @@ width: 30px;
 .social-embed--facebook iframe, .social-embed--instagram iframe { display:block; box-sizing:border-box; width:100% !important; max-width:none !important; min-width:0; height:520px; min-height:520px; flex:1 1 auto; border:0; align-self:stretch; }
 .social-embed--facebook > a, .social-embed--instagram > a { margin:12px 16px 16px; align-self:flex-start; }
 @media(max-width:600px){.social-embed--facebook iframe,.social-embed--instagram iframe{height:480px;min-height:480px}}
+
+
+/* ===== Personalización de fondos por sección =====
+   Para cambiar una sección, edita su --*-bg-color o --*-bg-image.
+   Ejemplo de imagen: --news-bg-image: url("img/fondo-noticias.jpg");
+   Ejemplo de color: --news-bg-color: #f2f4d7;
+   Deja la imagen como none si solo quieres un color.
+*/
+:root {
+  --hero-bg-color: #438052;
+  --hero-bg-image: none;
+  --access-bg-color: transparent;
+  --access-bg-image: none;
+  --social-bg-color: transparent;
+  --social-bg-image: none;
+  --news-bg-color: transparent;
+  --news-bg-image: none;
+  --works-bg-color: #f2f4d7;
+  --works-bg-image: url("img/works-bg.jpg");
+  --map-bg-color: transparent;
+  --map-bg-image: none;
+  --footer-bg-color: #17251d;
+  --footer-bg-image: none;
+}
+.artwork {
+  background-color: var(--hero-bg-color);
+  background-image: var(--hero-bg-image);
+  background-size: cover;
+  background-position: center;
+}
+.access {
+  background-color: var(--access-bg-color);
+  background-image: var(--access-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-section {
+  background-color: var(--social-bg-color);
+  background-image: var(--social-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.news-section {
+  background-color: var(--news-bg-color);
+  background-image: var(--news-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.works {
+  background-color: var(--works-bg-color);
+  background-image: var(--works-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.map-sec {
+  background-color: var(--map-bg-color);
+  background-image: var(--map-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.foot {
+  background-color: var(--footer-bg-color);
+  background-image: var(--footer-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Selector de idioma dentro del menú, separado de Colaborá y sin invadir la imagen. */
+.navigation > .languages {
+  position: relative;
+  inset: auto;
+  z-index: 3;
+  flex: 0 0 52px;
+  margin-left: clamp(14px, 1.8vw, 28px);
+}
+@media (max-width: 760px) {
+  .navigation > .languages {
+    display: grid !important;
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 0;
+    justify-self: center;
+  }
+}
