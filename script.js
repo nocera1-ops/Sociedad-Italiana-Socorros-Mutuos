@@ -33,6 +33,18 @@ const I18N = {
     worksTitle: "¿En qué estamos trabajando?",
     worksSub: "Para lograr la habilitación de la galería y el microcine, la nueva gestión lleva adelante obras de infraestructura fundamental:",
     mapEyebrow: "Encontranos", mapTitle: "Dónde estamos",
+    supportEyebrow: "Sumate a la red", supportTitle: "Apoyanos",
+    supportDonateTitle: "Aportá", supportDonateText: "No importa el monto: tu donación hace una diferencia real para nuestra comunidad.", supportDonateBtn: "Donar",
+    supportJoinTitle: "Asociate", supportJoinText: "Sumate a nuestras actividades comunitarias y a las campañas de difusión.", supportJoinBtn: "Hacerme socio",
+    supportShareTitle: "Difundí", supportShareText: "Ayudanos a contarle a tus amigos, familia y colegas sobre nuestra causa.", supportShareBtn: "Contactanos",
+    contactTag: "Las raíces de ayer, la cultura de hoy, el legado de mañana.",
+    cfName: "Nombre completo", cfPhone: "Número de contacto*", cfReason: "Motivo*",
+    cfReasonSocio: "Hacerme socio", cfReasonConsulta: "Consulta general",
+    cfReasonSugerencia: "Sugerencia", cfReasonDonacion: "Donación",
+    cfMsg: "Mensaje", cfSubmit: "Enviar",
+    cfNote: "Nunca compartimos tus datos. Solo los usamos para responder tu mensaje.",
+    thanksTitle: "¡Gracias!", thanksSub: "Guardamos tu mensaje. Nos vamos a poner en contacto pronto.",
+    thanksBtn: "Enviar otro mensaje", thanksDm: "Escribinos por mensaje directo",
     footAbout: "Trabajamos desde hace generaciones por la comunidad ítalo-argentina.",
     fNav: "Navegación", fHist: "Historia", fCons: "Consulado y voto", fCult: "Cultura italiana",
     fNews: "Noticias", fAbout: "Sobre nosotros", fContact: "Contacto",
@@ -56,6 +68,18 @@ const I18N = {
     worksTitle: "What are we working on?",
     worksSub: "To open the gallery and the microcinema, the new leadership is carrying out essential infrastructure works:",
     mapEyebrow: "Find us", mapTitle: "Where we are",
+    supportEyebrow: "Join the network", supportTitle: "Support us",
+    supportDonateTitle: "Donate", supportDonateText: "No matter the amount, your donation makes a real difference for our community.", supportDonateBtn: "Donate",
+    supportJoinTitle: "Become a member", supportJoinText: "Join our community activities and outreach campaigns.", supportJoinBtn: "Become a member",
+    supportShareTitle: "Spread the word", supportShareText: "Help us tell your friends, family and colleagues about our cause.", supportShareBtn: "Contact us",
+    contactTag: "Yesterday's roots, today's culture, tomorrow's legacy.",
+    cfName: "Full name", cfPhone: "Phone number*", cfReason: "Reason*",
+    cfReasonSocio: "Become a member", cfReasonConsulta: "General inquiry",
+    cfReasonSugerencia: "Suggestion", cfReasonDonacion: "Donation",
+    cfMsg: "Message", cfSubmit: "Send",
+    cfNote: "We never share your data. We only use it to reply to your message.",
+    thanksTitle: "Thank you!", thanksSub: "Your message is saved. We'll get in touch soon.",
+    thanksBtn: "Send another message", thanksDm: "DM us",
     footAbout: "For generations we have worked for the Italian-Argentine community.",
     fNav: "Menu", fHist: "History", fCons: "Consulate and vote", fCult: "Italian culture",
     fNews: "News", fAbout: "About us", fContact: "Contact",
@@ -79,6 +103,18 @@ const I18N = {
     worksTitle: "A cosa stiamo lavorando?",
     worksSub: "Per l'apertura della galleria e del microcinema, la nuova gestione sta portando avanti lavori di infrastruttura fondamentali:",
     mapEyebrow: "Dove siamo", mapTitle: "Dove ci troviamo",
+    supportEyebrow: "Entra nella rete", supportTitle: "Sostienici",
+    supportDonateTitle: "Dona", supportDonateText: "Qualsiasi sia la cifra, la tua donazione fa davvero la differenza per la nostra comunità.", supportDonateBtn: "Dona",
+    supportJoinTitle: "Diventa socio", supportJoinText: "Partecipa alle nostre attività comunitarie e alle campagne di sensibilizzazione.", supportJoinBtn: "Diventa socio",
+    supportShareTitle: "Diffondi", supportShareText: "Aiutaci a parlare della nostra causa ad amici, familiari e colleghi.", supportShareBtn: "Contattaci",
+    contactTag: "Le radici di ieri, la cultura di oggi, l'eredità di domani.",
+    cfName: "Nome completo", cfPhone: "Numero di telefono*", cfReason: "Motivo*",
+    cfReasonSocio: "Diventare socio", cfReasonConsulta: "Richiesta generale",
+    cfReasonSugerencia: "Suggerimento", cfReasonDonacion: "Donazione",
+    cfMsg: "Messaggio", cfSubmit: "Invia",
+    cfNote: "Non condividiamo mai i tuoi dati. Li usiamo solo per risponderti.",
+    thanksTitle: "Grazie!", thanksSub: "Il tuo messaggio è salvato. Ti contatteremo presto.",
+    thanksBtn: "Invia un altro messaggio", thanksDm: "Scrivici in messaggio diretto",
     footAbout: "Da generazioni lavoriamo per la comunità italo-argentina.",
     fNav: "Menu", fHist: "Storia", fCons: "Consolato e voto", fCult: "Cultura italiana",
     fNews: "Notizie", fAbout: "Chi siamo", fContact: "Contatti",
@@ -175,6 +211,8 @@ function applyStatic(){
   if (igLink) igLink.href = SITE.ig;
   const fbFollow = $("#fb-follow");
   if (fbFollow) fbFollow.href = SITE.fb;
+  const ctIg = $("#ct-ig");
+  if (ctIg) ctIg.href = SITE.ig;
   document.querySelectorAll("[data-link='fb']").forEach(a => a.href = SITE.fb);
   document.querySelectorAll("[data-link='ig']").forEach(a => a.href = SITE.ig);
 }
@@ -262,9 +300,40 @@ if (filterContainer) {
   });
 }
 
-$("#explore").addEventListener("click", () => {
-  window.scrollTo({ top: document.getElementById("accesos").offsetTop - 20, behavior: "smooth" });
-});
+const exploreBtn = $("#explore");
+if (exploreBtn) {
+  exploreBtn.addEventListener("click", () => {
+    window.scrollTo({ top: document.getElementById("accesos").offsetTop - 20, behavior: "smooth" });
+  });
+}
+
+// Formulario de contacto (contacto.html): no hay servidor detrás, solo mostramos la confirmación en pantalla.
+function showContactState(state){
+  const card = $("#contact-card");
+  if (!card) return;
+  const foot = $("#contact-thanks-foot");
+  card.classList.toggle("is-thanks", state === "thanks");
+  document.querySelectorAll('[data-state="form"]').forEach(el => el.hidden = state !== "form");
+  document.querySelectorAll('[data-state="thanks"]').forEach(el => el.hidden = state !== "thanks");
+  if (foot) foot.hidden = state !== "thanks";
+}
+
+const contactForm = $("#contact-form");
+if (contactForm) {
+  contactForm.addEventListener("submit", e => {
+    e.preventDefault();
+    showContactState("thanks");
+    try { $("#contact-card").scrollIntoView({ behavior: "smooth", block: "center" }); } catch(_) {}
+  });
+}
+
+const ctAgain = $("#ct-again");
+if (ctAgain) {
+  ctAgain.addEventListener("click", () => {
+    contactForm.reset();
+    showContactState("form");
+  });
+}
 
 /* ===== Inicio: recordar el último idioma elegido ===== */
 try {

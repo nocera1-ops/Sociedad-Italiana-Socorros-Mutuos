@@ -428,6 +428,23 @@ width: 30px;
 .ticket:nth-child(6n+6) .t-stub{background:#cbd2c3;color:#465044}
 
 /* ===== Dónde estamos (mapa) ===== */
+/* ===== Apoyanos ===== */
+.support{position:relative;overflow:hidden;background:var(--green);color:#fff;margin-top:40px}
+.support::before,.support::after{content:"";position:absolute;right:-110px;border-radius:50%;border:1px solid rgba(255,255,255,.18);pointer-events:none}
+.support::before{top:-100px;width:420px;height:420px}
+.support::after{top:30px;right:-10px;width:260px;height:260px}
+.support-in{position:relative;z-index:1;padding:90px 28px 80px}
+.support .eyebrow{color:var(--gold);margin-bottom:22px}
+.support h2{color:#fff}
+
+.support-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid rgba(255,255,255,.3)}
+.support-col{padding:34px 36px 4px;border-left:1px solid rgba(255,255,255,.3)}
+.support-col:first-child{border-left:none;padding-left:0}
+.support-col h3{font:500 italic clamp(22px,2.4vw,28px)/1.2 "Playfair Display",Georgia,serif;color:#fff;margin:0 0 18px}
+.support-col p{margin:0 0 26px;color:#eaf3ee;font-size:15px;line-height:1.6}
+.support-btn{display:inline-flex;align-items:center;min-height:50px;padding:12px 24px;border-radius:999px;background:var(--ink);color:var(--gold);font:700 14px "DM Sans",Arial,sans-serif;text-decoration:none}
+.support-btn:hover{background:#000}
+
 .map-sec{padding:100px 28px 20px}
 .map-sec .eyebrow{color:var(--green);margin-bottom:18px}
 .map-addr{display:flex;align-items:center;gap:8px;margin:16px 0 28px;font-size:16px;color:var(--muted)}
@@ -457,6 +474,9 @@ width: 30px;
   .hist,.cult{grid-row:span 2}
   .social-grid{grid-template-columns:1fr}
   .tickets{grid-template-columns:1fr 1fr}
+  .support-grid{grid-template-columns:1fr;border-top:none}
+  .support-col{border-left:none;border-top:1px solid rgba(255,255,255,.3);padding:26px 0 0}
+  .support-col:first-child{border-top:none}
   .foot-grid{grid-template-columns:1fr 1fr}
 }
 
@@ -478,6 +498,8 @@ width: 30px;
   .date-n{font-size:36px}
   .arr{width:44px;height:44px}
   .tickets{grid-template-columns:1fr}
+  .support-in{padding:60px 20px 56px}
+  .support-btn{width:100%;justify-content:center}
   .foot-grid{grid-template-columns:1fr}
   .copy{text-align:left}
 }
