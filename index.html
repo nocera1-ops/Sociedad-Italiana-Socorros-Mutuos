@@ -19,20 +19,20 @@
   <section class="site-card" aria-label="Sociedad Italiana de Socorros Mutuos">
     <section class="intro" aria-labelledby="headline">
       <nav class="navigation" aria-label="Navegación principal">
-        <button class="nav-tab active" type="button" data-section="greens" aria-pressed="true">
+        <button class="nav-tab active" type="button" data-section="greens" aria-pressed="true" href="index.html">
           <span data-label="inicio"><img src="img/logo.png" class="icon-logo"></span>
         </button>
-        <button class="nav-tab" type="button" data-section="historia" aria-pressed="false">
+        <button class="nav-tab" type="button" data-section="historia" aria-pressed="false" href="historia.html">
           <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M8 7h8M8 11h8"/></svg>
           <span data-label="historia">Historia</span>
         </button>
-        <button class="nav-tab" type="button" data-section="consulado" aria-pressed="false">
+        <button class="nav-tab" type="button" data-section="consulado" aria-pressed="false" href="consulado.html" >
 <svg class="nav-icon nav-icon--consulate" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-6 9 6"/><path d="M4 10h16M5 10v9M9 10v9M15 10v9M19 10v9M3 21h18M2 19h20"/></svg>          <span data-label="consulado">Consulado</span>
         </button>
-        <button class="nav-tab" type="button" data-section="cultura" aria-pressed="false">
+        <button class="nav-tab" type="button" data-section="cultura" aria-pressed="false" href="cultura.html">
 <svg class="nav-icon nav-icon--culture" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="7" r=".8" fill="currentColor" stroke="none"/></svg>          <span data-label="cultura">Cultura</span>
         </button>
-                  <button class="nav-tab" type="button" data-section="colabora" aria-pressed="false">
+                  <button class="nav-tab" type="button" data-section="colabora" aria-pressed="false" href="contacto.html">
           <svg class="nav-icon nav-icon--collab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.35-9-9.2C1.5 8.2 3.8 5 7.2 5c2 0 3.4 1.1 4.8 2.8C13.4 6.1 14.8 5 16.8 5 20.2 5 22.5 8.2 21 11.8 19 16.65 12 21 12 21Z"/><path d="M3 13h4l2-3 3 5 2-3h7"/></svg>          
           <span data-i18n="navCollab">Colaborá</span>
           </button>
@@ -110,6 +110,21 @@
     <div class="tickets" id="works-grid"></div>
   </section>
 
+  <!-- DÓNDE ESTAMOS -->
+  <section class="map-sec wrap">
+    <p class="eyebrow" data-i18n="mapEyebrow">Encontranos</p>
+    <h2 class="big" data-i18n="mapTitle">Dónde estamos</h2>
+    <p class="map-addr">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+      Belgrano 664
+    </p>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps?q=Belgrano+664&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa: Belgrano 664"></iframe>
+    </div>
+    <br>
+  </section>
+</main>
+
   <!-- APOYANOS -->
   <section class="support">
     <div class="wrap support-in">
@@ -124,7 +139,7 @@
         <div class="support-col">
           <h3 data-i18n="supportJoinTitle">Asociate</h3>
           <p data-i18n="supportJoinText">Sumate a nuestras actividades comunitarias y a las campañas de difusión.</p>
-          <a class="support-btn" href="socios.html" data-i18n="supportJoinBtn">Hacerme socio</a>
+          <a class="support-btn" href="contacto.html" data-i18n="supportJoinBtn">Hacerme socio</a>
         </div>
         <div class="support-col">
           <h3 data-i18n="supportShareTitle">Difundí</h3>
@@ -134,21 +149,6 @@
       </div>
     </div>
   </section>
-
-  <!-- DÓNDE ESTAMOS -->
-  <section class="map-sec wrap">
-    <p class="eyebrow" data-i18n="mapEyebrow">Encontranos</p>
-    <h2 class="big" data-i18n="mapTitle">Dónde estamos</h2>
-    <p class="map-addr">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
-      Belgrano 664
-    </p>
-    <div class="map-frame">
-      <iframe src="https://www.google.com/maps?q=Belgrano+664&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa: Belgrano 664"></iframe>
-    </div>
-  </section>
-</main>
-
 
 <!-- PIE DE PÁGINA -->
 <footer class="foot">
@@ -165,23 +165,23 @@
           <li><a href="consulado.html" data-i18n="fCons">Consulado y voto</a></li>
           <li><a href="cultura.html" data-i18n="fCult">Cultura italiana</a></li>
           <li><a href="#noticias" data-i18n="fNews">Noticias</a></li>
-          <li><a href="nosotros.html" data-i18n="fAbout">Sobre nosotros</a></li>
+          <li><a href="historia.html" data-i18n="fAbout">Sobre nosotros</a></li>
         </ul>
       </div>
       <div>
         <h4 data-i18n="fContact">Contacto</h4>
         <ul>
           <li data-i18n="fAddress">Dirección de la sociedad, Ciudad, Argentina</li>
-          <li data-i18n="fPhone">Tel: (011) 0000-0000</li>
+          <li data-i18n="fPhone">Tel: (3404) 408843</li>
           <li><a href="mailto:contacto@sociedad.org.ar">contacto@sociedad.org.ar</a></li>
         </ul>
       </div>
       <div>
         <h4 data-i18n="fFollow">Seguinos</h4>
         <ul>
-          <li><a href="#" data-link="fb" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="#" data-link="ig" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="sugerencias.html" data-i18n="fSugg">Dejá una sugerencia</a></li>
+          <li><a href="https://www.facebook.com/TeatroMarconiGalvezItaliaUnida/?locale=es_LA" data-link="fb" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/sociedaditalianagalvez/" data-link="ig" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="contacto.html" data-i18n="fSugg">Dejá una sugerencia</a></li>
         </ul>
       </div>
     </div>

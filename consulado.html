@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Guía informativa de servicios consulares italianos: ciudadanía, AIRE, voto, pasaportes y estado civil para la comunidad de Gálvez y su región.">
+<title>Servicios consulares | Sociedad Italiana de Socorros Mutuos</title>
+<link rel="shortcut icon" href="img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js?v=2" defer></script>
+<style>
+/* Estilos exclusivos de esta página; la identidad visual general proviene de styles.css. */
+.consulate-page { padding-top: clamp(34px, 5vw, 72px); }
+.consulate-hero { position:relative; overflow:hidden; margin:0 auto 56px; padding:clamp(30px,6vw,76px); max-width:1240px; background:#e2e9cb; border-radius:18px; }
+.consulate-hero::after { content:""; position:absolute; right:-65px; bottom:-120px; width:330px; height:330px; border:1px solid rgba(32,92,62,.24); border-radius:50%; box-shadow:0 0 0 28px rgba(32,92,62,.04),0 0 0 58px rgba(32,92,62,.04); pointer-events:none; }
+.consulate-hero .eyebrow { color:var(--deep-green); }
+.consulate-hero h1 { max-width:850px; margin:22px 0 20px; font-size:clamp(40px,7vw,82px); letter-spacing:-.04em; }
+.consulate-hero p:not(.eyebrow) { max-width:720px; font-size:clamp(16px,2vw,19px); color:#46534a; }
+.consulate-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+.consulate-button { display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:48px; padding:12px 19px; border:1px solid var(--deep-green); border-radius:10px; background:var(--deep-green); color:white; text-decoration:none; font-weight:700; }
+.consulate-button.secondary { background:transparent; color:var(--deep-green); }
+.consulate-section { max-width:1240px; margin:0 auto; padding:20px 28px 58px; scroll-margin-top:24px; }
+.consulate-heading { display:grid; grid-template-columns:minmax(0,1fr) minmax(220px,.7fr); align-items:end; gap:28px; margin-bottom:28px; }
+.consulate-heading h2 { margin-top:13px; font-size:clamp(32px,4vw,52px); }
+.consulate-heading > p { margin:0; color:var(--muted); max-width:540px; }
+.consulate-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.consulate-card { min-width:0; padding:26px; border:1px solid rgba(39,55,39,.18); border-radius:14px; background:rgba(255,255,255,.55); }
+.consulate-card .number { display:inline-grid; place-items:center; width:38px; height:38px; margin-bottom:18px; border-radius:50%; background:#e2e9cb; color:var(--deep-green); font-weight:700; }
+.consulate-card h3 { font-size:25px; margin-bottom:12px; }
+.consulate-card p,.consulate-card li { color:#505b54; font-size:15px; }
+.consulate-card ul,.consulate-list { padding-left:20px; }
+.consulate-card li+li,.consulate-list li+li { margin-top:8px; }
+.consulate-note { margin-top:20px; padding:20px 22px; border-left:4px solid var(--italian-red); border-radius:0 10px 10px 0; background:#f5e8e3; color:#4d4541; }
+.consulate-link { color:var(--deep-green); font-weight:700; text-underline-offset:3px; }
+.consulate-band { display:grid; grid-template-columns:1fr auto; align-items:center; gap:24px; margin-top:26px; padding:25px 28px; border-radius:14px; background:#205c3e; color:#fff; }
+.consulate-band h3 { font-size:26px; margin-bottom:6px; }
+.consulate-band p { margin:0; color:#e0e9e2; }
+.consulate-band .consulate-button { white-space:nowrap; background:#e8c36a; border-color:#e8c36a; color:#1f3026; }
+.consulate-faq { display:grid; gap:12px; }
+.consulate-faq details { border:1px solid rgba(39,55,39,.2); border-radius:12px; background:rgba(255,255,255,.5); padding:0 20px; }
+.consulate-faq summary { cursor:pointer; padding:18px 28px 18px 0; position:relative; font-weight:700; }
+.consulate-faq summary::marker { color:var(--italian-red); }
+.consulate-faq details p { margin:0; padding:0 0 20px; color:#505b54; }
+.consulate-form-wrap { display:grid; grid-template-columns:.8fr 1.2fr; gap:32px; align-items:start; }
+.consulate-form-intro { padding:28px; border-radius:14px; background:#f2f4d7; }
+.consulate-form-intro h3 { font-size:29px; margin:12px 0; }
+.consulate-form { display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:26px; border:1px solid rgba(39,55,39,.18); border-radius:14px; background:rgba(255,255,255,.6); }
+.consulate-form label { display:grid; gap:7px; font-size:14px; font-weight:700; }
+.consulate-form input,.consulate-form select,.consulate-form textarea { width:100%; min-height:46px; padding:11px 12px; border:1px solid #c7cbbf; border-radius:8px; background:#fff; color:var(--ink); font:inherit; }
+.consulate-form textarea { min-height:130px; resize:vertical; }
+.consulate-form .full { grid-column:1/-1; }
+.consulate-form .consulate-button { justify-self:start; cursor:pointer; font:inherit; }
+.form-disclaimer { font-size:13px!important; color:#626a63!important; }
+.consulate-footer-note { margin-top:18px; font-size:13px; color:#626a63; }
+@media(max-width:850px){.consulate-heading{grid-template-columns:1fr;gap:14px}.consulate-grid{grid-template-columns:1fr 1fr}.consulate-form-wrap{grid-template-columns:1fr}}
+@media(max-width:560px){.consulate-hero{margin-inline:14px;border-radius:14px}.consulate-section{padding-inline:18px}.consulate-grid{grid-template-columns:1fr}.consulate-band{grid-template-columns:1fr}.consulate-band .consulate-button{justify-self:start;white-space:normal}.consulate-form{grid-template-columns:1fr;padding:18px}.consulate-form .full{grid-column:auto}}
+/* En esta página se conserva la navegación global, pero se reemplaza el hero de Inicio por una cabecera compacta. */
+.site-card.consulate-site-header { display:block; height:auto; min-height:0; padding:0; overflow:visible; background:var(--ivory); }
+.consulate-site-header .intro { min-height:0; height:82px; padding:0; background:var(--ivory); }
+.consulate-site-header .navigation { top:16px; left:clamp(14px,3vw,42px); right:clamp(14px,3vw,42px); }
+.consulate-site-header .description,.consulate-site-header .headline,.consulate-site-header #explore,.consulate-site-header .artwork { display:none!important; }
+.consulate-breadcrumb { max-width:1240px; margin:18px auto 0; padding:0 28px; color:#58645b; font-size:14px; }
+.consulate-breadcrumb ol { display:flex; flex-wrap:wrap; align-items:center; gap:9px; margin:0; padding:0; list-style:none; }
+.consulate-breadcrumb li+li::before { content:"/"; margin-right:9px; color:#9aa296; }
+.consulate-breadcrumb a { color:var(--deep-green); text-underline-offset:3px; }
+.consulate-breadcrumb [aria-current="page"] { color:var(--ink); font-weight:700; }
+.consulate-page { padding-top:18px; }
+.consulate-hero { background:#205c3e; color:#fff; border-radius:24px; }
+.consulate-hero .eyebrow { color:#e8c36a; }
+.consulate-hero h1 { max-width:850px; }
+.consulate-hero p:not(.eyebrow) { color:#e6eee7; }
+.consulate-hero .consulate-button { background:#e8c36a; border-color:#e8c36a; color:#1f3026; }
+.consulate-hero .consulate-button.secondary { background:transparent; color:#fff; border-color:rgba(255,255,255,.7); }
+@media(max-width:600px){.consulate-site-header .intro{height:116px}.consulate-site-header .navigation{top:12px;left:10px;right:10px}.consulate-breadcrumb{padding:0 18px;margin-top:12px}.consulate-page{padding-top:14px}.consulate-hero{margin-inline:14px;border-radius:20px}}
+/* Fondos alternados inspirados en la bandera italiana: verde, blanco y rojo en tonos suaves. */
+.consulate-page { background: #f2f4d7; }
+.consulate-hero { background: #205c3e; }
+#ciudadania { background: #fffdf8; }
+#voto { background: #c62828; color: #fff; }
+#tramites { background: #e2e9cb; }
+#preguntas { background: #fffdf8; }
+#consulta { background: #c62828; color: #fff; }
+#voto .consulate-heading > p, #consulta .consulate-heading > p,
+#voto .consulate-footer-note, #consulta .consulate-footer-note { color: #fff; }
+#voto .consulate-card, #consulta .consulate-card,
+#voto .consulate-form-intro, #consulta .consulate-form-intro { color: #263329; }
+/* Secciones a todo lo ancho con contenido alineado al mismo ancho máximo. */
+.consulate-section { max-width:none; }
+.consulate-section > .consulate-heading,
+.consulate-section > .consulate-grid,
+.consulate-section > .consulate-note,
+.consulate-section > .consulate-band,
+.consulate-section > .consulate-faq,
+.consulate-section > .consulate-form-wrap,
+.consulate-section > .consulate-footer-note { max-width:1184px; margin-left:auto; margin-right:auto; }
+.consulate-section > .consulate-heading { margin-bottom:28px; }
+.consulate-section > .consulate-band { margin-top:26px; }
+.consulate-section > .consulate-footer-note { margin-top:18px; }
+
+
+/* Navegación suave y aparición progresiva de las secciones al desplazarse. */
+html { scroll-behavior: smooth; }
+.consulate-section, .consulate-hero {
+  scroll-margin-top: 28px;
+  transition: background-color .45s ease, color .45s ease;
+}
+.consulate-section .consulate-heading,
+.consulate-section .consulate-grid,
+.consulate-section .consulate-note,
+.consulate-section .consulate-band,
+.consulate-section .consulate-faq,
+.consulate-section .consulate-form-wrap,
+.consulate-section .consulate-footer-note {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+.consulate-section.is-visible .consulate-heading,
+.consulate-section.is-visible .consulate-grid,
+.consulate-section.is-visible .consulate-note,
+.consulate-section.is-visible .consulate-band,
+.consulate-section.is-visible .consulate-faq,
+.consulate-section.is-visible .consulate-form-wrap,
+.consulate-section.is-visible .consulate-footer-note {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Reveal individual para tarjetas, bloques e imágenes. */
+.scroll-reveal {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0) scale(.99);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1);
+  will-change: opacity, transform;
+}
+.scroll-reveal.is-revealed { opacity: 1; transform: translate3d(0,0,0) scale(1); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .consulate-section, .consulate-hero,
+  .consulate-section .consulate-heading, .consulate-section .consulate-grid,
+  .consulate-section .consulate-note, .consulate-section .consulate-band,
+  .consulate-section .consulate-faq, .consulate-section .consulate-form-wrap,
+  .consulate-section .consulate-footer-note, .scroll-reveal {
+    transition: none; opacity: 1; transform: none; will-change: auto;
+  }
+}
+
+
+/* Presentación por secciones en escritorio: cada sección ocupa al menos una pantalla. */
+@media (min-width: 851px) {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 0;
+  }
+  .consulate-hero {
+    scroll-snap-align: start;
+  }
+  .consulate-section {
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-height: 100dvh;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+  .consulate-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: clamp(34px, 5vh, 64px);
+    padding-bottom: clamp(34px, 5vh, 64px);
+  }
+}
+
+/* En tabletas y móviles se mantiene el alto mínimo, pero nunca se limita el contenido. */
+@media (max-width: 850px) {
+  html { scroll-snap-type: none; }
+  .consulate-section {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    scroll-snap-align: none;
+  }
+  .consulate-hero {
+    height: auto;
+    min-height: 0;
+  }
+  .consulate-section { justify-content: flex-start; }
+}
+
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.consulate-section');
+    const revealItems = document.querySelectorAll(
+      '.consulate-grid > *, .consulate-faq > *, .consulate-band, .consulate-note, .consulate-form-wrap, .consulate-hero img, .consulate-section img'
+    );
+    revealItems.forEach(item => item.classList.add('scroll-reveal'));
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+      sections.forEach(section => section.classList.add('is-visible'));
+      revealItems.forEach(item => item.classList.add('is-revealed'));
+      return;
+    }
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          sectionObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -5% 0px' });
+    sections.forEach(section => sectionObserver.observe(section));
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -4% 0px' });
+    revealItems.forEach(item => revealObserver.observe(item));
+  });
+</script>
+</head>
+<body>
+<a class="skip" href="#contenido" data-i18n="skip">Ir al contenido</a>
+
+<!-- Encabezado y navegación compartidos con index.html -->
+<main id="contenido">
+  <section class="site-card consulate-site-header" aria-label="Sociedad Italiana de Socorros Mutuos">
+    <section class="intro" aria-labelledby="headline">
+      <nav class="navigation" aria-label="Navegación principal">
+        <button class="nav-tab" type="button" data-section="inicio" aria-label="Inicio">
+          <span data-label="inicio"><img src="img/logo.png" class="icon-logo" alt="Logo de la Sociedad Italiana"></span>
+        </button>
+        <button class="nav-tab" type="button" data-section="historia" aria-pressed="false">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M8 7h8M8 11h8"/></svg>
+          <span data-label="historia">Historia</span>
+        </button>
+        <button class="nav-tab active" type="button" data-section="consulado" aria-pressed="true">
+          <svg class="nav-icon nav-icon--consulate" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-6 9 6"/><path d="M4 10h16M5 10v9M9 10v9M15 10v9M19 10v9M3 21h18M2 19h20"/></svg>
+          <span data-label="consulado">Consulado</span>
+        </button>
+        <button class="nav-tab" type="button" data-section="cultura" aria-pressed="false">
+          <svg class="nav-icon nav-icon--culture" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="7" r=".8" fill="currentColor" stroke="none"/></svg>
+          <span data-label="cultura">Cultura</span>
+        </button>
+        <button class="nav-tab" type="button" data-section="colabora" aria-pressed="false">
+          <svg class="nav-icon nav-icon--collab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.35-9-9.2C1.5 8.2 3.8 5 7.2 5c2 0 3.4 1.1 4.8 2.8C13.4 6.1 14.8 5 16.8 5 20.2 5 22.5 8.2 21 11.8 19 16.65 12 21 12 21Z"/><path d="M3 13h4l2-3 3 5 2-3h7"/></svg>
+          <span data-i18n="navCollab">Colaborá</span>
+        </button>
+        <div class="languages" aria-label="Idioma">
+          <button class="language" type="button" data-lang="it" aria-label="Italiano">It</button>
+          <button class="language other" type="button" data-lang="en" aria-label="English">En</button>
+          <button class="language active" type="button" data-lang="es" aria-label="Español" aria-pressed="true">Es</button>
+        </div>
+      </nav>
+    </section>
+  </section>
+
+  <nav class="consulate-breadcrumb" aria-label="Migas de pan">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li aria-current="page">Consulado</li>
+    </ol>
+  </nav>
+
+  <div class="consulate-page">
+    <section class="consulate-hero" id="accesos">
+      <p class="eyebrow">Área Consular · Trámites y Servicios</p>
+      <h1>Consulado: <em>guía de trámites</em></h1>
+      <p>Una guía inicial para orientarte con ciudadanía, documentación, registro consular y voto en el exterior. Para requisitos definitivos, fechas, costos y turnos, consultá siempre los canales oficiales del Consulado General de Italia en Rosario.</p>
+      <div class="consulate-actions">
+        <a class="consulate-button" href="https://consrosario.esteri.it/es/" target="_blank" rel="noopener">Web oficial del Consulado ↗</a>
+        <a class="consulate-button secondary" href="https://prenotami.esteri.it/" target="_blank" rel="noopener">Acceder a Prenot@Mi ↗</a>
+      </div>
+    </section>
+
+    <section class="consulate-section" id="ciudadania">
+      <div class="consulate-heading"><div><p class="eyebrow">01 · Ciudadanía</p><h2>Reconstruir tu historia familiar</h2></div><p>La ciudadanía por descendencia, conocida como <em>iure sanguinis</em>, requiere verificar la línea familiar y cumplir la normativa vigente. Las condiciones cambiaron en 2025: no todos los casos de descendencia califican automáticamente.</p></div>
+      <div class="consulate-grid">
+        <article class="consulate-card"><span class="number">1</span><h3>Revisá si tu caso aplica</h3><p>Antes de reunir documentos, comprobá las condiciones actuales de la Ley italiana n.º 91/1992 y sus modificaciones. La posibilidad de reconocimiento depende de las circunstancias familiares y de las excepciones previstas en la normativa vigente.</p><p><a class="consulate-link" href="https://consrosario.esteri.it/es/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/cittadinanza_n/cittadinanza-e-adozione/" target="_blank" rel="noopener">Leer los requisitos oficiales ↗</a></p></article>
+        <article class="consulate-card"><span class="number">2</span><h3>Ordená las actas</h3><p>Según tu caso, puede ser necesario reunir actas de nacimiento, matrimonio y defunción de los ascendientes de la línea, además de certificados sobre ciudadanía y no renuncia. Los nombres, fechas y lugares deben coincidir o estar debidamente rectificados.</p><ul><li>Solicitá partidas oficiales completas.</li><li>Verificá si requieren apostilla o legalización.</li><li>Prepará traducciones al italiano según las indicaciones consulares.</li></ul></article>
+        <article class="consulate-card"><span class="number">3</span><h3>Solicitá el turno</h3><p>El Consulado General de Italia en Rosario publica el procedimiento vigente para ciudadanía y los tipos de turno habilitados en Prenot@Mi. La disponibilidad puede variar y las citas son personales y gratuitas.</p><p><a class="consulate-link" href="https://prenotami.esteri.it/" target="_blank" rel="noopener">Abrir Prenot@Mi ↗</a></p></article>
+      </div>
+      <div class="consulate-note"><strong>Importante:</strong> esta es una orientación general, no una lista documental definitiva. No apostilles ni traduzcas documentos hasta confirmar qué exige el Consulado para tu situación concreta. Desconfiá de gestores que prometen turnos garantizados.</div>
+    </section>
+
+    <section class="consulate-section" id="voto">
+      <div class="consulate-heading"><div><p class="eyebrow">02 · Voto y padrón</p><h2>Participar desde el exterior</h2></div><p>Los ciudadanos italianos residentes en el exterior que estén correctamente inscriptos en el AIRE pueden votar en determinados comicios, de acuerdo con las reglas y plazos de cada convocatoria.</p></div>
+      <div class="consulate-grid">
+        <article class="consulate-card"><span class="number">A</span><h3>Actualizá tu AIRE</h3><p>El AIRE es el registro de ciudadanos italianos que residen fuera de Italia. La inscripción y los cambios de domicilio se gestionan en línea mediante FAST IT. Mantené actualizados tu domicilio y tus datos de estado civil.</p><p><a class="consulate-link" href="https://serviziconsolarionline.esteri.it/" target="_blank" rel="noopener">Ingresar a FAST IT ↗</a></p></article>
+        <article class="consulate-card"><span class="number">B</span><h3>Verificá tu situación electoral</h3><p>Comprobá que tu inscripción consular y tu domicilio estén actualizados. Para cada elección o referéndum, revisá los avisos oficiales sobre electores habilitados, plazos, envío de sobres y modalidades de voto.</p><p><a class="consulate-link" href="https://consrosario.esteri.it/es/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/servicios-electorales/" target="_blank" rel="noopener">Información electoral oficial ↗</a></p></article>
+        <article class="consulate-card"><span class="number">C</span><h3>Atendé los plazos</h3><p>Las fechas límite son específicas de cada convocatoria. Si te mudaste recientemente o no recibís comunicaciones electorales, consultá cuanto antes al Consulado; no esperes a que se anuncie una elección para actualizar tus datos.</p><p><a class="consulate-link" href="https://consrosario.esteri.it/es/" target="_blank" rel="noopener">Novedades del Consulado ↗</a></p></article>
+      </div>
+    </section>
+
+    <section class="consulate-section" id="tramites">
+      <div class="consulate-heading"><div><p class="eyebrow">03 · Otros trámites</p><h2>Documentación y estado civil</h2></div><p>Los procedimientos, formularios, costos y documentos varían según el trámite, la edad y la situación registral de cada persona.</p></div>
+      <div class="consulate-grid">
+        <article class="consulate-card"><span class="number">01</span><h3>Pasaporte italiano</h3><p>La emisión del pasaporte se solicita con turno, normalmente mediante Prenot@Mi. El registro consular y los datos personales y de estado civil deben estar actualizados. El pasaporte no se “renueva”: se solicita la emisión de uno nuevo cuando corresponda.</p><p><a class="consulate-link" href="https://consrosario.esteri.it/es/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/passaporti-e-carte-didentita/" target="_blank" rel="noopener">Requisitos de pasaporte ↗</a></p></article>
+        <article class="consulate-card"><span class="number">02</span><h3>Nacimientos y matrimonios</h3><p>Los ciudadanos italianos deben comunicar los cambios de estado civil para que puedan registrarse en Italia. La presentación de actas de nacimiento, matrimonio o unión civil depende de la situación y de las instrucciones consulares aplicables.</p><p><a class="consulate-link" href="https://consrosario.esteri.it/es/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/stato-civile/" target="_blank" rel="noopener">Trámites de estado civil ↗</a></p></article>
+        <article class="consulate-card"><span class="number">03</span><h3>Defunciones y cambios de datos</h3><p>La defunción de un ciudadano italiano y otros cambios registrales deben comunicarse mediante el procedimiento indicado por el Consulado. Consultá también las instrucciones para rectificaciones de nombres, apellidos, divorcios u otros actos.</p><p><a class="consulate-link" href="https://consrosario.esteri.it/es/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/stato-civile/" target="_blank" rel="noopener">Ver opciones y documentación ↗</a></p></article>
+      </div>
+      <div class="consulate-band"><div><h3>¿Tenés que iniciar un trámite?</h3><p>Consultá primero la guía oficial para confirmar documentos, modalidad de presentación y disponibilidad de turnos.</p></div><a class="consulate-button" href="https://consrosario.esteri.it/es/chi-siamo/gli-uffici/prenota-lappuntamento/" target="_blank" rel="noopener">Ver cómo pedir turno ↗</a></div>
+    </section>
+
+    <section class="consulate-section" id="preguntas">
+      <div class="consulate-heading"><div><p class="eyebrow">04 · Preguntas frecuentes</p><h2>Respuestas para empezar</h2></div><p>Estas respuestas son orientativas. Ante diferencias entre esta guía y la información oficial, prevalece siempre la información publicada por el Consulado.</p></div>
+      <div class="consulate-faq">
+        <details><summary>¿La Sociedad Italiana tramita la ciudadanía o consigue turnos?</summary><p>No. Esta página tiene fines informativos y orientativos. Las solicitudes y los turnos se gestionan por los canales oficiales correspondientes; no se garantizan citas ni resultados.</p></details>
+        <details><summary>¿Cualquier persona con un antepasado italiano puede obtener la ciudadanía?</summary><p>No necesariamente. La legislación cambió en 2025 y establece condiciones y excepciones específicas. Revisá el apartado oficial de ciudadanía antes de iniciar la recopilación de documentación.</p><p><a class="consulate-link" href="https://consrosario.esteri.it/es/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/cittadinanza_n/cittadinanza-e-adozione/" target="_blank" rel="noopener">Consultar normativa y requisitos ↗</a></p></details>
+        <details><summary>¿Todas las actas necesitan apostilla y traducción?</summary><p>No hay que asumirlo sin revisar el caso. Los requisitos dependen del tipo de documento, la autoridad emisora y el trámite. Seguí la lista oficial y las instrucciones sobre apostilla, legalización y traducción al italiano.</p></details>
+        <details><summary>¿Cómo actualizo mi domicilio en el AIRE?</summary><p>La actualización se realiza en línea a través de FAST IT. Ingresá con tus datos y seguí las instrucciones del servicio consular correspondiente a tu circunscripción.</p><p><a class="consulate-link" href="https://serviziconsolarionline.esteri.it/" target="_blank" rel="noopener">Abrir FAST IT ↗</a></p></details>
+        <details><summary>¿Dónde reviso los turnos y sus costos?</summary><p>En la web oficial del Consulado General de Italia en Rosario y en Prenot@Mi. Los turnos son personales; los horarios, requisitos y aranceles pueden cambiar.</p><p><a class="consulate-link" href="https://prenotami.esteri.it/" target="_blank" rel="noopener">Prenot@Mi ↗</a> · <a class="consulate-link" href="https://consrosario.esteri.it/es/" target="_blank" rel="noopener">Consulado de Rosario ↗</a></p></details>
+        <details><summary>¿A qué consulado debo dirigirme?</summary><p>La competencia depende del domicilio y de la circunscripción consular. Para la comunidad de Gálvez y Santa Fe, consultá la web del Consulado General de Italia en Rosario y verificá allí que tu domicilio esté comprendido.</p></details>
+      </div>
+    </section>
+
+    <section class="consulate-section" id="consulta">
+      <div class="consulate-heading"><div><p class="eyebrow">05 · Contacto</p><h2>Dejanos tu consulta</h2></div><p>Podés contarnos qué información necesitás y qué trámite querés conocer. No incluyas números de documentos, datos sensibles ni archivos personales en esta primera consulta.</p></div>
+      <div class="consulate-form-wrap">
+        <aside class="consulate-form-intro"><p class="eyebrow">Estamos para orientarte</p><h3>Un primer paso, con información confiable.</h3><p>La Sociedad puede orientarte sobre dónde buscar información oficial. No reemplazamos al Consulado ni podemos confirmar la elegibilidad de un caso o acelerar trámites.</p><p><strong>Atención:</strong> el formulario abre tu aplicación de correo para que revises y envíes el mensaje.</p></aside>
+        <form class="consulate-form" id="consular-form">
+          <label>Nombre y apellido<input name="nombre" autocomplete="name" required></label>
+          <label>Correo electrónico<input name="email" type="email" autocomplete="email" required></label>
+          <label>¿Sobre qué trámite consultás?
+            <select name="tramite" required><option value="" selected disabled>Elegí una opción</option><option>Ciudadanía italiana</option><option>AIRE / cambio de domicilio</option><option>Voto electoral</option><option>Pasaporte</option><option>Registro civil</option><option>Otro tema</option></select>
+          </label>
+          <label>¿En qué localidad residís?<input name="localidad" autocomplete="address-level2" placeholder="Ej.: Gálvez"></label>
+          <label class="full">Tu consulta<textarea name="consulta" minlength="10" required placeholder="Contanos brevemente qué información necesitás..."></textarea></label>
+          <p class="full form-disclaimer">No adjuntes partidas, DNI, pasaportes ni otra documentación personal. Para presentar documentos, utilizá exclusivamente los canales oficiales.</p>
+          <button class="consulate-button full" type="submit">Preparar correo de consulta ↗</button>
+          <p class="full form-disclaimer" id="form-status" aria-live="polite">Al enviar, se abrirá tu aplicación de correo con el mensaje preparado. Tendrás que confirmar el envío desde allí.</p>
+        </form>
+      </div>
+      <p class="consulate-footer-note">Información revisada en sitios oficiales del Consulado General de Italia en Rosario. Los procedimientos pueden cambiar; verificá siempre la información vigente antes de actuar.</p>
+    </section>
+  </div>
+</main>
+
+<!-- Footer compartido con index.html -->
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-grid">
+      <div><p class="foot-logo" data-i18n="orgName">Sociedad Italiana de Socorros Mutuos</p><p class="foot-sub" data-i18n="footAbout">Trabajamos desde hace generaciones por la comunidad ítalo-argentina.</p></div>
+      <div><h4 data-i18n="fNav">Navegación</h4><ul><li><a href="historia.html" data-i18n="fHist">Historia</a></li><li><a href="consulado.html" data-i18n="fCons">Consulado y voto</a></li><li><a href="cultura.html" data-i18n="fCult">Cultura italiana</a></li><li><a href="index.html#noticias" data-i18n="fNews">Noticias</a></li><li><a href="nosotros.html" data-i18n="fAbout">Sobre nosotros</a></li></ul></div>
+      <div><h4 data-i18n="fContact">Contacto</h4><ul><li data-i18n="fAddress">Belgrano 664</li><li data-i18n="fPhone">Tel: (011) 0000-0000</li><li><a href="mailto:contacto@sociedad.org.ar">contacto@sociedad.org.ar</a></li></ul></div>
+      <div><h4 data-i18n="fFollow">Seguinos</h4><ul><li><a href="https://www.facebook.com/TeatroMarconiGalvezItaliaUnida/?locale=es_LA" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/sociedaditalianagalvez/" target="_blank" rel="noopener">Instagram</a></li><li><a href="sugerencias.html" data-i18n="fSugg">Dejá una sugerencia</a></li></ul></div>
+    </div>
+    <div class="copy"><span data-i18n="copy">© 2026 Sociedad Italiana de Socorros Mutuos. Todos los derechos reservados.</span></div>
+  </div>
+</footer>
+<script>
+// El sitio no cuenta con backend de formularios: se prepara un correo para revisión y envío del usuario.
+document.getElementById('consular-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+  const data = new FormData(this);
+  const subject = encodeURIComponent('Consulta consular - ' + data.get('tramite'));
+  const body = encodeURIComponent(
+    'Nombre: ' + data.get('nombre') + '\n' +
+    'Correo: ' + data.get('email') + '\n' +
+    'Trámite: ' + data.get('tramite') + '\n' +
+    'Localidad: ' + (data.get('localidad') || 'No indicada') + '\n\n' +
+    'Consulta:\n' + data.get('consulta')
+  );
+  // Reemplazar esta dirección por el correo institucional real antes de publicar el sitio.
+  window.location.href = 'mailto:contacto@sociedad.org.ar?subject=' + subject + '&body=' + body;
+  document.getElementById('form-status').textContent = 'Se intentó abrir tu aplicación de correo. Si no se abrió, escribinos desde tu correo habitual; recordá reemplazar la dirección institucional si corresponde.';
+});
+</script>
+</body>
+</html>
