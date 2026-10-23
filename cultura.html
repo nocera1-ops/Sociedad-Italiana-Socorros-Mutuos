@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cultura italiana · Mapa interactivo de Italia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/sitio.css">
+<style>
+  /* ── 1. Introducción ─────────────────────────────────── */
+  .intro{padding-block:clamp(56px,8vw,104px)}
+  .intro-grid{display:grid; gap:clamp(40px,6vw,96px); align-items:center}
+  .intro-media{position:relative; margin:0; width:100%; max-width:420px; justify-self:center}
+  .arco{aspect-ratio:4/5; border-radius:50% 50% 0 0 / 40% 40% 0 0; overflow:hidden; background:#d9cbb3}
+  .arco > svg, .arco > img{display:block; width:100%; height:100%; object-fit:cover}
+  .pill{
+    position:absolute; left:6%; bottom:7%; margin:0; padding:12px 20px;
+    background:var(--crema); border-radius:999px; box-shadow:0 6px 18px rgba(0,0,0,.14);
+    font:700 11px/1 var(--sans); letter-spacing:.2em; text-transform:uppercase;
+  }
+  @media (min-width:860px){
+    .intro-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}
+  }
+
+  /* ── 2. Mapa + cuadro de contenido ───────────────────── */
+  .explorador{background:var(--gris); padding-block:clamp(56px,8vw,100px)}
+  .explorador-head{margin-bottom:clamp(28px,4vw,48px)}
+  .explorador-grid{display:grid; gap:clamp(28px,4vw,56px); align-items:start}
+  @media (min-width:1000px){
+    .explorador-grid{grid-template-columns:minmax(300px,4fr) minmax(0,8fr)}
+  }
+
+  .mapa-col{display:flex; flex-direction:column; align-items:center; gap:16px}
+  .map-wrap{width:100%; max-width:430px}
+  #svg-map{display:block; width:100%; height:auto; overflow:visible}
+  path.region{
+    fill:var(--verde); stroke:var(--gris); stroke-width:6; stroke-linejoin:round;
+    cursor:pointer; transition:fill .18s ease;
+  }
+  path.region:hover{fill:var(--verde-claro)}
+  path.region:focus{outline:none}
+  path.region:focus-visible{fill:var(--verde-claro); stroke:var(--tinta); stroke-width:10}
+  path.region.is-selected{fill:var(--rojo)}
+  path.region.is-selected:hover{fill:var(--rojo-claro)}
+
+  .map-hint{margin:0; min-height:1.6em; font-size:14px; color:var(--texto); text-align:center}
+  .map-hint strong{color:var(--tinta)}
+  .legend{display:flex; gap:18px; flex-wrap:wrap; justify-content:center; font-size:12.5px; color:var(--texto)}
+  .legend span{display:inline-flex; align-items:center; gap:7px}
+  .swatch{width:11px; height:11px; border-radius:3px; display:inline-block}
+
+  .list{width:100%; display:flex; flex-wrap:wrap; gap:6px; justify-content:center}
+  .list button{
+    font:600 12.5px/1 var(--sans); color:var(--verde-profundo); cursor:pointer;
+    padding:7px 11px; border-radius:999px; border:1px solid rgba(2,117,58,.35); background:transparent;
+    transition:background .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .list button:hover{background:rgba(2,117,58,.1)}
+  .list button:focus-visible{outline:2px solid var(--tinta); outline-offset:2px}
+  .list button[aria-pressed="true"]{background:var(--rojo); border-color:var(--rojo); color:#fff}
+
+  /* Cuadro de la región */
+  .panel{container:panel / inline-size; min-width:0; background:var(--panel); box-shadow:0 18px 40px -24px rgba(0,0,0,.35)}
+  .panel-head{
+    display:flex; align-items:center; justify-content:space-between; gap:12px 16px; flex-wrap:wrap;
+    padding:16px clamp(18px,4cqi,30px); background:var(--rojo); color:#fff;
+  }
+  .panel-nombre{margin:0; font:700 clamp(24px,5cqi,34px)/1.1 var(--sans); letter-spacing:.01em; text-transform:uppercase}
+  .panel-meta{margin:4px 0 0; font-size:13px; opacity:.88}
+  .panel-nav{display:flex; align-items:center; gap:8px}
+  .nav-btn{
+    display:grid; place-items:center; width:36px; height:36px; padding:0; cursor:pointer;
+    border-radius:50%; border:1px solid rgba(255,255,255,.5); background:transparent; color:#fff;
+  }
+  .nav-btn svg{width:16px; height:16px}
+  .nav-btn[data-paso="-1"] svg{transform:scaleX(-1)}
+  .nav-btn:hover{background:rgba(255,255,255,.15)}
+  .nav-btn:focus-visible{outline:2px solid #fff; outline-offset:2px}
+  .panel-pos{min-width:4.5ch; text-align:center; font-size:13px; font-weight:600; font-variant-numeric:tabular-nums}
+
+  .panel-body{
+    display:grid; gap:28px; padding:clamp(18px,4cqi,30px);
+    grid-template-columns:minmax(0,1fr); grid-template-areas:"recetas" "libros" "musica";
+  }
+  .panel-body.is-fresh{animation:aparecer .35s ease}
+  @keyframes aparecer{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:none}}
+  .bloque{min-width:0}
+  .bloque-recetas{grid-area:recetas}
+  .bloque-libros{grid-area:libros}
+  .bloque-musica{grid-area:musica}
+  .bloque-libros, .bloque-musica{border-top:1px solid var(--verde); padding-top:24px}
+  .panel-enlace{grid-column:1 / -1; margin:0; font-size:14px}
+  .panel-enlace a{display:inline-flex; align-items:center; gap:6px; color:var(--verde); font-weight:700}
+  .panel-enlace svg{width:14px; height:14px}
+
+  .bloque-titulo{
+    display:flex; align-items:center; gap:10px; margin:0 0 14px; color:var(--verde);
+    font:700 12px/1 var(--sans); letter-spacing:.2em; text-transform:uppercase;
+  }
+  .bloque-titulo svg{width:18px; height:18px}
+
+  /* Recetas */
+  .recetas{list-style:none; margin:0; padding:0; display:grid; gap:12px}
+  .receta{display:flex; flex-direction:column; gap:6px; padding:16px 16px 18px; background:#fff; border:1px solid #e6e3dc; border-radius:4px}
+  .receta-top{display:flex; align-items:center; justify-content:space-between; gap:8px}
+  .receta-num{font:italic 400 26px/1 var(--serif); color:var(--verde)}
+  .receta-tipo{white-space:nowrap; padding:6px 9px; border-radius:999px; background:var(--crema); color:var(--texto); font:700 10.5px/1 var(--sans); letter-spacing:.12em; text-transform:uppercase}
+  .receta-nombre{margin:6px 0 0; font:500 19px/1.2 var(--serif); color:var(--rojo)}
+  .receta-origen{display:flex; align-items:center; gap:5px; margin:0; font-size:12.5px; color:var(--texto)}
+  .receta-origen svg{width:13px; height:13px; flex:none}
+  .receta-desc{margin:4px 0 0; font-size:14px; line-height:1.55; color:#3c3c38}
+
+  /* Libros */
+  .libros{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,150px)); gap:14px}
+  .portada{
+    container-type:inline-size; position:relative; overflow:hidden; aspect-ratio:2/3;
+    display:flex; flex-direction:column; justify-content:space-between; padding:14% 11%; text-align:center;
+    border-radius:2px 4px 4px 2px; box-shadow:0 10px 18px -10px rgba(0,0,0,.5), inset 4px 0 0 rgba(0,0,0,.14);
+  }
+  .portada::after{content:""; position:absolute; inset:6px; border:1px solid currentColor; opacity:.35; pointer-events:none}
+  .portada-titulo{font:500 clamp(10px,11cqi,17px)/1.15 var(--serif); hyphens:auto; overflow-wrap:break-word}
+  .portada-titulo::after{content:""; display:block; width:28%; height:1px; margin:12% auto 0; background:currentColor; opacity:.6}
+  .portada-autor{font:700 clamp(7px,6.5cqi,10px)/1.25 var(--sans); letter-spacing:.12em; text-transform:uppercase}
+  .portada--0{background:#1e2a55; color:#e7c66b}
+  .portada--1{background:#0f3b33; color:var(--crema)}
+  .portada--1 .portada-titulo{font:700 clamp(9px,9cqi,14px)/1.25 var(--sans); letter-spacing:.08em; text-transform:uppercase}
+  .portada--2{background:#f3e6cf; color:var(--rojo)}
+  .libro-original{margin:10px 0 0; font:italic 13px/1.3 var(--serif)}
+  .libro-meta{margin:3px 0 0; font-size:12px; color:var(--texto)}
+
+  /* Música */
+  .player{padding:16px; border-radius:6px; background:#0b0b0b; color:#f2f2f2}
+  .player-head{display:flex; align-items:center; gap:12px; padding-bottom:14px; border-bottom:1px solid rgba(255,255,255,.12)}
+  .player-cover{
+    display:grid; place-items:center; flex:none; width:52px; height:52px; border-radius:4px; color:#0b0b0b;
+    background:linear-gradient(90deg,var(--verde) 0 33.3%,var(--crema) 33.3% 66.6%,var(--rojo) 66.6%);
+  }
+  .player-cover svg{width:22px; height:22px}
+  .player-titulo{margin:0; font-size:15px; font-weight:700; line-height:1.25}
+  .player-sub{margin:2px 0 0; font-size:12px; color:#a7a7a7}
+  .pistas{list-style:none; margin:8px 0 0; padding:0}
+  .pista{
+    display:grid; grid-template-columns:20px minmax(0,1fr) 30px; align-items:center; gap:10px;
+    padding:10px 6px; border-radius:4px; color:inherit; text-decoration:none;
+  }
+  .pista:hover{background:rgba(255,255,255,.08)}
+  .pista:focus-visible{outline:2px solid #fff; outline-offset:-2px}
+  .pista-num{font-size:13px; color:#9a9a9a; text-align:center; font-variant-numeric:tabular-nums}
+  .pista-nombre{display:block; font-size:14px; font-weight:700; line-height:1.3}
+  .pista-desc{display:block; margin-top:2px; font-size:12.5px; line-height:1.4; color:#b3b3b3}
+  .pista-play{display:grid; place-items:center; width:30px; height:30px; border-radius:50%; border:1px solid rgba(255,255,255,.35); transition:background .15s ease, color .15s ease}
+  .pista-play svg{width:12px; height:12px; margin-left:2px}
+  .pista:hover .pista-play, .pista:focus-visible .pista-play{background:#fff; color:#0b0b0b}
+
+  @container panel (min-width:560px){
+    .recetas{grid-template-columns:repeat(3,minmax(0,1fr))}
+  }
+  @container panel (min-width:680px){
+    .panel-body{grid-template-columns:minmax(230px,.95fr) minmax(0,1.25fr); grid-template-areas:"musica libros" "recetas recetas"; column-gap:28px}
+    .bloque-libros, .bloque-musica{border-top:0; padding-top:0}
+    .bloque-recetas{border-top:1px solid var(--verde); padding-top:24px}
+    .pista{grid-template-columns:minmax(0,1fr) 30px}
+    .pista-num{display:none}
+  }
+
+  /* ── 3. Sugerencias ──────────────────────────────────── */
+  .sugerencias{background:var(--verde); color:var(--crema); padding-block:clamp(64px,9vw,120px)}
+  .sugerencias .titulo em{color:#cfe6d6}
+  .sugerencias .lead{color:rgba(244,241,233,.82)}
+  .sug-head{max-width:640px; margin-bottom:clamp(36px,5vw,64px)}
+  .sug-grid{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+  .sug-card{display:flex; flex-direction:column; overflow:hidden; border-radius:6px; background:var(--crema); color:var(--tinta)}
+  .sug-media{display:grid; grid-template-columns:2fr 1fr; grid-template-rows:1fr 1fr; gap:4px; aspect-ratio:4/3; padding:4px}
+  .sug-media > :first-child{grid-row:1 / span 2}
+  .sug-media > *, .galeria > *{width:100%; height:100%; min-height:0; object-fit:cover; border-radius:3px}
+  .sug-body{display:flex; flex-direction:column; gap:10px; padding:22px 24px 28px}
+  .sug-meta{display:flex; align-items:center; gap:12px}
+  .sug-num{font:italic 400 30px/1 var(--serif); color:var(--verde)}
+  .sug-tag{font:700 10.5px/1 var(--sans); letter-spacing:.18em; text-transform:uppercase; color:var(--rojo)}
+  .sug-card h3{margin:0; font:500 clamp(22px,2.2vw,26px)/1.2 var(--serif)}
+  .sug-card p{margin:0; font-size:15px; line-height:1.65; color:var(--texto)}
+
+  /* Espacios reservados para imágenes */
+  .ph{
+    display:grid; place-items:center; color:rgba(13,59,42,.45);
+    background:repeating-linear-gradient(135deg,rgba(2,117,58,.06) 0 10px,transparent 10px 20px),#e6dfd1;
+  }
+  .ph svg{width:28px; height:28px}
+  .ph--b{background-color:#dde6dc}
+  .ph--c{background-color:#efdcd6}
+
+  .galeria-wrap{margin-top:clamp(40px,6vw,72px); padding-top:24px; border-top:1px solid rgba(244,241,233,.3)}
+  .galeria-head{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px 24px; margin-bottom:20px}
+  .galeria-head h3{margin:0; font:400 clamp(26px,3vw,34px)/1.1 var(--serif)}
+  .galeria-head p{margin:0; font-size:15px; color:rgba(244,241,233,.8)}
+  .galeria{display:grid; gap:8px; grid-template-columns:repeat(2,minmax(0,1fr)); grid-auto-rows:130px; grid-auto-flow:dense}
+  .galeria .ph{
+    color:rgba(244,241,233,.55); border:1px solid rgba(244,241,233,.18);
+    background:repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 10px,transparent 10px 20px),rgba(255,255,255,.07);
+  }
+  .g-alta{grid-row:span 2}
+  .g-ancha{grid-column:span 2}
+  @media (min-width:720px){
+    .galeria{grid-template-columns:repeat(4,minmax(0,1fr)); grid-auto-rows:170px}
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Iconos reutilizables -->
+<svg class="sprite" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.3"/></g></symbol>
+  <symbol id="i-plato" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v18M4.5 3v5a2.5 2.5 0 0 0 5 0V3"/><path d="M17.5 21V3c-2 1.4-3 3.8-3 7v3h3"/></g></symbol>
+  <symbol id="i-libro" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 5.5c2.5-1 5.5-1 9 1 3.5-2 6.5-2 9-1v13c-2.5-1-5.5-1-9 1-3.5-2-6.5-2-9-1z"/><path d="M12 6.5v13"/></g></symbol>
+  <symbol id="i-nota" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></g></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor"/></symbol>
+  <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-externo" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-img" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M4 18l5-5 4 4 3-3 4 4"/></g></symbol>
+</svg>
+
+<a class="saltar" href="#cultura">Saltar al contenido</a>
+<header class="sitio-cabecera" id="inicio" tabindex="-1">
+  <div class="contenedor sitio-cabecera-inner">
+    <p class="sitio-marca"><span class="sitio-marca-nombre">Sociedad Italiana de Socorros Mutuos</span><span class="sitio-marca-lugar">Gálvez · Santa Fe</span></p>
+    <nav class="sitio-nav" aria-label="Principal">
+      <ul>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="cultura.html" aria-current="page">Cultura italiana</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="cultura">
+
+  <!-- ═══ 1. Introducción a la sección de cultura ═══ -->
+  <section class="intro" aria-labelledby="intro-titulo">
+    <div class="contenedor intro-grid">
+      <figure class="intro-media">
+        <div class="arco">
+          <!-- Ilustración decorativa. Para usar una fotografía, reemplazar este <svg> por <img src="..." alt="...">. -->
+          <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de una calle italiana: fachadas con persianas verdes y la bandera de Italia en un balcón">
+            <defs>
+              <linearGradient id="g-cielo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8cfd6"/><stop offset=".75" stop-color="#ece4d3"/></linearGradient>
+              <pattern id="p-palazzo" x="100" y="96" width="52" height="70" patternUnits="userSpaceOnUse">
+                <rect x="10" y="4" width="32" height="4" fill="#d4bd95"/><rect x="14" y="9" width="24" height="40" fill="#33454a"/>
+                <rect x="7" y="9" width="7" height="40" fill="#4b7b5d"/><rect x="38" y="9" width="7" height="40" fill="#4b7b5d"/>
+                <rect x="10" y="49" width="32" height="3" fill="#d4bd95"/>
+              </pattern>
+              <pattern id="p-izq" x="6" y="48" width="50" height="78" patternUnits="userSpaceOnUse">
+                <rect x="9" y="6" width="32" height="4" fill="#e6c9a8"/><rect x="13" y="11" width="24" height="46" fill="#2f3d40"/>
+                <rect x="6" y="11" width="7" height="46" fill="#3f6b4f"/><rect x="37" y="11" width="7" height="46" fill="#3f6b4f"/>
+                <rect x="9" y="57" width="32" height="3" fill="#e6c9a8"/>
+              </pattern>
+              <pattern id="p-der" x="298" y="34" width="50" height="80" patternUnits="userSpaceOnUse">
+                <rect x="9" y="6" width="32" height="4" fill="#f0d9ae"/><rect x="13" y="11" width="24" height="48" fill="#2f3d40"/>
+                <rect x="13" y="11" width="12" height="48" fill="#6b8f6e"/><rect x="9" y="59" width="32" height="3" fill="#f0d9ae"/>
+              </pattern>
+              <pattern id="p-bugnato" x="0" y="317" width="40" height="14" patternUnits="userSpaceOnUse">
+                <rect width="40" height="14" fill="#e6d4b4"/><rect y="12" width="40" height="2" fill="#d6c19c"/>
+              </pattern>
+              <pattern id="p-toldo" x="4" y="0" width="12" height="10" patternUnits="userSpaceOnUse">
+                <rect width="6" height="10" fill="#2f6f4f"/><rect x="6" width="6" height="10" fill="#efe6d3"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="500" fill="url(#g-cielo)"/>
+            <path d="M150 46q6-6 12 0q6-6 12 0M196 30q5-5 10 0q5-5 10 0" fill="none" stroke="#5a6a70" stroke-width="1.5"/>
+            <!-- Palazzo central -->
+            <rect x="96" y="70" width="208" height="430" fill="#ecdcc0"/>
+            <rect x="88" y="62" width="224" height="12" fill="#d4bd95"/>
+            <rect x="96" y="74" width="208" height="6" fill="#dcc8a3"/>
+            <rect x="100" y="96" width="208" height="210" fill="url(#p-palazzo)"/>
+            <rect x="96" y="312" width="208" height="5" fill="#d9c39d"/>
+            <rect x="96" y="317" width="208" height="135" fill="url(#p-bugnato)"/>
+            <path d="M166 452V398a34 34 0 0 1 68 0v54z" fill="#d4bd95"/>
+            <path d="M172 452V400a28 28 0 0 1 56 0v52z" fill="#3a2e28"/>
+            <path d="M118 430v-38a12 12 0 0 1 24 0v38zM258 430v-38a12 12 0 0 1 24 0v38z" fill="#33454a"/>
+            <!-- Balcón y bandera -->
+            <rect x="150" y="300" width="100" height="6" fill="#cdb48a"/>
+            <path d="M152 284h96v16h-96zM162 284v16M172 284v16M182 284v16M192 284v16M202 284v16M212 284v16M222 284v16M232 284v16M242 284v16" fill="none" stroke="#4a3d33" stroke-width="2"/>
+            <circle cx="158" cy="281" r="6" fill="#5c8a4a"/><circle cx="167" cy="279" r="5" fill="#6f9b57"/><circle cx="176" cy="282" r="4.5" fill="#5c8a4a"/>
+            <rect x="237" y="236" width="2.5" height="64" fill="#3a332c"/>
+            <rect x="240" y="238" width="15" height="30" fill="#02753a"/><rect x="255" y="238" width="15" height="30" fill="#f4f1e9"/><rect x="270" y="238" width="15" height="30" fill="#a62029"/>
+            <!-- Edificio izquierdo -->
+            <rect x="0" y="24" width="108" height="476" fill="#c9774f"/>
+            <rect x="0" y="16" width="116" height="10" fill="#ad5f3c"/>
+            <rect x="6" y="48" width="100" height="312" fill="url(#p-izq)"/>
+            <path d="M4 384h100l-8 26H12z" fill="url(#p-toldo)"/>
+            <rect x="16" y="410" width="76" height="42" fill="#3a3430"/>
+            <rect x="96" y="24" width="12" height="476" fill="#000" opacity=".08"/>
+            <path d="M108 250h18v6" fill="none" stroke="#2b2b29" stroke-width="3"/>
+            <path d="M120 256h12l-2 14h-8z" fill="#2b2b29"/>
+            <!-- Edificio derecho -->
+            <rect x="292" y="6" width="108" height="494" fill="#dca55f"/>
+            <rect x="284" y="0" width="116" height="10" fill="#c38b43"/>
+            <rect x="298" y="34" width="100" height="320" fill="url(#p-der)"/>
+            <path d="M318 452v-40a18 18 0 0 1 36 0v40z" fill="#3a2e28"/>
+            <rect x="292" y="6" width="10" height="494" fill="#000" opacity=".1"/>
+            <!-- Calle -->
+            <rect x="0" y="452" width="400" height="48" fill="#b7a284"/>
+            <rect x="0" y="452" width="400" height="3" fill="#9e8a6e"/>
+          </svg>
+        </div>
+        <p class="pill">20 regiones, una cultura</p>
+      </figure>
+
+      <div>
+        <p class="eyebrow">Cultura italiana</p>
+        <h1 class="titulo" id="intro-titulo">Sabores, letras y música <em>de cada región.</em></h1>
+        <p class="lead">Italia son veinte regiones con identidad propia. Esta sección propone recorrerlas en un mapa interactivo y descubrir, en cada una, sus recetas típicas, los libros que la cuentan y la música que la acompaña.</p>
+        <a class="cta" href="#mapa">Explorar el mapa <svg aria-hidden="true"><use href="#i-pin"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 2. Mapa interactivo y contenido regional ═══ -->
+  <section class="explorador" id="mapa" aria-labelledby="mapa-titulo">
+    <div class="contenedor">
+      <header class="explorador-head">
+        <p class="eyebrow">Mapa interactivo</p>
+        <h2 class="titulo titulo--sm" id="mapa-titulo">Un clic, <em>una región.</em></h2>
+        <p class="lead">Toca una región del mapa (o elige su nombre en la lista) para ver sus recetas, libros y música.</p>
+      </header>
+
+      <div class="explorador-grid">
+        <div class="mapa-col">
+          <div class="map-wrap">
+            <svg id="svg-map" viewBox="0 0 2657.2 3130.6" xmlns="http://www.w3.org/2000/svg" aria-label="Mapa de las regiones de Italia"></svg>
+          </div>
+          <p class="map-hint" id="map-hint" aria-hidden="true">Toca una región para explorarla</p>
+          <div class="legend">
+            <span><i class="swatch" style="background:var(--rojo)"></i>Región seleccionada</span>
+            <span><i class="swatch" style="background:var(--verde)"></i>Otras regiones</span>
+          </div>
+          <div class="list" id="list" role="group" aria-label="Elegir región por nombre"></div>
+          <noscript><p>Activa JavaScript para usar el mapa interactivo.</p></noscript>
+        </div>
+
+        <article class="panel" id="panel" aria-labelledby="panel-nombre">
+          <header class="panel-head">
+            <div>
+              <h3 class="panel-nombre" id="panel-nombre">Italia</h3>
+              <p class="panel-meta" id="panel-meta"></p>
+            </div>
+            <div class="panel-nav">
+              <button type="button" class="nav-btn" data-paso="-1" aria-label="Región anterior"><svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
+              <span class="panel-pos" id="panel-pos"></span>
+              <button type="button" class="nav-btn" data-paso="1" aria-label="Región siguiente"><svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
+            </div>
+          </header>
+          <div class="panel-body" id="panel-body"></div>
+          <p class="sr-only" id="panel-estado" aria-live="polite"></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 3. Sugerencias ═══
+       Para usar fotos reales, reemplazar cada <div class="ph"> por <img src="..." alt="...">:
+       el CSS ya las recorta y las ajusta al espacio. -->
+  <section class="sugerencias" aria-labelledby="sug-titulo">
+    <div class="contenedor">
+      <header class="sug-head">
+        <p class="eyebrow">Más cultura</p>
+        <h2 class="titulo titulo--sm" id="sug-titulo">Historias, curiosidades <em>y arte.</em></h2>
+        <p class="lead">Nuevos espacios para seguir descubriendo Italia y su vínculo con Gálvez, contados con muchas imágenes.</p>
+      </header>
+
+      <div class="sug-grid">
+        <article class="sug-card">
+          <div class="sug-media">
+            <div class="ph" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+            <div class="ph ph--b" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+            <div class="ph ph--c" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          </div>
+          <div class="sug-body">
+            <div class="sug-meta"><span class="sug-num">01</span><span class="sug-tag">Historia local</span></div>
+            <h3>Inmigrantes italianos en Gálvez</h3>
+            <p>La historia de las familias italianas que llegaron a Gálvez, contada a través de relatos, fotografías y documentos.</p>
+          </div>
+        </article>
+
+        <article class="sug-card">
+          <div class="sug-media">
+            <div class="ph ph--b" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+            <div class="ph ph--c" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+            <div class="ph" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          </div>
+          <div class="sug-body">
+            <div class="sug-meta"><span class="sug-num">02</span><span class="sug-tag">Curiosidades</span></div>
+            <h3>Datos curiosos de Italia</h3>
+            <p>Curiosidades sobre Italia, sus regiones y sus costumbres, en un formato breve y visual.</p>
+          </div>
+        </article>
+
+        <article class="sug-card">
+          <div class="sug-media">
+            <div class="ph ph--c" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+            <div class="ph" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+            <div class="ph ph--b" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          </div>
+          <div class="sug-body">
+            <div class="sug-meta"><span class="sug-num">03</span><span class="sug-tag">Arte</span></div>
+            <h3>Arte italiano</h3>
+            <p>Una selección visual del arte italiano: pintura, escultura y arquitectura.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="galeria-wrap">
+        <div class="galeria-head">
+          <h3>Galería</h3>
+          <p>Fotografías e imágenes de Italia, su arte y la historia italiana de Gálvez.</p>
+        </div>
+        <div class="galeria">
+          <div class="ph g-alta g-ancha" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          <div class="ph" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          <div class="ph g-alta" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          <div class="ph" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          <div class="ph g-ancha" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          <div class="ph" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          <div class="ph" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          <div class="ph" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          <div class="ph g-ancha" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+          <div class="ph" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="sitio-pie">
+  Límites administrativos: <a href="https://github.com/openpolis/geojson-italy" target="_blank" rel="noopener">ISTAT / openpolis</a> (CC-BY), geometría simplificada.
+</footer>
+
+<script>
+  // ───────────────────────────────────────────────────────────
+  // REGIONES: geometría del mapa. El campo "url" es opcional: al
+  // sustituir el enlace de ejemplo por uno real, el cuadro de la
+  // región muestra un enlace «Más sobre…» que lleva a ese sitio.
+  // ───────────────────────────────────────────────────────────
+  const REGIONES = [
+  { id:"piemonte", nombre:"Piamonte", grupo:"north", url:"https://example.com/piemonte", d:"M114,541 L113,470 L285,447 L280,333 L340,283 L325,247 L407,186 L406,250 L470,316 L431,392 L495,507 L461,537 L430,517 L424,565 L454,620 L505,607 L578,699 L576,745 L515,722 L483,778 L466,751 L363,766 L308,894 L146,882 L58,816 L51,765 L100,718 L0,594 L114,541 Z M464,619 L465,621 L464,618 L464,619 Z" },
+  { id:"valle-de-aosta", nombre:"Valle de Aosta", grupo:"north", url:"https://example.com/valle-de-aosta", d:"M91,349 L276,350 L285,447 L94,483 L40,399 L91,349 Z" },
+  { id:"liguria", nombre:"Liguria", grupo:"north", url:"https://example.com/liguria", d:"M202,990 L246,887 L323,881 L357,770 L446,749 L483,778 L515,722 L640,757 L628,799 L676,801 L769,897 L716,910 L639,853 L583,821 L579,835 L552,813 L512,801 L512,805 L494,798 L473,797 L408,839 L323,958 L234,992 L202,990 Z" },
+  { id:"lombardia", nombre:"Lombardía", grupo:"north", url:"https://example.com/lombardia", d:"M436,399 L473,288 L511,376 L538,378 L532,314 L586,255 L593,176 L633,173 L653,234 L743,211 L781,258 L791,203 L763,164 L807,134 L893,191 L855,328 L873,389 L941,375 L894,444 L907,522 L1023,591 L1016,607 L1036,608 L1038,619 L1070,635 L1072,637 L1072,640 L870,651 L750,585 L714,609 L653,585 L594,645 L603,718 L575,719 L505,607 L454,620 L424,565 L430,517 L461,537 L495,507 L436,399 Z M596,713 L595,715 L598,714 L596,713 Z M597,717 L598,717 L598,716 L597,717 Z" },
+  { id:"trentino", nombre:"Trentino-Alto Adigio", grupo:"north", url:"https://example.com/trentino", d:"M1216,122 L1162,172 L1150,217 L1189,274 L1130,297 L1128,335 L1035,349 L1007,417 L866,376 L869,221 L895,204 L841,128 L859,68 L982,95 L1014,35 L1251,0 L1233,51 L1307,121 L1243,147 L1216,122 Z" },
+  { id:"veneto", nombre:"Véneto", grupo:"north", url:"https://example.com/veneto", d:"M896,464 L941,375 L942,409 L1005,418 L1035,349 L1128,335 L1130,297 L1176,289 L1192,265 L1150,217 L1175,192 L1158,179 L1216,122 L1364,135 L1273,243 L1311,280 L1296,341 L1350,388 L1415,371 L1447,433 L1281,506 L1275,598 L1325,635 L1289,687 L1211,632 L1073,646 L916,538 L896,464 Z" },
+  { id:"friuli", nombre:"Friuli-Venecia Julia", grupo:"north", url:"https://example.com/friuli", d:"M1583,168 L1516,261 L1572,274 L1530,323 L1567,330 L1552,372 L1629,435 L1614,450 L1585,447 L1604,441 L1593,437 L1596,429 L1592,421 L1575,404 L1543,384 L1521,421 L1446,432 L1415,371 L1325,377 L1290,313 L1311,280 L1272,246 L1371,131 L1583,168 Z" },
+  { id:"emilia-romana", nombre:"Emilia-Romaña", grupo:"north", url:"https://example.com/emilia-romana", d:"M603,718 L594,645 L653,585 L714,609 L750,585 L880,652 L916,627 L1262,642 L1289,687 L1264,673 L1254,711 L1280,844 L1364,964 L1311,961 L1314,928 L1264,995 L1197,996 L1136,962 L1121,928 L1144,888 L1071,853 L1032,896 L886,890 L862,858 L756,808 L747,786 L628,799 L640,757 L575,740 L575,719 L603,718 Z M1252,982 L1242,993 L1254,989 L1252,982 Z" },
+  { id:"toscana", nombre:"Toscana", grupo:"center", url:"https://example.com/toscana", d:"M807,963 L684,815 L714,785 L956,906 L1071,853 L1145,889 L1121,928 L1141,966 L1216,1003 L1264,995 L1283,1012 L1206,1100 L1251,1136 L1184,1180 L1191,1264 L1145,1284 L1158,1329 L1106,1355 L1115,1394 L1031,1399 L1011,1417 L1017,1363 L917,1284 L926,1252 L865,1245 L871,1153 L819,1061 L807,963 Z M861,868 L861,868 L861,868 L861,868 Z" },
+  { id:"umbria", nombre:"Umbría", grupo:"center", url:"https://example.com/umbria", d:"M1459,1329 L1318,1416 L1246,1327 L1187,1320 L1181,1187 L1251,1136 L1207,1104 L1222,1068 L1280,1040 L1275,1068 L1373,1088 L1401,1236 L1479,1270 L1459,1329 Z" },
+  { id:"marcas", nombre:"Marcas", grupo:"center", url:"https://example.com/marcas", d:"M1373,1088 L1243,1035 L1283,1012 L1264,987 L1403,948 L1564,1060 L1629,1257 L1512,1319 L1466,1305 L1483,1282 L1477,1265 L1401,1236 L1373,1088 Z M1295,1042 L1295,1047 L1297,1047 L1295,1042 Z" },
+  { id:"lacio", nombre:"Lacio", grupo:"center", url:"https://example.com/lacio", d:"M1158,1283 L1246,1327 L1318,1416 L1495,1308 L1512,1348 L1467,1349 L1450,1392 L1509,1471 L1443,1472 L1430,1510 L1505,1548 L1509,1580 L1629,1610 L1653,1668 L1616,1700 L1623,1736 L1437,1758 L1339,1691 L1078,1412 L1157,1332 L1158,1283 Z M1345,1601 L1348,1604 L1346,1600 L1345,1601 Z M1303,1554 L1301,1553 L1300,1554 L1303,1554 Z" },
+  { id:"abruzo", nombre:"Abruzo", grupo:"south", url:"https://example.com/abruzo", d:"M1634,1619 L1509,1580 L1428,1503 L1443,1472 L1509,1471 L1458,1418 L1467,1349 L1509,1351 L1504,1316 L1543,1280 L1627,1257 L1672,1356 L1822,1515 L1757,1597 L1711,1552 L1691,1600 L1634,1619 Z" },
+  { id:"molise", nombre:"Molise", grupo:"south", url:"https://example.com/molise", d:"M1782,1716 L1675,1673 L1657,1707 L1634,1619 L1691,1600 L1711,1552 L1757,1597 L1821,1504 L1901,1547 L1907,1612 L1856,1639 L1872,1679 L1782,1716 Z" },
+  { id:"campania", nombre:"Campania", grupo:"south", url:"https://example.com/campania", d:"M1617,1699 L1782,1716 L1872,1679 L1933,1752 L1918,1780 L1993,1809 L1989,1853 L1946,1874 L2051,2043 L2022,2108 L1988,2103 L1965,2128 L1941,2115 L1931,2118 L1851,2052 L1870,2008 L1824,1926 L1756,1937 L1741,1942 L1720,1954 L1754,1916 L1752,1906 L1748,1899 L1708,1872 L1656,1887 L1658,1870 L1651,1846 L1594,1758 L1617,1699 Z" },
+  { id:"apulia", nombre:"Apulia", grupo:"south", url:"https://example.com/apulia", d:"M1934,1796 L1856,1639 L1907,1612 L1902,1547 L2113,1543 L2138,1586 L2072,1640 L2085,1686 L2338,1806 L2424,1876 L2505,1918 L2527,1919 L2657,2093 L2649,2102 L2647,2112 L2638,2118 L2632,2132 L2623,2187 L2586,2173 L2544,2134 L2543,2092 L2524,2070 L2524,2058 L2518,2050 L2520,2049 L2510,2040 L2431,2036 L2343,1969 L2287,2005 L2255,1981 L2242,1900 L2184,1913 L2065,1783 L1934,1796 Z M2236,1898 L2238,1899 L2239,1899 L2236,1898 Z" },
+  { id:"basilicata", nombre:"Basilicata", grupo:"south", url:"https://example.com/basilicata", d:"M2051,2043 L1950,1860 L1989,1853 L1996,1798 L2065,1783 L2184,1913 L2256,1911 L2255,1981 L2288,2006 L2238,2090 L2188,2082 L2173,2155 L2060,2123 L2040,2148 L2022,2116 L2015,2112 L2051,2043 Z" },
+  { id:"calabria", nombre:"Calabria", grupo:"south", url:"https://example.com/calabria", d:"M2143,2473 L2044,2137 L2172,2155 L2188,2082 L2234,2086 L2210,2225 L2353,2305 L2342,2393 L2364,2416 L2339,2457 L2231,2479 L2220,2599 L2109,2747 L2041,2750 L2013,2723 L2012,2658 L2048,2641 L2074,2591 L2057,2531 L2125,2509 L2143,2473 Z" },
+  { id:"sicilia", nombre:"Sicilia", grupo:"island", url:"https://example.com/sicilia", d:"M1403,2717 L1494,2658 L1590,2734 L1764,2712 L1852,2667 L1865,2679 L1892,2689 L1918,2669 L1925,2652 L1921,2644 L2017,2645 L1918,2798 L1890,2880 L1893,2930 L1928,2953 L1912,2954 L1912,2966 L1937,2993 L1932,3013 L1946,3023 L1932,3023 L1905,3051 L1892,3086 L1902,3120 L1889,3131 L1875,3114 L1757,3089 L1705,3007 L1620,2994 L1462,2877 L1306,2813 L1306,2801 L1296,2784 L1309,2763 L1303,2753 L1317,2722 L1311,2720 L1363,2669 L1403,2717 Z" },
+  { id:"cerdena", nombre:"Cerdeña", grupo:"island", url:"https://example.com/cerdena", d:"M415,2043 L373,1947 L340,1949 L353,1921 L337,1906 L356,1864 L352,1833 L374,1870 L418,1879 L483,1848 L566,1777 L562,1751 L657,1790 L643,1822 L656,1814 L679,1827 L667,1824 L661,1829 L659,1846 L648,1845 L644,1846 L642,1851 L693,1872 L683,1874 L680,1890 L698,1945 L708,1962 L715,1966 L670,2049 L695,2102 L684,2130 L664,2319 L665,2329 L672,2335 L647,2397 L578,2357 L539,2373 L536,2425 L533,2429 L530,2429 L509,2453 L505,2456 L499,2460 L498,2462 L468,2444 L450,2465 L425,2407 L397,2437 L385,2396 L411,2408 L416,2400 L389,2360 L404,2338 L403,2332 L400,2328 L401,2325 L390,2313 L392,2288 L434,2166 L396,2154 L417,2099 L415,2043 Z" }
+  ];
+
+  // ───────────────────────────────────────────────────────────
+  // EDITA AQUÍ: contenido cultural de cada región (misma clave
+  // que el "id" de REGIONES). En música, "q" es la búsqueda que
+  // se abre en YouTube; si falta, se usa el nombre.
+  // ───────────────────────────────────────────────────────────
+  const CULTURA = {
+    "piemonte": {
+      it:"Piemonte", capital:"Turín",
+      recetas:[
+        { nombre:"Bagna càuda", tipo:"Entrada", origen:"Langhe y Monferrato", desc:"Salsa caliente de ajo, anchoas y aceite de oliva en la que se mojan verduras crudas y cocidas." },
+        { nombre:"Vitello tonnato", tipo:"Entrada", desc:"Finas láminas de ternera cocida cubiertas con una salsa cremosa de atún, anchoas y alcaparras." },
+        { nombre:"Agnolotti del plin", tipo:"Primer plato", origen:"Langhe", desc:"Pequeña pasta rellena de carne, cerrada con un pellizco («plin»), con manteca y salvia o jugo de asado." }
+      ],
+      libros:[
+        { titulo:"La luna y las fogatas", original:"La luna e i falò", autor:"Cesare Pavese", anio:"1950", genero:"Novela" },
+        { titulo:"Léxico familiar", original:"Lessico famigliare", autor:"Natalia Ginzburg", anio:"1963", genero:"Novela" },
+        { titulo:"Una cuestión privada", original:"Una questione privata", autor:"Beppe Fenoglio", anio:"1963", genero:"Novela" }
+      ],
+      musica:[
+        { nombre:"Paolo Conte", desc:"Cantautor y pianista de Asti · «Via con me» (1981)", q:"Paolo Conte Via con me" },
+        { nombre:"Fred Buscaglione", desc:"Crooner turinés de los años 50 · «Che bambola» (1956)", q:"Fred Buscaglione Che bambola" },
+        { nombre:"Subsonica", desc:"Banda turinesa de rock electrónico · «Tutti i miei sbagli» (2000)", q:"Subsonica Tutti i miei sbagli" }
+      ]
+    },
+    "valle-de-aosta": {
+      it:"Valle d'Aosta", capital:"Aosta",
+      recetas:[
+        { nombre:"Fonduta valdostana", tipo:"Entrada", desc:"Crema de queso Fontina fundido con leche, manteca y yemas, para acompañar pan o polenta." },
+        { nombre:"Carbonade", tipo:"Segundo plato", desc:"Carne vacuna cocida lentamente en vino tinto con cebolla y especias; se sirve con polenta." },
+        { nombre:"Zuppa alla valpellinentze", tipo:"Sopa", origen:"Valpelline", desc:"Capas de pan, repollo, Fontina y caldo, gratinadas al horno." }
+      ],
+      libros:[
+        { titulo:"Las ocho montañas", original:"Le otto montagne", autor:"Paolo Cognetti", anio:"2016", genero:"Novela" },
+        { titulo:"Il ragazzo selvatico", autor:"Paolo Cognetti", anio:"2013", genero:"Diario de montaña" },
+        { titulo:"El leproso de la ciudad de Aosta", original:"Le Lépreux de la cité d'Aoste", autor:"Xavier de Maistre", anio:"1811", genero:"Relato" }
+      ],
+      musica:[
+        { nombre:"Canto en patois", desc:"Canciones tradicionales en francoprovenzal, la lengua histórica del valle", q:"chants patois valdôtain" },
+        { nombre:"Coros alpinos", desc:"Corales de montaña que mantienen vivo el repertorio popular del valle", q:"coro canti di montagna valle d'aosta" },
+        { nombre:"Carnaval de la Coumba Freida", desc:"Carnaval tradicional del valle del Gran San Bernardo, con desfiles al son de la música popular", q:"Carnevale della Coumba Freida" }
+      ]
+    },
+    "liguria": {
+      it:"Liguria", capital:"Génova",
+      recetas:[
+        { nombre:"Pesto alla genovese", tipo:"Salsa", origen:"Génova", desc:"Albahaca, piñones, ajo, queso y aceite de oliva machacados en mortero; clásico con trofie o trenette." },
+        { nombre:"Focaccia genovese", tipo:"Pan", origen:"Génova", desc:"Masa baja y aceitosa, con su típica superficie de hoyuelos y sal gruesa." },
+        { nombre:"Farinata", tipo:"Entrada", origen:"Génova", desc:"Torta fina de harina de garbanzos horneada en asadera de cobre; antecesora de la fainá rioplatense." }
+      ],
+      libros:[
+        { titulo:"El barón rampante", original:"Il barone rampante", autor:"Italo Calvino", anio:"1957", genero:"Novela" },
+        { titulo:"El sendero de los nidos de araña", original:"Il sentiero dei nidi di ragno", autor:"Italo Calvino", anio:"1947", genero:"Novela" },
+        { titulo:"Huesos de sepia", original:"Ossi di seppia", autor:"Eugenio Montale", anio:"1925", genero:"Poesía" }
+      ],
+      musica:[
+        { nombre:"Fabrizio De André", desc:"Cantautor genovés · «Crêuza de mä» (1984), en dialecto genovés", q:"Fabrizio De André Creuza de ma" },
+        { nombre:"Gino Paoli", desc:"Figura de la escuela genovesa de cantautores · «Il cielo in una stanza» (1960)", q:"Gino Paoli Il cielo in una stanza" },
+        { nombre:"Trallalero", desc:"Canto polifónico tradicional genovés, a cargo de grupos de voces masculinas", q:"trallalero genovese" }
+      ]
+    },
+    "lombardia": {
+      it:"Lombardia", capital:"Milán",
+      recetas:[
+        { nombre:"Risotto alla milanese", tipo:"Primer plato", origen:"Milán", desc:"Arroz cremoso con azafrán, caldo, manteca y queso." },
+        { nombre:"Cotoletta alla milanese", tipo:"Segundo plato", origen:"Milán", desc:"Costilla de ternera con hueso, empanada y frita en manteca; pariente de la milanesa." },
+        { nombre:"Panettone", tipo:"Postre", origen:"Milán", desc:"Pan dulce alto y esponjoso con pasas y frutas confitadas, símbolo de la Navidad." }
+      ],
+      libros:[
+        { titulo:"Los novios", original:"I promessi sposi", autor:"Alessandro Manzoni", anio:"1827", genero:"Novela" },
+        { titulo:"Venus privada", original:"Venere privata", autor:"Giorgio Scerbanenco", anio:"1966", genero:"Novela negra" },
+        { titulo:"La Tierra Santa", original:"La Terra Santa", autor:"Alda Merini", anio:"1984", genero:"Poesía" }
+      ],
+      musica:[
+        { nombre:"Teatro alla Scala", desc:"Inaugurado en 1778; allí se estrenó «Nabucco» de Verdi (1842)", q:"Va pensiero Nabucco Teatro alla Scala" },
+        { nombre:"Mina", desc:"Nacida en Busto Arsizio · «Se telefonando» (1966)", q:"Mina Se telefonando" },
+        { nombre:"Enzo Jannacci", desc:"Cantautor milanés · «Vengo anch'io. No, tu no» (1967)", q:"Enzo Jannacci Vengo anch'io no tu no" }
+      ]
+    },
+    "trentino": {
+      it:"Trentino-Alto Adige", capital:"Trento",
+      recetas:[
+        { nombre:"Canederli", tipo:"Primer plato", origen:"Trentino y Tirol del Sur", desc:"Bolas de pan duro con speck y queso, servidas en caldo o con manteca derretida." },
+        { nombre:"Strangolapreti", tipo:"Primer plato", origen:"Trento", desc:"Ñoquis de pan y espinaca con manteca y queso." },
+        { nombre:"Strudel di mele", tipo:"Postre", origen:"Tirol del Sur", desc:"Masa estirada muy fina rellena de manzanas, pasas, piñones y canela." }
+      ],
+      libros:[
+        { titulo:"Me quedo aquí", original:"Resto qui", autor:"Marco Balzano", anio:"2018", genero:"Novela" },
+        { titulo:"Eva duerme", original:"Eva dorme", autor:"Francesca Melandri", anio:"2010", genero:"Novela" },
+        { titulo:"La montaña desnuda", original:"Der nackte Berg", autor:"Reinhold Messner", anio:"2002", genero:"Relato de montaña" }
+      ],
+      musica:[
+        { nombre:"Coro della SAT", desc:"Coro de montaña fundado en Trento en 1926, referente del canto alpino", q:"Coro della SAT La Montanara" },
+        { nombre:"Música tirolesa", desc:"Bandas de música (Musikkapellen) y canto jodel en los valles del Tirol del Sur", q:"Südtiroler Volksmusik" },
+        { nombre:"I Suoni delle Dolomiti", desc:"Festival de verano con conciertos al aire libre en las montañas del Trentino", q:"I Suoni delle Dolomiti" }
+      ]
+    },
+    "veneto": {
+      it:"Veneto", capital:"Venecia",
+      recetas:[
+        { nombre:"Sarde in saor", tipo:"Entrada", origen:"Venecia", desc:"Sardinas fritas marinadas con cebolla, vinagre, pasas y piñones." },
+        { nombre:"Risi e bisi", tipo:"Primer plato", origen:"Venecia", desc:"Arroz caldoso con arvejas tiernas, plato tradicional de la primavera veneciana." },
+        { nombre:"Tiramisù", tipo:"Postre", origen:"Treviso", desc:"Bizcochos embebidos en café, crema de mascarpone y cacao." }
+      ],
+      libros:[
+        { titulo:"La posadera", original:"La locandiera", autor:"Carlo Goldoni", anio:"1753", genero:"Teatro" },
+        { titulo:"La muerte en Venecia", original:"Der Tod in Venedig", autor:"Thomas Mann", anio:"1912", genero:"Novela corta" },
+        { titulo:"Libera nos a malo", autor:"Luigi Meneghello", anio:"1963", genero:"Novela" }
+      ],
+      musica:[
+        { nombre:"Antonio Vivaldi", desc:"Compositor veneciano · «Las cuatro estaciones» (1725)", q:"Vivaldi Le quattro stagioni" },
+        { nombre:"Teatro La Fenice", desc:"Allí se estrenaron «Rigoletto» (1851) y «La traviata» (1853) de Verdi", q:"La traviata Libiamo Teatro La Fenice" },
+        { nombre:"Barcarolas venecianas", desc:"Canciones de góndola (canzoni da battello) de la tradición popular", q:"canzoni da battello veneziane" }
+      ]
+    },
+    "friuli": {
+      it:"Friuli-Venezia Giulia", capital:"Trieste",
+      recetas:[
+        { nombre:"Frico", tipo:"Segundo plato", origen:"Carnia y Friuli", desc:"Torta crocante de queso Montasio y papas, dorada en sartén." },
+        { nombre:"Cjarsons", tipo:"Primer plato", origen:"Carnia", desc:"Pasta rellena agridulce, con papa, pasas, hierbas y especias, servida con manteca y ricota ahumada." },
+        { nombre:"Jota triestina", tipo:"Sopa", origen:"Trieste", desc:"Sopa espesa de porotos, chucrut y papas." }
+      ],
+      libros:[
+        { titulo:"La conciencia de Zeno", original:"La coscienza di Zeno", autor:"Italo Svevo", anio:"1923", genero:"Novela" },
+        { titulo:"Microcosmos", original:"Microcosmi", autor:"Claudio Magris", anio:"1997", genero:"Narrativa" },
+        { titulo:"Poesie a Casarsa", autor:"Pier Paolo Pasolini", anio:"1942", genero:"Poesía en friulano" }
+      ],
+      musica:[
+        { nombre:"Villotte friulane", desc:"Canciones corales breves, el corazón del canto popular friulano", q:"villotte friulane coro" },
+        { nombre:"«Stelutis alpinis»", desc:"Canción en friulano compuesta por Arturo Zardini durante la Primera Guerra Mundial", q:"Stelutis alpinis" },
+        { nombre:"Elisa", desc:"Cantautora nacida en Trieste · «Luce (tramonti a nord est)» (2001)", q:"Elisa Luce tramonti a nord est" }
+      ]
+    },
+    "emilia-romana": {
+      it:"Emilia-Romagna", capital:"Bolonia",
+      recetas:[
+        { nombre:"Tagliatelle al ragù", tipo:"Primer plato", origen:"Bolonia", desc:"Pasta al huevo amasada a mano con el clásico ragú boloñés de carne." },
+        { nombre:"Tortellini in brodo", tipo:"Primer plato", origen:"Bolonia y Módena", desc:"Pequeña pasta rellena de carnes, jamón y Parmigiano, servida en caldo de capón." },
+        { nombre:"Piadina romagnola", tipo:"Pan", origen:"Romaña", desc:"Pan chato sin levadura que se rellena con fiambres, quesos y verduras." }
+      ],
+      libros:[
+        { titulo:"El jardín de los Finzi-Contini", original:"Il giardino dei Finzi-Contini", autor:"Giorgio Bassani", anio:"1962", genero:"Novela" },
+        { titulo:"Don Camilo", original:"Mondo piccolo. Don Camillo", autor:"Giovannino Guareschi", anio:"1948", genero:"Relatos" },
+        { titulo:"Myricae", autor:"Giovanni Pascoli", anio:"1891", genero:"Poesía" }
+      ],
+      musica:[
+        { nombre:"Giuseppe Verdi", desc:"Nacido cerca de Busseto (Parma) · «Aida» (1871)", q:"Verdi Aida marcia trionfale" },
+        { nombre:"Luciano Pavarotti", desc:"Tenor de Módena, una de las voces más célebres de la ópera", q:"Luciano Pavarotti" },
+        { nombre:"«Romagna mia»", desc:"Canción de Secondo Casadei (1954), emblema del liscio romañolo", q:"Romagna mia Secondo Casadei" }
+      ]
+    },
+    "toscana": {
+      it:"Toscana", capital:"Florencia",
+      recetas:[
+        { nombre:"Ribollita", tipo:"Sopa", desc:"Sopa de pan del día anterior, porotos, repollo negro y verduras, «rehervida» al día siguiente." },
+        { nombre:"Bistecca alla fiorentina", tipo:"Segundo plato", origen:"Florencia", desc:"Gruesa chuleta de vaca con hueso en T, asada a la brasa y servida jugosa." },
+        { nombre:"Cantucci e Vin Santo", tipo:"Postre", origen:"Prato", desc:"Galletas crocantes de almendra para mojar en vino dulce." }
+      ],
+      libros:[
+        { titulo:"La Divina Comedia", original:"Divina Commedia", autor:"Dante Alighieri", anio:"c. 1304–1321", genero:"Poema" },
+        { titulo:"El Decamerón", original:"Decameron", autor:"Giovanni Boccaccio", anio:"c. 1349–1353", genero:"Relatos" },
+        { titulo:"Las aventuras de Pinocho", original:"Le avventure di Pinocchio", autor:"Carlo Collodi", anio:"1883", genero:"Novela" }
+      ],
+      musica:[
+        { nombre:"Giacomo Puccini", desc:"Compositor de Lucca · «La bohème» (1896)", q:"Puccini La bohème" },
+        { nombre:"Maggio Musicale Fiorentino", desc:"Festival de ópera y música clásica de Florencia, desde 1933", q:"Maggio Musicale Fiorentino" },
+        { nombre:"Canto en ottava rima", desc:"Poesía cantada e improvisada en octavas, tradición campesina toscana", q:"ottava rima canto improvvisato toscana" }
+      ]
+    },
+    "umbria": {
+      it:"Umbria", capital:"Perugia",
+      recetas:[
+        { nombre:"Strangozzi al tartufo nero", tipo:"Primer plato", origen:"Spoleto y Norcia", desc:"Pasta larga artesanal con trufa negra rallada, aceite de oliva y ajo." },
+        { nombre:"Torta al testo", tipo:"Pan", desc:"Pan chato cocido sobre una piedra o plancha («testo»), relleno con fiambres o verduras." },
+        { nombre:"Lenticchie di Castelluccio", tipo:"Guarnición", origen:"Castelluccio di Norcia", desc:"Pequeñas lentejas de altura con IGP, en sopa o junto a embutidos." }
+      ],
+      libros:[
+        { titulo:"Cántico de las criaturas", original:"Cantico delle creature", autor:"Francisco de Asís", anio:"c. 1225", genero:"Poesía" },
+        { titulo:"Laudes", original:"Laude", autor:"Jacopone da Todi", anio:"siglo XIII", genero:"Poesía" },
+        { titulo:"Poesie", autor:"Sandro Penna", anio:"1939", genero:"Poesía" }
+      ],
+      musica:[
+        { nombre:"Umbria Jazz", desc:"Festival de jazz de Perugia, celebrado desde 1973", q:"Umbria Jazz" },
+        { nombre:"Festival dei Due Mondi", desc:"Festival de Spoleto fundado en 1958 por Gian Carlo Menotti", q:"Festival dei Due Mondi Spoleto" },
+        { nombre:"Laudas medievales", desc:"Cantos devocionales en lengua vulgar, difundidos desde Umbria en el siglo XIII", q:"laude medievali" }
+      ]
+    },
+    "marcas": {
+      it:"Marche", capital:"Ancona",
+      recetas:[
+        { nombre:"Olive all'ascolana", tipo:"Entrada", origen:"Ascoli Piceno", desc:"Aceitunas verdes rellenas de carne, empanadas y fritas." },
+        { nombre:"Vincisgrassi", tipo:"Primer plato", origen:"Macerata", desc:"Lasaña tradicional de las Marcas, con ragú de carnes y bechamel." },
+        { nombre:"Brodetto all'anconetana", tipo:"Sopa", origen:"Ancona", desc:"Guiso de diversos pescados del Adriático cocidos con tomate." }
+      ],
+      libros:[
+        { titulo:"Cantos", original:"Canti", autor:"Giacomo Leopardi", anio:"1831", genero:"Poesía" },
+        { titulo:"El cortesano", original:"Il Cortegiano", autor:"Baldassare Castiglione", anio:"1528", genero:"Tratado" },
+        { titulo:"La macchina mondiale", autor:"Paolo Volponi", anio:"1965", genero:"Novela" }
+      ],
+      musica:[
+        { nombre:"Gioachino Rossini", desc:"Compositor de Pésaro · «El barbero de Sevilla» (1816)", q:"Rossini Il barbiere di Siviglia" },
+        { nombre:"Giovanni Battista Pergolesi", desc:"Nacido en Jesi · «Stabat Mater» (1736)", q:"Pergolesi Stabat Mater" },
+        { nombre:"Acordeón de Castelfidardo", desc:"Ciudad de las Marcas famosa por la fabricación de acordeones", q:"fisarmonica Castelfidardo" }
+      ]
+    },
+    "lacio": {
+      it:"Lazio", capital:"Roma",
+      recetas:[
+        { nombre:"Spaghetti alla carbonara", tipo:"Primer plato", origen:"Roma", desc:"Pasta con guanciale, yema de huevo, pecorino romano y pimienta negra." },
+        { nombre:"Bucatini all'amatriciana", tipo:"Primer plato", origen:"Amatrice", desc:"Salsa de guanciale, tomate y pecorino." },
+        { nombre:"Carciofi alla giudia", tipo:"Guarnición", origen:"Gueto judío de Roma", desc:"Alcauciles enteros fritos hasta quedar abiertos y crocantes como una flor." }
+      ],
+      libros:[
+        { titulo:"Los indiferentes", original:"Gli indifferenti", autor:"Alberto Moravia", anio:"1929", genero:"Novela" },
+        { titulo:"La historia", original:"La Storia", autor:"Elsa Morante", anio:"1974", genero:"Novela" },
+        { titulo:"El zafarrancho aquel de via Merulana", original:"Quer pasticciaccio brutto de via Merulana", autor:"Carlo Emilio Gadda", anio:"1957", genero:"Novela" }
+      ],
+      musica:[
+        { nombre:"Ennio Morricone", desc:"Compositor romano · «El bueno, el malo y el feo» (1966)", q:"Ennio Morricone Il buono il brutto il cattivo" },
+        { nombre:"Antonello Venditti", desc:"Cantautor romano · «Roma capoccia» (1972)", q:"Antonello Venditti Roma capoccia" },
+        { nombre:"Stornelli romanos", desc:"Coplas populares breves e ingeniosas, a menudo improvisadas", q:"stornelli romani" }
+      ]
+    },
+    "abruzo": {
+      it:"Abruzzo", capital:"L'Aquila",
+      recetas:[
+        { nombre:"Arrosticini", tipo:"Segundo plato", desc:"Brochetas finas de carne de oveja asadas sobre brasas en una parrilla alargada." },
+        { nombre:"Maccheroni alla chitarra", tipo:"Primer plato", desc:"Pasta al huevo cortada con un telar de cuerdas metálicas, la «chitarra»." },
+        { nombre:"Confetti di Sulmona", tipo:"Dulce", origen:"Sulmona", desc:"Almendras recubiertas de azúcar, protagonistas de bodas y celebraciones." }
+      ],
+      libros:[
+        { titulo:"Fontamara", autor:"Ignazio Silone", anio:"1933", genero:"Novela" },
+        { titulo:"La hija de Iorio", original:"La figlia di Iorio", autor:"Gabriele D'Annunzio", anio:"1904", genero:"Teatro" },
+        { titulo:"Metamorfosis", original:"Metamorphoses", autor:"Ovidio", anio:"c. 8 d. C.", genero:"Poema" }
+      ],
+      musica:[
+        { nombre:"«Vola vola vola»", desc:"Canción popular abruzzesa de Guido Albanese y Luigi Dommarco (1922)", q:"Vola vola vola canto abruzzese" },
+        { nombre:"Saltarello", desc:"Danza popular rápida y alegre, al ritmo del organetto", q:"saltarello abruzzese organetto" },
+        { nombre:"Zampogna", desc:"Gaita tradicional de los pastores de los Apeninos", q:"zampogna abruzzese" }
+      ]
+    },
+    "molise": {
+      it:"Molise", capital:"Campobasso",
+      recetas:[
+        { nombre:"Cavatelli al ragù", tipo:"Primer plato", desc:"Pasta corta y ahuecada hecha a mano, con ragú de cerdo." },
+        { nombre:"Pezzata", tipo:"Segundo plato", origen:"Capracotta", desc:"Carne de oveja cocida largamente con verduras y hierbas." },
+        { nombre:"Caciocavallo di Agnone", tipo:"Queso", origen:"Agnone", desc:"Queso de pasta hilada con forma de pera, curado colgado de a pares." }
+      ],
+      libros:[
+        { titulo:"Le terre del Sacramento", autor:"Francesco Jovine", anio:"1950", genero:"Novela" },
+        { titulo:"Signora Ava", autor:"Francesco Jovine", anio:"1942", genero:"Novela" },
+        { titulo:"Tiro al piccione", autor:"Giose Rimanelli", anio:"1953", genero:"Novela" }
+      ],
+      musica:[
+        { nombre:"Zampogna de Scapoli", desc:"Scapoli, «el pueblo de la zampogna», mantiene viva la construcción y el toque de esta gaita", q:"zampogna Scapoli" },
+        { nombre:"Fred Bongusto", desc:"Cantante nacido en Campobasso · «Una rotonda sul mare» (1964)", q:"Fred Bongusto Una rotonda sul mare" },
+        { nombre:"Cantos croatas y arbëreshë", desc:"Repertorio de las comunidades de lengua croata y albanesa del Molise", q:"canti croato molisani" }
+      ]
+    },
+    "campania": {
+      it:"Campania", capital:"Nápoles",
+      recetas:[
+        { nombre:"Pizza napoletana", tipo:"Pizza", origen:"Nápoles", desc:"Masa blanda de bordes altos con tomate, mozzarella y albahaca, cocida en horno de leña." },
+        { nombre:"Spaghetti alle vongole", tipo:"Primer plato", desc:"Fideos con almejas, ajo, aceite de oliva y perejil." },
+        { nombre:"Pastiera napoletana", tipo:"Postre", origen:"Nápoles", desc:"Tarta de Pascua con ricota, trigo cocido y agua de azahar." }
+      ],
+      libros:[
+        { titulo:"La amiga estupenda", original:"L'amica geniale", autor:"Elena Ferrante", anio:"2011", genero:"Novela" },
+        { titulo:"Filumena Marturano", autor:"Eduardo De Filippo", anio:"1946", genero:"Teatro" },
+        { titulo:"El mar no baña Nápoles", original:"Il mare non bagna Napoli", autor:"Anna Maria Ortese", anio:"1953", genero:"Relatos" }
+      ],
+      musica:[
+        { nombre:"«'O sole mio»", desc:"Canción napolitana de Giovanni Capurro y Eduardo di Capua (1898)", q:"O sole mio" },
+        { nombre:"Pino Daniele", desc:"Cantautor napolitano · «Napule è» (1977)", q:"Pino Daniele Napule è" },
+        { nombre:"Tammurriata", desc:"Canto y danza popular al ritmo de la tammorra, un gran pandero", q:"tammurriata" }
+      ]
+    },
+    "apulia": {
+      it:"Puglia", capital:"Bari",
+      recetas:[
+        { nombre:"Orecchiette con cime di rapa", tipo:"Primer plato", origen:"Bari", desc:"Pasta en forma de «orejita» con brotes de nabo, ajo, anchoas y aceite de oliva." },
+        { nombre:"Riso, patate e cozze", tipo:"Primer plato", origen:"Bari", desc:"Tiella al horno con capas de arroz, papas y mejillones." },
+        { nombre:"Burrata", tipo:"Queso", origen:"Andria", desc:"Bolsa de mozzarella rellena de crema y tiras de pasta hilada." }
+      ],
+      libros:[
+        { titulo:"Testigo involuntario", original:"Testimone inconsapevole", autor:"Gianrico Carofiglio", anio:"2002", genero:"Novela negra" },
+        { titulo:"La ferocia", autor:"Nicola Lagioia", anio:"2014", genero:"Novela" },
+        { titulo:"Spatriati", autor:"Mario Desiati", anio:"2021", genero:"Novela" }
+      ],
+      musica:[
+        { nombre:"Pizzica", desc:"Danza del Salento ligada a la tradición de la taranta, protagonista de «La Notte della Taranta»", q:"pizzica salentina" },
+        { nombre:"Domenico Modugno", desc:"Nacido en Polignano a Mare · «Nel blu dipinto di blu» (1958)", q:"Domenico Modugno Nel blu dipinto di blu" },
+        { nombre:"Negramaro", desc:"Banda de rock del Salento · «Mentre tutto scorre» (2005)", q:"Negramaro Mentre tutto scorre" }
+      ]
+    },
+    "basilicata": {
+      it:"Basilicata", capital:"Potenza",
+      recetas:[
+        { nombre:"Lagane e ceci", tipo:"Primer plato", desc:"Pasta ancha casera con garbanzos, una receta de origen muy antiguo." },
+        { nombre:"Lucanica", tipo:"Embutido", desc:"Embutido de cerdo especiado cuyo nombre remite a la antigua Lucania." },
+        { nombre:"Peperoni cruschi", tipo:"Producto típico", origen:"Senise", desc:"Pimientos secados al sol y fritos un instante hasta quedar crocantes." }
+      ],
+      libros:[
+        { titulo:"Cristo se detuvo en Éboli", original:"Cristo si è fermato a Eboli", autor:"Carlo Levi", anio:"1945", genero:"Memorias" },
+        { titulo:"È fatto giorno", autor:"Rocco Scotellaro", anio:"1954", genero:"Poesía" },
+        { titulo:"Vidi le Muse", autor:"Leonardo Sinisgalli", anio:"1943", genero:"Poesía" }
+      ],
+      musica:[
+        { nombre:"Cupa cupa", desc:"Tambor de fricción que acompaña los cantos del carnaval", q:"cupa cupa Basilicata" },
+        { nombre:"Arisa", desc:"Cantante criada en Pignola (Potenza) · «Sincerità» (2009)", q:"Arisa Sincerità" },
+        { nombre:"Cantos campesinos", desc:"Lamentos y cantos de trabajo registrados por Ernesto de Martino y Diego Carpitella en los años cincuenta", q:"Ernesto de Martino Lucania canti" }
+      ]
+    },
+    "calabria": {
+      it:"Calabria", capital:"Catanzaro",
+      recetas:[
+        { nombre:"'Nduja", tipo:"Embutido", origen:"Spilinga", desc:"Embutido de cerdo untable y muy picante, a base de ají calabrés." },
+        { nombre:"Fileja alla 'nduja", tipo:"Primer plato", origen:"Vibo Valentia", desc:"Pasta enrollada a mano, con salsa de tomate y 'nduja." },
+        { nombre:"Morzello alla catanzarese", tipo:"Segundo plato", origen:"Catanzaro", desc:"Guiso de achuras con tomate y ají, servido dentro de la «pitta»." }
+      ],
+      libros:[
+        { titulo:"Gente in Aspromonte", autor:"Corrado Alvaro", anio:"1930", genero:"Relatos" },
+        { titulo:"La ciudad del sol", original:"La città del Sole", autor:"Tommaso Campanella", anio:"1602", genero:"Utopía filosófica" },
+        { titulo:"Il selvaggio di Santa Venere", autor:"Saverio Strati", anio:"1977", genero:"Novela" }
+      ],
+      musica:[
+        { nombre:"Tarantella calabresa", desc:"Danza tradicional acompañada por la lira calabresa, el organetto y la zampogna", q:"tarantella calabrese lira" },
+        { nombre:"Rino Gaetano", desc:"Cantautor nacido en Crotone · «Gianna» (1978)", q:"Rino Gaetano Gianna" },
+        { nombre:"Brunori Sas", desc:"Cantautor de Cosenza · «La verità» (2017)", q:"Brunori Sas La verità" }
+      ]
+    },
+    "sicilia": {
+      it:"Sicilia", capital:"Palermo",
+      recetas:[
+        { nombre:"Arancine", tipo:"Entrada", origen:"Palermo", desc:"Bolas de arroz rellenas de ragú o de jamón y queso, empanadas y fritas." },
+        { nombre:"Pasta alla Norma", tipo:"Primer plato", origen:"Catania", desc:"Pasta con tomate, berenjenas fritas, albahaca y ricota salada." },
+        { nombre:"Cannoli", tipo:"Postre", desc:"Tubos de masa frita y crocante rellenos de ricota dulce." }
+      ],
+      libros:[
+        { titulo:"El gatopardo", original:"Il Gattopardo", autor:"Giuseppe Tomasi di Lampedusa", anio:"1958", genero:"Novela" },
+        { titulo:"Seis personajes en busca de autor", original:"Sei personaggi in cerca d'autore", autor:"Luigi Pirandello", anio:"1921", genero:"Teatro" },
+        { titulo:"El día de la lechuza", original:"Il giorno della civetta", autor:"Leonardo Sciascia", anio:"1961", genero:"Novela" }
+      ],
+      musica:[
+        { nombre:"Vincenzo Bellini", desc:"Compositor de Catania · «Norma» (1831)", q:"Bellini Norma Casta diva" },
+        { nombre:"Rosa Balistreri", desc:"Voz de la canción popular siciliana, nacida en Licata", q:"Rosa Balistreri" },
+        { nombre:"Franco Battiato", desc:"Cantautor siciliano · «La cura» (1996)", q:"Franco Battiato La cura" }
+      ]
+    },
+    "cerdena": {
+      it:"Sardegna", capital:"Cagliari",
+      recetas:[
+        { nombre:"Malloreddus alla campidanese", tipo:"Primer plato", origen:"Campidano", desc:"Ñoquis de sémola con azafrán, en salsa de tomate y salchicha." },
+        { nombre:"Porceddu", tipo:"Segundo plato", desc:"Lechón asado lentamente al espiedo, perfumado con mirto." },
+        { nombre:"Seadas", tipo:"Postre", desc:"Empanada frita rellena de queso fresco y bañada en miel." }
+      ],
+      libros:[
+        { titulo:"Cañas al viento", original:"Canne al vento", autor:"Grazia Deledda", anio:"1913", genero:"Novela" },
+        { titulo:"El día del juicio", original:"Il giorno del giudizio", autor:"Salvatore Satta", anio:"1979", genero:"Novela" },
+        { titulo:"Accabadora", autor:"Michela Murgia", anio:"2009", genero:"Novela" }
+      ],
+      musica:[
+        { nombre:"Canto a tenore", desc:"Canto polifónico pastoral a cuatro voces, Patrimonio Cultural Inmaterial de la UNESCO", q:"canto a tenore" },
+        { nombre:"Launeddas", desc:"Instrumento de viento de tres cañas, de origen milenario", q:"launeddas" },
+        { nombre:"Maria Carta", desc:"Cantante de Siligo, gran intérprete del canto tradicional sardo", q:"Maria Carta" }
+      ]
+    }
+  };
+
+  const GRUPOS = { north:"Norte", center:"Centro", south:"Sur", island:"Islas" };
+  const REGION_INICIAL = "toscana";
+  const SVG_NS = "http://www.w3.org/2000/svg";
+
+  const svg = document.getElementById("svg-map");
+  const list = document.getElementById("list");
+  const hint = document.getElementById("map-hint");
+  const panel = document.getElementById("panel");
+  const panelNombre = document.getElementById("panel-nombre");
+  const panelMeta = document.getElementById("panel-meta");
+  const panelPos = document.getElementById("panel-pos");
+  const panelBody = document.getElementById("panel-body");
+  const panelEstado = document.getElementById("panel-estado");
+  const escritorio = window.matchMedia("(min-width: 1000px)");
+  const sinMovimiento = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  const elementos = {};
+  let actual = null;
+
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+  const icono = id => `<svg aria-hidden="true"><use href="#${id}"/></svg>`;
+  const enlaceReal = url => Boolean(url) && !/example\.com/.test(url);
+
+  function mostrarPista(nombre){ hint.innerHTML = `Ver <strong>${esc(nombre)}</strong>`; }
+  function restaurarPista(){
+    const reg = REGIONES.find(r => r.id === actual);
+    hint.innerHTML = reg ? `Región seleccionada: <strong>${esc(reg.nombre)}</strong>` : "Toca una región para explorarla";
+  }
+
+  REGIONES.forEach(reg => {
+    const path = document.createElementNS(SVG_NS, "path");
+    path.setAttribute("d", reg.d);
+    path.setAttribute("class", "region");
+    path.setAttribute("tabindex", "0");
+    path.setAttribute("role", "button");
+    path.setAttribute("aria-label", reg.nombre);
+    path.setAttribute("aria-pressed", "false");
+
+    const title = document.createElementNS(SVG_NS, "title");
+    title.textContent = reg.nombre;
+    path.appendChild(title);
+
+    const elegir = () => seleccionar(reg.id, { desplazar:true });
+    path.addEventListener("click", elegir);
+    path.addEventListener("keydown", e => { if(e.key==="Enter"||e.key===" "){ e.preventDefault(); elegir(); } });
+    path.addEventListener("mouseenter", () => mostrarPista(reg.nombre));
+    path.addEventListener("focus", () => mostrarPista(reg.nombre));
+    path.addEventListener("mouseleave", restaurarPista);
+    path.addEventListener("blur", restaurarPista);
+    svg.appendChild(path);
+
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.textContent = reg.nombre;
+    chip.setAttribute("aria-pressed", "false");
+    chip.addEventListener("click", elegir);
+    list.appendChild(chip);
+
+    elementos[reg.id] = { path, chip };
+  });
+
+  const recetaHTML = (r, i) => `
+    <li class="receta">
+      <div class="receta-top">
+        <span class="receta-num" aria-hidden="true">${String(i + 1).padStart(2, "0")}</span>
+        <span class="receta-tipo">${esc(r.tipo)}</span>
+      </div>
+      <h5 class="receta-nombre" lang="it">${esc(r.nombre)}</h5>
+      ${r.origen ? `<p class="receta-origen">${icono("i-pin")}${esc(r.origen)}</p>` : ""}
+      <p class="receta-desc">${esc(r.desc)}</p>
+    </li>`;
+
+  const libroHTML = (l, i) => `
+    <li class="libro">
+      <div class="portada portada--${i % 3}">
+        <span class="portada-titulo">${esc(l.titulo)}</span>
+        <span class="portada-autor">${esc(l.autor)}</span>
+      </div>
+      ${l.original ? `<p class="libro-original"><span class="sr-only">Título original: </span>${esc(l.original)}</p>` : ""}
+      <p class="libro-meta">${esc(l.genero)} · ${esc(l.anio)}</p>
+    </li>`;
+
+  const pistaHTML = (m, i) => `
+    <li>
+      <a class="pista" href="https://www.youtube.com/results?search_query=${encodeURIComponent(m.q || m.nombre)}" target="_blank" rel="noopener">
+        <span class="pista-num" aria-hidden="true">${i + 1}</span>
+        <span><span class="pista-nombre">${esc(m.nombre)}</span><span class="pista-desc">${esc(m.desc)}</span></span>
+        <span class="pista-play">${icono("i-play")}</span>
+        <span class="sr-only">(buscar en YouTube; se abre en una pestaña nueva)</span>
+      </a>
+    </li>`;
+
+  function renderPanel(reg, c){
+    panelNombre.textContent = reg.nombre;
+    panelMeta.textContent = [c.it !== reg.nombre ? c.it : null, GRUPOS[reg.grupo], `Capital: ${c.capital}`].filter(Boolean).join(" · ");
+    panelPos.textContent = `${REGIONES.indexOf(reg) + 1} / ${REGIONES.length}`;
+    panelBody.innerHTML = `
+      <section class="bloque bloque-recetas" aria-labelledby="t-recetas">
+        <h4 class="bloque-titulo" id="t-recetas">${icono("i-plato")}Recetas</h4>
+        <ol class="recetas">${c.recetas.map(recetaHTML).join("")}</ol>
+      </section>
+      <section class="bloque bloque-libros" aria-labelledby="t-libros">
+        <h4 class="bloque-titulo" id="t-libros">${icono("i-libro")}Libros</h4>
+        <ul class="libros">${c.libros.map(libroHTML).join("")}</ul>
+      </section>
+      <section class="bloque bloque-musica" aria-labelledby="t-musica">
+        <h4 class="bloque-titulo" id="t-musica">${icono("i-nota")}Música</h4>
+        <div class="player">
+          <div class="player-head">
+            <span class="player-cover">${icono("i-nota")}</span>
+            <div>
+              <p class="player-titulo">Sonidos de ${esc(reg.nombre)}</p>
+              <p class="player-sub">${c.musica.length} propuestas · Escuchar en YouTube</p>
+            </div>
+          </div>
+          <ol class="pistas">${c.musica.map(pistaHTML).join("")}</ol>
+        </div>
+      </section>
+      ${enlaceReal(reg.url) ? `<p class="panel-enlace"><a href="${esc(reg.url)}" target="_blank" rel="noopener">Más sobre ${esc(reg.nombre)}${icono("i-externo")}</a></p>` : ""}`;
+
+    panelBody.classList.remove("is-fresh");
+    void panelBody.offsetWidth;
+    panelBody.classList.add("is-fresh");
+  }
+
+  function seleccionar(id, { desplazar = false, anunciar = true } = {}){
+    const reg = REGIONES.find(r => r.id === id);
+    const datos = CULTURA[id];
+    if(!reg || !datos) return;
+
+    if(actual){
+      const prev = elementos[actual];
+      prev.path.classList.remove("is-selected");
+      prev.path.setAttribute("aria-pressed", "false");
+      prev.chip.setAttribute("aria-pressed", "false");
+    }
+    actual = id;
+    const { path, chip } = elementos[id];
+    path.classList.add("is-selected");
+    path.setAttribute("aria-pressed", "true");
+    chip.setAttribute("aria-pressed", "true");
+
+    renderPanel(reg, datos);
+    restaurarPista();
+    if(anunciar){
+      panelEstado.textContent = `${reg.nombre}: ${datos.recetas.length} recetas, ${datos.libros.length} libros y ${datos.musica.length} propuestas musicales.`;
+    }
+    // En pantallas angostas el cuadro queda debajo del mapa: se lleva a la vista.
+    if(desplazar && !escritorio.matches){
+      const top = panel.getBoundingClientRect().top;
+      if(top < 0 || top > window.innerHeight * 0.5){
+        panel.scrollIntoView({ behavior: sinMovimiento.matches ? "auto" : "smooth", block:"start" });
+      }
+    }
+  }
+
+  document.querySelectorAll(".nav-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const i = REGIONES.findIndex(r => r.id === actual);
+      const n = (i + Number(btn.dataset.paso) + REGIONES.length) % REGIONES.length;
+      seleccionar(REGIONES[n].id);
+    });
+  });
+
+  seleccionar(REGION_INICIAL, { anunciar:false });
+</script>
+
+</body>
+</html>
