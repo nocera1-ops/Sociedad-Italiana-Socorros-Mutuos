@@ -46,38 +46,55 @@ body{
 .cta svg{width:18px; height:18px}
 .cta:hover, .cta:focus-visible{color:var(--verde); border-color:var(--verde)}
 
-/* ── Banner y menú principal ─────────────────────────── */
+/* ── Menú principal ──────────────────────────────────────
+   Réplica del menú del sitio (styles.css: .navigation / .nav-tab) para las
+   páginas que no cargan styles.css. Si cambia el menú del sitio, actualizar
+   también estos valores. */
+:root{--alto-menu:82px}
 .saltar{
   position:absolute; left:12px; top:-60px; z-index:100; padding:10px 16px;
   background:var(--crema); color:var(--tinta); font-weight:700; text-decoration:none;
   border-radius:0 0 6px 6px; transition:top .15s ease;
 }
 .saltar:focus{top:0}
-.sitio-cabecera{position:relative; background:var(--verde-profundo); color:var(--crema)}
-.sitio-cabecera:focus{outline:none}
-.sitio-cabecera::after{
-  content:""; position:absolute; left:0; right:0; bottom:0; height:3px;
-  background:linear-gradient(90deg,var(--verde) 0 33.33%,var(--crema) 33.33% 66.66%,var(--rojo) 66.66%);
+.menu-sitio{
+  --menu-fondo:#f2f4d7; --menu-tinta:#242629; --menu-linea:rgba(39,55,39,.36);
+  --menu-verde:#397d52; --menu-rojo:#d8543f;
+  position:relative; z-index:5; min-height:var(--alto-menu);
+  padding:16px clamp(14px,3vw,42px) 0; background:var(--menu-fondo);
+  font-family:Inter,"Avenir Next",Avenir,"Segoe UI",Arial,sans-serif;
 }
-.sitio-cabecera-inner{
-  display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;
-  gap:6px 32px; min-height:68px; padding-block:12px 15px;
+.menu-sitio:focus{outline:none}
+.menu-sitio .navigation{display:flex; align-items:flex-start; gap:4px; white-space:nowrap}
+.menu-sitio .nav-tab{
+  position:relative; display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  height:45px; min-width:0; padding:0 13px;
+  border:1px solid var(--menu-linea); border-radius:14px; background:transparent; color:var(--menu-tinta);
+  font-size:clamp(10px,.85vw,12px); font-weight:450; line-height:1; text-decoration:none; cursor:pointer;
+  transition:background-color .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
 }
-.sitio-marca{display:flex; flex-direction:column; margin:0; line-height:1.15}
-.sitio-marca-nombre{font:500 17px/1.25 var(--serif)}
-.sitio-marca-lugar{font:700 10.5px/1.5 var(--sans); letter-spacing:.2em; text-transform:uppercase; opacity:.75}
-.sitio-nav ul{display:flex; gap:clamp(18px,3vw,34px); margin:0; padding:0; list-style:none}
-.sitio-nav a{
-  position:relative; display:inline-block; padding:12px 0; color:var(--crema); text-decoration:none; opacity:.82;
-  font:700 12px/1 var(--sans); letter-spacing:.16em; text-transform:uppercase; transition:opacity .2s ease;
+.menu-sitio .nav-tab::after{content:""; position:absolute; left:12px; right:12px; bottom:0; height:2px; border-radius:2px; background:transparent}
+.menu-sitio .nav-tab:nth-child(1){flex:0 1 86px; min-width:54px; padding-inline:8px}
+.menu-sitio .nav-tab:nth-child(2){flex:1 1 132px}
+.menu-sitio .nav-tab:nth-child(3){flex:1 1 148px}
+.menu-sitio .nav-tab:nth-child(4){flex:1 1 124px}
+.menu-sitio .nav-tab:nth-child(5){flex:1 1 140px; background-color:var(--menu-rojo); font-weight:650}
+.menu-sitio .nav-tab:hover{border-color:var(--menu-verde); background:rgba(225,254,211,.48)}
+.menu-sitio .nav-tab:active{transform:translateY(1px)}
+.menu-sitio .nav-tab.active{color:#fffdf3; background:var(--menu-tinta); border-color:var(--menu-tinta)}
+.menu-sitio .nav-tab.active::after{background:var(--menu-rojo)}
+.menu-sitio .nav-tab:focus-visible{outline:2px solid var(--menu-rojo); outline-offset:3px}
+.menu-sitio .nav-icon{width:20px; height:20px; flex:0 0 20px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+.menu-sitio .nav-tab:nth-child(3) .nav-icon{width:22px; height:22px; flex-basis:22px}
+.menu-sitio .nav-tab:nth-child(4) .nav-icon{width:24px; height:24px; flex-basis:24px}
+.menu-sitio .nav-tab:nth-child(5) .nav-icon{width:25px; height:25px; flex-basis:25px}
+.menu-sitio .icon-logo{display:block; width:30px; height:30px}
+@media (max-width:760px){
+  :root{--alto-menu:116px}
+  .menu-sitio{padding:12px 10px 0}
+  .menu-sitio .navigation{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:42px 42px; gap:6px}
+  .menu-sitio .nav-tab{height:42px; font-size:clamp(10px,2.6vw,13px)}
 }
-.sitio-nav a::after{
-  content:""; position:absolute; left:0; right:0; bottom:6px; height:2px; background:currentColor;
-  transform:scaleX(0); transform-origin:left; transition:transform .2s ease;
-}
-.sitio-nav a:hover, .sitio-nav a[aria-current="page"]{opacity:1}
-.sitio-nav a:hover::after, .sitio-nav a[aria-current="page"]::after{transform:scaleX(1)}
-.sitio-nav a:focus-visible{outline:2px solid var(--crema); outline-offset:4px}
 
 /* ── Pie ─────────────────────────────────────────────── */
 .sitio-pie{padding:22px var(--gutter); background:var(--verde-profundo); color:rgba(244,241,233,.7); text-align:center; font-size:12.5px; line-height:1.6}
