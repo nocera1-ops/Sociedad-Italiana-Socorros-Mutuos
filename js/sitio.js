@@ -9,6 +9,10 @@
    (lo que haya dentro del <footer>, como un crédito propio de la página,
    se conserva al final del pie).
 
+   Cuando el menú tiene poco espacio (celulares, o la portada en pantallas
+   medianas), las secciones se esconden detrás del botón «Menú» y se
+   despliegan debajo de la barra (ver css/base.css).
+
    El idioma elegido se guarda en localStorage («lang»), se indica en
    <html lang> y se avisa con el evento «sitio:idioma» para que cada
    página traduzca su propio contenido.
@@ -29,7 +33,7 @@
 
   const TEXTOS = {
     es: {
-      menu: "Navegación principal", inicio: "Inicio", historia: "Historia", consulado: "Consulado", cultura: "Cultura", colabora: "Colaborá",
+      menu: "Navegación principal", menuBoton: "Menú", inicio: "Inicio", historia: "Historia", consulado: "Consulado", cultura: "Cultura", colabora: "Colaborá",
       idioma: "Idioma", es: "Español", it: "Italiano", en: "Inglés",
       orgName: "Sociedad Italiana de Socorros Mutuos", footAbout: "Trabajamos desde hace generaciones por la comunidad ítalo-argentina.",
       fNav: "Navegación", fAbout: "Sobre nosotros", fCons: "Consulado y voto", fCult: "Cultura italiana", fNews: "Noticias",
@@ -37,7 +41,7 @@
       copy: "© 2026 Sociedad Italiana de Socorros Mutuos. Todos los derechos reservados."
     },
     it: {
-      menu: "Navigazione principale", inicio: "Home", historia: "Storia", consulado: "Consolato", cultura: "Cultura", colabora: "Collabora",
+      menu: "Navigazione principale", menuBoton: "Menu", inicio: "Home", historia: "Storia", consulado: "Consolato", cultura: "Cultura", colabora: "Collabora",
       idioma: "Lingua", es: "Spagnolo", it: "Italiano", en: "Inglese",
       orgName: "Società Italiana di Mutuo Soccorso", footAbout: "Da generazioni lavoriamo per la comunità italo-argentina.",
       fNav: "Menu", fAbout: "Chi siamo", fCons: "Consolato e voto", fCult: "Cultura italiana", fNews: "Notizie",
@@ -45,7 +49,7 @@
       copy: "© 2026 Società Italiana di Mutuo Soccorso. Tutti i diritti riservati."
     },
     en: {
-      menu: "Main navigation", inicio: "Home", historia: "History", consulado: "Consulate", cultura: "Culture", colabora: "Get involved",
+      menu: "Main navigation", menuBoton: "Menu", inicio: "Home", historia: "History", consulado: "Consulate", cultura: "Culture", colabora: "Get involved",
       idioma: "Language", es: "Spanish", it: "Italian", en: "English",
       orgName: "Italian Mutual Aid Society", footAbout: "For generations we have worked for the Italian-Argentine community.",
       fNav: "Menu", fAbout: "About us", fCons: "Consulate and vote", fCult: "Italian culture", fNews: "News",
@@ -62,7 +66,9 @@
     noticias: '<path d="M4 5h13v14H6a2 2 0 0 1-2-2V5Z"/><path d="M17 8h3v9a2 2 0 0 1-2 2"/><path d="M7 9h7M7 12h7M7 15h4"/>',
     facebook: '<rect x="3" y="3" width="18" height="18" rx="5"/><path d="M15.5 8H14a2 2 0 0 0-2 2v11M9.5 13h5.5"/>',
     instagram: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/>',
-    sugerencia: '<path d="M12 21s-7-4.35-9-9.2C1.5 8.2 3.8 5 7.2 5c2 0 3.4 1.1 4.8 2.8C13.4 6.1 14.8 5 16.8 5 20.2 5 22.5 8.2 21 11.8 19 16.65 12 21 12 21Z"/>'
+    sugerencia: '<path d="M12 21s-7-4.35-9-9.2C1.5 8.2 3.8 5 7.2 5c2 0 3.4 1.1 4.8 2.8C13.4 6.1 14.8 5 16.8 5 20.2 5 22.5 8.2 21 11.8 19 16.65 12 21 12 21Z"/>',
+    abrir: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+    cerrar: '<path d="M6 6l12 12M18 6 6 18"/>'
   };
   const icono = (nombre, clase = "") =>
     `<svg class="${clase}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONOS[nombre]}</svg>`;
@@ -72,19 +78,27 @@
 
   /* ── Menú ─────────────────────────────────────────── */
   const PESTANAS = [
-    { clave: "historia", href: "historia.html", icono: "nav-icon" },
-    { clave: "consulado", href: "consulado.html", icono: "nav-icon nav-icon--consulate" },
-    { clave: "cultura", href: "cultura.html", icono: "nav-icon nav-icon--culture" },
-    { clave: "colabora", href: "contacto.html", icono: "nav-icon nav-icon--collab" }
+    { clave: "historia", href: "historia.html" },
+    { clave: "consulado", href: "consulado.html" },
+    { clave: "cultura", href: "cultura.html" },
+    { clave: "colabora", href: "contacto.html" }
   ];
   const PAGINA_DE = { contacto: "colabora" };   // la pestaña «Colaborá» lleva a Contacto
+  let menus = 0;
 
   function armarMenu(nav){
     const pagina = PAGINA_DE[nav.dataset.pagina] || nav.dataset.pagina;
-    const atributos = clave => (clave === pagina ? 'class="nav-tab active" aria-current="page"' : 'class="nav-tab"');
+    const opciones = "sitio-opciones-" + (++menus);
+    const atributos = clave => `class="nav-tab nav-tab--${clave}${clave === pagina ? ' active" aria-current="page"' : '"'}`;
+    // Orden: logo, botón «Menú» (solo visible con poco espacio), secciones e idiomas.
     nav.innerHTML = `<div class="menu-pestanas">` +
       `<a ${atributos("inicio")} href="index.html" data-sitio-aria="inicio"><img src="img/logo.png" class="icon-logo" alt=""></a>` +
-      PESTANAS.map(p => `<a ${atributos(p.clave)} href="${p.href}">${icono(p.clave, p.icono)}<span data-sitio-texto="${p.clave}"></span></a>`).join("") +
+      `<button class="menu-boton" type="button" aria-expanded="false" aria-controls="${opciones}">` +
+        icono("abrir", "menu-boton-icono menu-boton-icono--abrir") + icono("cerrar", "menu-boton-icono menu-boton-icono--cerrar") +
+        `<span data-sitio-texto="menuBoton"></span></button>` +
+      `<div class="menu-opciones" id="${opciones}">` +
+      PESTANAS.map(p => `<a ${atributos(p.clave)} href="${p.href}">${icono(p.clave, "nav-icon")}<span data-sitio-texto="${p.clave}"></span></a>`).join("") +
+      `</div>` +
       `<div class="idiomas" role="group" data-sitio-aria="idioma">` +
       IDIOMAS.map(l => `<button class="idioma" type="button" data-idioma="${l}" lang="${l}" data-sitio-aria="${l}">${l.toUpperCase()}</button>`).join("") +
       `</div></div>`;
@@ -99,6 +113,22 @@
       const boton = e.target.closest("[data-idioma]");
       if (boton) cambiarIdioma(boton.dataset.idioma);
     });
+
+    // Botón «Menú»: abre y cierra las secciones. Se cierra con Escape, al tocar
+    // o enfocar algo fuera del menú y al volver a la página con «Atrás».
+    const boton = nav.querySelector(".menu-boton");
+    const desplegar = abierto => {
+      nav.classList.toggle("menu-abierto", abierto);
+      boton.setAttribute("aria-expanded", String(abierto));
+    };
+    boton.addEventListener("click", () => desplegar(boton.getAttribute("aria-expanded") !== "true"));
+    nav.addEventListener("keydown", e => {
+      if (e.key === "Escape" && nav.classList.contains("menu-abierto")) { desplegar(false); boton.focus(); }
+    });
+    const afuera = e => { if (!nav.contains(e.target)) desplegar(false); };
+    document.addEventListener("pointerdown", afuera);
+    document.addEventListener("focusin", afuera);
+    window.addEventListener("pageshow", () => desplegar(false));
   }
 
   /* ── Pie ──────────────────────────────────────────── */

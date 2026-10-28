@@ -34,21 +34,37 @@
   transition:background-color .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
 }
 .nav-tab::after{content:""; position:absolute; left:12px; right:12px; bottom:0; height:2px; border-radius:2px; background:transparent}
-.nav-tab:nth-child(1){flex:0 1 86px; min-width:54px; padding-inline:8px}
-.nav-tab:nth-child(2){flex:1 1 132px}
-.nav-tab:nth-child(3){flex:1 1 148px}
-.nav-tab:nth-child(4){flex:1 1 124px}
-.nav-tab:nth-child(5){flex:1 1 140px; background-color:var(--s-rojo); font-weight:650}
+.nav-tab--inicio{flex:0 1 86px; min-width:54px; padding-inline:8px}
+.nav-tab--historia{flex:1 1 132px}
+.nav-tab--consulado{flex:1 1 148px}
+.nav-tab--cultura{flex:1 1 124px}
+.nav-tab--colabora{flex:1 1 140px; background-color:var(--s-rojo); font-weight:650}
 .nav-tab:hover{border-color:var(--s-verde); background:rgba(225,254,211,.48)}
 .nav-tab:active{transform:translateY(1px)}
 .nav-tab.active{color:#fffdf3; background:var(--s-tinta); border-color:var(--s-tinta)}
 .nav-tab.active::after{background:var(--s-rojo)}
 .nav-tab:focus-visible{outline:2px solid var(--s-rojo); outline-offset:3px}
 .nav-icon{width:20px; height:20px; flex:0 0 20px}
-.nav-tab:nth-child(3) .nav-icon{width:22px; height:22px; flex-basis:22px}
-.nav-tab:nth-child(4) .nav-icon{width:24px; height:24px; flex-basis:24px}
-.nav-tab:nth-child(5) .nav-icon{width:25px; height:25px; flex-basis:25px}
+.nav-tab--consulado .nav-icon{width:22px; height:22px; flex-basis:22px}
+.nav-tab--cultura .nav-icon{width:24px; height:24px; flex-basis:24px}
+.nav-tab--colabora .nav-icon{width:25px; height:25px; flex-basis:25px}
 .icon-logo{display:block; width:30px; height:30px}
+
+/* Con espacio de sobra, las secciones van en la misma fila y el botón «Menú» no se ve. */
+.menu-opciones{display:contents}
+.menu-boton{
+  display:none; align-items:center; gap:8px;
+  height:45px; padding:0 15px 0 12px;
+  border:1px solid var(--s-linea); border-radius:14px; background:transparent; color:var(--s-tinta);
+  font:600 13px/1 var(--s-fuente-menu); letter-spacing:.02em; cursor:pointer;
+  transition:background-color .18s ease, color .18s ease, border-color .18s ease;
+}
+.menu-boton:hover{border-color:var(--s-verde); background:rgba(225,254,211,.48)}
+.menu-boton[aria-expanded="true"]{color:#fffdf3; background:var(--s-tinta); border-color:var(--s-tinta)}
+.menu-boton:focus-visible{outline:2px solid var(--s-rojo); outline-offset:3px}
+.menu-boton-icono{width:20px; height:20px; flex:none}
+.menu-boton[aria-expanded="true"] .menu-boton-icono--abrir,
+.menu-boton[aria-expanded="false"] .menu-boton-icono--cerrar{display:none}
 
 /* Selector de idioma: mismo borde y altura que las pestañas */
 .idiomas{
@@ -65,15 +81,26 @@
 .idioma[aria-pressed="true"]{background:var(--s-tinta); color:#fffdf3}
 .idioma:focus-visible{outline:2px solid var(--s-rojo); outline-offset:2px}
 
-/* Poco espacio: sin íconos. Muy poco: dos filas de tres. */
+/* Poco espacio: sin íconos. Muy poco: una barra con el logo, el botón «Menú» y los idiomas;
+   las secciones se despliegan debajo, sobre el contenido de la página. */
 @container menu (max-width:640px){ .nav-icon{display:none} }
 @container menu (max-width:600px){
-  .menu-pestanas{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:42px 42px; gap:6px}
-  .nav-tab{height:42px; font-size:clamp(10px,2.6vw,13px)}
-  .nav-icon{display:block}
-  .idiomas{height:42px; margin-left:0}
-  .idioma{flex:1; padding:0}
+  .menu-pestanas{position:relative; align-items:center; gap:6px}
+  .nav-tab--inicio{flex:0 0 56px}
+  .menu-boton{display:inline-flex}
+  .idiomas{margin-left:auto}
+  .menu-opciones{
+    position:absolute; top:calc(100% + 8px); left:0; right:0; z-index:10;
+    display:none; flex-direction:column; gap:6px; padding:8px;
+    background:var(--s-marfil); border:1px solid var(--s-linea); border-radius:18px;
+    box-shadow:0 24px 48px -22px rgba(20,35,25,.55);
+  }
+  .menu-abierto .menu-opciones{display:flex; animation:menu-baja .18s ease-out}
+  .menu-opciones .nav-tab{flex:none; justify-content:flex-start; gap:12px; height:48px; padding:0 16px; font-size:15px}
+  .menu-opciones .nav-tab::after{left:16px; right:auto; width:28px}
+  .menu-opciones .nav-icon{display:block}
 }
+@keyframes menu-baja{from{opacity:0; transform:translateY(-6px)} to{opacity:1; transform:none}}
 
 /* ── Pie ─────────────────────────────────────────────── */
 .foot{
@@ -98,4 +125,7 @@
 @media (max-width:1000px){ .foot-grid{grid-template-columns:1fr 1fr} }
 @media (max-width:600px){ .foot-grid{grid-template-columns:1fr} .copy{text-align:left} }
 
-@media (prefers-reduced-motion:reduce){ .nav-tab,.idioma{transition:none} }
+@media (prefers-reduced-motion:reduce){
+  .nav-tab,.idioma,.menu-boton{transition:none}
+  .menu-abierto .menu-opciones{animation:none}
+}
