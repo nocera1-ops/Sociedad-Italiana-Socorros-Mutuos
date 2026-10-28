@@ -61,18 +61,28 @@
     </div>
   </section>
 
-  <!-- REDES SOCIALES: Facebook e Instagram en columnas paralelas -->
-  <section class="social-section wrap" id="redes-sociales" aria-label="Redes sociales">
-    <div class="section-heading"><p class="eyebrow">Comunidad</p><h2 class="big">Nuestras redes</h2></div>
+  <!-- COMUNIDAD: tarjetas propias de Facebook e Instagram (sin recuadros externos). Toda la tarjeta es un enlace. -->
+  <section class="social-section wrap" id="redes-sociales" aria-labelledby="redes-titulo">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="socialEyebrow">Comunidad</p>
+      <h2 class="big" id="redes-titulo" data-i18n="socialTitle">Nuestras redes</h2>
+      <p class="social-sub" data-i18n="socialSub">Seguí las novedades de la Sociedad y del Teatro Marconi en nuestras redes.</p>
+    </div>
     <div class="social-columns">
-      <section class="social-panel" aria-labelledby="facebook-title">
-        <div class="panel-head"><h3 id="facebook-title">Facebook</h3><a class="follow" id="fb-follow" href="https://www.facebook.com/TeatroMarconiGalvezItaliaUnida/?locale=es_LA" target="_blank" rel="noopener">Seguinos</a></div>
-        <div class="social-embed social-embed--facebook"><iframe title="Publicaciones de Facebook: Teatro Marconi Gálvez Italia Unida" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTeatroMarconiGalvezItaliaUnida%2F%3Flocale%3Des_LA&tabs=timeline&width=500&height=520&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" width="500" height="520" style="border:none;overflow:hidden;width:100%;max-width:500px" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe><a href="https://www.facebook.com/TeatroMarconiGalvezItaliaUnida/?locale=es_LA" target="_blank" rel="noopener">Ver Facebook <span aria-hidden="true">↗</span></a></div>
-      </section>
-      <section class="social-panel" aria-labelledby="instagram-title">
-        <div class="panel-head"><h3 id="instagram-title">Instagram</h3><a class="follow" id="ig-link" href="https://www.instagram.com/sociedaditalianagalvez/" target="_blank" rel="noopener">Seguinos</a></div>
-        <div class="social-embed social-embed--instagram"><iframe title="Perfil de Instagram de Sociedad Italiana Gálvez" src="https://www.instagram.com/sociedaditalianagalvez/embed" width="400" height="520" style="border:0;width:100%;max-width:400px" frameborder="0" scrolling="no" allowtransparency="true"></iframe><a href="https://www.instagram.com/sociedaditalianagalvez/" target="_blank" rel="noopener">Ver Instagram <span aria-hidden="true">↗</span></a></div>
-      </section>
+      <article class="red red--facebook">
+        <span class="red-icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M15.5 8H14a2 2 0 0 0-2 2v11M9.5 13h5.5"/></svg></span>
+        <p class="red-tipo">Facebook</p>
+        <h3 class="red-nombre">Teatro Marconi Gálvez Italia Unida</h3>
+        <p class="red-texto" data-i18n="fbText">La página del teatro: novedades, actividades y eventos.</p>
+        <a class="red-boton" id="fb-follow" href="https://www.facebook.com/TeatroMarconiGalvezItaliaUnida/?locale=es_LA" target="_blank" rel="noopener"><span data-i18n="fbFollow">Seguinos en Facebook</span><span class="red-sr" data-i18n="newTab">(se abre en una pestaña nueva)</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </article>
+      <article class="red red--instagram">
+        <span class="red-icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></span>
+        <p class="red-tipo">Instagram</p>
+        <h3 class="red-nombre">@sociedaditalianagalvez</h3>
+        <p class="red-texto" data-i18n="igText">Fotos y novedades de la Sociedad Italiana de Gálvez.</p>
+        <a class="red-boton" id="ig-link" href="https://www.instagram.com/sociedaditalianagalvez/" target="_blank" rel="noopener"><span data-i18n="igFollow">Seguinos en Instagram</span><span class="red-sr" data-i18n="newTab">(se abre en una pestaña nueva)</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </article>
     </div>
   </section>
 

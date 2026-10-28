@@ -681,18 +681,22 @@ body {
 .social-section .eyebrow,.news-section .eyebrow{color:var(--green);margin:0 0 12px}
 .social-section .big,.news-section .big{margin:0;font-size:clamp(30px,3vw,42px);line-height:1.12}
 .social-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,36px)}
-.social-panel{min-width:0}
-.social-panel .panel-head{min-height:56px;margin:0 0 16px;padding:0 0 13px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line)}
-.social-panel .panel-head h3{margin:0;font:600 clamp(23px,2vw,30px)/1.15 "Playfair Display",Georgia,serif}
-.social-panel .follow{min-height:38px;padding:7px 14px;font-size:13px;white-space:nowrap}
-.social-embed{min-height:260px;border:1px solid var(--line);border-radius:14px;padding:28px;background:#fff;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;box-shadow:0 4px 16px rgba(20,35,25,.045)}
-.social-embed .embed-mark{width:48px;height:48px;display:grid;place-items:center;margin-bottom:18px;border-radius:14px;color:#fff;font:700 32px/1 Arial,sans-serif}
-.social-embed--facebook .embed-mark{background:#1877f2}
-.social-embed--instagram .embed-mark{background:linear-gradient(135deg,#7b36a8,#e44768 55%,#f4a63d)}
-.social-embed h4{margin:0 0 8px;font:600 21px/1.25 "Playfair Display",Georgia,serif}
-.social-embed p{max-width:420px;margin:0 0 18px;color:var(--muted);font-size:14px;line-height:1.6}
-.social-embed>a{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-weight:700;text-decoration:none}
-.social-embed>a:hover{text-decoration:underline;text-underline-offset:4px}
+.social-sub{max-width:620px;margin:14px 0 0;color:var(--muted);font-size:15px;line-height:1.6}
+/* Tarjetas de redes: el botón cubre toda la tarjeta con ::after, así se puede tocar en cualquier parte. */
+.red{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0;padding:30px 30px 28px;border:1px solid var(--line);border-radius:16px;background:#fffdf3;box-shadow:0 4px 16px rgba(20,35,25,.05);transition:transform .2s ease,box-shadow .2s ease}
+.red:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(20,35,25,.1)}
+.red-icono{display:grid;place-items:center;width:56px;height:56px;margin-bottom:14px;border-radius:16px;color:#fff;background:var(--deep-green)}
+.red--instagram .red-icono{background:var(--red)}
+.red-icono svg{width:28px;height:28px}
+.red-tipo{margin:0;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--deep-green)}
+.red--instagram .red-tipo{color:var(--red)}
+.red-nombre{margin:0;font:500 clamp(22px,2.3vw,30px)/1.15 "Playfair Display",Georgia,serif;overflow-wrap:anywhere}
+.red-texto{max-width:40ch;margin:4px 0 22px;color:var(--muted);font-size:15px;line-height:1.6}
+.red-boton{display:inline-flex;align-items:center;gap:10px;margin-top:auto;min-height:46px;padding:10px 20px;border:1.5px solid var(--ink);border-radius:999px;color:var(--ink);font-size:14px;font-weight:700;text-decoration:none;transition:background-color .2s ease,color .2s ease}
+.red-boton::after{content:"";position:absolute;inset:0;border-radius:16px}
+.red-boton svg{width:18px;height:18px;flex:none}
+.red:hover .red-boton{background:var(--ink);color:#fff}
+.red-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 /* ===== Noticias de Italia: tarjetas con imagen, resumen y enlace ===== */
 .news-section{max-width:1240px;margin-inline:auto;padding:74px 28px 30px}
 .news-section .sec-head{margin-bottom:28px}
@@ -709,25 +713,16 @@ body {
 .news-cards .read-more{margin-top:auto;padding-top:8px;color:var(--green);font-size:13px;font-weight:700}
 .news-cards .arr{display:none}
 @media(max-width:900px){.social-section{padding-top:66px}.news-section{padding-top:58px}.news-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.news-cards .news-thumb{height:170px}}
-@media(max-width:600px){.social-section,.news-section{padding-left:18px;padding-right:18px}.social-columns{grid-template-columns:minmax(0,1fr);gap:30px}.social-embed{min-height:220px;padding:22px}.news-cards{grid-template-columns:minmax(0,1fr)}.news-cards .news-thumb{height:210px}}
+@media(max-width:600px){.social-section,.news-section{padding-left:18px;padding-right:18px}.social-columns{grid-template-columns:minmax(0,1fr);gap:20px}.red{padding:24px 22px 22px}.news-cards{grid-template-columns:minmax(0,1fr)}.news-cards .news-thumb{height:210px}}
 
-/* Ajustes para widgets sociales incrustados y sección de proyectos */
-.social-embed iframe { display:block; flex:1 1 auto; min-height:420px; align-self:stretch; background:#fff; }
-.social-embed--facebook, .social-embed--instagram { align-items:center; justify-content:flex-start; padding:14px; overflow:hidden; }
-.social-embed > a { align-self:flex-start; margin:12px 10px 4px; }
+/* Ajustes de las secciones de proyectos y noticias */
 .works { display:block !important; visibility:visible !important; opacity:1 !important; position:relative; }
 .news-section { display:block !important; visibility:visible !important; opacity:1 !important; }
 .news-cards { min-height:180px; }
 
 
 /* Corrección: una sola imagen por noticia; las tarjetas usan la imagen creada por renderNews(). */
-/* Corrección: los widgets sociales ocupan todo el ancho útil de sus paneles. */
 .social-columns { align-items: stretch; }
-.social-panel { display:flex; flex-direction:column; min-width:0; }
-.social-embed--facebook, .social-embed--instagram { box-sizing:border-box; width:100%; min-width:0; min-height:0; flex:1 1 auto; padding:0; align-items:stretch; overflow:hidden; }
-.social-embed--facebook iframe, .social-embed--instagram iframe { display:block; box-sizing:border-box; width:100% !important; max-width:none !important; min-width:0; height:520px; min-height:520px; flex:1 1 auto; border:0; align-self:stretch; }
-.social-embed--facebook > a, .social-embed--instagram > a { margin:12px 16px 16px; align-self:flex-start; }
-@media(max-width:600px){.social-embed--facebook iframe,.social-embed--instagram iframe{height:480px;min-height:480px}}
 
 
 /* ===== Personalización de fondos por sección =====
