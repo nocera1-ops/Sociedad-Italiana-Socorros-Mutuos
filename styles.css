@@ -1004,3 +1004,53 @@ width: 30px;
     justify-self: center;
   }
 }
+
+/* =========================================================
+   1. BOTÓN 'COLABORÁ' (:HOVER CORAL / ROJO CLARO)
+   ========================================================= */
+.nav-tab[data-section="colabora"] {
+  background-color: var(--italian-red);
+  color: #ffffff;
+  font-weight: 650;
+  transition: background-color .2s ease, transform .18s ease, border-color .2s ease;
+}
+
+.nav-tab[data-section="colabora"]:hover {
+  background-color: #e85d48 !important; /* Rojo coral brillante suave */
+  border-color: #e85d48 !important;
+  color: #ffffff !important;
+}
+
+
+
+/* =========================================================
+   4. ALINEACIÓN UNIFORME DE ICONOS EN EL FOOTER
+   ========================================================= */
+.foot ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.foot ul li svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  stroke: currentColor;
+  fill: none;
+}
+
+.foot ul li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #e9efe9;
+  text-decoration: none;
+}
+
+.foot ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
