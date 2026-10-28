@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="styles.css">
 <script src="script.js?v=2" defer></script>
 <style>
@@ -82,14 +83,8 @@
   <!-- Encabezado y navegación compartidos con index.html -->
   <section class="site-card contact-site-header" aria-label="Sociedad Italiana de Socorros Mutuos">
     <section class="intro" aria-label="Navegación principal">
-      <nav class="navigation" aria-label="Navegación principal">
-        <button class="nav-tab" type="button" data-section="inicio" aria-label="Inicio"><span data-label="inicio"><img src="img/logo.png" class="icon-logo" alt="Logo de la Sociedad Italiana"></span></button>
-        <button class="nav-tab" type="button" data-section="historia" aria-pressed="false"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M8 7h8M8 11h8"/></svg><span data-label="historia">Historia</span></button>
-        <button class="nav-tab" type="button" data-section="consulado" aria-pressed="false"><svg class="nav-icon nav-icon--consulate" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-6 9 6"/><path d="M4 10h16M5 10v9M9 10v9M15 10v9M19 10v9M3 21h18M2 19h20"/></svg><span data-label="consulado">Consulado</span></button>
-        <button class="nav-tab" type="button" data-section="cultura" aria-pressed="false"><svg class="nav-icon nav-icon--culture" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11"/><path d="M8 12h8M8 15h8M9 20v-2a3 3 0 0 1 6 0v2"/></svg><span data-label="cultura">Cultura</span></button>
-        <button class="nav-tab" type="button" data-section="colabora" aria-pressed="false"><svg class="nav-icon nav-icon--collab" viewBox="0 0 24 24" aria-hidden="true"><path d="m11 17 2 2a2 2 0 0 0 3-1l1-1"/><path d="m8 14 5 5a2 2 0 0 0 3-1"/><path d="m3 11 5-5 4 1 2-1 7 5-7 7a2 2 0 0 1-3 0l-3-3"/><path d="m3 11-1-1 5-5 3 1M21 11l2-2-5-4-3 1"/></svg><span data-i18n="navCollab">Colaborá</span></button>
-        <div class="languages" aria-label="Idioma"><button class="language" type="button" data-lang="it" aria-label="Italiano">It</button><button class="language other" type="button" data-lang="en" aria-label="English">En</button><button class="language active" type="button" data-lang="es" aria-label="Español" aria-pressed="true">Es</button></div>
-      </nav>
+      <nav class="navigation" aria-label="Navegación principal" data-sitio="menu" data-pagina="contacto"></nav>
+      <script src="js/sitio.js"></script>
     </section>
   </section>
 
@@ -148,17 +143,7 @@
 </main>
 
 <!-- Footer compartido con index.html -->
-<footer class="foot">
-  <div class="foot-in">
-    <div class="foot-grid">
-      <div><p class="foot-logo" data-i18n="orgName">Sociedad Italiana de Socorros Mutuos</p><p class="foot-sub" data-i18n="footAbout">Trabajamos desde hace generaciones por la comunidad ítalo-argentina.</p></div>
-      <div><h4 data-i18n="fNav">Navegación</h4><ul><li><a href="historia.html" data-i18n="fHist">Historia</a></li><li><a href="consulado.html" data-i18n="fCons">Consulado y voto</a></li><li><a href="cultura.html" data-i18n="fCult">Cultura italiana</a></li><li><a href="index.html#noticias" data-i18n="fNews">Noticias</a></li><li><a href="nosotros.html" data-i18n="fAbout">Sobre nosotros</a></li></ul></div>
-      <div><h4 data-i18n="fContact">Contacto</h4><ul><li data-i18n="fAddress">Belgrano 664, Gálvez, Santa Fe</li><li data-i18n="fPhone">Teléfono: consultar por correo</li><li><a href="mailto:contacto@sociedad.org.ar">contacto@sociedad.org.ar</a></li></ul></div>
-      <div><h4 data-i18n="fFollow">Seguinos</h4><ul><li><a href="https://www.facebook.com/TeatroMarconiGalvezItaliaUnida/?locale=es_LA" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/sociedaditalianagalvez/" target="_blank" rel="noopener">Instagram</a></li><li><a href="sugerencias.html" data-i18n="fSugg">Dejá una sugerencia</a></li></ul></div>
-    </div>
-    <div class="copy"><span data-i18n="copy">© 2026 Sociedad Italiana de Socorros Mutuos. Todos los derechos reservados.</span></div>
-  </div>
-</footer>
+<footer class="foot" data-sitio="pie"></footer>
 <script>
 // El sitio no dispone de backend de formularios: se prepara un correo para que la persona lo revise y lo envíe.
 document.getElementById('contact-form').addEventListener('submit', function(event) {

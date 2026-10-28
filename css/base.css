@@ -1,0 +1,100 @@
+/* ───────────────────────────────────────────────────────────
+   Base común de todas las páginas: paleta, menú, selector de idioma y pie.
+   Se carga antes que la hoja propia de cada página (styles.css o css/sitio.css).
+   El menú y el pie los arma js/sitio.js.
+   ─────────────────────────────────────────────────────────── */
+:root{
+  /* Paleta del sitio (la de la portada) */
+  --s-verde:#397d52;
+  --s-verde-oscuro:#205c3e;
+  --s-rojo:#d8543f;
+  --s-rojo-oscuro:#B8323A;
+  --s-marfil:#f2f4d7;
+  --s-papel:#F4F1EA;
+  --s-dorado:#E8C36A;
+  --s-mostaza:#D9A23A;
+  --s-tinta:#242629;
+  --s-linea:rgba(39,55,39,.36);
+  --s-pie:#17251d;
+  --s-fuente-menu:Inter,"Avenir Next",Avenir,"Segoe UI",Arial,sans-serif;
+  --s-fuente-texto:"DM Sans",Arial,sans-serif;
+  --s-fuente-titulos:"Playfair Display",Georgia,serif;
+}
+
+/* ── Menú principal ──────────────────────────────────── */
+/* El menú se adapta al espacio que tiene (en la portada ocupa media pantalla; en las demás, todo el ancho). */
+.navigation{container:menu / inline-size; font-family:var(--s-fuente-menu)}
+.menu-pestanas{display:flex; align-items:flex-start; gap:4px; white-space:nowrap}
+.nav-tab{
+  position:relative; display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  height:45px; min-width:0; padding:0 13px;
+  border:1px solid var(--s-linea); border-radius:14px; background:transparent; color:var(--s-tinta);
+  font-family:inherit; font-size:clamp(10px,.85vw,12px); font-weight:450; line-height:1; text-decoration:none; cursor:pointer;
+  transition:background-color .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
+}
+.nav-tab::after{content:""; position:absolute; left:12px; right:12px; bottom:0; height:2px; border-radius:2px; background:transparent}
+.nav-tab:nth-child(1){flex:0 1 86px; min-width:54px; padding-inline:8px}
+.nav-tab:nth-child(2){flex:1 1 132px}
+.nav-tab:nth-child(3){flex:1 1 148px}
+.nav-tab:nth-child(4){flex:1 1 124px}
+.nav-tab:nth-child(5){flex:1 1 140px; background-color:var(--s-rojo); font-weight:650}
+.nav-tab:hover{border-color:var(--s-verde); background:rgba(225,254,211,.48)}
+.nav-tab:active{transform:translateY(1px)}
+.nav-tab.active{color:#fffdf3; background:var(--s-tinta); border-color:var(--s-tinta)}
+.nav-tab.active::after{background:var(--s-rojo)}
+.nav-tab:focus-visible{outline:2px solid var(--s-rojo); outline-offset:3px}
+.nav-icon{width:20px; height:20px; flex:0 0 20px}
+.nav-tab:nth-child(3) .nav-icon{width:22px; height:22px; flex-basis:22px}
+.nav-tab:nth-child(4) .nav-icon{width:24px; height:24px; flex-basis:24px}
+.nav-tab:nth-child(5) .nav-icon{width:25px; height:25px; flex-basis:25px}
+.icon-logo{display:block; width:30px; height:30px}
+
+/* Selector de idioma: mismo borde y altura que las pestañas */
+.idiomas{
+  display:flex; flex:0 0 auto; align-items:stretch; gap:2px;
+  height:45px; margin-left:clamp(10px,1.6vw,24px); padding:3px;
+  border:1px solid var(--s-linea); border-radius:14px;
+}
+.idioma{
+  min-width:30px; padding:0 7px; border:0; border-radius:10px; background:transparent; color:var(--s-tinta);
+  font-family:inherit; font-size:11px; font-weight:600; letter-spacing:.08em; cursor:pointer;
+  transition:background-color .18s ease, color .18s ease;
+}
+.idioma:hover{background:rgba(225,254,211,.7)}
+.idioma[aria-pressed="true"]{background:var(--s-tinta); color:#fffdf3}
+.idioma:focus-visible{outline:2px solid var(--s-rojo); outline-offset:2px}
+
+/* Poco espacio: sin íconos. Muy poco: dos filas de tres. */
+@container menu (max-width:640px){ .nav-icon{display:none} }
+@container menu (max-width:600px){
+  .menu-pestanas{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:42px 42px; gap:6px}
+  .nav-tab{height:42px; font-size:clamp(10px,2.6vw,13px)}
+  .nav-icon{display:block}
+  .idiomas{height:42px; margin-left:0}
+  .idioma{flex:1; padding:0}
+}
+
+/* ── Pie ─────────────────────────────────────────────── */
+.foot{
+  color:#e9efe9; background:var(--s-pie); border-top:6px solid var(--s-mostaza);
+  font-family:var(--s-fuente-texto); line-height:1.6;
+}
+.foot-in{max-width:1240px; margin:0 auto; padding:72px 28px 32px}
+.foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1.2fr 1fr; gap:40px}
+.foot-logo{margin:0 0 14px; color:#fff; font:500 27px/1.2 var(--s-fuente-titulos)}
+.foot-sub{margin:0; color:#b9c5bd; font-size:15px}
+.foot h2{margin:0 0 16px; color:var(--s-dorado); font:700 13px/1.6 var(--s-fuente-texto); letter-spacing:.16em; text-transform:uppercase}
+.foot ul{display:grid; gap:12px; margin:0; padding:0; list-style:none}
+.foot li{display:flex; align-items:center; gap:10px; font-size:15px}
+.foot li > svg{width:18px; height:18px; flex:none}
+.foot a{color:#e9efe9; text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.foot a:focus-visible{outline:2px solid var(--s-dorado); outline-offset:3px}
+.foot-notas{margin-top:40px; color:#b9c5bd; font-size:13px}
+.foot-notas p{margin:0}
+.foot-notas a{text-decoration:underline}
+.copy{margin-top:56px; padding-top:24px; border-top:1px solid #ffffff26; color:#b9c5bd; font-size:12px; letter-spacing:.1em; text-transform:uppercase; text-align:center}
+@media (max-width:1000px){ .foot-grid{grid-template-columns:1fr 1fr} }
+@media (max-width:600px){ .foot-grid{grid-template-columns:1fr} .copy{text-align:left} }
+
+@media (prefers-reduced-motion:reduce){ .nav-tab,.idioma{transition:none} }
