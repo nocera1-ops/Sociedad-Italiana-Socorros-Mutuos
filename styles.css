@@ -949,7 +949,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-<<<<<<< HEAD
 
 /* Selector de idioma dentro del menú, separado de Colaborá y sin invadir la imagen. */
 .navigation > .languages {
@@ -971,7 +970,6 @@ body {
 
 /* =========================================================
    1. BOTÓN 'COLABORÁ' (:HOVER CORAL / ROJO CLARO)
-   ========================================================= */
 .nav-tab[data-section="colabora"] {
   background-color: var(--italian-red);
   color: #ffffff;
@@ -989,7 +987,6 @@ body {
 
 /* =========================================================
    4. ALINEACIÓN UNIFORME DE ICONOS EN EL FOOTER
-   ========================================================= */
 .foot ul li {
   display: flex;
   align-items: center;
@@ -1018,5 +1015,15 @@ body {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-=======
->>>>>>> d1e1199d6c3c23167d5c2fe7dc2f18416a1ba77d
+
+
+/* Ajustes finales del menú. También se duplican en index.html para evitar que
+   las hojas posteriores de la portada los sobrescriban. */
+.navigation { gap: 6px !important; }
+.navigation > .nav-tab { flex: 0 0 auto !important; min-width: 96px !important; padding-inline: 14px !important; }
+.navigation > .languages { position: relative !important; inset: auto !important; flex: 0 0 52px !important; margin-left: auto !important; margin-right: auto !important; }
+@media (max-width: 760px) {
+  .navigation { right: 6px !important; left: 8px !important; gap: 3px !important; }
+  .navigation > .nav-tab { min-width: 0 !important; padding-inline: 7px !important; font-size: 10px !important; }
+  .navigation > .languages { margin-left: 0 !important; margin-right: 0 !important; flex-basis: 48px !important; }
+}
