@@ -9,7 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/noticias.css">
 <script src="script.js?v=2" defer></script>
+<script src="js/noticias.js" defer></script>
+<script src="js/noticias-portada.js" defer></script>
 </head>
 <body>
 
@@ -98,6 +101,17 @@
 
   <!-- NOTICIAS DE ITALIA: sección independiente debajo de las redes -->
   
+
+  <!-- NOTICIAS: titulares automáticos de Google News (GitHub Actions actualiza js/noticias.js dos veces por día) -->
+  <section class="noticias-franja" id="noticias" aria-labelledby="noticias-titulo">
+    <div class="wrap noticias-in">
+      <p class="eyebrow" data-noticias="eyebrow">Actualidad</p>
+      <h2 class="noticias-titulo" id="noticias-titulo"><span data-noticias="titulo">Lo que está pasando</span> <em data-noticias="tituloEm">en la comunidad italiana.</em></h2>
+      <p class="noticias-nota" data-noticias="nota">Titulares de Google News sobre la colectividad, el consulado, la cultura y el patrimonio italianos. Se actualizan solos dos veces por día.</p>
+      <ol class="noticias-lista" id="noticias-lista"></ol>
+      <p class="noticias-estado" id="noticias-estado"></p>
+    </div>
+  </section>
 
   <!-- EN QUÉ ESTAMOS TRABAJANDO -->
   <section class="works wrap">
