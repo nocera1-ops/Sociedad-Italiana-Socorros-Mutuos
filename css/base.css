@@ -38,8 +38,9 @@
 .nav-tab--historia{flex:1 1 132px}
 .nav-tab--consulado{flex:1 1 148px}
 .nav-tab--cultura{flex:1 1 124px}
-.nav-tab--colabora{flex:1 1 140px; background-color:var(--s-rojo); font-weight:650}
+.nav-tab--colabora{flex:1 1 140px; color:#fff; background-color:var(--s-rojo-oscuro); border-color:var(--s-rojo-oscuro); font-weight:650}
 .nav-tab:hover{border-color:var(--s-verde); background:rgba(225,254,211,.48)}
+.nav-tab--colabora:not(.active):hover{border-color:#962830; background:#962830}
 .nav-tab:active{transform:translateY(1px)}
 .nav-tab.active{color:#fffdf3; background:var(--s-tinta); border-color:var(--s-tinta)}
 .nav-tab.active::after{background:var(--s-rojo)}
