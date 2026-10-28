@@ -4,14 +4,6 @@ const SITE = {
   ig: "https://www.instagram.com/sociedaditalianagalvez/"
 };
 
-/* Páginas a las que navega cada pestaña del menú (excepto "inicio", que es esta misma página) */
-const SECTION_PAGES = {
-  historia: "historia.html",
-  consulado: "consulado.html",
-  cultura: "cultura.html",
-  colabora: "colabora.html"
-};
-
 const LANG_NAMES = { es: "Español", it: "Italiano", en: "English" };
 const LOCALES = { es: "es-AR", it: "it-IT", en: "en-US" };
 
@@ -20,7 +12,6 @@ const I18N = {
   es: {
     skip: "Ir al contenido",
     orgName: "Sociedad Italiana de Socorros Mutuos",
-    navHome: "Inicio", navHistory: "Historia", navConsulate: "Consulado", navCulture: "Cultura", navCollab: "Colaborá",
     heroDesc: "Más que una institución, somos un espacio de encuentro donde las generaciones comparten sus historias, las tradiciones cobran vida y la cultura se convierte en un vínculo que nos une.",
     heroHeadline: '<span class="accent-red">Sociedad</span> <span class="ink">Italiana de</span> <span class="accent-green">Socorros Mutuos</span>',
     exploreLabel: "Más detalles",
@@ -32,11 +23,15 @@ const I18N = {
     worksEyebrow: "Nuestros proyectos",
     worksTitle: "¿En qué estamos trabajando?",
     worksSub: "Para lograr la habilitación de la galería y el microcine, la nueva gestión lleva adelante obras de infraestructura fundamental:",
+    workNum: "N.º",
+    socialEyebrow: "Comunidad", socialTitle: "Nuestras redes", socialSub: "Seguí las novedades de la Sociedad y del Teatro Marconi en nuestras redes.",
+    fbText: "La página del teatro: novedades, actividades y eventos.", fbFollow: "Seguinos en Facebook",
+    igText: "Fotos y novedades de la Sociedad Italiana de Gálvez.", igFollow: "Seguinos en Instagram", newTab: "(se abre en una pestaña nueva)",
     mapEyebrow: "Encontranos", mapTitle: "Dónde estamos",
     supportEyebrow: "Sumate a la red", supportTitle: "Apoyanos",
-    supportDonateTitle: "Aportá", supportDonateText: "No importa el monto: tu donación hace una diferencia real para nuestra comunidad.", supportDonateBtn: "Donar",
-    supportJoinTitle: "Asociate", supportJoinText: "Sumate a nuestras actividades comunitarias y a las campañas de difusión.", supportJoinBtn: "Hacerme socio",
-    supportShareTitle: "Difundí", supportShareText: "Ayudanos a contarle a tus amigos, familia y colegas sobre nuestra causa.", supportShareBtn: "Contactanos",
+    supportDonateTitle: "Aportá", supportDonateText: "No importa el monto: tu donación hace una diferencia real para nosotros.", supportDonateBtn: "Donar",
+    supportJoinTitle: "Asociate", supportJoinText: "Tu membresía nos permite sostener nuestros proyectos y crecer mes a mes.", supportJoinBtn: "Hacerme socio",
+    supportShareTitle: "Colaborá", supportShareText: "Sumá tu empresa como sponsor o colaborá con insumos para potenciar nuestro trabajo.", supportShareBtn: "Contactanos",
     contactTag: "Las raíces de ayer, la cultura de hoy, el legado de mañana.",
     cfName: "Nombre completo", cfPhone: "Número de contacto*", cfReason: "Motivo*",
     cfReasonSocio: "Hacerme socio", cfReasonConsulta: "Consulta general",
@@ -44,18 +39,11 @@ const I18N = {
     cfMsg: "Mensaje", cfSubmit: "Enviar",
     cfNote: "Nunca compartimos tus datos. Solo los usamos para responder tu mensaje.",
     thanksTitle: "¡Gracias!", thanksSub: "Guardamos tu mensaje. Nos vamos a poner en contacto pronto.",
-    thanksBtn: "Enviar otro mensaje", thanksDm: "Escribinos por mensaje directo",
-    footAbout: "Trabajamos desde hace generaciones por la comunidad ítalo-argentina.",
-    fNav: "Navegación", fHist: "Historia", fCons: "Consulado y voto", fCult: "Cultura italiana",
-    fNews: "Noticias", fAbout: "Sobre nosotros", fContact: "Contacto",
-    fAddress: "Belgrano 664", fPhone: "Tel: (011) 0000-0000",
-    fFollow: "Seguinos", fSugg: "Dejá una sugerencia",
-    copy: "© 2026 Sociedad Italiana de Socorros Mutuos. Todos los derechos reservados."
+    thanksBtn: "Enviar otro mensaje", thanksDm: "Escribinos por mensaje directo"
   },
   en: {
     skip: "Skip to content",
     orgName: "Italian Mutual Aid Society",
-    navHome: "Home", navHistory: "History", navConsulate: "Consulate", navCulture: "Culture", navCollab: "Get involved",
     heroDesc: "More than an institution, we are a meeting place where generations share their stories, traditions come alive, and culture becomes a bond that unites us.",
     heroHeadline: '<span class="accent-red">Italian</span> <span class="ink">Mutual Aid</span> <span class="accent-green">Society</span>',
     exploreLabel: "Learn more",
@@ -67,11 +55,15 @@ const I18N = {
     worksEyebrow: "Our projects",
     worksTitle: "What are we working on?",
     worksSub: "To open the gallery and the microcinema, the new leadership is carrying out essential infrastructure works:",
+    workNum: "No.",
+    socialEyebrow: "Community", socialTitle: "Our social media", socialSub: "Follow the latest from the Society and the Teatro Marconi on our social media.",
+    fbText: "The theatre's page: news, activities and events.", fbFollow: "Follow us on Facebook",
+    igText: "Photos and news from the Italian Society of Gálvez.", igFollow: "Follow us on Instagram", newTab: "(opens in a new tab)",
     mapEyebrow: "Find us", mapTitle: "Where we are",
     supportEyebrow: "Join the network", supportTitle: "Support us",
-    supportDonateTitle: "Donate", supportDonateText: "No matter the amount, your donation makes a real difference for our community.", supportDonateBtn: "Donate",
-    supportJoinTitle: "Become a member", supportJoinText: "Join our community activities and outreach campaigns.", supportJoinBtn: "Become a member",
-    supportShareTitle: "Spread the word", supportShareText: "Help us tell your friends, family and colleagues about our cause.", supportShareBtn: "Contact us",
+    supportDonateTitle: "Donate", supportDonateText: "No matter the amount, your donation makes a real difference for us.", supportDonateBtn: "Donate",
+    supportJoinTitle: "Become a member", supportJoinText: "Your membership helps us sustain our projects and grow month after month.", supportJoinBtn: "Become a member",
+    supportShareTitle: "Collaborate", supportShareText: "Join as a sponsor company or contribute supplies to boost our work.", supportShareBtn: "Contact us",
     contactTag: "Yesterday's roots, today's culture, tomorrow's legacy.",
     cfName: "Full name", cfPhone: "Phone number*", cfReason: "Reason*",
     cfReasonSocio: "Become a member", cfReasonConsulta: "General inquiry",
@@ -79,18 +71,11 @@ const I18N = {
     cfMsg: "Message", cfSubmit: "Send",
     cfNote: "We never share your data. We only use it to reply to your message.",
     thanksTitle: "Thank you!", thanksSub: "Your message is saved. We'll get in touch soon.",
-    thanksBtn: "Send another message", thanksDm: "DM us",
-    footAbout: "For generations we have worked for the Italian-Argentine community.",
-    fNav: "Menu", fHist: "History", fCons: "Consulate and vote", fCult: "Italian culture",
-    fNews: "News", fAbout: "About us", fContact: "Contact",
-    fAddress: "Belgrano 664", fPhone: "Phone: (011) 0000-0000",
-    fFollow: "Follow us", fSugg: "Leave a suggestion",
-    copy: "© 2026 Italian Mutual Aid Society. All rights reserved."
+    thanksBtn: "Send another message", thanksDm: "DM us"
   },
   it: {
     skip: "Vai al contenuto",
     orgName: "Società Italiana di Mutuo Soccorso",
-    navHome: "Home", navHistory: "Storia", navConsulate: "Consolato", navCulture: "Cultura", navCollab: "Collabora",
     heroDesc: "Più di un'istituzione, siamo uno spazio d'incontro dove le generazioni condividono le loro storie, le tradizioni prendono vita e la cultura diventa un legame che ci unisce.",
     heroHeadline: '<span class="accent-red">Società</span> <span class="ink">Italiana di</span> <span class="accent-green">Mutuo Soccorso</span>',
     exploreLabel: "Scopri di più",
@@ -102,11 +87,15 @@ const I18N = {
     worksEyebrow: "I nostri progetti",
     worksTitle: "A cosa stiamo lavorando?",
     worksSub: "Per l'apertura della galleria e del microcinema, la nuova gestione sta portando avanti lavori di infrastruttura fondamentali:",
+    workNum: "N.",
+    socialEyebrow: "Comunità", socialTitle: "I nostri social", socialSub: "Segui le novità della Società e del Teatro Marconi sui nostri social.",
+    fbText: "La pagina del teatro: novità, attività ed eventi.", fbFollow: "Seguici su Facebook",
+    igText: "Foto e novità della Società Italiana di Gálvez.", igFollow: "Seguici su Instagram", newTab: "(si apre in una nuova scheda)",
     mapEyebrow: "Dove siamo", mapTitle: "Dove ci troviamo",
     supportEyebrow: "Entra nella rete", supportTitle: "Sostienici",
-    supportDonateTitle: "Dona", supportDonateText: "Qualsiasi sia la cifra, la tua donazione fa davvero la differenza per la nostra comunità.", supportDonateBtn: "Dona",
-    supportJoinTitle: "Diventa socio", supportJoinText: "Partecipa alle nostre attività comunitarie e alle campagne di sensibilizzazione.", supportJoinBtn: "Diventa socio",
-    supportShareTitle: "Diffondi", supportShareText: "Aiutaci a parlare della nostra causa ad amici, familiari e colleghi.", supportShareBtn: "Contattaci",
+    supportDonateTitle: "Dona", supportDonateText: "Qualsiasi sia la cifra, la tua donazione fa davvero la differenza per noi.", supportDonateBtn: "Dona",
+    supportJoinTitle: "Diventa socio", supportJoinText: "La tua iscrizione ci permette di sostenere i nostri progetti e di crescere mese dopo mese.", supportJoinBtn: "Diventa socio",
+    supportShareTitle: "Collabora", supportShareText: "Partecipa come azienda sponsor o collabora con materiali per potenziare il nostro lavoro.", supportShareBtn: "Contattaci",
     contactTag: "Le radici di ieri, la cultura di oggi, l'eredità di domani.",
     cfName: "Nome completo", cfPhone: "Numero di telefono*", cfReason: "Motivo*",
     cfReasonSocio: "Diventare socio", cfReasonConsulta: "Richiesta generale",
@@ -114,13 +103,7 @@ const I18N = {
     cfMsg: "Messaggio", cfSubmit: "Invia",
     cfNote: "Non condividiamo mai i tuoi dati. Li usiamo solo per risponderti.",
     thanksTitle: "Grazie!", thanksSub: "Il tuo messaggio è salvato. Ti contatteremo presto.",
-    thanksBtn: "Invia un altro messaggio", thanksDm: "Scrivici in messaggio diretto",
-    footAbout: "Da generazioni lavoriamo per la comunità italo-argentina.",
-    fNav: "Menu", fHist: "Storia", fCons: "Consolato e voto", fCult: "Cultura italiana",
-    fNews: "Notizie", fAbout: "Chi siamo", fContact: "Contatti",
-    fAddress: "Belgrano 664", fPhone: "Tel: (011) 0000-0000",
-    fFollow: "Seguici", fSugg: "Lascia un suggerimento",
-    copy: "© 2026 Società Italiana di Mutuo Soccorso. Tutti i diritti riservati."
+    thanksBtn: "Invia un altro messaggio", thanksDm: "Scrivici in messaggio diretto"
   }
 };
 
@@ -197,15 +180,10 @@ const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
 /* ===== Render ===== */
 function applyStatic(){
   document.documentElement.lang = lang;
-  document.title = t("orgName");
+  // Solo la portada traduce el título de la pestaña; las demás páginas conservan el suyo.
+  if (document.querySelector(".tiles")) document.title = t("orgName");
   document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t(el.dataset.i18n));
   document.querySelectorAll("[data-i18n-html]").forEach(el => el.innerHTML = t(el.dataset.i18nHtml));
-
-  document.querySelectorAll(".language").forEach(b => {
-    const on = b.dataset.lang === lang;
-    b.classList.toggle("active", on);
-    b.setAttribute("aria-pressed", String(on));
-  });
 
   const igLink = $("#ig-link");
   if (igLink) igLink.href = SITE.ig;
@@ -213,8 +191,6 @@ function applyStatic(){
   if (fbFollow) fbFollow.href = SITE.fb;
   const ctIg = $("#ct-ig");
   if (ctIg) ctIg.href = SITE.ig;
-  document.querySelectorAll("[data-link='fb']").forEach(a => a.href = SITE.fb);
-  document.querySelectorAll("[data-link='ig']").forEach(a => a.href = SITE.ig);
 }
 
 function renderFilters(){
@@ -245,15 +221,19 @@ function renderSocial(){
 function renderWorks(){
   const worksGrid = $("#works-grid");
   if (!worksGrid) return;
-  worksGrid.innerHTML = WORKS.map(w => `
-    <article class="ticket">
-      <div class="t-stub">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${WORK_ICONS[w.icon]}</svg>
-        <span>${L(w.label)}</span>
-      </div>
-      <div class="t-body">
-        <h3>${L(w.title)}</h3>
-        <p>${L(w.text)}</p>
+  // Cada obra es una entrada de teatro: talón con ícono y número, línea de corte y cuerpo.
+  worksGrid.innerHTML = WORKS.map((w, i) => `
+    <article class="ticket ticket--${w.icon}">
+      <div class="t-papel">
+        <div class="t-stub" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${WORK_ICONS[w.icon]}</svg>
+          <span class="t-num">${t("workNum")} ${String(i + 1).padStart(2, "0")}</span>
+        </div>
+        <div class="t-body">
+          <p class="t-label">${L(w.label)}</p>
+          <h3>${L(w.title)}</h3>
+          <p>${L(w.text)}</p>
+        </div>
       </div>
     </article>`).join("");
 }
@@ -268,25 +248,10 @@ function render(){
 
 /* ===== Eventos ===== */
 
-// Pestañas del menú: "Inicio" te deja en esta página, el resto navega a su página propia
-document.querySelectorAll(".nav-tab").forEach(tab => {
-  tab.addEventListener("click", () => {
-    const section = tab.dataset.section;
-    if (section === "inicio") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else if (SECTION_PAGES[section]) {
-      window.location.href = SECTION_PAGES[section];
-    }
-  });
-});
-
-// Los 3 botones de idioma: cada uno pone directamente ese idioma
-document.querySelectorAll(".language").forEach(btn => {
-  btn.addEventListener("click", () => {
-    lang = btn.dataset.lang;
-    try { localStorage.setItem("lang", lang); } catch(_) {}
-    render();
-  });
+// El selector de idioma está en el menú común (js/sitio.js), que avisa cada cambio.
+document.addEventListener("sitio:idioma", e => {
+  lang = e.detail.idioma;
+  render();
 });
 
 const filterContainer = $("#filters");
@@ -307,33 +272,7 @@ if (exploreBtn) {
   });
 }
 
-// Formulario de contacto (contacto.html): no hay servidor detrás, solo mostramos la confirmación en pantalla.
-function showContactState(state){
-  const card = $("#contact-card");
-  if (!card) return;
-  const foot = $("#contact-thanks-foot");
-  card.classList.toggle("is-thanks", state === "thanks");
-  document.querySelectorAll('[data-state="form"]').forEach(el => el.hidden = state !== "form");
-  document.querySelectorAll('[data-state="thanks"]').forEach(el => el.hidden = state !== "thanks");
-  if (foot) foot.hidden = state !== "thanks";
-}
-
-const contactForm = $("#contact-form");
-if (contactForm) {
-  contactForm.addEventListener("submit", e => {
-    e.preventDefault();
-    showContactState("thanks");
-    try { $("#contact-card").scrollIntoView({ behavior: "smooth", block: "center" }); } catch(_) {}
-  });
-}
-
-const ctAgain = $("#ct-again");
-if (ctAgain) {
-  ctAgain.addEventListener("click", () => {
-    contactForm.reset();
-    showContactState("form");
-  });
-}
+// El formulario de contacto (contacto.html) tiene su propio script en esa página.
 
 /* ===== Inicio: recordar el último idioma elegido ===== */
 try {

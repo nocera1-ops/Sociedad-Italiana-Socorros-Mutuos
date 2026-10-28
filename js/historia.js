@@ -131,9 +131,11 @@
     const actualizar = () => {
       const v = Number(control.value);
       comparador.style.setProperty("--pos", v + "%");
-      control.setAttribute("aria-valuetext", `Antes ${v} %, después ${100 - v} %`);
+      const texto = window.Sitio ? Sitio.t("comparadorValor", { a: v, d: 100 - v }) : `Antes ${v} %, después ${100 - v} %`;
+      control.setAttribute("aria-valuetext", texto);
     };
     control.addEventListener("input", actualizar);
+    document.addEventListener("sitio:idioma", actualizar);
     actualizar();
   }
 })();

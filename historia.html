@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Historia · Sociedad Italiana de Socorros Mutuos de Gálvez</title>
 <meta name="description" content="La historia de la Sociedad Italiana de Socorros Mutuos de Gálvez, Santa Fe: sus inicios, crecimiento, apogeo, declive, renacer y reconstrucción.">
+<link rel="shortcut icon" href="img/logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/sitio.css">
 <link rel="stylesheet" href="css/historia.css">
 <script src="js/historia.js" defer></script>
@@ -27,17 +29,11 @@
 <!-- Marca de posición: la flecha «volver arriba» aparece cuando esta zona sale de la pantalla -->
 <div class="centinela" id="centinela" aria-hidden="true"></div>
 
-<a class="saltar" href="#contenido">Saltar al contenido</a>
-<header class="sitio-cabecera" id="inicio" tabindex="-1">
-  <div class="contenedor sitio-cabecera-inner">
-    <p class="sitio-marca"><span class="sitio-marca-nombre">Sociedad Italiana de Socorros Mutuos</span><span class="sitio-marca-lugar">Gálvez · Santa Fe</span></p>
-    <nav class="sitio-nav" aria-label="Principal">
-      <ul>
-        <li><a href="historia.html" aria-current="page">Historia</a></li>
-        <li><a href="cultura.html">Cultura italiana</a></li>
-      </ul>
-    </nav>
-  </div>
+<a class="saltar" href="#contenido" data-t="h-pag-1">Ir al contenido</a>
+<!-- Menú principal del sitio (el mismo de index.html y consulado.html) -->
+<header class="menu-sitio" id="inicio" tabindex="-1">
+  <nav class="navigation" aria-label="Navegación principal" data-sitio="menu" data-pagina="historia"></nav>
+  <script src="js/sitio.js"></script>
 </header>
 
 <main id="contenido">
@@ -56,24 +52,24 @@
     </div>
 
     <div class="contenedor portada-contenido">
-      <p class="eyebrow">Nuestra historia</p>
-      <h1 class="titulo" id="historia-titulo">De la memoria <em>al renacer.</em></h1>
-      <p class="lead">La Sociedad Italiana de Socorros Mutuos de Gálvez nació del esfuerzo de inmigrantes que, lejos de su tierra, decidieron cuidarse unos a otros. Esta es la historia de sus comienzos, de sus años de esplendor, de los tiempos difíciles y de la recuperación que hoy le devuelve la vida.</p>
+      <p class="eyebrow" data-t="h-pag-2">Nuestra historia</p>
+      <h1 class="titulo" id="historia-titulo" data-t="h-pag-3">De la memoria <em>al renacer.</em></h1>
+      <p class="lead" data-t="h-pag-4">La Sociedad Italiana de Socorros Mutuos de Gálvez nació del esfuerzo de inmigrantes que, lejos de su tierra, decidieron cuidarse unos a otros. Esta es la historia de sus comienzos, de sus años de esplendor, de los tiempos difíciles y de la recuperación que hoy le devuelve la vida.</p>
 
-      <nav class="indice" aria-label="Etapas de la historia">
-        <p class="indice-titulo">Un recorrido en seis etapas</p>
+      <nav class="indice" aria-label="Etapas de la historia" data-t-attr="aria-label:h-a-indice">
+        <p class="indice-titulo" data-t="h-pag-5">Un recorrido en seis etapas</p>
         <ol>
-          <li><a href="#etapa-inicios"><span>01</span>Los inicios</a></li>
-          <li><a href="#etapa-crecimiento"><span>02</span>El crecimiento</a></li>
-          <li><a href="#etapa-apogeo"><span>03</span>El apogeo</a></li>
-          <li><a href="#etapa-declive"><span>04</span>El declive</a></li>
-          <li><a href="#etapa-renacer"><span>05</span>El renacer</a></li>
-          <li><a href="#etapa-reconstruccion"><span>06</span>La reconstrucción</a></li>
+          <li><a href="#etapa-inicios" data-t="h-pag-6"><span>01</span>Los inicios</a></li>
+          <li><a href="#etapa-crecimiento" data-t="h-pag-7"><span>02</span>El crecimiento</a></li>
+          <li><a href="#etapa-apogeo" data-t="h-pag-8"><span>03</span>El apogeo</a></li>
+          <li><a href="#etapa-declive" data-t="h-pag-9"><span>04</span>El declive</a></li>
+          <li><a href="#etapa-renacer" data-t="h-pag-10"><span>05</span>El renacer</a></li>
+          <li><a href="#etapa-reconstruccion" data-t="h-pag-11"><span>06</span>La reconstrucción</a></li>
         </ol>
       </nav>
     </div>
 
-    <a class="bajar" href="#etapa-inicios" aria-label="Comenzar el recorrido"><svg aria-hidden="true"><use href="#i-abajo"/></svg></a>
+    <a class="bajar" href="#etapa-inicios" aria-label="Comenzar el recorrido" data-t-attr="aria-label:h-a-bajar"><svg aria-hidden="true"><use href="#i-abajo"/></svg></a>
   </section>
 
   <!--
@@ -90,21 +86,21 @@
 
     <div class="contenedor etapa-grid">
       <div class="etapa-texto revelar">
-        <p class="etapa-eyebrow"><span>Etapa 01</span>Los inicios</p>
-        <h2 class="etapa-titulo" id="t-inicios">Lejos de casa, <em>juntos.</em></h2>
-        <p class="entrada">A fines del siglo XIX, Gálvez nacía junto a la estación del ferrocarril, y entre sus primeros vecinos había numerosas familias llegadas desde Italia.</p>
-        <p>Lejos de su tierra, sin redes que los protegieran ante la enfermedad, la falta de trabajo o la muerte, los inmigrantes italianos encontraron una respuesta en la ayuda mutua. En toda la provincia de Santa Fe fundaron sociedades de socorros mutuos para sostenerse entre sí y mantener vivas su lengua y sus costumbres.</p>
-        <p>En Gálvez, esa misma voluntad dio origen a la Sociedad Italiana de Socorros Mutuos.</p>
+        <p class="etapa-eyebrow" data-t="h-etapa-inicios-1"><span>Etapa 01</span>Los inicios</p>
+        <h2 class="etapa-titulo" id="t-inicios" data-t="h-etapa-inicios-2">Lejos de casa, <em>juntos.</em></h2>
+        <p class="entrada" data-t="h-etapa-inicios-3">A fines del siglo XIX, Gálvez nacía junto a la estación del ferrocarril, y entre sus primeros vecinos había numerosas familias llegadas desde Italia.</p>
+        <p data-t="h-etapa-inicios-4">Lejos de su tierra, sin redes que los protegieran ante la enfermedad, la falta de trabajo o la muerte, los inmigrantes italianos encontraron una respuesta en la ayuda mutua. En toda la provincia de Santa Fe fundaron sociedades de socorros mutuos para sostenerse entre sí y mantener vivas su lengua y sus costumbres.</p>
+        <p data-t="h-etapa-inicios-5">En Gálvez, esa misma voluntad dio origen a la Sociedad Italiana de Socorros Mutuos.</p>
 
         <!-- PENDIENTE. Pista a verificar con el acta fundacional: un directorio comercial
              consigna la «Mutual Sociedad Italiana de Socorros Mutuos Italia Unida»
              (Belgrano 654, Gálvez) con fecha de constitución 8/1/1910. No es fuente histórica. -->
-        <aside class="pendiente" aria-label="Información a completar">
-          <p class="pendiente-titulo"><svg aria-hidden="true"><use href="#i-lapiz"/></svg>Información a completar</p>
+        <aside class="pendiente" aria-label="Información a completar" data-t-attr="aria-label:h-a-pendiente">
+          <p class="pendiente-titulo"><svg aria-hidden="true"><use href="#i-lapiz"/></svg><span data-t="h-etapa-inicios-6">Información a completar</span></p>
           <ul>
-            <li>Fecha de fundación de la Sociedad y nombre original de la institución.</li>
-            <li>Socios fundadores y primera comisión directiva.</li>
-            <li>Lugar de las primeras reuniones o primera sede.</li>
+            <li data-t="h-etapa-inicios-7">Fecha de fundación de la Sociedad y nombre original de la institución.</li>
+            <li data-t="h-etapa-inicios-8">Socios fundadores y primera comisión directiva.</li>
+            <li data-t="h-etapa-inicios-9">Lugar de las primeras reuniones o primera sede.</li>
           </ul>
         </aside>
       </div>
@@ -112,26 +108,26 @@
       <figure class="foto foto--vertical foto--archivo foto--pendiente" data-parallax="marco" data-velocidad="0.08">
         <div class="foto-ventana">
           <div class="foto-capa" data-parallax="interior" data-velocidad="0.14">
-            <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong>Fotografía pendiente</strong><span>Socios fundadores o acta de fundación</span></div>
+            <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong data-t="h-etapa-inicios-10">Fotografía pendiente</strong><span data-t="h-etapa-inicios-11">Socios fundadores o acta de fundación</span></div>
           </div>
         </div>
-        <figcaption class="foto-pie">Los socios fundadores · <span class="falta">año a confirmar</span></figcaption>
+        <figcaption class="foto-pie" data-t="h-etapa-inicios-12">Los socios fundadores · <span class="falta">año a confirmar</span></figcaption>
       </figure>
     </div>
 
     <div class="contenedor">
-      <ul class="contexto revelar" aria-label="Gálvez en sus orígenes">
+      <ul class="contexto revelar" aria-label="Gálvez en sus orígenes" data-t-attr="aria-label:h-a-contexto">
         <li>
           <span class="contexto-dato">1886</span>
-          <p>El 15 de octubre se aprueba el trazado del «Pueblo Estación Gálvez», origen de la actual ciudad.<sup><a href="#fuente-1" aria-label="Fuentes 1 y 2">1, 2</a></sup></p>
+          <p data-t="h-etapa-inicios-13">El 15 de octubre se aprueba el trazado del «Pueblo Estación Gálvez», origen de la actual ciudad.<sup><a href="#fuente-1" aria-label="Fuentes 1 y 2">1, 2</a></sup></p>
         </li>
         <li>
           <span class="contexto-dato">1887</span>
-          <p>El censo provincial registra numerosos vecinos nacidos en Italia en el distrito Colonia Gálvez.<sup><a href="#fuente-3" aria-label="Fuente 3">3</a></sup></p>
+          <p data-t="h-etapa-inicios-14">El censo provincial registra numerosos vecinos nacidos en Italia en el distrito Colonia Gálvez.<sup><a href="#fuente-3" aria-label="Fuente 3">3</a></sup></p>
         </li>
         <li>
           <span class="contexto-dato">60</span>
-          <p>localidades santafesinas, sin contar las ciudades más grandes, fundaron sociedades italianas de socorros mutuos entre 1859 y 1920.<sup><a href="#fuente-4" aria-label="Fuente 4">4</a></sup></p>
+          <p data-t="h-etapa-inicios-15">localidades santafesinas, sin contar las ciudades más grandes, fundaron sociedades italianas de socorros mutuos entre 1859 y 1920.<sup><a href="#fuente-4" aria-label="Fuente 4">4</a></sup></p>
         </li>
       </ul>
     </div>
@@ -146,40 +142,40 @@
         <figure class="foto foto--horizontal foto--archivo foto--pendiente" data-parallax="marco" data-velocidad="0.16">
           <div class="foto-ventana">
             <div class="foto-capa" data-parallax="interior" data-velocidad="0.1">
-              <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong>Fotografía pendiente</strong><span>Fachada del edificio en sus primeros años</span></div>
+              <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong data-t="h-etapa-crecimiento-1">Fotografía pendiente</strong><span data-t="h-etapa-crecimiento-2">Fachada del edificio en sus primeros años</span></div>
             </div>
           </div>
-          <figcaption class="foto-pie">El edificio social · <span class="falta">año a confirmar</span></figcaption>
+          <figcaption class="foto-pie" data-t="h-etapa-crecimiento-3">El edificio social · <span class="falta">año a confirmar</span></figcaption>
         </figure>
         <figure class="foto foto--vertical foto--archivo foto--pendiente" data-parallax="marco" data-velocidad="0.02">
           <div class="foto-ventana">
             <div class="foto-capa" data-parallax="interior" data-velocidad="0.1">
-              <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong>Fotografía pendiente</strong><span>Socios o comisión directiva de la época</span></div>
+              <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong data-t="h-etapa-crecimiento-4">Fotografía pendiente</strong><span data-t="h-etapa-crecimiento-5">Socios o comisión directiva de la época</span></div>
             </div>
           </div>
-          <figcaption class="foto-pie">Socios de la época</figcaption>
+          <figcaption class="foto-pie" data-t="h-etapa-crecimiento-6">Socios de la época</figcaption>
         </figure>
         <figure class="foto foto--cuadrada foto--archivo foto--pendiente" data-parallax="marco" data-velocidad="-0.1">
           <div class="foto-ventana">
             <div class="foto-capa" data-parallax="interior" data-velocidad="0.1">
-              <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong>Fotografía pendiente</strong><span>Carnet de socio, libro de actas u otro documento</span></div>
+              <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong data-t="h-etapa-crecimiento-7">Fotografía pendiente</strong><span data-t="h-etapa-crecimiento-8">Carnet de socio, libro de actas u otro documento</span></div>
             </div>
           </div>
-          <figcaption class="foto-pie">Documentos de la Sociedad</figcaption>
+          <figcaption class="foto-pie" data-t="h-etapa-crecimiento-9">Documentos de la Sociedad</figcaption>
         </figure>
       </div>
 
       <div class="etapa-texto revelar">
-        <p class="etapa-eyebrow"><span>Etapa 02</span>El crecimiento</p>
-        <h2 class="etapa-titulo" id="t-crecimiento">Una casa <em>para todos.</em></h2>
-        <p class="entrada">Con el paso de los años, la Sociedad fue mucho más que un sistema de ayuda: se transformó en un punto de encuentro.</p>
-        <p>Sus actividades se consolidaron y su presencia empezó a formar parte de la vida social y cultural de Gálvez. Cada socio que se sumaba aportaba algo más que una cuota: aportaba confianza en un proyecto común.</p>
-        <aside class="pendiente" aria-label="Información a completar">
-          <p class="pendiente-titulo"><svg aria-hidden="true"><use href="#i-lapiz"/></svg>Información a completar</p>
+        <p class="etapa-eyebrow" data-t="h-etapa-crecimiento-10"><span>Etapa 02</span>El crecimiento</p>
+        <h2 class="etapa-titulo" id="t-crecimiento" data-t="h-etapa-crecimiento-11">Una casa <em>para todos.</em></h2>
+        <p class="entrada" data-t="h-etapa-crecimiento-12">Con el paso de los años, la Sociedad fue mucho más que un sistema de ayuda: se transformó en un punto de encuentro.</p>
+        <p data-t="h-etapa-crecimiento-13">Sus actividades se consolidaron y su presencia empezó a formar parte de la vida social y cultural de Gálvez. Cada socio que se sumaba aportaba algo más que una cuota: aportaba confianza en un proyecto común.</p>
+        <aside class="pendiente" aria-label="Información a completar" data-t-attr="aria-label:h-a-pendiente">
+          <p class="pendiente-titulo"><svg aria-hidden="true"><use href="#i-lapiz"/></svg><span data-t="h-etapa-crecimiento-14">Información a completar</span></p>
           <ul>
-            <li>Año de construcción o adquisición del edificio social.</li>
-            <li>Servicios y actividades que ofrecía a sus socios.</li>
-            <li>Cantidad aproximada de socios e hitos de expansión.</li>
+            <li data-t="h-etapa-crecimiento-15">Año de construcción o adquisición del edificio social.</li>
+            <li data-t="h-etapa-crecimiento-16">Servicios y actividades que ofrecía a sus socios.</li>
+            <li data-t="h-etapa-crecimiento-17">Cantidad aproximada de socios e hitos de expansión.</li>
           </ul>
         </aside>
       </div>
@@ -192,22 +188,22 @@
 
     <div class="contenedor apogeo-cabecera revelar">
       <div>
-        <p class="etapa-eyebrow"><span>Etapa 03</span>El apogeo</p>
-        <h2 class="etapa-titulo" id="t-apogeo">Los años <em>de esplendor.</em></h2>
+        <p class="etapa-eyebrow" data-t="h-etapa-apogeo-1"><span>Etapa 03</span>El apogeo</p>
+        <h2 class="etapa-titulo" id="t-apogeo" data-t="h-etapa-apogeo-2">Los años <em>de esplendor.</em></h2>
       </div>
       <div class="etapa-texto">
-        <p class="entrada">Hubo un tiempo en que la Sociedad Italiana fue protagonista de la vida de Gálvez.</p>
-        <p>Fue la etapa de mayor actividad y de mayor participación de la comunidad. La institución ocupaba un lugar central en la ciudad y su sede reunía a socios, familias y vecinos.</p>
+        <p class="entrada" data-t="h-etapa-apogeo-3">Hubo un tiempo en que la Sociedad Italiana fue protagonista de la vida de Gálvez.</p>
+        <p data-t="h-etapa-apogeo-4">Fue la etapa de mayor actividad y de mayor participación de la comunidad. La institución ocupaba un lugar central en la ciudad y su sede reunía a socios, familias y vecinos.</p>
       </div>
     </div>
 
     <figure class="foto foto--banda foto--archivo foto--pendiente">
       <div class="foto-ventana">
         <div class="foto-capa" data-parallax="interior" data-velocidad="0.3" data-recorrido="0.2">
-          <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong>Fotografía pendiente</strong><span>Acto, celebración o reunión en la sede durante su etapa de mayor actividad</span></div>
+          <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong data-t="h-etapa-apogeo-5">Fotografía pendiente</strong><span data-t="h-etapa-apogeo-6">Acto, celebración o reunión en la sede durante su etapa de mayor actividad</span></div>
         </div>
       </div>
-      <figcaption class="foto-pie contenedor">Vida social en la sede · <span class="falta">evento y año a confirmar</span></figcaption>
+      <figcaption class="foto-pie contenedor" data-t="h-etapa-apogeo-7">Vida social en la sede · <span class="falta">evento y año a confirmar</span></figcaption>
     </figure>
 
   </section>
@@ -218,16 +214,16 @@
 
     <div class="contenedor etapa-grid">
       <div class="etapa-texto revelar">
-        <p class="etapa-eyebrow"><span>Etapa 04</span>El declive</p>
-        <h2 class="etapa-titulo" id="t-declive">Tiempos <em>difíciles.</em></h2>
-        <p class="entrada">Como tantas instituciones nacidas de la inmigración, la Sociedad atravesó una etapa crítica.</p>
-        <p>La actividad fue disminuyendo y el edificio comenzó a sentir el paso del tiempo y la falta de uso. Fueron años silenciosos, pero no de olvido: la historia seguía allí, en sus paredes y en la memoria de quienes la habían vivido, esperando ser recuperada.</p>
-        <aside class="pendiente" aria-label="Información a completar">
-          <p class="pendiente-titulo"><svg aria-hidden="true"><use href="#i-lapiz"/></svg>Información a completar</p>
+        <p class="etapa-eyebrow" data-t="h-etapa-declive-1"><span>Etapa 04</span>El declive</p>
+        <h2 class="etapa-titulo" id="t-declive" data-t="h-etapa-declive-2">Tiempos <em>difíciles.</em></h2>
+        <p class="entrada" data-t="h-etapa-declive-3">Como tantas instituciones nacidas de la inmigración, la Sociedad atravesó una etapa crítica.</p>
+        <p data-t="h-etapa-declive-4">La actividad fue disminuyendo y el edificio comenzó a sentir el paso del tiempo y la falta de uso. Fueron años silenciosos, pero no de olvido: la historia seguía allí, en sus paredes y en la memoria de quienes la habían vivido, esperando ser recuperada.</p>
+        <aside class="pendiente" aria-label="Información a completar" data-t-attr="aria-label:h-a-pendiente">
+          <p class="pendiente-titulo"><svg aria-hidden="true"><use href="#i-lapiz"/></svg><span data-t="h-etapa-declive-5">Información a completar</span></p>
           <ul>
-            <li>Período aproximado del declive.</li>
-            <li>Causas principales de la pérdida de actividad.</li>
-            <li>Estado del edificio y de las instalaciones en esa etapa.</li>
+            <li data-t="h-etapa-declive-6">Período aproximado del declive.</li>
+            <li data-t="h-etapa-declive-7">Causas principales de la pérdida de actividad.</li>
+            <li data-t="h-etapa-declive-8">Estado del edificio y de las instalaciones en esa etapa.</li>
           </ul>
         </aside>
       </div>
@@ -235,10 +231,10 @@
       <figure class="foto foto--vertical foto--declive foto--pendiente" data-parallax="marco" data-velocidad="0.2">
         <div class="foto-ventana">
           <div class="foto-capa" data-parallax="interior" data-velocidad="0.08">
-            <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong>Fotografía pendiente</strong><span>El edificio deteriorado, antes de su recuperación</span></div>
+            <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong data-t="h-etapa-declive-9">Fotografía pendiente</strong><span data-t="h-etapa-declive-10">El edificio deteriorado, antes de su recuperación</span></div>
           </div>
         </div>
-        <figcaption class="foto-pie">El edificio antes de la recuperación · <span class="falta">año a confirmar</span></figcaption>
+        <figcaption class="foto-pie" data-t="h-etapa-declive-11">El edificio antes de la recuperación · <span class="falta">año a confirmar</span></figcaption>
       </figure>
     </div>
   </section>
@@ -251,23 +247,23 @@
       <figure class="foto foto--horizontal foto--actual foto--pendiente" data-parallax="marco" data-velocidad="-0.16">
         <div class="foto-ventana">
           <div class="foto-capa" data-parallax="interior" data-velocidad="0.1">
-            <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong>Fotografía pendiente</strong><span>Nueva comisión directiva o primera actividad tras la reapertura</span></div>
+            <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong data-t="h-etapa-renacer-1">Fotografía pendiente</strong><span data-t="h-etapa-renacer-2">Nueva comisión directiva o primera actividad tras la reapertura</span></div>
           </div>
         </div>
-        <figcaption class="foto-pie">La nueva administración · <span class="falta">año a confirmar</span></figcaption>
+        <figcaption class="foto-pie" data-t="h-etapa-renacer-3">La nueva administración · <span class="falta">año a confirmar</span></figcaption>
       </figure>
 
       <div class="etapa-texto revelar">
-        <p class="etapa-eyebrow"><span>Etapa 05</span>El renacer</p>
-        <h2 class="etapa-titulo" id="t-renacer">Volver a abrir <em>las puertas.</em></h2>
-        <p class="entrada">La llegada de una nueva administración marcó un punto de inflexión.</p>
-        <p>Con trabajo y compromiso, la Sociedad recuperó su actividad institucional y volvió a mirar su patrimonio como un bien a cuidar. El renacer no fue solo administrativo: fue el reencuentro de una comunidad con una parte de su identidad.</p>
-        <aside class="pendiente" aria-label="Información a completar">
-          <p class="pendiente-titulo"><svg aria-hidden="true"><use href="#i-lapiz"/></svg>Información a completar</p>
+        <p class="etapa-eyebrow" data-t="h-etapa-renacer-4"><span>Etapa 05</span>El renacer</p>
+        <h2 class="etapa-titulo" id="t-renacer" data-t="h-etapa-renacer-5">Volver a abrir <em>las puertas.</em></h2>
+        <p class="entrada" data-t="h-etapa-renacer-6">La llegada de una nueva administración marcó un punto de inflexión.</p>
+        <p data-t="h-etapa-renacer-7">Con trabajo y compromiso, la Sociedad recuperó su actividad institucional y volvió a mirar su patrimonio como un bien a cuidar. El renacer no fue solo administrativo: fue el reencuentro de una comunidad con una parte de su identidad.</p>
+        <aside class="pendiente" aria-label="Información a completar" data-t-attr="aria-label:h-a-pendiente">
+          <p class="pendiente-titulo"><svg aria-hidden="true"><use href="#i-lapiz"/></svg><span data-t="h-etapa-renacer-8">Información a completar</span></p>
           <ul>
-            <li>Año en que asumió la nueva administración.</li>
-            <li>Integrantes de la comisión directiva.</li>
-            <li>Primeras acciones y actividades recuperadas.</li>
+            <li data-t="h-etapa-renacer-9">Año en que asumió la nueva administración.</li>
+            <li data-t="h-etapa-renacer-10">Integrantes de la comisión directiva.</li>
+            <li data-t="h-etapa-renacer-11">Primeras acciones y actividades recuperadas.</li>
           </ul>
         </aside>
       </div>
@@ -280,12 +276,12 @@
 
     <div class="contenedor reconstruccion-cabecera revelar">
       <div>
-        <p class="etapa-eyebrow"><span>Etapa 06</span>La reconstrucción</p>
-        <h2 class="etapa-titulo" id="t-reconstruccion">El edificio <em>vuelve a la vida.</em></h2>
+        <p class="etapa-eyebrow" data-t="h-etapa-reconstruccion-1"><span>Etapa 06</span>La reconstrucción</p>
+        <h2 class="etapa-titulo" id="t-reconstruccion" data-t="h-etapa-reconstruccion-2">El edificio <em>vuelve a la vida.</em></h2>
       </div>
       <div class="etapa-texto">
-        <p class="entrada">La recuperación de las instalaciones devolvió al edificio su valor y su dignidad.</p>
-        <p>Cada obra fue una manera de honrar a quienes lo levantaron y de prepararlo para las generaciones que vienen. La transformación que muestran estas imágenes es también la de una institución que decidió seguir adelante.</p>
+        <p class="entrada" data-t="h-etapa-reconstruccion-3">La recuperación de las instalaciones devolvió al edificio su valor y su dignidad.</p>
+        <p data-t="h-etapa-reconstruccion-4">Cada obra fue una manera de honrar a quienes lo levantaron y de prepararlo para las generaciones que vienen. La transformación que muestran estas imágenes es también la de una institución que decidió seguir adelante.</p>
       </div>
     </div>
 
@@ -293,26 +289,26 @@
       <!-- Antes / después: reemplazar cada .foto-pendiente por la foto correspondiente, con el mismo encuadre. -->
       <div class="comparador revelar" id="comparador">
         <div class="comparador-capa foto--declive">
-          <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong>Fotografía pendiente · Antes</strong><span>El edificio antes de la obra</span></div>
+          <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong data-t="h-etapa-reconstruccion-5">Fotografía pendiente · Antes</strong><span data-t="h-etapa-reconstruccion-6">El edificio antes de la obra</span></div>
         </div>
         <div class="comparador-capa comparador-despues foto--actual">
-          <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong>Fotografía pendiente · Después</strong><span>El edificio recuperado, con el mismo encuadre</span></div>
+          <div class="foto-pendiente"><svg aria-hidden="true"><use href="#i-img"/></svg><strong data-t="h-etapa-reconstruccion-7">Fotografía pendiente · Después</strong><span data-t="h-etapa-reconstruccion-8">El edificio recuperado, con el mismo encuadre</span></div>
         </div>
-        <span class="comparador-etiqueta comparador-etiqueta--antes" aria-hidden="true">Antes</span>
-        <span class="comparador-etiqueta comparador-etiqueta--despues" aria-hidden="true">Después</span>
+        <span class="comparador-etiqueta comparador-etiqueta--antes" aria-hidden="true" data-t="h-etapa-reconstruccion-9">Antes</span>
+        <span class="comparador-etiqueta comparador-etiqueta--despues" aria-hidden="true" data-t="h-etapa-reconstruccion-10">Después</span>
         <span class="comparador-linea" aria-hidden="true"><span class="comparador-mango"><svg><use href="#i-comparar"/></svg></span></span>
-        <input class="comparador-control" type="range" min="0" max="100" value="50" step="1" aria-label="Comparar el edificio antes y después de la reconstrucción" aria-valuetext="Antes 50 %, después 50 %">
+        <input class="comparador-control" type="range" min="0" max="100" value="50" step="1" aria-label="Comparar el edificio antes y después de la reconstrucción" data-t-attr="aria-label:h-a-comparador" aria-valuetext="Antes 50 %, después 50 %">
       </div>
-      <p class="comparador-ayuda">Desliza el control para comparar el antes y el después.</p>
+      <p class="comparador-ayuda" data-t="h-etapa-reconstruccion-11">Desliza el control para comparar el antes y el después.</p>
 
       
 
-      <aside class="pendiente revelar" aria-label="Información a completar">
-        <p class="pendiente-titulo"><svg aria-hidden="true"><use href="#i-lapiz"/></svg>Información a completar</p>
+      <aside class="pendiente revelar" aria-label="Información a completar" data-t-attr="aria-label:h-a-pendiente">
+        <p class="pendiente-titulo"><svg aria-hidden="true"><use href="#i-lapiz"/></svg><span data-t="h-etapa-reconstruccion-12">Información a completar</span></p>
         <ul>
-          <li>Obras realizadas y sus fechas.</li>
-          <li>Financiamiento, aportes y colaboraciones.</li>
-          <li>Profesionales y voluntarios que participaron.</li>
+          <li data-t="h-etapa-reconstruccion-13">Obras realizadas y sus fechas.</li>
+          <li data-t="h-etapa-reconstruccion-14">Financiamiento, aportes y colaboraciones.</li>
+          <li data-t="h-etapa-reconstruccion-15">Profesionales y voluntarios que participaron.</li>
         </ul>
       </aside>
     </div>
@@ -322,25 +318,25 @@
 
   <section class="fuentes" id="fuentes" aria-labelledby="t-fuentes">
     <div class="contenedor">
-      <h2 id="t-fuentes">Fuentes consultadas</h2>
+      <h2 id="t-fuentes" data-t="h-fuentes-1">Fuentes consultadas</h2>
       <ol>
-        <li id="fuente-1">Williams Alcaraz, estudio sobre la historia de la iglesia de Gálvez (e-revistas de la Universidad Católica Argentina): aprobación del trazado del «Pueblo Estación Gálvez» el 15 de octubre de 1886. <a href="https://e-revistas.uca.edu.ar/index.php/RGES/article/download/4446/4415/16016" target="_blank" rel="noopener">Ver documento</a></li>
-        <li id="fuente-2">Honorable Cámara de Diputados de la Nación, Orden del Día n.º 1083 (2016): 130.º aniversario de la fundación de Gálvez, el 15 de octubre. <a href="https://www3.hcdn.gob.ar/dependencias/dcomisiones/periodo-134/134-1083.pdf" target="_blank" rel="noopener">Ver documento</a></li>
-        <li id="fuente-3">Censo provincial de Santa Fe de 1887, distrito Colonia Gálvez (Archivo General de la Provincia de Santa Fe y CFI). <a href="https://www.santafe.gov.ar/censo1887/public_html/distrito/Colonia+Galvez/1083" target="_blank" rel="noopener">Ver registros</a></li>
-        <li id="fuente-4">Revista <i>Adversus</i>, año XV, n.º 34 (2018), artículo sobre las asociaciones italianas en Argentina. <a href="http://www.adversus.org/indice/nro-34/articulos/XV3402.pdf" target="_blank" rel="noopener">Ver artículo</a></li>
+        <li id="fuente-1" data-t="h-fuentes-2">Williams Alcaraz, estudio sobre la historia de la iglesia de Gálvez (e-revistas de la Universidad Católica Argentina): aprobación del trazado del «Pueblo Estación Gálvez» el 15 de octubre de 1886. <a href="https://e-revistas.uca.edu.ar/index.php/RGES/article/download/4446/4415/16016" target="_blank" rel="noopener">Ver documento</a></li>
+        <li id="fuente-2" data-t="h-fuentes-3">Honorable Cámara de Diputados de la Nación, Orden del Día n.º 1083 (2016): 130.º aniversario de la fundación de Gálvez, el 15 de octubre. <a href="https://www3.hcdn.gob.ar/dependencias/dcomisiones/periodo-134/134-1083.pdf" target="_blank" rel="noopener">Ver documento</a></li>
+        <li id="fuente-3" data-t="h-fuentes-4">Censo provincial de Santa Fe de 1887, distrito Colonia Gálvez (Archivo General de la Provincia de Santa Fe y CFI). <a href="https://www.santafe.gov.ar/censo1887/public_html/distrito/Colonia+Galvez/1083" target="_blank" rel="noopener">Ver registros</a></li>
+        <li id="fuente-4" data-t="h-fuentes-5">Revista <i>Adversus</i>, año XV, n.º 34 (2018), artículo sobre las asociaciones italianas en Argentina. <a href="http://www.adversus.org/indice/nro-34/articulos/XV3402.pdf" target="_blank" rel="noopener">Ver artículo</a></li>
       </ol>
-      <p class="fuentes-nota">Los datos propios de la Sociedad (fechas, nombres, obras y fotografías) se incorporarán a partir de su archivo institucional: actas, libros de socios y material fotográfico.</p>
+      <p class="fuentes-nota" data-t="h-fuentes-6">Los datos propios de la Sociedad (fechas, nombres, obras y fotografías) se incorporarán a partir de su archivo institucional: actas, libros de socios y material fotográfico.</p>
     </div>
   </section>
 </main>
 
-<footer class="sitio-pie">
-  Sociedad Italiana de Socorros Mutuos · Gálvez, Santa Fe, Argentina
-</footer>
+<footer class="foot" data-sitio="pie"></footer>
 
-<a class="volver-arriba" id="volver-arriba" href="#inicio" aria-label="Volver al inicio: banner y menú principal">
-  <svg aria-hidden="true"><use href="#i-arriba"/></svg><span aria-hidden="true">Inicio</span>
+<a class="volver-arriba" id="volver-arriba" href="#inicio" aria-label="Volver al inicio: banner y menú principal" data-t-attr="aria-label:h-a-volver">
+  <svg aria-hidden="true"><use href="#i-arriba"/></svg><span aria-hidden="true" data-t="h-pag-12">Inicio</span>
 </a>
 
+<!-- Traducciones al italiano y al inglés (el español es el de esta página) -->
+<script src="js/i18n/historia.js"></script>
 </body>
 </html>

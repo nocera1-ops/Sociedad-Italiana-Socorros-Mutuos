@@ -8,129 +8,136 @@
 <link rel="shortcut icon" href="img/logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="styles.css">
 <script src="script.js?v=2" defer></script>
 <style>
-/* Estilos específicos de Contacto; la identidad general se hereda de styles.css. */
-.contact-page{background:#f2f4d7;padding:0 0 70px;color:var(--ink)}
-.site-card.contact-site-header{display:block;height:auto;min-height:0;padding:0;overflow:visible;background:var(--ivory)}
-.contact-site-header .intro{min-height:0;height:82px;padding:0;background:var(--ivory)}
-.contact-site-header .navigation{top:16px;left:clamp(14px,3vw,42px);right:clamp(14px,3vw,42px)}
-.contact-site-header .description,.contact-site-header .headline,.contact-site-header #explore,.contact-site-header .artwork{display:none!important}
-.contact-breadcrumb{max-width:1240px;margin:18px auto 0;padding:0 28px;color:#58645b;font-size:14px}
-.contact-breadcrumb ol{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:0;padding:0;list-style:none}
-.contact-breadcrumb li+li::before{content:"/";margin-right:9px;color:#9aa296}
-.contact-breadcrumb a{color:var(--deep-green);text-underline-offset:3px}
-.contact-breadcrumb [aria-current=page]{font-weight:700;color:var(--ink)}
-.contact-wrap{max-width:1240px;margin:0 auto;padding:0 28px}
-.contact-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(20px,3vw,42px);padding:clamp(22px,3.5vw,44px) 0 12px}
-.contact-hero-copy{min-width:0}
-.contact-eyebrow{margin:0 0 14px;color:var(--deep-green);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-.contact-hero h1{max-width:none;margin:0 0 8px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:clamp(36px,4.1vw,58px);line-height:1.08;letter-spacing:-.04em;white-space:nowrap}
-.contact-hero h1 em{font-family:'Playfair Display',serif;font-weight:500;color:var(--italian-red)}
-.contact-lead{max-width:590px;color:#505b54;font-size:17px;line-height:1.75}
-.contact-visual{position:relative;min-width:0}
-.contact-visual img{display:block;width:100%;height:clamp(300px,38vw,480px);object-fit:cover;border-radius:24px;box-shadow:0 22px 50px rgba(24,35,31,.13)}
-.contact-visual::after{content:"";position:absolute;z-index:0;inset:14px -14px -14px 14px;border:2px solid var(--italian-red);border-radius:24px;pointer-events:none}
-.contact-visual img{position:relative;z-index:1}
-.contact-quick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px}
-.contact-quick a,.contact-quick .contact-quick-item{display:flex;align-items:flex-start;gap:12px;min-width:0;padding:15px 14px;border:1px solid rgba(39,55,39,.17);border-radius:13px;background:rgba(255,255,255,.65);color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
-.contact-icon{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;border-radius:11px;background:#e2e9cb;color:var(--deep-green)}
-.contact-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.contact-quick strong{display:block;margin:1px 0 4px;font-size:13px}
-.contact-quick span:not(.contact-icon){display:block;color:#566159;font-size:12px;line-height:1.5}
-.contact-main{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);align-items:start;gap:26px;padding:28px 0 58px}
-.contact-panel{min-width:0;padding:clamp(22px,3vw,34px);border:1px solid rgba(39,55,39,.16);border-radius:18px;background:rgba(255,255,255,.72);box-shadow:0 12px 35px rgba(24,35,31,.045)}
-.contact-panel h2,.contact-map h2{margin:0 0 10px;font-size:clamp(28px,3vw,38px);letter-spacing:-.03em}
-.contact-panel-intro{margin:0 0 24px;color:#58645b;line-height:1.65}
-.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.contact-form label{display:grid;gap:7px;font-size:14px;font-weight:700}
-.contact-form input,.contact-form select,.contact-form textarea{box-sizing:border-box;width:100%;min-height:48px;padding:12px 13px;border:1px solid #c7cbbf;border-radius:9px;background:#fff;color:var(--ink);font:inherit;outline-offset:2px}
-.contact-form textarea{min-height:150px;resize:vertical}
-.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--deep-green);outline:2px solid rgba(32,92,62,.14)}
+/* ───────────────────────────────────────────────────────────
+   Contacto (pestaña «Colaborá»). Paleta, esquinas y franja del menú vienen
+   de css/base.css; títulos y volantas, de styles.css.
+   ─────────────────────────────────────────────────────────── */
+.contact-page{--borde:rgba(39,55,39,.16); --texto-suave:#4c5650; padding:0 0 clamp(48px,7vw,80px)}
+.contact-breadcrumb{max-width:1184px; margin:18px auto 0; padding:0 28px; color:#58645b; font-size:14px}
+.contact-breadcrumb ol{display:flex; flex-wrap:wrap; align-items:center; gap:9px; margin:0; padding:0; list-style:none}
+.contact-breadcrumb li+li::before{content:"/"; margin-right:9px; color:#9aa296}
+.contact-breadcrumb a{color:var(--s-verde-oscuro); text-underline-offset:3px}
+.contact-breadcrumb [aria-current=page]{color:var(--s-tinta); font-weight:700}
+.contact-wrap{max-width:1184px; margin:0 auto; padding:0 28px}
+.contact-page .eyebrow{color:var(--s-verde-oscuro)}
+
+/* Título */
+.contact-hero{padding:clamp(28px,4vw,52px) 0 clamp(22px,3vw,34px)}
+.contact-hero h1{margin:18px 0 0; font-size:clamp(40px,6vw,72px); letter-spacing:-.03em}
+.contact-hero h1 em{color:var(--s-rojo)}
+
+/* Formulario y datos */
+.contact-main{display:grid; grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr); align-items:start; gap:24px; padding-bottom:clamp(48px,7vw,72px)}
+.contact-panel{min-width:0; padding:clamp(22px,3vw,34px); border:1px solid var(--borde); border-radius:var(--s-radio-grande); background:#fff}
+.contact-panel h2, .contact-map h2{margin:14px 0 10px; font-size:clamp(28px,3vw,40px)}
+.contact-panel-intro{margin:0 0 24px; color:var(--texto-suave); line-height:1.65}
+.contact-form{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+.contact-form label{display:grid; gap:7px; font-size:14px; font-weight:700}
+.contact-form input, .contact-form select, .contact-form textarea{
+  width:100%; min-height:48px; padding:12px 13px; border:1px solid #c7cbbf; border-radius:var(--s-radio-chico);
+  background:#fff; color:var(--s-tinta); font:inherit; font-weight:400;
+}
+.contact-form textarea{min-height:150px; resize:vertical}
 .contact-form .full{grid-column:1/-1}
-.contact-submit{display:inline-flex;align-items:center;justify-content:center;gap:10px;justify-self:start;min-height:50px;padding:13px 22px;border:1px solid var(--italian-red);border-radius:10px;background:var(--italian-red);color:#fff;font:inherit;font-weight:700;cursor:pointer;transition:transform .2s ease,background .2s ease}
-.contact-submit:hover{transform:translateY(-2px);background:#b83c2b}
-.contact-small{margin:0;color:#667068;font-size:12px;line-height:1.6}
-.contact-info{display:grid;gap:18px}
-.contact-info-card{padding:24px;border-radius:16px;background:#205c3e;color:#fff}
-.contact-info-card h3{margin:0 0 15px;font-size:23px}
-.contact-info-card p{margin:8px 0;color:#e7eee8;line-height:1.65}
-.contact-info-card a{color:#fff;text-underline-offset:3px}
-.contact-hours{display:grid;grid-template-columns:1fr auto;gap:8px 16px;font-size:14px;line-height:1.5}
-.contact-hours span:nth-child(even){text-align:right;color:#e8c36a;font-weight:700}
-.contact-socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-.contact-socials a{display:inline-flex;align-items:center;gap:8px;padding:10px 13px;border:1px solid rgba(255,255,255,.42);border-radius:9px;color:#fff;text-decoration:none;font-weight:600;font-size:14px}
-.contact-socials a:hover{background:rgba(255,255,255,.12)}
-.contact-socials svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.contact-map{padding-top:8px}
-.contact-map-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:20px}
-.contact-map-head p{margin:0;color:#566159}
-.contact-map-frame{height:390px;overflow:hidden;border:1px solid rgba(39,55,39,.18);border-radius:18px;background:#fff;box-shadow:0 14px 36px rgba(24,35,31,.07)}
-.contact-map-frame iframe{width:100%;height:100%;border:0}
-.contact-status{font-size:13px;color:#566159}
-@media(max-width:1100px){.contact-hero h1{white-space:normal;font-size:clamp(34px,4.8vw,50px)}}
-@media(max-width:900px){.contact-hero{grid-template-columns:1fr 1fr;gap:28px}.contact-quick{grid-template-columns:1fr}.contact-quick a,.contact-quick .contact-quick-item{padding:12px}.contact-main{grid-template-columns:1fr}.contact-info{grid-template-columns:1fr 1fr}.contact-info-card:first-child{grid-column:1/-1}}
-@media(max-width:650px){.contact-site-header .intro{height:116px}.contact-site-header .navigation{top:12px;left:10px;right:10px}.contact-breadcrumb{padding:0 18px;margin-top:12px}.contact-wrap{padding:0 18px}.contact-hero{grid-template-columns:1fr;padding:32px 0 28px;gap:26px}.contact-hero h1{font-size:clamp(36px,10vw,50px)}.contact-visual{margin:0 10px 10px 0}.contact-visual img{height:290px;border-radius:18px}.contact-visual::after{border-radius:18px}.contact-quick{grid-template-columns:1fr}.contact-main{padding-top:14px}.contact-info{grid-template-columns:1fr}.contact-info-card:first-child{grid-column:auto}.contact-form{grid-template-columns:1fr}.contact-form .full{grid-column:auto}.contact-submit{width:100%}.contact-map-head{display:block}.contact-map-head p{margin-top:8px}.contact-map-frame{height:300px}}
-@media(prefers-reduced-motion:reduce){.contact-submit{transition:none}.contact-submit:hover{transform:none}}
+.contact-small{margin:0; color:#5d655f; font-size:13px; line-height:1.6}
+.contact-submit{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px; justify-self:start; min-height:50px; padding:13px 22px;
+  border:1px solid var(--s-rojo-oscuro); border-radius:var(--s-radio); background:var(--s-rojo-oscuro); color:#fff;
+  font:inherit; font-weight:700; cursor:pointer; transition:background-color .2s ease, border-color .2s ease;
+}
+.contact-submit:hover{background:#962830; border-color:#962830}
+.contact-status{margin:0; color:var(--texto-suave); font-size:13px}
+.contact-status:empty{display:none}
+.contact-info{display:grid; gap:18px}
+.contact-info-card{padding:26px; border-radius:var(--s-radio); background:var(--s-verde-oscuro); color:#fff}
+.contact-info-card h3{margin:0 0 14px; color:#fff; font-size:24px}
+.contact-info-card p{margin:8px 0; color:#e6eee7; line-height:1.65}
+.contact-hours{display:grid; grid-template-columns:1fr auto; gap:8px 16px; margin:14px 0; font-size:14px; line-height:1.5}
+.contact-hours span:nth-child(even){text-align:right; color:var(--s-dorado); font-weight:700}
+.contact-info-card--redes{background:var(--s-verde-suave); color:var(--s-tinta)}
+.contact-info-card--redes h3{color:var(--s-tinta)}
+.contact-info-card--redes p{color:var(--texto-suave)}
+.contact-socials{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px}
+.contact-socials a{
+  display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:10px 14px;
+  border:1px solid var(--s-verde-oscuro); border-radius:var(--s-radio); color:var(--s-verde-oscuro);
+  font-size:14px; font-weight:700; text-decoration:none; transition:background-color .2s ease, color .2s ease;
+}
+.contact-socials a:hover{background:var(--s-verde-oscuro); color:#fff}
+.contact-socials svg{width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+
+/* Mapa */
+.contact-map-head{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:end; gap:12px 20px; margin-bottom:20px}
+.contact-map-head > p{margin:0; color:var(--texto-suave)}
+.contact-map-frame{height:390px; overflow:hidden; border:1px solid var(--borde); border-radius:var(--s-radio); background:var(--s-verde-suave)}
+.contact-map-frame iframe{display:block; width:100%; height:100%; border:0}
+
+@media (max-width:900px){
+  .contact-main{grid-template-columns:minmax(0,1fr)}
+  .contact-info{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  .contact-breadcrumb{margin-top:12px; padding:0 18px}
+  .contact-wrap{padding:0 18px}
+  .contact-form, .contact-info{grid-template-columns:minmax(0,1fr)}
+  .contact-submit{justify-self:stretch}
+  .contact-map-frame{height:300px}
+}
+@media (prefers-reduced-motion:reduce){ .contact-submit, .contact-socials a{transition:none} }
 </style>
 </head>
 <body>
 <a class="skip" href="#contenido" data-i18n="skip">Ir al contenido</a>
-<main id="contenido">
-  <!-- Encabezado y navegación compartidos con index.html -->
-  <section class="site-card contact-site-header" aria-label="Sociedad Italiana de Socorros Mutuos">
-    <section class="intro" aria-label="Navegación principal">
-      <nav class="navigation" aria-label="Navegación principal">
-        <button class="nav-tab" type="button" data-section="inicio" aria-label="Inicio"><span data-label="inicio"><img src="img/logo.png" class="icon-logo" alt="Logo de la Sociedad Italiana"></span></button>
-        <button class="nav-tab" type="button" data-section="historia" aria-pressed="false"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M8 7h8M8 11h8"/></svg><span data-label="historia">Historia</span></button>
-        <button class="nav-tab" type="button" data-section="consulado" aria-pressed="false"><svg class="nav-icon nav-icon--consulate" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-6 9 6"/><path d="M4 10h16M5 10v9M9 10v9M15 10v9M19 10v9M3 21h18M2 19h20"/></svg><span data-label="consulado">Consulado</span></button>
-        <button class="nav-tab" type="button" data-section="cultura" aria-pressed="false"><svg class="nav-icon nav-icon--culture" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11"/><path d="M8 12h8M8 15h8M9 20v-2a3 3 0 0 1 6 0v2"/></svg><span data-label="cultura">Cultura</span></button>
-        <button class="nav-tab" type="button" data-section="colabora" aria-pressed="false"><svg class="nav-icon nav-icon--collab" viewBox="0 0 24 24" aria-hidden="true"><path d="m11 17 2 2a2 2 0 0 0 3-1l1-1"/><path d="m8 14 5 5a2 2 0 0 0 3-1"/><path d="m3 11 5-5 4 1 2-1 7 5-7 7a2 2 0 0 1-3 0l-3-3"/><path d="m3 11-1-1 5-5 3 1M21 11l2-2-5-4-3 1"/></svg><span data-i18n="navCollab">Colaborá</span></button>
-        <div class="languages" aria-label="Idioma"><button class="language" type="button" data-lang="it" aria-label="Italiano">It</button><button class="language other" type="button" data-lang="en" aria-label="English">En</button><button class="language active" type="button" data-lang="es" aria-label="Español" aria-pressed="true">Es</button></div>
-      </nav>
-    </section>
-  </section>
+<!-- Menú principal del sitio (franja común de css/base.css) -->
+<header class="menu-sitio">
+  <nav class="navigation" aria-label="Navegación principal" data-sitio="menu" data-pagina="contacto"></nav>
+  <script src="js/sitio.js"></script>
+</header>
 
-  <nav class="contact-breadcrumb" aria-label="Migas de pan"><ol><li><a href="index.html">Inicio</a></li><li aria-current="page">Contacto</li></ol></nav>
+<main id="contenido">
+
+  <nav class="contact-breadcrumb" aria-label="Migas de pan" data-t-attr="aria-label:ct-a-migas"><ol><li><a href="index.html" data-t="ct-pag-1">Inicio</a></li><li aria-current="page" data-t="ct-pag-2">Contacto</li></ol></nav>
 
   <div class="contact-page">
     <div class="contact-wrap">
       <section class="contact-hero" aria-labelledby="contact-title">
-        <div class="contact-hero-copy">
-          <p class="contact-eyebrow">Estamos para escucharte</p>
-          <h1 id="contact-title">Ponte en contacto <em> <strong>con nosotros</strong></em></h1>
-        </section>
+        <p class="eyebrow" data-t="ct-pag-3">Estamos para escucharte</p>
+        <h1 id="contact-title" data-t="ct-pag-4">Ponete en contacto <em>con nosotros</em></h1>
+      </section>
 
-      <section class="contact-main" aria-label="Formulario e información de contacto">
+      <section class="contact-main" aria-label="Formulario e información de contacto" data-t-attr="aria-label:ct-a-formulario">
         <div class="contact-panel">
-          <p class="contact-eyebrow">Tu mensaje</p>
-          <h2>Escribinos</h2>
-          <p class="contact-panel-intro">Completá el formulario y prepararemos un correo con tus datos para que puedas revisarlo antes de enviarlo.</p>
+          <p class="eyebrow" data-t="ct-pag-5">Tu mensaje</p>
+          <h2 data-t="ct-pag-6">Escribinos</h2>
+          <p class="contact-panel-intro" data-t="ct-pag-7">Completá el formulario y prepararemos un correo con tus datos para que puedas revisarlo antes de enviarlo.</p>
           <form class="contact-form" id="contact-form">
-            <label>Nombre completo<input name="nombre" autocomplete="name" required placeholder="Tu nombre y apellido"></label>
-            <label>Correo electrónico<input name="email" type="email" autocomplete="email" required placeholder="nombre@ejemplo.com"></label>
-            <label>Teléfono <span aria-hidden="true">(opcional)</span><input name="telefono" type="tel" autocomplete="tel" placeholder="Tu número de teléfono"></label>
-            <label>Tipo de consulta<select name="categoria" required><option value="" selected disabled>Seleccioná una categoría</option><option>General</option><option>Trámites / Consulado</option><option>Socios</option><option>Aportes y colaboración</option><option>Cultura y actividades</option><option>Otro</option></select></label>
-            <label class="full">Asunto<input name="asunto" required placeholder="¿Sobre qué querés consultarnos?"></label>
-            <label class="full">Mensaje<textarea name="mensaje" required minlength="10" placeholder="Escribí tu mensaje aquí..."></textarea></label>
-            <p class="contact-small full">Este formulario no envía datos a un servidor. Al presionar el botón, se abrirá tu aplicación de correo con el mensaje preparado para que confirmes el envío.</p>
-            <button class="contact-submit full" type="submit">Preparar mensaje <span aria-hidden="true">↗</span></button>
+            <label><span data-t="ct-pag-8">Nombre completo</span><input name="nombre" autocomplete="name" required placeholder="Tu nombre y apellido" data-t-attr="placeholder:ct-a-nombre"></label>
+            <label><span data-t="ct-pag-9">Correo electrónico</span><input name="email" type="email" autocomplete="email" required placeholder="nombre@ejemplo.com" data-t-attr="placeholder:ct-a-correo"></label>
+            <label><span data-t="ct-pag-10">Teléfono <span aria-hidden="true">(opcional)</span></span><input name="telefono" type="tel" autocomplete="tel" placeholder="Tu número de teléfono" data-t-attr="placeholder:ct-a-telefono"></label>
+            <label><span data-t="ct-pag-11">Tipo de consulta</span><select name="categoria" required><option value="" selected disabled data-t="ct-pag-12">Seleccioná una categoría</option><option data-t="ct-pag-13">General</option><option data-t="ct-pag-14">Trámites / Consulado</option><option data-t="ct-pag-15">Socios</option><option data-t="ct-pag-16">Aportes y colaboración</option><option data-t="ct-pag-17">Cultura y actividades</option><option data-t="ct-pag-18">Otro</option></select></label>
+            <label class="full"><span data-t="ct-pag-19">Asunto</span><input name="asunto" required placeholder="¿Sobre qué querés consultarnos?" data-t-attr="placeholder:ct-a-asunto"></label>
+            <label class="full"><span data-t="ct-pag-20">Mensaje</span><textarea name="mensaje" required minlength="10" placeholder="Escribí tu mensaje aquí..." data-t-attr="placeholder:ct-a-mensaje"></textarea></label>
+            <p class="contact-small full" data-t="ct-pag-21">Este formulario no envía datos a un servidor. Al presionar el botón, se abrirá tu aplicación de correo con el mensaje preparado para que confirmes el envío.</p>
+            <button class="contact-submit full" type="submit" data-t="ct-pag-22">Preparar mensaje <span aria-hidden="true">↗</span></button>
             <p class="contact-status full" id="contact-status" aria-live="polite"></p>
           </form>
         </div>
 
-        <aside class="contact-info" aria-label="Horarios y redes sociales">
+        <aside class="contact-info" aria-label="Horarios y redes sociales" data-t-attr="aria-label:ct-a-datos">
           <section class="contact-info-card">
-            <h3>Horarios de atención</h3>
-            <p>No tenemos horarios verificados cargados en este sitio. Antes de acercarte, escribinos para confirmar la atención presencial y telefónica.</p>
-            <div class="contact-hours"><span>Atención presencial</span><span>Consultar</span><span>Atención telefónica</span><span>Consultar</span></div>
-            <p>Dirección: Belgrano 664, Gálvez, Santa Fe.</p>
+            <h3 data-t="ct-pag-23">Horarios de atención</h3>
+            <p data-t="ct-pag-24">No tenemos horarios verificados cargados en este sitio. Antes de acercarte, escribinos para confirmar la atención presencial y telefónica.</p>
+            <div class="contact-hours"><span data-t="ct-pag-25">Atención presencial</span><span data-t="ct-pag-26">Consultar</span><span data-t="ct-pag-27">Atención telefónica</span><span data-t="ct-pag-28">Consultar</span></div>
+            <p data-t="ct-pag-29">Dirección: Belgrano 664, Gálvez, Santa Fe.</p>
           </section>
-          <section class="contact-info-card">
-            <h3>Conectá con nosotros</h3>
-            <p>Seguinos en nuestras redes para conocer las novedades, actividades y propuestas culturales.</p>
+          <section class="contact-info-card contact-info-card--redes">
+            <h3 data-t="ct-pag-30">Conectá con nosotros</h3>
+            <p data-t="ct-pag-31">Seguinos en nuestras redes para conocer las novedades, actividades y propuestas culturales.</p>
             <div class="contact-socials">
               <a href="https://www.facebook.com/TeatroMarconiGalvezItaliaUnida/?locale=es_LA" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h4V4h-4a5 5 0 0 0-5 5v3H6v4h3v4h4v-4h4l1-4h-5V9a1 1 0 0 1 1-1Z"/></svg>Facebook</a>
               <a href="https://www.instagram.com/sociedaditalianagalvez/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>Instagram</a>
@@ -140,41 +147,35 @@
       </section>
 
       <section class="contact-map" aria-labelledby="contact-map-title">
-        <div class="contact-map-head"><div><p class="contact-eyebrow">Cómo llegar</p><h2 id="contact-map-title">Encontranos en Gálvez</h2></div><p>Belgrano 664 · Gálvez, Santa Fe</p></div>
-        <div class="contact-map-frame"><iframe src="https://www.google.com/maps?q=Belgrano+664%2C+G%C3%A1lvez%2C+Santa+Fe%2C+Argentina&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación de la Sociedad Italiana, Belgrano 664, Gálvez"></iframe></div>
+        <div class="contact-map-head"><div><p class="eyebrow" data-t="ct-pag-34">Cómo llegar</p><h2 id="contact-map-title" data-t="ct-pag-35">Encontranos en Gálvez</h2></div><p>Belgrano 664 · Gálvez, Santa Fe</p></div>
+        <div class="contact-map-frame"><iframe src="https://www.google.com/maps?q=Belgrano+664%2C+G%C3%A1lvez%2C+Santa+Fe%2C+Argentina&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación de la Sociedad Italiana, Belgrano 664, Gálvez" data-t-attr="title:ct-a-mapa"></iframe></div>
       </section>
     </div>
   </div>
 </main>
 
 <!-- Footer compartido con index.html -->
-<footer class="foot">
-  <div class="foot-in">
-    <div class="foot-grid">
-      <div><p class="foot-logo" data-i18n="orgName">Sociedad Italiana de Socorros Mutuos</p><p class="foot-sub" data-i18n="footAbout">Trabajamos desde hace generaciones por la comunidad ítalo-argentina.</p></div>
-      <div><h4 data-i18n="fNav">Navegación</h4><ul><li><a href="historia.html" data-i18n="fHist">Historia</a></li><li><a href="consulado.html" data-i18n="fCons">Consulado y voto</a></li><li><a href="cultura.html" data-i18n="fCult">Cultura italiana</a></li><li><a href="index.html#noticias" data-i18n="fNews">Noticias</a></li><li><a href="nosotros.html" data-i18n="fAbout">Sobre nosotros</a></li></ul></div>
-      <div><h4 data-i18n="fContact">Contacto</h4><ul><li data-i18n="fAddress">Belgrano 664, Gálvez, Santa Fe</li><li data-i18n="fPhone">Teléfono: consultar por correo</li><li><a href="mailto:contacto@sociedad.org.ar">contacto@sociedad.org.ar</a></li></ul></div>
-      <div><h4 data-i18n="fFollow">Seguinos</h4><ul><li><a href="https://www.facebook.com/TeatroMarconiGalvezItaliaUnida/?locale=es_LA" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/sociedaditalianagalvez/" target="_blank" rel="noopener">Instagram</a></li><li><a href="sugerencias.html" data-i18n="fSugg">Dejá una sugerencia</a></li></ul></div>
-    </div>
-    <div class="copy"><span data-i18n="copy">© 2026 Sociedad Italiana de Socorros Mutuos. Todos los derechos reservados.</span></div>
-  </div>
-</footer>
+<footer class="foot" data-sitio="pie"></footer>
+<!-- Traducciones al italiano y al inglés (el español es el de esta página) -->
+<script src="js/i18n/contacto.js"></script>
 <script>
 // El sitio no dispone de backend de formularios: se prepara un correo para que la persona lo revise y lo envíe.
+// Las etiquetas del correo y el aviso siguen el idioma elegido (js/i18n/contacto.js).
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault();
   if (!this.reportValidity()) return;
+  const t = clave => (window.Sitio ? Sitio.t(clave) : clave);
   const data = new FormData(this);
-  const subject = encodeURIComponent('Contacto web - ' + data.get('asunto'));
+  const subject = encodeURIComponent(t('correoAsunto') + ' - ' + data.get('asunto'));
   const body = encodeURIComponent(
-    'Nombre: ' + data.get('nombre') + '\n' +
-    'Correo: ' + data.get('email') + '\n' +
-    'Teléfono: ' + (data.get('telefono') || 'No indicado') + '\n' +
-    'Categoría: ' + data.get('categoria') + '\n' +
-    'Asunto: ' + data.get('asunto') + '\n\n' +
-    'Mensaje:\n' + data.get('mensaje')
+    t('correoNombre') + ': ' + data.get('nombre') + '\n' +
+    t('correoCorreo') + ': ' + data.get('email') + '\n' +
+    t('correoTelefono') + ': ' + (data.get('telefono') || t('correoSinTelefono')) + '\n' +
+    t('correoCategoria') + ': ' + data.get('categoria') + '\n' +
+    t('correoTema') + ': ' + data.get('asunto') + '\n\n' +
+    t('correoMensaje') + ':\n' + data.get('mensaje')
   );
-  document.getElementById('contact-status').textContent = 'Se abrirá tu aplicación de correo. Revisá el destinatario y el contenido antes de enviar.';
+  document.getElementById('contact-status').textContent = t('estadoEnviado');
   window.location.href = 'mailto:contacto@sociedad.org.ar?subject=' + subject + '&body=' + body;
 });
 </script>

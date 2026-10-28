@@ -2,15 +2,16 @@
    Página Historia · se carga después de css/sitio.css
    ─────────────────────────────────────────────────────────── */
 .pagina-historia{
-  /* Verdes de la narración: suben hasta el apogeo, se apagan en el declive y vuelven */
+  /* Verdes de la narración: suben hasta el apogeo, se apagan en el declive y vuelven.
+     El más claro es el verde oscuro de la portada (css/base.css); los demás son variantes más hondas. */
   --h-noche:#0a2e20;
   --h-bosque:#0d3b2a;
   --h-musgo:#114a31;
-  --h-verde:#02753a;
+  --h-verde:var(--s-verde-oscuro);
   --h-gris:#2b3a32;
-  --h-hoja:#0d5f35;
+  --h-hoja:#17513a;
   --h-menta:#cfe6d6;
-  --h-ambar:#e7c66b;
+  --h-ambar:var(--s-dorado);
   --h-texto:#ecede4;
   background:var(--h-noche); color:var(--crema);
 }
@@ -25,10 +26,10 @@
 /* ── Banner de la página ─────────────────────────────── */
 .portada-historia{
   position:relative; overflow:hidden; display:flex; align-items:center;
-  min-height:calc(100vh - 68px); min-height:calc(100svh - 68px);
+  min-height:calc(100vh - var(--alto-menu)); min-height:calc(100svh - var(--alto-menu));
   padding-block:clamp(64px,9vw,120px) clamp(104px,11vw,140px);
   background:
-    radial-gradient(900px 600px at 80% 12%, rgba(42,154,95,.26), transparent 65%),
+    radial-gradient(900px 600px at 80% 12%, rgba(57,125,82,.34), transparent 65%),
     linear-gradient(180deg,var(--h-bosque) 0%,var(--h-noche) 100%);
 }
 .capa-fondo{position:absolute; inset:0; color:var(--crema); pointer-events:none}
@@ -128,7 +129,7 @@ sup a:focus-visible{outline:2px solid var(--h-ambar)}
 /* Información a completar */
 .pendiente{
   max-width:58ch; margin-top:28px; padding:18px 20px;
-  border:1px dashed rgba(231,198,107,.7); border-radius:6px; background:rgba(0,0,0,.16);
+  border:1px dashed rgba(231,198,107,.7); border-radius:var(--s-radio); background:rgba(0,0,0,.16);
   font-size:14px; line-height:1.6; color:var(--h-texto);
 }
 .pendiente .pendiente-titulo{
@@ -143,7 +144,7 @@ sup a:focus-visible{outline:2px solid var(--h-ambar)}
 /* ── Fotografías ─────────────────────────────────────── */
 .foto{position:relative; margin:0}
 .foto-ventana{
-  position:relative; overflow:hidden; aspect-ratio:3/2; border-radius:4px;
+  position:relative; overflow:hidden; aspect-ratio:3/2; border-radius:var(--s-radio-chico);
   background:#1b2a22; box-shadow:0 30px 60px -30px rgba(0,0,0,.65);
 }
 .foto--vertical .foto-ventana{aspect-ratio:4/5}
@@ -207,7 +208,7 @@ sup a:focus-visible{outline:2px solid var(--h-ambar)}
 .comparador{
   --pos:50%;
   position:relative; overflow:hidden; aspect-ratio:16/9; margin-top:clamp(40px,6vw,72px);
-  border-radius:6px; background:#1b2a22; box-shadow:0 30px 70px -30px rgba(0,0,0,.6); user-select:none;
+  border-radius:var(--s-radio); background:#1b2a22; box-shadow:0 30px 70px -30px rgba(0,0,0,.6); user-select:none;
 }
 .comparador-capa{position:absolute; inset:0}
 .comparador-capa > img{display:block; width:100%; height:100%; object-fit:cover}
@@ -221,7 +222,7 @@ sup a:focus-visible{outline:2px solid var(--h-ambar)}
 }
 .comparador-mango svg{width:22px; height:22px}
 .comparador-etiqueta{
-  position:absolute; top:16px; padding:7px 12px; border-radius:999px; background:rgba(10,46,32,.8); pointer-events:none;
+  position:absolute; top:16px; padding:7px 12px; border-radius:var(--s-radio-chico); background:rgba(10,46,32,.8); pointer-events:none;
   font:700 11px/1 var(--sans); letter-spacing:.18em; text-transform:uppercase;
 }
 .comparador-etiqueta--antes{left:16px}
@@ -257,7 +258,7 @@ sup a:focus-visible{outline:2px solid var(--h-ambar)}
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px;
   min-width:52px; min-height:56px; padding:8px 10px 10px;
   background:var(--crema); color:var(--h-bosque); text-decoration:none;
-  border-radius:0 0 14px 14px; box-shadow:0 10px 24px -8px rgba(0,0,0,.5);
+  border-radius:0 0 var(--s-radio) var(--s-radio); box-shadow:0 10px 24px -8px rgba(0,0,0,.5);
   font:700 10px/1 var(--sans); letter-spacing:.14em; text-transform:uppercase;
   transform:translateY(-110%); visibility:hidden;
   transition:transform .3s ease, visibility 0s linear .3s, background .2s ease;

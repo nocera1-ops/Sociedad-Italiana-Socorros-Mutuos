@@ -1,0 +1,55 @@
+/* ───────────────────────────────────────────────────────────
+   Portada de index.html · «Piazza metafísica»
+   Arcadas racionalistas como las del Palazzo della Civiltà Italiana
+   (el «Colosseo quadrato» de Roma), sol bajo y sombras largas al modo
+   de De Chirico. La ilustración es un SVG dentro de index.html: se
+   escala sin recortar el edificio y el cielo y la piazza se extienden
+   para llenar el recuadro. Se carga después de styles.css.
+   ─────────────────────────────────────────────────────────── */
+.portada{
+  display:grid; grid-template-columns:minmax(0,50.6fr) minmax(0,49.4fr); gap:clamp(16px,2vw,28px);
+  min-height:100vh; min-height:100svh; padding:16px 16px 16px 20px; background:var(--s-marfil);
+}
+.portada-texto{display:flex; flex-direction:column; min-width:0}
+/* El menú queda por encima del resto de la portada, para que su desplegable no quede tapado. */
+.portada .navigation{position:relative; z-index:3}
+.portada-contenido{margin-top:auto; padding:48px 6px 6px 2px}
+.portada-volanta{
+  display:flex; align-items:center; gap:12px; margin:0 0 22px;
+  font:700 12px/1.2 var(--s-fuente-texto); letter-spacing:.22em; text-transform:uppercase; color:var(--s-verde-oscuro);
+}
+.portada-volanta::before{content:""; width:40px; height:1px; background:currentColor}
+.portada-titulo{
+  margin:0; color:var(--s-tinta);
+  font:400 clamp(54px,7.4vw,106px)/.86 Georgia,"Times New Roman",serif; letter-spacing:-.045em;
+}
+.portada-titulo .r{color:var(--s-rojo)}
+.portada-titulo .v{color:var(--s-verde)}
+.portada-pie{
+  display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:end; gap:24px;
+  margin-top:34px; padding-top:20px; border-top:1px solid var(--s-linea);
+}
+.portada-bajada{margin:0; max-width:40ch; font-size:clamp(14px,1.15vw,16px); line-height:1.6}
+.portada-boton{
+  display:inline-flex; align-items:center; gap:10px; height:44px; padding:0 18px;
+  border:0; border-radius:var(--s-radio); background:var(--s-verde-oscuro); color:#fffdf3;
+  font:500 13px/1 var(--s-fuente-menu); white-space:nowrap; cursor:pointer; transition:background-color .2s ease;
+}
+.portada-boton:hover{background:var(--s-verde)}
+.portada-boton:focus-visible{outline:2px solid var(--s-rojo); outline-offset:3px}
+.portada-escena{position:relative; overflow:hidden; min-height:420px; border-radius:var(--s-radio); background:#f2f4d7}
+.portada-escena svg{position:absolute; inset:0; width:100%; height:100%}
+
+/* Tabletas y celulares: el texto primero y la ilustración debajo. */
+@media (max-width:860px){
+  .portada{grid-template-columns:minmax(0,1fr); min-height:0; padding:12px 10px 10px}
+  .portada-contenido{padding-top:56px}
+  .portada-escena{min-height:0; aspect-ratio:4/3}
+}
+@media (max-width:600px){
+  .portada-pie{grid-template-columns:minmax(0,1fr)}
+  .portada-boton{justify-self:start}
+  .portada-titulo{font-size:clamp(50px,15.5vw,72px)}
+  .portada-escena{aspect-ratio:1/1}
+}
+@media (prefers-reduced-motion:reduce){ .portada-boton{transition:none} }

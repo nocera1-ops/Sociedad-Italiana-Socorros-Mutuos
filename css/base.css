@@ -1,0 +1,147 @@
+/* ───────────────────────────────────────────────────────────
+   Base común de todas las páginas: paleta, menú, selector de idioma y pie.
+   Se carga antes que la hoja propia de cada página (styles.css o css/sitio.css).
+   El menú y el pie los arma js/sitio.js.
+   ─────────────────────────────────────────────────────────── */
+:root{
+  /* Paleta del sitio (la de la portada) */
+  --s-verde:#397d52;
+  --s-verde-oscuro:#205c3e;
+  --s-verde-suave:#e2e9cb;
+  --s-rojo:#d8543f;
+  --s-rojo-oscuro:#B8323A;
+  --s-marfil:#f2f4d7;
+  --s-papel:#F4F1EA;
+  --s-dorado:#E8C36A;
+  --s-mostaza:#D9A23A;
+  --s-tinta:#242629;
+  --s-linea:rgba(39,55,39,.36);
+  --s-pie:#17251d;
+  /* Esquinas (como las de Historia y Cultura): chicas para piezas internas y etiquetas,
+     comunes para botones, pestañas, tarjetas y campos, grandes para contenedores que agrupan otros. */
+  --s-radio-chico:4px;
+  --s-radio:6px;
+  --s-radio-grande:8px;
+  --s-fuente-menu:Inter,"Avenir Next",Avenir,"Segoe UI",Arial,sans-serif;
+  --s-fuente-texto:"DM Sans",Arial,sans-serif;
+  --s-fuente-titulos:"Playfair Display",Georgia,serif;
+}
+
+/* ── Menú principal ──────────────────────────────────── */
+/* El menú se adapta al espacio que tiene (en la portada ocupa media pantalla; en las demás, todo el ancho). */
+.navigation{container:menu / inline-size; font-family:var(--s-fuente-menu)}
+.menu-pestanas{display:flex; align-items:flex-start; gap:4px; white-space:nowrap}
+.nav-tab{
+  position:relative; display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  height:45px; min-width:0; padding:0 13px;
+  border:1px solid var(--s-linea); border-radius:var(--s-radio); background:transparent; color:var(--s-tinta);
+  font-family:inherit; font-size:clamp(10px,.85vw,12px); font-weight:450; line-height:1; text-decoration:none; cursor:pointer;
+  transition:background-color .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
+}
+.nav-tab::after{content:""; position:absolute; left:12px; right:12px; bottom:0; height:2px; border-radius:2px; background:transparent}
+.nav-tab--inicio{flex:0 1 86px; min-width:54px; padding-inline:8px}
+.nav-tab--historia{flex:1 1 132px}
+.nav-tab--consulado{flex:1 1 148px}
+.nav-tab--cultura{flex:1 1 124px}
+.nav-tab--colabora{flex:1 1 140px; color:#fff; background-color:var(--s-rojo-oscuro); border-color:var(--s-rojo-oscuro); font-weight:650}
+.nav-tab:hover{border-color:var(--s-verde); background:rgba(225,254,211,.48)}
+.nav-tab--colabora:not(.active):hover{border-color:#962830; background:#962830}
+.nav-tab:active{transform:translateY(1px)}
+.nav-tab.active{color:#fffdf3; background:var(--s-tinta); border-color:var(--s-tinta)}
+.nav-tab.active::after{background:var(--s-rojo)}
+.nav-tab:focus-visible{outline:2px solid var(--s-rojo); outline-offset:3px}
+.nav-icon{width:20px; height:20px; flex:0 0 20px}
+.nav-tab--consulado .nav-icon{width:22px; height:22px; flex-basis:22px}
+.nav-tab--cultura .nav-icon{width:24px; height:24px; flex-basis:24px}
+.nav-tab--colabora .nav-icon{width:25px; height:25px; flex-basis:25px}
+.icon-logo{display:block; width:30px; height:30px}
+
+/* Con espacio de sobra, las secciones van en la misma fila y el botón «Menú» no se ve. */
+.menu-opciones{display:contents}
+.menu-boton{
+  display:none; align-items:center; gap:8px;
+  height:45px; padding:0 15px 0 12px;
+  border:1px solid var(--s-linea); border-radius:var(--s-radio); background:transparent; color:var(--s-tinta);
+  font:600 13px/1 var(--s-fuente-menu); letter-spacing:.02em; cursor:pointer;
+  transition:background-color .18s ease, color .18s ease, border-color .18s ease;
+}
+.menu-boton:hover{border-color:var(--s-verde); background:rgba(225,254,211,.48)}
+.menu-boton[aria-expanded="true"]{color:#fffdf3; background:var(--s-tinta); border-color:var(--s-tinta)}
+.menu-boton:focus-visible{outline:2px solid var(--s-rojo); outline-offset:3px}
+.menu-boton-icono{width:20px; height:20px; flex:none}
+.menu-boton[aria-expanded="true"] .menu-boton-icono--abrir,
+.menu-boton[aria-expanded="false"] .menu-boton-icono--cerrar{display:none}
+
+/* Selector de idioma: mismo borde y altura que las pestañas */
+.idiomas{
+  display:flex; flex:0 0 auto; align-items:stretch; gap:2px;
+  height:45px; margin-left:clamp(10px,1.6vw,24px); padding:3px;
+  border:1px solid var(--s-linea); border-radius:var(--s-radio);
+}
+.idioma{
+  min-width:30px; padding:0 7px; border:0; border-radius:var(--s-radio-chico); background:transparent; color:var(--s-tinta);
+  font-family:inherit; font-size:11px; font-weight:600; letter-spacing:.08em; cursor:pointer;
+  transition:background-color .18s ease, color .18s ease;
+}
+.idioma:hover{background:rgba(225,254,211,.7)}
+.idioma[aria-pressed="true"]{background:var(--s-tinta); color:#fffdf3}
+.idioma:focus-visible{outline:2px solid var(--s-rojo); outline-offset:2px}
+
+/* Poco espacio: sin íconos. Muy poco: una barra con el logo, el botón «Menú» y los idiomas;
+   las secciones se despliegan debajo, sobre el contenido de la página. */
+@container menu (max-width:640px){ .nav-icon{display:none} }
+@container menu (max-width:600px){
+  .menu-pestanas{position:relative; align-items:center; gap:6px}
+  .nav-tab--inicio{flex:0 0 56px}
+  .menu-boton{display:inline-flex}
+  .idiomas{margin-left:auto}
+  .menu-opciones{
+    position:absolute; top:calc(100% + 8px); left:0; right:0; z-index:10;
+    display:none; flex-direction:column; gap:6px; padding:8px;
+    background:var(--s-marfil); border:1px solid var(--s-linea); border-radius:var(--s-radio-grande);
+    box-shadow:0 24px 48px -22px rgba(20,35,25,.55);
+  }
+  .menu-abierto .menu-opciones{display:flex; animation:menu-baja .18s ease-out}
+  .menu-opciones .nav-tab{flex:none; justify-content:flex-start; gap:12px; height:48px; padding:0 16px; font-size:15px}
+  .menu-opciones .nav-tab::after{left:16px; right:auto; width:28px}
+  .menu-opciones .nav-icon{display:block}
+}
+@keyframes menu-baja{from{opacity:0; transform:translateY(-6px)} to{opacity:1; transform:none}}
+
+/* ── Franja del menú en las páginas internas ─────────── */
+/* <header class="menu-sitio"> con el <nav> adentro (Historia, Cultura, Consulado, Contacto). */
+:root{--alto-menu:82px}
+.menu-sitio{position:relative; z-index:5; min-height:var(--alto-menu); padding:16px clamp(14px,3vw,42px) 0; background:var(--s-marfil)}
+.menu-sitio:focus{outline:none}
+@media (max-width:600px){
+  :root{--alto-menu:70px}
+  .menu-sitio{padding:12px 10px 0}
+}
+
+/* ── Pie ─────────────────────────────────────────────── */
+.foot{
+  color:#e9efe9; background:var(--s-pie); border-top:6px solid var(--s-mostaza);
+  font-family:var(--s-fuente-texto); line-height:1.6;
+}
+.foot-in{max-width:1240px; margin:0 auto; padding:72px 28px 32px}
+.foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1.2fr 1fr; gap:40px}
+.foot-logo{margin:0 0 14px; color:#fff; font:500 27px/1.2 var(--s-fuente-titulos)}
+.foot-sub{margin:0; color:#b9c5bd; font-size:15px}
+.foot h2{margin:0 0 16px; color:var(--s-dorado); font:700 13px/1.6 var(--s-fuente-texto); letter-spacing:.16em; text-transform:uppercase}
+.foot ul{display:grid; gap:12px; margin:0; padding:0; list-style:none}
+.foot li{display:flex; align-items:center; gap:10px; font-size:15px}
+.foot li > svg{width:18px; height:18px; flex:none}
+.foot a{color:#e9efe9; text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.foot a:focus-visible{outline:2px solid var(--s-dorado); outline-offset:3px}
+.foot-notas{margin-top:40px; color:#b9c5bd; font-size:13px}
+.foot-notas p{margin:0}
+.foot-notas a{text-decoration:underline}
+.copy{margin-top:56px; padding-top:24px; border-top:1px solid #ffffff26; color:#b9c5bd; font-size:12px; letter-spacing:.1em; text-transform:uppercase; text-align:center}
+@media (max-width:1000px){ .foot-grid{grid-template-columns:1fr 1fr} }
+@media (max-width:600px){ .foot-grid{grid-template-columns:1fr} .copy{text-align:left} }
+
+@media (prefers-reduced-motion:reduce){
+  .nav-tab,.idioma,.menu-boton{transition:none}
+  .menu-abierto .menu-opciones{animation:none}
+}
