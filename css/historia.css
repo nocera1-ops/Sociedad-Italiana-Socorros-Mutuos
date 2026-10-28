@@ -2,15 +2,16 @@
    Página Historia · se carga después de css/sitio.css
    ─────────────────────────────────────────────────────────── */
 .pagina-historia{
-  /* Verdes de la narración: suben hasta el apogeo, se apagan en el declive y vuelven */
+  /* Verdes de la narración: suben hasta el apogeo, se apagan en el declive y vuelven.
+     El más claro es el verde oscuro de la portada (css/base.css); los demás son variantes más hondas. */
   --h-noche:#0a2e20;
   --h-bosque:#0d3b2a;
   --h-musgo:#114a31;
-  --h-verde:#02753a;
+  --h-verde:var(--s-verde-oscuro);
   --h-gris:#2b3a32;
-  --h-hoja:#0d5f35;
+  --h-hoja:#17513a;
   --h-menta:#cfe6d6;
-  --h-ambar:#e7c66b;
+  --h-ambar:var(--s-dorado);
   --h-texto:#ecede4;
   background:var(--h-noche); color:var(--crema);
 }
@@ -28,7 +29,7 @@
   min-height:calc(100vh - var(--alto-menu)); min-height:calc(100svh - var(--alto-menu));
   padding-block:clamp(64px,9vw,120px) clamp(104px,11vw,140px);
   background:
-    radial-gradient(900px 600px at 80% 12%, rgba(42,154,95,.26), transparent 65%),
+    radial-gradient(900px 600px at 80% 12%, rgba(57,125,82,.34), transparent 65%),
     linear-gradient(180deg,var(--h-bosque) 0%,var(--h-noche) 100%);
 }
 .capa-fondo{position:absolute; inset:0; color:var(--crema); pointer-events:none}

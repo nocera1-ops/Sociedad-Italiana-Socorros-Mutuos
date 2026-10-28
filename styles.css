@@ -1,13 +1,12 @@
+/* Los colores de la paleta salen de css/base.css (--s-*), que se carga antes. */
 :root{
-  --paper:#F4F1EA; --ink:#18231F; --green:#1E7F55; --gold:#E8C36A; --mustard:#D9A23A;
-  --red:#B8323A; --footer:#10231C; --muted:#4f5a55; --line:#cdc7b8; --white:#fff;
-  --focus:#0045c4; --cream: #f2f4d7;
-  --ink: #242629;
-  --italian-green: #397d52;
-  --deep-green: #205c3e;
-  --italian-red: #d8543f;
-  --line: rgba(39, 55, 39, .36);
-  --soft-green: #e2e9cb;
+  --paper:var(--s-papel); --ink:var(--s-tinta); --green:#1E7F55; --gold:var(--s-dorado); --mustard:var(--s-mostaza);
+  --red:var(--s-rojo-oscuro); --footer:#10231C; --muted:#4f5a55; --line:var(--s-linea); --white:#fff;
+  --focus:#0045c4; --cream:var(--s-marfil);
+  --italian-green:var(--s-verde);
+  --deep-green:var(--s-verde-oscuro);
+  --italian-red:var(--s-rojo);
+  --soft-green:var(--s-verde-suave);
 }
 
 *{box-sizing:border-box}
@@ -383,7 +382,7 @@ body {
 
 /* ===== Correcciones de legibilidad y distribución (octubre 2026) ===== */
 :root {
-  --ivory: #f2f4d7;
+  --ivory: var(--s-marfil);
 }
 
 /* El panel inicial ocupa el alto de la ventana y conserva el fondo uniforme. */
