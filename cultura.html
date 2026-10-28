@@ -19,7 +19,7 @@
   .arco > svg, .arco > img{display:block; width:100%; height:100%; object-fit:cover}
   .pill{
     position:absolute; left:6%; bottom:7%; margin:0; padding:12px 20px;
-    background:var(--crema); border-radius:999px; box-shadow:0 6px 18px rgba(0,0,0,.14);
+    background:var(--crema); border-radius:var(--s-radio); box-shadow:0 6px 18px rgba(0,0,0,.14);
     font:700 11px/1 var(--sans); letter-spacing:.2em; text-transform:uppercase;
   }
   @media (min-width:860px){
@@ -56,7 +56,7 @@
   .list{width:100%; display:flex; flex-wrap:wrap; gap:6px; justify-content:center}
   .list button{
     font:600 12.5px/1 var(--sans); color:var(--verde-oscuro); cursor:pointer;
-    padding:7px 11px; border-radius:999px; border:1px solid rgba(57,125,82,.45); background:transparent;
+    padding:7px 11px; border-radius:var(--s-radio); border:1px solid rgba(57,125,82,.45); background:transparent;
     transition:background .15s ease, color .15s ease, border-color .15s ease;
   }
   .list button:hover{background:rgba(57,125,82,.12)}
@@ -105,10 +105,10 @@
 
   /* Recetas */
   .recetas{list-style:none; margin:0; padding:0; display:grid; gap:12px}
-  .receta{display:flex; flex-direction:column; gap:6px; padding:16px 16px 18px; background:#fff; border:1px solid #e6e3dc; border-radius:4px}
+  .receta{display:flex; flex-direction:column; gap:6px; padding:16px 16px 18px; background:#fff; border:1px solid #e6e3dc; border-radius:var(--s-radio)}
   .receta-top{display:flex; align-items:center; justify-content:space-between; gap:8px}
   .receta-num{font:italic 400 26px/1 var(--serif); color:var(--verde)}
-  .receta-tipo{white-space:nowrap; padding:6px 9px; border-radius:999px; background:var(--crema); color:var(--texto); font:700 10.5px/1 var(--sans); letter-spacing:.12em; text-transform:uppercase}
+  .receta-tipo{white-space:nowrap; padding:6px 9px; border-radius:var(--s-radio-chico); background:var(--crema); color:var(--texto); font:700 10.5px/1 var(--sans); letter-spacing:.12em; text-transform:uppercase}
   .receta-nombre{margin:6px 0 0; font:500 19px/1.2 var(--serif); color:var(--rojo-oscuro)}
   .receta-origen{display:flex; align-items:center; gap:5px; margin:0; font-size:12.5px; color:var(--texto)}
   .receta-origen svg{width:13px; height:13px; flex:none}
@@ -133,10 +133,10 @@
   .libro-meta{margin:3px 0 0; font-size:12px; color:var(--texto)}
 
   /* Música */
-  .player{padding:16px; border-radius:6px; background:#0b0b0b; color:#f2f2f2}
+  .player{padding:16px; border-radius:var(--s-radio); background:#0b0b0b; color:#f2f2f2}
   .player-head{display:flex; align-items:center; gap:12px; padding-bottom:14px; border-bottom:1px solid rgba(255,255,255,.12)}
   .player-cover{
-    display:grid; place-items:center; flex:none; width:52px; height:52px; border-radius:4px; color:#0b0b0b;
+    display:grid; place-items:center; flex:none; width:52px; height:52px; border-radius:var(--s-radio-chico); color:#0b0b0b;
     background:linear-gradient(90deg,var(--verde) 0 33.3%,var(--crema) 33.3% 66.6%,var(--rojo) 66.6%);
   }
   .player-cover svg{width:22px; height:22px}
@@ -145,7 +145,7 @@
   .pistas{list-style:none; margin:8px 0 0; padding:0}
   .pista{
     display:grid; grid-template-columns:20px minmax(0,1fr) 30px; align-items:center; gap:10px;
-    padding:10px 6px; border-radius:4px; color:inherit; text-decoration:none;
+    padding:10px 6px; border-radius:var(--s-radio-chico); color:inherit; text-decoration:none;
   }
   .pista:hover{background:rgba(255,255,255,.08)}
   .pista:focus-visible{outline:2px solid #fff; outline-offset:-2px}
@@ -173,7 +173,7 @@
   .sugerencias .lead{color:rgba(244,241,233,.82)}
   .sug-head{max-width:640px; margin-bottom:clamp(36px,5vw,64px)}
   .sug-grid{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
-  .sug-card{display:flex; flex-direction:column; overflow:hidden; border-radius:6px; background:var(--crema); color:var(--tinta)}
+  .sug-card{display:flex; flex-direction:column; overflow:hidden; border-radius:var(--s-radio); background:var(--crema); color:var(--tinta)}
   .sug-media{display:grid; grid-template-columns:2fr 1fr; grid-template-rows:1fr 1fr; gap:4px; aspect-ratio:4/3; padding:4px}
   .sug-media > :first-child{grid-row:1 / span 2}
   .sug-media > *, .galeria > *{width:100%; height:100%; min-height:0; object-fit:cover; border-radius:3px}

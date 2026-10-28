@@ -17,6 +17,11 @@
   --s-tinta:#242629;
   --s-linea:rgba(39,55,39,.36);
   --s-pie:#17251d;
+  /* Esquinas (como las de Historia y Cultura): chicas para piezas internas y etiquetas,
+     comunes para botones, pestañas, tarjetas y campos, grandes para contenedores que agrupan otros. */
+  --s-radio-chico:4px;
+  --s-radio:6px;
+  --s-radio-grande:8px;
   --s-fuente-menu:Inter,"Avenir Next",Avenir,"Segoe UI",Arial,sans-serif;
   --s-fuente-texto:"DM Sans",Arial,sans-serif;
   --s-fuente-titulos:"Playfair Display",Georgia,serif;
@@ -29,7 +34,7 @@
 .nav-tab{
   position:relative; display:inline-flex; align-items:center; justify-content:center; gap:8px;
   height:45px; min-width:0; padding:0 13px;
-  border:1px solid var(--s-linea); border-radius:14px; background:transparent; color:var(--s-tinta);
+  border:1px solid var(--s-linea); border-radius:var(--s-radio); background:transparent; color:var(--s-tinta);
   font-family:inherit; font-size:clamp(10px,.85vw,12px); font-weight:450; line-height:1; text-decoration:none; cursor:pointer;
   transition:background-color .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
 }
@@ -56,7 +61,7 @@
 .menu-boton{
   display:none; align-items:center; gap:8px;
   height:45px; padding:0 15px 0 12px;
-  border:1px solid var(--s-linea); border-radius:14px; background:transparent; color:var(--s-tinta);
+  border:1px solid var(--s-linea); border-radius:var(--s-radio); background:transparent; color:var(--s-tinta);
   font:600 13px/1 var(--s-fuente-menu); letter-spacing:.02em; cursor:pointer;
   transition:background-color .18s ease, color .18s ease, border-color .18s ease;
 }
@@ -71,10 +76,10 @@
 .idiomas{
   display:flex; flex:0 0 auto; align-items:stretch; gap:2px;
   height:45px; margin-left:clamp(10px,1.6vw,24px); padding:3px;
-  border:1px solid var(--s-linea); border-radius:14px;
+  border:1px solid var(--s-linea); border-radius:var(--s-radio);
 }
 .idioma{
-  min-width:30px; padding:0 7px; border:0; border-radius:10px; background:transparent; color:var(--s-tinta);
+  min-width:30px; padding:0 7px; border:0; border-radius:var(--s-radio-chico); background:transparent; color:var(--s-tinta);
   font-family:inherit; font-size:11px; font-weight:600; letter-spacing:.08em; cursor:pointer;
   transition:background-color .18s ease, color .18s ease;
 }
@@ -93,7 +98,7 @@
   .menu-opciones{
     position:absolute; top:calc(100% + 8px); left:0; right:0; z-index:10;
     display:none; flex-direction:column; gap:6px; padding:8px;
-    background:var(--s-marfil); border:1px solid var(--s-linea); border-radius:18px;
+    background:var(--s-marfil); border:1px solid var(--s-linea); border-radius:var(--s-radio-grande);
     box-shadow:0 24px 48px -22px rgba(20,35,25,.55);
   }
   .menu-abierto .menu-opciones{display:flex; animation:menu-baja .18s ease-out}

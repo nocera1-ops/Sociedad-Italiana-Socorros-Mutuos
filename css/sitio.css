@@ -55,7 +55,7 @@ body{
 .saltar{
   position:absolute; left:12px; top:-60px; z-index:100; padding:10px 16px;
   background:var(--crema); color:var(--tinta); font-weight:700; text-decoration:none;
-  border-radius:0 0 6px 6px; transition:top .15s ease;
+  border-radius:0 0 var(--s-radio) var(--s-radio); transition:top .15s ease;
 }
 .saltar:focus{top:0}
 .menu-sitio{position:relative; z-index:5; min-height:var(--alto-menu); padding:16px clamp(14px,3vw,42px) 0; background:var(--s-marfil)}

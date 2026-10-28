@@ -32,12 +32,12 @@
 .portada-bajada{margin:0; max-width:40ch; font-size:clamp(14px,1.15vw,16px); line-height:1.6}
 .portada-boton{
   display:inline-flex; align-items:center; gap:10px; height:44px; padding:0 18px;
-  border:0; border-radius:6px; background:var(--s-verde-oscuro); color:#fffdf3;
+  border:0; border-radius:var(--s-radio); background:var(--s-verde-oscuro); color:#fffdf3;
   font:500 13px/1 var(--s-fuente-menu); white-space:nowrap; cursor:pointer; transition:background-color .2s ease;
 }
 .portada-boton:hover{background:var(--s-verde)}
 .portada-boton:focus-visible{outline:2px solid var(--s-rojo); outline-offset:3px}
-.portada-escena{position:relative; overflow:hidden; min-height:420px; border-radius:6px; background:#f2f4d7}
+.portada-escena{position:relative; overflow:hidden; min-height:420px; border-radius:var(--s-radio); background:#f2f4d7}
 .portada-escena svg{position:absolute; inset:0; width:100%; height:100%}
 
 /* Tabletas y celulares: el texto primero y la ilustración debajo. */
