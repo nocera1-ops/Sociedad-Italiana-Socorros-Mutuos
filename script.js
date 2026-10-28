@@ -23,6 +23,7 @@ const I18N = {
     worksEyebrow: "Nuestros proyectos",
     worksTitle: "¿En qué estamos trabajando?",
     worksSub: "Para lograr la habilitación de la galería y el microcine, la nueva gestión lleva adelante obras de infraestructura fundamental:",
+    workNum: "N.º",
     mapEyebrow: "Encontranos", mapTitle: "Dónde estamos",
     supportEyebrow: "Sumate a la red", supportTitle: "Apoyanos",
     supportDonateTitle: "Aportá", supportDonateText: "No importa el monto: tu donación hace una diferencia real para nosotros.", supportDonateBtn: "Donar",
@@ -51,6 +52,7 @@ const I18N = {
     worksEyebrow: "Our projects",
     worksTitle: "What are we working on?",
     worksSub: "To open the gallery and the microcinema, the new leadership is carrying out essential infrastructure works:",
+    workNum: "No.",
     mapEyebrow: "Find us", mapTitle: "Where we are",
     supportEyebrow: "Join the network", supportTitle: "Support us",
     supportDonateTitle: "Donate", supportDonateText: "No matter the amount, your donation makes a real difference for us.", supportDonateBtn: "Donate",
@@ -79,6 +81,7 @@ const I18N = {
     worksEyebrow: "I nostri progetti",
     worksTitle: "A cosa stiamo lavorando?",
     worksSub: "Per l'apertura della galleria e del microcinema, la nuova gestione sta portando avanti lavori di infrastruttura fondamentali:",
+    workNum: "N.",
     mapEyebrow: "Dove siamo", mapTitle: "Dove ci troviamo",
     supportEyebrow: "Entra nella rete", supportTitle: "Sostienici",
     supportDonateTitle: "Dona", supportDonateText: "Qualsiasi sia la cifra, la tua donazione fa davvero la differenza per noi.", supportDonateBtn: "Dona",
@@ -209,15 +212,19 @@ function renderSocial(){
 function renderWorks(){
   const worksGrid = $("#works-grid");
   if (!worksGrid) return;
-  worksGrid.innerHTML = WORKS.map(w => `
-    <article class="ticket">
-      <div class="t-stub">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${WORK_ICONS[w.icon]}</svg>
-        <span>${L(w.label)}</span>
-      </div>
-      <div class="t-body">
-        <h3>${L(w.title)}</h3>
-        <p>${L(w.text)}</p>
+  // Cada obra es una entrada de teatro: talón con ícono y número, línea de corte y cuerpo.
+  worksGrid.innerHTML = WORKS.map((w, i) => `
+    <article class="ticket ticket--${w.icon}">
+      <div class="t-papel">
+        <div class="t-stub" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${WORK_ICONS[w.icon]}</svg>
+          <span class="t-num">${t("workNum")} ${String(i + 1).padStart(2, "0")}</span>
+        </div>
+        <div class="t-body">
+          <p class="t-label">${L(w.label)}</p>
+          <h3>${L(w.title)}</h3>
+          <p>${L(w.text)}</p>
+        </div>
       </div>
     </article>`).join("");
 }

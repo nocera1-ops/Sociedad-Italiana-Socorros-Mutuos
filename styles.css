@@ -293,36 +293,46 @@ body {
 .works .eyebrow{color:var(--red);margin-bottom:18px}
 .works-sub{max-width:640px;margin:18px 0 40px;color:var(--muted);font-size:15px;line-height:1.65}
 
+/* Cada obra es una entrada de teatro: talón con ícono y número, línea de corte punteada
+   con muescas arriba y abajo, y el cuerpo con la etiqueta, el título y el texto.
+   La sombra va en .ticket y la forma (máscara) en .t-papel, para que la máscara no la recorte. */
 .tickets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 24px;align-items:stretch}
 .ticket{
-  position:relative;isolation:isolate;display:flex;min-width:0;min-height:160px;
-  padding:7px 0;background:#f8f1d9;border:1px solid #c5b58a;
-  border-radius:3px;box-shadow:0 3px 8px #382d1917;
-  overflow:hidden;
-  /* Perforaciones circulares laterales típicas de una entrada impresa. */
-  clip-path:polygon(0 0,100% 0,100% 43%,98.5% 45%,98.5% 48%,100% 50%,98.5% 52%,98.5% 55%,100% 57%,100% 100%,0 100%,0 57%,1.5% 55%,1.5% 52%,0 50%,1.5% 48%,1.5% 45%,0 43%);
+  --talon:78px;--muesca:9px;--papel:#f8f1d9;--fondo-talon:#e6d59e;--tinta-talon:#55462b;--corte:rgba(72,59,37,.55);
+  display:flex;min-width:0;
+  filter:drop-shadow(0 1px 1px rgba(56,45,25,.14)) drop-shadow(0 8px 14px rgba(56,45,25,.1));
+  transition:transform .2s ease;
 }
-.ticket::before,.ticket::after{content:"";position:absolute;z-index:0;top:9px;bottom:9px;width:12px;pointer-events:none;opacity:.55;background:radial-gradient(circle at center,#8d805f 1px,transparent 1.5px) center top/12px 12px repeat-y}
-.ticket::before{left:5px}.ticket::after{right:5px}
-.t-stub{position:relative;z-index:1;width:68px;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:16px 0;border-right:2px dashed rgba(72,59,37,.42);background:rgba(221,210,174,.56)}
-.t-stub svg{width:26px;height:26px}
-.t-stub span{writing-mode:vertical-rl;transform:rotate(180deg);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;opacity:.8}
-.t-body{position:relative;z-index:1;flex:1;padding:18px 22px;display:flex;flex-direction:column;justify-content:center;gap:6px;min-width:0}
-.t-body h3{font:600 16px "DM Sans",Arial,sans-serif;margin:0;color:var(--ink)}
+.ticket:hover{transform:translateY(-3px)}
+.t-papel{
+  position:relative;display:flex;flex:1;min-width:0;min-height:160px;border-radius:6px;background:var(--papel);
+  -webkit-mask:radial-gradient(circle var(--muesca) at var(--talon) 0,#0000 97%,#000) top/100% 51% no-repeat,radial-gradient(circle var(--muesca) at var(--talon) 100%,#0000 97%,#000) bottom/100% 51% no-repeat;
+          mask:radial-gradient(circle var(--muesca) at var(--talon) 0,#0000 97%,#000) top/100% 51% no-repeat,radial-gradient(circle var(--muesca) at var(--talon) 100%,#0000 97%,#000) bottom/100% 51% no-repeat;
+}
+.t-papel::before{
+  content:"";position:absolute;z-index:1;left:calc(var(--talon) - 1px);top:calc(var(--muesca) + 6px);bottom:calc(var(--muesca) + 6px);width:2px;
+  background:radial-gradient(circle,var(--corte) 1px,transparent 1.3px) center top/2px 7px repeat-y;
+}
+.t-stub{
+  width:var(--talon);flex:none;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:14px;
+  padding:22px 0 20px;border-radius:6px 0 0 6px;background:var(--fondo-talon);color:var(--tinta-talon);
+}
+.t-stub svg{width:26px;height:26px;flex:none}
+.t-num{writing-mode:vertical-rl;transform:rotate(180deg);font:italic 400 19px/1 "Playfair Display",Georgia,serif;letter-spacing:.04em;white-space:nowrap}
+.t-body{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:20px 22px 20px 26px}
+.t-body .t-label{margin:0 0 2px;font:700 10.5px/1.2 "DM Sans",Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--tinta-talon)}
+.t-body h3{margin:0;font:500 20px/1.2 "Playfair Display",Georgia,serif;color:var(--ink)}
 .t-body p{margin:0;font-size:13.5px;line-height:1.55;color:#625a48}
-/* Talones en tonos de papel y tinta, sin filtros ni superposiciones. */
-.ticket:nth-child(6n+1){background:#f3e6b9;border-color:#bca66c}
-.ticket:nth-child(6n+2){background:#e7e6ce;border-color:#a9aa8d}
-.ticket:nth-child(6n+3){background:#ead6c7;border-color:#c4a18a}
-.ticket:nth-child(6n+4){background:#d7e7df;border-color:#91b5a5}
-.ticket:nth-child(6n+5){background:#f2d8ad;border-color:#cba976}
-.ticket:nth-child(6n+6){background:#dfe3d8;border-color:#aab19f}
-.ticket:nth-child(6n+1) .t-stub{background:#e6d59e;color:#55462b}
-.ticket:nth-child(6n+2) .t-stub{background:#d6d7bd;color:#4e503d}
-.ticket:nth-child(6n+3) .t-stub{background:#dfc0aa;color:#5b4033}
-.ticket:nth-child(6n+4) .t-stub{background:#bdd7cb;color:#31594b}
-.ticket:nth-child(6n+5) .t-stub{background:#e8c994;color:#634b2c}
-.ticket:nth-child(6n+6) .t-stub{background:#cbd2c3;color:#465044}
+/* Tonos de papel (se repiten cada seis entradas). */
+.ticket:nth-child(6n+1){--papel:#f3e6b9;--fondo-talon:#e6d59e;--tinta-talon:#55462b}
+.ticket:nth-child(6n+2){--papel:#e7e6ce;--fondo-talon:#d6d7bd;--tinta-talon:#4e503d}
+.ticket:nth-child(6n+3){--papel:#ead6c7;--fondo-talon:#dfc0aa;--tinta-talon:#5b4033}
+.ticket:nth-child(6n+4){--papel:#d7e7df;--fondo-talon:#bdd7cb;--tinta-talon:#31594b}
+.ticket:nth-child(6n+5){--papel:#f2d8ad;--fondo-talon:#e8c994;--tinta-talon:#634b2c}
+.ticket:nth-child(6n+6){--papel:#dfe3d8;--fondo-talon:#cbd2c3;--tinta-talon:#465044}
+/* «Tu aporte suma» no es una obra: talón rojo para distinguirla. */
+.ticket--aporte .t-stub{background:var(--red);color:#fff}
+.ticket--aporte .t-body .t-label{color:var(--red)}
 
 /* ===== Dónde estamos (mapa) ===== */
 /* ===== Apoyanos ===== */
@@ -385,6 +395,8 @@ body {
   .date-n{font-size:36px}
   .arr{width:44px;height:44px}
   .tickets{grid-template-columns:1fr}
+  .ticket{--talon:66px}
+  .t-body{padding:18px 18px 18px 22px}
   .support-in{padding:60px 20px 56px}
   .support-btn{width:100%;justify-content:center}
 }
