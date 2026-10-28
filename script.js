@@ -272,33 +272,7 @@ if (exploreBtn) {
   });
 }
 
-// Formulario de contacto (contacto.html): no hay servidor detrás, solo mostramos la confirmación en pantalla.
-function showContactState(state){
-  const card = $("#contact-card");
-  if (!card) return;
-  const foot = $("#contact-thanks-foot");
-  card.classList.toggle("is-thanks", state === "thanks");
-  document.querySelectorAll('[data-state="form"]').forEach(el => el.hidden = state !== "form");
-  document.querySelectorAll('[data-state="thanks"]').forEach(el => el.hidden = state !== "thanks");
-  if (foot) foot.hidden = state !== "thanks";
-}
-
-const contactForm = $("#contact-form");
-if (contactForm) {
-  contactForm.addEventListener("submit", e => {
-    e.preventDefault();
-    showContactState("thanks");
-    try { $("#contact-card").scrollIntoView({ behavior: "smooth", block: "center" }); } catch(_) {}
-  });
-}
-
-const ctAgain = $("#ct-again");
-if (ctAgain) {
-  ctAgain.addEventListener("click", () => {
-    contactForm.reset();
-    showContactState("form");
-  });
-}
+// El formulario de contacto (contacto.html) tiene su propio script en esa página.
 
 /* ===== Inicio: recordar el último idioma elegido ===== */
 try {

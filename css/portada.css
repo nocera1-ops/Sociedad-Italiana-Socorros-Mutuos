@@ -11,8 +11,8 @@
   min-height:100vh; min-height:100svh; padding:16px 16px 16px 20px; background:var(--s-marfil);
 }
 .portada-texto{display:flex; flex-direction:column; min-width:0}
-/* En la portada el menú va en el flujo de la columna (en las demás páginas de styles.css es absoluto). */
-.portada .navigation{position:relative; top:auto; left:auto; right:auto; z-index:3}
+/* El menú queda por encima del resto de la portada, para que su desplegable no quede tapado. */
+.portada .navigation{position:relative; z-index:3}
 .portada-contenido{margin-top:auto; padding:48px 6px 6px 2px}
 .portada-volanta{
   display:flex; align-items:center; gap:12px; margin:0 0 22px;

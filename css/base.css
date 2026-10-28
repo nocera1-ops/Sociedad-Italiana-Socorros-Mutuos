@@ -108,6 +108,16 @@
 }
 @keyframes menu-baja{from{opacity:0; transform:translateY(-6px)} to{opacity:1; transform:none}}
 
+/* ── Franja del menú en las páginas internas ─────────── */
+/* <header class="menu-sitio"> con el <nav> adentro (Historia, Cultura, Consulado, Contacto). */
+:root{--alto-menu:82px}
+.menu-sitio{position:relative; z-index:5; min-height:var(--alto-menu); padding:16px clamp(14px,3vw,42px) 0; background:var(--s-marfil)}
+.menu-sitio:focus{outline:none}
+@media (max-width:600px){
+  :root{--alto-menu:70px}
+  .menu-sitio{padding:12px 10px 0}
+}
+
 /* ── Pie ─────────────────────────────────────────────── */
 .foot{
   color:#e9efe9; background:var(--s-pie); border-top:6px solid var(--s-mostaza);

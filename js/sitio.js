@@ -16,6 +16,14 @@
    El idioma elegido se guarda en localStorage («lang»), se indica en
    <html lang> y se avisa con el evento «sitio:idioma» para que cada
    página traduzca su propio contenido.
+
+   Contenido de cada página: el español está en el HTML. Los textos
+   traducibles llevan data-t="clave" (y data-t-attr="atributo:clave;…"
+   para atributos como aria-label o placeholder); las traducciones van en
+   js/i18n/<página>.js, que define window.SITIO_TRADUCCIONES =
+   { es:{…}, it:{…}, en:{…} } y se carga al final del <body>. En «es» solo
+   van los textos que arma JavaScript. Si falta una clave, queda el español.
+   Para esos textos armados por JavaScript: Sitio.t("clave", { valor }).
    ─────────────────────────────────────────────────────────── */
 (() => {
   "use strict";
@@ -169,20 +177,54 @@
     document.querySelectorAll("[data-idioma]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.idioma === idioma)));
   }
 
+  /* ── Contenido de la página ───────────────────────── */
+  const originales = new WeakMap();                 // español original de cada texto y atributo
+  const textos = () => window.SITIO_TRADUCCIONES || {};
+  const tituloOriginal = document.title;
+
+  // Traducción de una clave para los textos que arma JavaScript; {nombre} se reemplaza por valores[nombre].
+  function t(clave, valores){
+    const tx = textos(), propio = tx[idioma] && tx[idioma][clave];
+    let texto = propio != null ? propio : (tx.es && tx.es[clave] != null ? tx.es[clave] : clave);
+    if (valores) texto = texto.replace(/\{(\w+)\}/g, (m, k) => (valores[k] != null ? valores[k] : m));
+    return texto;
+  }
+
+  function traducirContenido(){
+    const tx = idioma === "es" ? null : textos()[idioma];
+    document.querySelectorAll("[data-t]").forEach(el => {
+      if (!originales.has(el)) { if (!tx) return; originales.set(el, el.innerHTML); }
+      const nuevo = tx && tx[el.dataset.t] != null ? tx[el.dataset.t] : originales.get(el);
+      if (el.innerHTML !== nuevo) el.innerHTML = nuevo;
+    });
+    document.querySelectorAll("[data-t-attr]").forEach(el => {
+      el.dataset.tAttr.split(";").forEach(par => {
+        const [attr, clave] = par.split(":").map(s => s.trim());
+        if (!attr || !clave) return;
+        const guardados = originales.get(el) || {};
+        if (!(attr in guardados)) { if (!tx) return; guardados[attr] = el.getAttribute(attr); originales.set(el, guardados); }
+        el.setAttribute(attr, tx && tx[clave] != null ? tx[clave] : guardados[attr]);
+      });
+    });
+    // La portada traduce su título desde script.js; acá solo las páginas con traducciones propias.
+    if (window.SITIO_TRADUCCIONES) document.title = tx && tx.titulo ? tx.titulo : tituloOriginal;
+  }
+
   function cambiarIdioma(nuevo){
     if (!IDIOMAS.includes(nuevo)) return;
     idioma = nuevo;
     try { localStorage.setItem("lang", nuevo); } catch (_) {}
     traducir();
+    traducirContenido();
     document.dispatchEvent(new CustomEvent("sitio:idioma", { detail: { idioma: nuevo } }));
   }
 
-  window.Sitio = { get idioma(){ return idioma; }, cambiarIdioma };
+  window.Sitio = { get idioma(){ return idioma; }, cambiarIdioma, t };
 
-  // El menú se arma enseguida (este script va justo después de él); el pie, cuando termina de cargar la página.
+  // El menú se arma enseguida (este script va justo después de él); el pie y el contenido, cuando termina de cargar la página.
   document.querySelectorAll('[data-sitio="menu"]').forEach(armarMenu);
   traducir();
-  const alCargar = () => { document.querySelectorAll('[data-sitio="pie"]').forEach(armarPie); traducir(); };
+  const alCargar = () => { document.querySelectorAll('[data-sitio="pie"]').forEach(armarPie); traducir(); traducirContenido(); };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", alCargar);
   else alCargar();
 })();

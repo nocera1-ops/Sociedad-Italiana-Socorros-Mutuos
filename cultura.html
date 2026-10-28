@@ -224,7 +224,7 @@
   <symbol id="i-img" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M4 18l5-5 4 4 3-3 4 4"/></g></symbol>
 </svg>
 
-<a class="saltar" href="#cultura">Ir al contenido</a>
+<a class="saltar" href="#cultura" data-t="c-pag-1">Ir al contenido</a>
 <!-- Menú principal del sitio (el mismo de index.html y consulado.html) -->
 <header class="menu-sitio" id="inicio" tabindex="-1">
   <nav class="navigation" aria-label="Navegación principal" data-sitio="menu" data-pagina="cultura"></nav>
@@ -239,7 +239,7 @@
       <figure class="intro-media">
         <div class="arco">
           <!-- Ilustración decorativa. Para usar una fotografía, reemplazar este <svg> por <img src="..." alt="...">. -->
-          <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de una calle italiana: fachadas con persianas verdes y la bandera de Italia en un balcón">
+          <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de una calle italiana: fachadas con persianas verdes y la bandera de Italia en un balcón" data-t-attr="aria-label:c-a-ilustracion">
             <defs>
               <linearGradient id="g-cielo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8cfd6"/><stop offset=".75" stop-color="#ece4d3"/></linearGradient>
               <pattern id="p-palazzo" x="100" y="96" width="52" height="70" patternUnits="userSpaceOnUse">
@@ -301,14 +301,14 @@
             <rect x="0" y="452" width="400" height="3" fill="#9e8a6e"/>
           </svg>
         </div>
-        <p class="pill">20 regiones, una cultura</p>
+        <p class="pill" data-t="c-pag-2">20 regiones, una cultura</p>
       </figure>
 
       <div>
-        <p class="eyebrow">Cultura italiana</p>
-        <h1 class="titulo" id="intro-titulo">Sabores, letras y música <em>de cada región.</em></h1>
-        <p class="lead">Italia son veinte regiones con identidad propia. Esta sección propone recorrerlas en un mapa interactivo y descubrir, en cada una, sus recetas típicas, los libros que la cuentan y la música que la acompaña.</p>
-        <a class="cta" href="#mapa">Explorar el mapa <svg aria-hidden="true"><use href="#i-pin"/></svg></a>
+        <p class="eyebrow" data-t="c-pag-3">Cultura italiana</p>
+        <h1 class="titulo" id="intro-titulo" data-t="c-pag-4">Sabores, letras y música <em>de cada región.</em></h1>
+        <p class="lead" data-t="c-pag-5">Italia son veinte regiones con identidad propia. Esta sección propone recorrerlas en un mapa interactivo y descubrir, en cada una, sus recetas típicas, los libros que la cuentan y la música que la acompaña.</p>
+        <a class="cta" href="#mapa"><span data-t="c-pag-6">Explorar el mapa</span> <svg aria-hidden="true"><use href="#i-pin"/></svg></a>
       </div>
     </div>
   </section>
@@ -317,22 +317,22 @@
   <section class="explorador" id="mapa" aria-labelledby="mapa-titulo">
     <div class="contenedor">
       <header class="explorador-head">
-        <p class="eyebrow">Mapa interactivo</p>
-        <h2 class="titulo titulo--sm" id="mapa-titulo">Un clic, <em>una región.</em></h2>
-        <p class="lead">Toca una región del mapa (o elige su nombre en la lista) para ver sus recetas, libros y música.</p>
+        <p class="eyebrow" data-t="c-mapa-1">Mapa interactivo</p>
+        <h2 class="titulo titulo--sm" id="mapa-titulo" data-t="c-mapa-2">Un clic, <em>una región.</em></h2>
+        <p class="lead" data-t="c-mapa-3">Toca una región del mapa (o elige su nombre en la lista) para ver sus recetas, libros y música.</p>
       </header>
 
       <div class="explorador-grid">
         <div class="mapa-col">
           <div class="map-wrap">
-            <svg id="svg-map" viewBox="0 0 2657.2 3130.6" xmlns="http://www.w3.org/2000/svg" aria-label="Mapa de las regiones de Italia"></svg>
+            <svg id="svg-map" viewBox="0 0 2657.2 3130.6" xmlns="http://www.w3.org/2000/svg" aria-label="Mapa de las regiones de Italia" data-t-attr="aria-label:c-a-mapa"></svg>
           </div>
           <p class="map-hint" id="map-hint" aria-hidden="true">Toca una región para explorarla</p>
           <div class="legend">
-            <span><i class="swatch" style="background:var(--rojo)"></i>Región seleccionada</span>
-            <span><i class="swatch" style="background:var(--verde)"></i>Otras regiones</span>
+            <span data-t="c-mapa-5"><i class="swatch" style="background:var(--rojo)"></i>Región seleccionada</span>
+            <span data-t="c-mapa-6"><i class="swatch" style="background:var(--verde)"></i>Otras regiones</span>
           </div>
-          <div class="list" id="list" role="group" aria-label="Elegir región por nombre"></div>
+          <div class="list" id="list" role="group" aria-label="Elegir región por nombre" data-t-attr="aria-label:c-a-lista"></div>
           <noscript><p>Activa JavaScript para usar el mapa interactivo.</p></noscript>
         </div>
 
@@ -343,9 +343,9 @@
               <p class="panel-meta" id="panel-meta"></p>
             </div>
             <div class="panel-nav">
-              <button type="button" class="nav-btn" data-paso="-1" aria-label="Región anterior"><svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
+              <button type="button" class="nav-btn" data-paso="-1" aria-label="Región anterior" data-t-attr="aria-label:c-a-anterior"><svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
               <span class="panel-pos" id="panel-pos"></span>
-              <button type="button" class="nav-btn" data-paso="1" aria-label="Región siguiente"><svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
+              <button type="button" class="nav-btn" data-paso="1" aria-label="Región siguiente" data-t-attr="aria-label:c-a-siguiente"><svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
             </div>
           </header>
           <div class="panel-body" id="panel-body"></div>
@@ -361,9 +361,9 @@
   <section class="sugerencias" aria-labelledby="sug-titulo">
     <div class="contenedor">
       <header class="sug-head">
-        <p class="eyebrow">Más cultura</p>
-        <h2 class="titulo titulo--sm" id="sug-titulo">Historias, curiosidades <em>y arte.</em></h2>
-        <p class="lead">Nuevos espacios para seguir descubriendo Italia y su vínculo con Gálvez, contados con muchas imágenes.</p>
+        <p class="eyebrow" data-t="c-pag-7">Más cultura</p>
+        <h2 class="titulo titulo--sm" id="sug-titulo" data-t="c-pag-8">Historias, curiosidades <em>y arte.</em></h2>
+        <p class="lead" data-t="c-pag-9">Nuevos espacios para seguir descubriendo Italia y su vínculo con Gálvez, contados con muchas imágenes.</p>
       </header>
 
       <div class="sug-grid">
@@ -374,9 +374,9 @@
             <div class="ph ph--c" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
           </div>
           <div class="sug-body">
-            <div class="sug-meta"><span class="sug-num">01</span><span class="sug-tag">Historia local</span></div>
-            <h3>Inmigrantes italianos en Gálvez</h3>
-            <p>La historia de las familias italianas que llegaron a Gálvez, contada a través de relatos, fotografías y documentos.</p>
+            <div class="sug-meta"><span class="sug-num">01</span><span class="sug-tag" data-t="c-pag-10">Historia local</span></div>
+            <h3 data-t="c-pag-11">Inmigrantes italianos en Gálvez</h3>
+            <p data-t="c-pag-12">La historia de las familias italianas que llegaron a Gálvez, contada a través de relatos, fotografías y documentos.</p>
           </div>
         </article>
 
@@ -387,9 +387,9 @@
             <div class="ph" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
           </div>
           <div class="sug-body">
-            <div class="sug-meta"><span class="sug-num">02</span><span class="sug-tag">Curiosidades</span></div>
-            <h3>Datos curiosos de Italia</h3>
-            <p>Curiosidades sobre Italia, sus regiones y sus costumbres, en un formato breve y visual.</p>
+            <div class="sug-meta"><span class="sug-num">02</span><span class="sug-tag" data-t="c-pag-13">Curiosidades</span></div>
+            <h3 data-t="c-pag-14">Datos curiosos de Italia</h3>
+            <p data-t="c-pag-15">Curiosidades sobre Italia, sus regiones y sus costumbres, en un formato breve y visual.</p>
           </div>
         </article>
 
@@ -400,17 +400,17 @@
             <div class="ph ph--b" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
           </div>
           <div class="sug-body">
-            <div class="sug-meta"><span class="sug-num">03</span><span class="sug-tag">Arte</span></div>
-            <h3>Arte italiano</h3>
-            <p>Una selección visual del arte italiano: pintura, escultura y arquitectura.</p>
+            <div class="sug-meta"><span class="sug-num">03</span><span class="sug-tag" data-t="c-pag-16">Arte</span></div>
+            <h3 data-t="c-pag-17">Arte italiano</h3>
+            <p data-t="c-pag-18">Una selección visual del arte italiano: pintura, escultura y arquitectura.</p>
           </div>
         </article>
       </div>
 
       <div class="galeria-wrap">
         <div class="galeria-head">
-          <h3>Galería</h3>
-          <p>Fotografías e imágenes de Italia, su arte y la historia italiana de Gálvez.</p>
+          <h3 data-t="c-pag-19">Galería</h3>
+          <p data-t="c-pag-20">Fotografías e imágenes de Italia, su arte y la historia italiana de Gálvez.</p>
         </div>
         <div class="galeria">
           <div class="ph g-alta g-ancha" aria-hidden="true"><svg><use href="#i-img"/></svg></div>
@@ -433,6 +433,8 @@
   <p>Límites administrativos: <a href="https://github.com/openpolis/geojson-italy" target="_blank" rel="noopener">ISTAT / openpolis</a> (CC-BY), geometría simplificada.</p>
 </footer>
 
+<!-- Traducciones al italiano y al inglés (el español es el de esta página) -->
+<script src="js/i18n/cultura.js"></script>
 <script>
   // ───────────────────────────────────────────────────────────
   // REGIONES: geometría del mapa. El campo "url" es opcional: al
@@ -830,7 +832,6 @@
     }
   };
 
-  const GRUPOS = { north:"Norte", center:"Centro", south:"Sur", island:"Islas" };
   const REGION_INICIAL = "toscana";
   const SVG_NS = "http://www.w3.org/2000/svg";
 
@@ -853,10 +854,42 @@
   const icono = id => `<svg aria-hidden="true"><use href="#${id}"/></svg>`;
   const enlaceReal = url => Boolean(url) && !/example\.com/.test(url);
 
-  function mostrarPista(nombre){ hint.innerHTML = `Ver <strong>${esc(nombre)}</strong>`; }
+  // Idioma: el español está en REGIONES y CULTURA; las traducciones, en js/i18n/cultura.js
+  // (textos de la interfaz con Sitio.t y contenido de cada región en CULTURA_TRADUCCIONES).
+  const idioma = () => (window.Sitio ? Sitio.idioma : "es");
+  const tx = (clave, valores) => (window.Sitio ? Sitio.t(clave, valores) : clave);
+  const capa = id => { const t = window.CULTURA_TRADUCCIONES; return (idioma() !== "es" && t && t[idioma()] && t[idioma()][id]) || null; };
+  const nombreDe = reg => (capa(reg.id) && capa(reg.id).nombre) || reg.nombre;
+  const deLista = (prefijo, valor) => { const v = tx(prefijo + valor); return v === prefijo + valor ? valor : v; };  // tipos y géneros
+
+  // Datos de la región en el idioma actual (lo que no está traducido queda en español).
+  // En italiano e inglés los libros se muestran con su título original.
+  function datosDe(id){
+    const c = CULTURA[id], t = capa(id);
+    if (!t) return c;
+    return {
+      ...c,
+      capital: t.capital || c.capital,
+      recetas: c.recetas.map((rec, i) => ({ ...rec, ...(t.recetas && t.recetas[i]), tipo: deLista("tipo:", rec.tipo) })),
+      libros: c.libros.map(l => ({ ...l, titulo: l.original || l.titulo, original: null, genero: deLista("genero:", l.genero) })),
+      musica: c.musica.map((m, i) => ({ ...m, ...(t.musica && t.musica[i]) }))
+    };
+  }
+
+  function mostrarPista(nombre){ hint.innerHTML = tx("pistaVer", { r: esc(nombre) }); }
   function restaurarPista(){
     const reg = REGIONES.find(r => r.id === actual);
-    hint.innerHTML = reg ? `Región seleccionada: <strong>${esc(reg.nombre)}</strong>` : "Toca una región para explorarla";
+    hint.innerHTML = reg ? tx("pistaElegida", { r: esc(nombreDe(reg)) }) : tx("pistaInicial");
+  }
+
+  // Nombres de las regiones en el mapa y en la lista, en el idioma actual.
+  function nombrarRegiones(){
+    REGIONES.forEach(reg => {
+      const { path, chip } = elementos[reg.id], nombre = nombreDe(reg);
+      path.setAttribute("aria-label", nombre);
+      path.querySelector("title").textContent = nombre;
+      chip.textContent = nombre;
+    });
   }
 
   REGIONES.forEach(reg => {
@@ -875,8 +908,8 @@
     const elegir = () => seleccionar(reg.id, { desplazar:true });
     path.addEventListener("click", elegir);
     path.addEventListener("keydown", e => { if(e.key==="Enter"||e.key===" "){ e.preventDefault(); elegir(); } });
-    path.addEventListener("mouseenter", () => mostrarPista(reg.nombre));
-    path.addEventListener("focus", () => mostrarPista(reg.nombre));
+    path.addEventListener("mouseenter", () => mostrarPista(nombreDe(reg)));
+    path.addEventListener("focus", () => mostrarPista(nombreDe(reg)));
     path.addEventListener("mouseleave", restaurarPista);
     path.addEventListener("blur", restaurarPista);
     svg.appendChild(path);
@@ -908,7 +941,7 @@
         <span class="portada-titulo">${esc(l.titulo)}</span>
         <span class="portada-autor">${esc(l.autor)}</span>
       </div>
-      ${l.original ? `<p class="libro-original"><span class="sr-only">Título original: </span>${esc(l.original)}</p>` : ""}
+      ${l.original ? `<p class="libro-original"><span class="sr-only">${tx("tituloOriginal")}</span>${esc(l.original)}</p>` : ""}
       <p class="libro-meta">${esc(l.genero)} · ${esc(l.anio)}</p>
     </li>`;
 
@@ -918,37 +951,38 @@
         <span class="pista-num" aria-hidden="true">${i + 1}</span>
         <span><span class="pista-nombre">${esc(m.nombre)}</span><span class="pista-desc">${esc(m.desc)}</span></span>
         <span class="pista-play">${icono("i-play")}</span>
-        <span class="sr-only">(buscar en YouTube; se abre en una pestaña nueva)</span>
+        <span class="sr-only">${tx("buscarYoutube")}</span>
       </a>
     </li>`;
 
   function renderPanel(reg, c){
-    panelNombre.textContent = reg.nombre;
-    panelMeta.textContent = [c.it !== reg.nombre ? c.it : null, GRUPOS[reg.grupo], `Capital: ${c.capital}`].filter(Boolean).join(" · ");
+    const nombre = nombreDe(reg);
+    panelNombre.textContent = nombre;
+    panelMeta.textContent = [c.it !== nombre ? c.it : null, tx("grupo-" + reg.grupo), tx("capital", { c: c.capital })].filter(Boolean).join(" · ");
     panelPos.textContent = `${REGIONES.indexOf(reg) + 1} / ${REGIONES.length}`;
     panelBody.innerHTML = `
       <section class="bloque bloque-recetas" aria-labelledby="t-recetas">
-        <h4 class="bloque-titulo" id="t-recetas">${icono("i-plato")}Recetas</h4>
+        <h4 class="bloque-titulo" id="t-recetas">${icono("i-plato")}${tx("recetas")}</h4>
         <ol class="recetas">${c.recetas.map(recetaHTML).join("")}</ol>
       </section>
       <section class="bloque bloque-libros" aria-labelledby="t-libros">
-        <h4 class="bloque-titulo" id="t-libros">${icono("i-libro")}Libros</h4>
+        <h4 class="bloque-titulo" id="t-libros">${icono("i-libro")}${tx("libros")}</h4>
         <ul class="libros">${c.libros.map(libroHTML).join("")}</ul>
       </section>
       <section class="bloque bloque-musica" aria-labelledby="t-musica">
-        <h4 class="bloque-titulo" id="t-musica">${icono("i-nota")}Música</h4>
+        <h4 class="bloque-titulo" id="t-musica">${icono("i-nota")}${tx("musica")}</h4>
         <div class="player">
           <div class="player-head">
             <span class="player-cover">${icono("i-nota")}</span>
             <div>
-              <p class="player-titulo">Sonidos de ${esc(reg.nombre)}</p>
-              <p class="player-sub">${c.musica.length} propuestas · Escuchar en YouTube</p>
+              <p class="player-titulo">${tx("sonidos", { r: esc(nombre) })}</p>
+              <p class="player-sub">${tx("propuestas", { n: c.musica.length })}</p>
             </div>
           </div>
           <ol class="pistas">${c.musica.map(pistaHTML).join("")}</ol>
         </div>
       </section>
-      ${enlaceReal(reg.url) ? `<p class="panel-enlace"><a href="${esc(reg.url)}" target="_blank" rel="noopener">Más sobre ${esc(reg.nombre)}${icono("i-externo")}</a></p>` : ""}`;
+      ${enlaceReal(reg.url) ? `<p class="panel-enlace"><a href="${esc(reg.url)}" target="_blank" rel="noopener">${tx("masSobre", { r: esc(nombre) })}${icono("i-externo")}</a></p>` : ""}`;
 
     panelBody.classList.remove("is-fresh");
     void panelBody.offsetWidth;
@@ -972,10 +1006,10 @@
     path.setAttribute("aria-pressed", "true");
     chip.setAttribute("aria-pressed", "true");
 
-    renderPanel(reg, datos);
+    renderPanel(reg, datosDe(id));
     restaurarPista();
     if(anunciar){
-      panelEstado.textContent = `${reg.nombre}: ${datos.recetas.length} recetas, ${datos.libros.length} libros y ${datos.musica.length} propuestas musicales.`;
+      panelEstado.textContent = tx("estado", { r: nombreDe(reg), a: datos.recetas.length, b: datos.libros.length, c: datos.musica.length });
     }
     // En pantallas angostas el cuadro queda debajo del mapa: se lleva a la vista.
     if(desplazar && !escritorio.matches){
@@ -994,6 +1028,14 @@
     });
   });
 
+  // Al cambiar de idioma se traducen los nombres y se vuelve a armar el cuadro de la región elegida.
+  document.addEventListener("sitio:idioma", () => {
+    nombrarRegiones();
+    if(actual) renderPanel(REGIONES.find(r => r.id === actual), datosDe(actual));
+    restaurarPista();
+  });
+
+  nombrarRegiones();
   seleccionar(REGION_INICIAL, { anunciar:false });
 </script>
 

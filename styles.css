@@ -38,35 +38,6 @@ body {
   background: var(--ivory);
 }
 
-/* Full-viewport panel: deliberately no blurred or gradient background. */
-.site-card {
-  width: 100%;
-  height: 95svh;
-  min-height: 540px;
-  display: grid;
-  grid-template-columns: minmax(0, 50.6fr) minmax(0, 49.4fr);
-  gap: 0;
-  padding: 16px 10px 14px 4px;
-  overflow: hidden;
-  background: var(--ivory);
-}
-
-.intro {
-  position: relative;
-  min-width: 0;
-  min-height: 0;
-  background: var(--ivory);
-}
-
-/* Posición del menú dentro de la portada (su aspecto está en css/base.css) */
-.navigation {
-  position: absolute;
-  top: 2px;
-  left: 15px;
-  right: 10px;
-  z-index: 2;
-}
-
 .notice {
   position: absolute;
   left: 50%;
@@ -303,15 +274,6 @@ body {
   --ivory: var(--s-marfil);
 }
 
-/* El panel inicial ocupa el alto de la ventana y conserva el fondo uniforme. */
-.site-card {
-  height: 100vh;
-  height: 100svh;
-  min-height: 540px;
-  background: var(--ivory);
-}
-.intro { background: var(--ivory); }
-
 
 /* FIX: al haber una imagen como primer hijo, span:first-child no seleccionaba
    el título. Ahora texto y flecha siempre se pintan por encima de la foto. */
@@ -362,18 +324,6 @@ body {
 .cult > span[data-i18n] {
   font-weight: 600;
   text-shadow: 0 2px 14px rgba(0, 0, 0, .95);
-}
-
-@media (max-width: 760px) {
-  .site-card {
-    height: auto;
-    min-height: 100svh;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(600px, auto) minmax(55svh, auto);
-    padding: 10px 10px 10px 4px;
-    overflow: visible;
-  }
-  .intro { min-height: 600px; }
 }
 
 

@@ -48,22 +48,14 @@ body{
 .cta svg{width:18px; height:18px}
 .cta:hover, .cta:focus-visible{color:var(--verde-oscuro); border-color:var(--verde-oscuro)}
 
-/* ── Franja del menú ─────────────────────────────────────
-   El menú y el pie los arma js/sitio.js; su aspecto está en css/base.css.
-   Acá solo la franja que contiene el menú en Historia y Cultura. */
-:root{--alto-menu:82px}
+/* ── Enlace para saltar al contenido ─────────────────────
+   La franja del menú (.menu-sitio) está en css/base.css. */
 .saltar{
   position:absolute; left:12px; top:-60px; z-index:100; padding:10px 16px;
   background:var(--crema); color:var(--tinta); font-weight:700; text-decoration:none;
   border-radius:0 0 var(--s-radio) var(--s-radio); transition:top .15s ease;
 }
 .saltar:focus{top:0}
-.menu-sitio{position:relative; z-index:5; min-height:var(--alto-menu); padding:16px clamp(14px,3vw,42px) 0; background:var(--s-marfil)}
-.menu-sitio:focus{outline:none}
-@media (max-width:600px){
-  :root{--alto-menu:70px}
-  .menu-sitio{padding:12px 10px 0}
-}
 
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
