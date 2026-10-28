@@ -67,104 +67,6 @@ body {
   z-index: 2;
 }
 
-.description {
-  position: absolute;
-  top: 36.5%;
-  right: 18px;
-  width: min(250px, 49%);
-  margin: 0;
-  font-size: clamp(12px, 1.35vw, 16px);
-  font-weight: 400;
-  line-height: 1.58;
-  text-align: right;
-  letter-spacing: -.17px;
-  text-wrap: pretty;
-}
-
-.headline {
-  position: absolute;
-  left: 16px;
-  bottom: -2px;
-  margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(58px, 7.8vw, 92px);
-  font-weight: 400;
-  letter-spacing: -4.4px;
-  line-height: .855;
-  white-space: nowrap;
-}
-
-.accent-red { color: var(--italian-red); }
-.ink { color: var(--ink); }
-.accent-green { color: var(--italian-green); }
-
-.explore {
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  width: 152px;
-  height: 35px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border: 1px solid var(--deep-green);
-  border-radius: 10px;
-  color: #fffdf3;
-  background: var(--deep-green);
-  font-family: inherit;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1;
-  cursor: pointer;
-  transition: transform .18s ease, background-color .18s ease, border-color .18s ease;
-}
-
-.explore:hover { background: var(--italian-green); border-color: var(--italian-green); transform: translateY(-1px); }
-.arrow { font-size: 13px; transform: translateY(-1px); }
-
-.artwork {
-  position: relative;
-  min-width: 0;
-  min-height: 0;
-  overflow: hidden;
-  border-radius: 0 7px 7px 0;
-  background: #438052;
-}
-
-.artwork .hero-main {
-  position: relative;
-  z-index: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* Miniaturas superpuestas en diagonal sobre la imagen principal. */
-.artwork .hero-float {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  width: clamp(300px, 35.5vw, 400px);
-  height: clamp(200px, 31vw, 300px);
-  object-fit: cover;
-  border: 5px solid #f4f1ea;
-  border-radius: 3px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, .24);
-}
-.artwork .hero-float--top {
-  top: 18%;
-  left: 4%;
-  transform: rotate(-6deg);
-}
-.artwork .hero-float--bottom {
-  right: 2%;
-  bottom: 27%;
-  transform: rotate(5deg);
-}
-
 .notice {
   position: absolute;
   left: 50%;
@@ -186,11 +88,6 @@ body {
 }
 
 .notice.visible { opacity: 1; transform: translate(-50%, 0); }
-
-.explore:focus-visible {
-  outline: 2px solid var(--italian-red);
-  outline-offset: 3px;
-}
 
 .site-header{background:#fff;border-bottom:1px solid var(--line)}
 
@@ -415,9 +312,6 @@ body {
 }
 .intro { background: var(--ivory); }
 
-/* Subimos ligeramente el nombre institucional y el botón principal. */
-.headline { bottom: 16px; }
-.explore { bottom: 16px; }
 
 /* FIX: al haber una imagen como primer hijo, span:first-child no seleccionaba
    el título. Ahora texto y flecha siempre se pintan por encima de la foto. */
@@ -480,17 +374,6 @@ body {
     overflow: visible;
   }
   .intro { min-height: 600px; }
-  .artwork {
-    height: 55svh;
-    min-height: 360px;
-    border-radius: 7px;
-  }
-  .artwork .hero-float { width: clamp(145px, 36vw, 220px); height: clamp(118px, 29vw, 175px); border-width: 4px; }
-  .artwork .hero-float--top { left: 5%; top: 15%; }
-  .artwork .hero-float--bottom { right: 20%; bottom: 25%; }
-  .description { top: 29%; right: 14px; width: min(270px, 72%); }
-  .headline { left: 12px; bottom: 16px; font-size: clamp(48px, 10vw, 72px); letter-spacing: -3px; }
-  .explore { right: 12px; bottom: 16px; width: 132px; }
 }
 
 
@@ -730,10 +613,9 @@ body {
    Ejemplo de imagen: --news-bg-image: url("img/fondo-noticias.jpg");
    Ejemplo de color: --news-bg-color: #f2f4d7;
    Deja la imagen como none si solo quieres un color.
+   (La portada usa una ilustración propia: ver css/portada.css e index.html.)
 */
 :root {
-  --hero-bg-color: #438052;
-  --hero-bg-image: none;
   --access-bg-color: transparent;
   --access-bg-image: none;
   --social-bg-color: transparent;
@@ -746,12 +628,6 @@ body {
   --map-bg-image: none;
   --footer-bg-color: #17251d;
   --footer-bg-image: none;
-}
-.artwork {
-  background-color: var(--hero-bg-color);
-  background-image: var(--hero-bg-image);
-  background-size: cover;
-  background-position: center;
 }
 .access {
   background-color: var(--access-bg-color);
