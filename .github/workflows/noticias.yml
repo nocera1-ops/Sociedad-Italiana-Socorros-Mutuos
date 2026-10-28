@@ -1,0 +1,37 @@
+# Actualiza los titulares de la sección «Noticias» de la portada.
+# Corre dos veces por día y también se puede ejecutar a mano desde la pestaña Actions.
+name: Actualizar noticias
+
+on:
+  schedule:
+    - cron: "17 10,22 * * *"   # 07:17 y 19:17, hora de Argentina (UTC-3)
+  workflow_dispatch:
+
+permissions:
+  contents: write              # necesario para guardar js/noticias.js
+
+concurrency:
+  group: noticias
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Descargar titulares de Google News
+        run: python3 scripts/actualizar_noticias.py
+
+      - name: Guardar cambios
+        run: |
+          if git diff --quiet -- js/noticias.js; then
+            echo "Sin titulares nuevos."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/noticias.js
+          git commit -m "Actualizar noticias automáticas"
+          git push
