@@ -1,6 +1,6 @@
 /* Los colores de la paleta salen de css/base.css (--s-*), que se carga antes. */
 :root{
-  --paper:var(--s-papel); --ink:var(--s-tinta); --green:#1E7F55; --gold:var(--s-dorado); --mustard:var(--s-mostaza);
+  --paper:var(--s-papel); --ink:var(--s-tinta); --green:var(--s-verde-oscuro); --gold:var(--s-dorado); --mustard:var(--s-mostaza);
   --red:var(--s-rojo-oscuro); --footer:#10231C; --muted:#4f5a55; --line:var(--s-linea); --white:#fff;
   --focus:#0045c4; --cream:var(--s-marfil);
   --italian-green:var(--s-verde);
@@ -349,8 +349,8 @@ body {
 .support-col:first-child{border-left:none;padding-left:0}
 .support-col h3{font:500 italic clamp(22px,2.4vw,28px)/1.2 "Playfair Display",Georgia,serif;color:#fff;margin:0 0 18px}
 .support-col p{margin:0 0 26px;color:#eaf3ee;font-size:15px;line-height:1.6}
-.support-btn{display:inline-flex;align-items:center;min-height:50px;padding:12px 24px;border-radius:999px;background:var(--ink);color:var(--gold);font:700 14px "DM Sans",Arial,sans-serif;text-decoration:none}
-.support-btn:hover{background:#000}
+.support-btn{display:inline-flex;align-items:center;min-height:50px;padding:12px 24px;border-radius:6px;background:var(--ink);color:var(--gold);font:700 14px "DM Sans",Arial,sans-serif;text-decoration:none;transition:background-color .2s ease,color .2s ease}
+.support-btn:hover{background:var(--gold);color:var(--ink)}
 
 .map-sec{padding:100px 28px 20px}
 .map-sec .eyebrow{color:var(--green);margin-bottom:18px}
