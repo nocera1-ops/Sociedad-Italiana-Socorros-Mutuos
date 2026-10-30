@@ -1,48 +1,48 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-10-30T01:57+00:00",
+  "actualizado": "2026-10-30T16:41+00:00",
   "items": [
     {
-      "titulo": "Poner un billete debajo del plato de ñoquis el día 29: para qué sirve y por qué lo recomiendan",
-      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdFhwMkc2Y0ZGeW01eWtfZkZhNFVhcDBsdFgyemdlallITlpNM0JCblJoNzNmWlV2aXNTa1hodTR0VmtRbUxhVXluOW5hQzlvcExHQ2lfQVduRE9XYlhDWEVGV19JV3ZlSnRMeHV2dWZTVzU1Y2xRbW94cGlsSkhBbV9OaVVxUlUtdmF4dTQ4QlhUN3ZCemJ1NWFFVzdtM29qenJDanNlVl9KUlZXR3FFd1BZbV92aklpejJvLUdJYmxISGJXcUM2TUU4MmRnQmlRMmxGVFFOdVc?oc=5",
-      "medio": "Radio Mitre",
-      "fecha": "2026-10-29T15:48+00:00",
+      "titulo": "Un vecino de Allen entregó al cónsul de Italia una medalla histórica de 1870 que perteneció a su padre",
+      "enlace": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRTAyQzB1c2dWY01pcWgwMU9KNVp5U0NUdU41OFVic0MzZDAyZ2U5TmlnbkNVSEpXc1BKSTZtUnZyYlhYeENNMlJXV09QYmoyMkdfM0dmV05QbjdRSlNCS2FfMm01RlJUQjZhbUJmbUZQSURwbjJ5c3pGRmNpZm1OQ1RvT3AwSnlzVExRbnlfVHV1bmxGTERKa3BsVU9pVmREQlJZeDlMeGYwazhmQzhtYXZaN01zZzFtUVZQdXdYZ1ExRW03NGc?oc=5",
+      "medio": "Neuquen Post",
+      "fecha": "2026-10-30T15:20+00:00",
       "tema": "Comunidad"
     },
     {
-      "titulo": "Independiente suma un refuerzo: Machuca cumplió la sanción de la FIFA y pelea por un lugar",
-      "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOY2lnTXF4LTd5cTUybDZMa2RiOUZSR1o2RmdUSWg1R2ozQ2N0ZndaNGNiUUlGaUFRdzZMMVpyYjlOcnllbmRMc1RNWmlsRU16TkFib0hNVWVnbEE5OUV5UmVRUU94Mm9BNlpOVEtaNHk2ZklNOURnMFU2RlJyT2h0Rm1rSWNfcXIySHRXblBzWFVZUmlCM09acHlZMlBKRmphc0toM1UxeFlEbVozN3podWlibXFGTWlMNWx4WG1NNVV1aTlqcXkxXzJWd2VSQ2RuX1NlS3l6VWU2bXQz?oc=5",
-      "medio": "FM Del Sol Pehuajo",
-      "fecha": "2026-10-29T23:10+00:00",
+      "titulo": "El Festival DegustArte llega al Torreón del Monje con gastronomía, cultura italiana y fin solidario",
+      "enlace": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNHVjdGR0ajJWYkItNVdHVS13NkJRMWZEUlQxNGdBUTdwOWRhbUN5UFM3Z2VYd08yaWlZUkliUkNPZFptNzNlVmwwTkgxa05LWldIenNfVjBKUlV6STBfcW5EaXFJcjcxaWhlS3FPdEU0RGN3Rmp1cXYxTW5jRVdldTBMTXVnOVZhc2gtSm9aOC1NM0FDUHhvN1htQjZmZjVCZ1ZwaUJxV2lOel8yOTN3UWZuUFNQWjU3dG8xNWV5VzE?oc=5",
+      "medio": "NoticiasMDQ",
+      "fecha": "2026-10-30T15:43+00:00",
       "tema": "Consulado"
     },
     {
-      "titulo": "Sergio Dalma vuelve a Tucumán con un show dedicado a la música italiana",
-      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeGlKaTlvMDRydGpkOGRfaDN6SXN4SGkzODZmMTZ2X0FBYnFlTk5LMGhDNGJzYnVXMHA5RnV2cXRUaWtKQnpfX0dNRTRPb2FWMFc4MlhibU9xME9Wbkp0UGpnR3hoendkY3dXRXppcTJrSVhpLUg2YlZUNGNBU0ZHMGFfdXg4LVM2TERMek9Za25WMFgzLS1rOWpXVHZkQXhSLXg4WS1VRS1hR0huZkHSAaYBQVVfeXFMUHJaLWZrUE0xUmFDRTNqZ2JVcVlxa3RLSGo3dWRMak5ZQV82eG5fbVdGcjBzSVBjbjdwSDVjZ1kxXzBvTFFsOFRlSl8yQWs1cjlpS29JVVJuRU91MkJwcEFuVHVkNGRJa21Tb0tfNUlFUl9uc3VLTWdCMUI0ZFN3TTlKbkFmeXVaYkZyemRIZ2IyYVRveDhvZHJnYlN3TU9fcVdPYUNGUQ?oc=5",
-      "medio": "Canal 10 Tucumán",
-      "fecha": "2026-10-29T16:54+00:00",
-      "tema": "Cultura"
-    },
-    {
-      "titulo": "Propuestas teatrales de vecinos de San Vicente: una atrevida revista y una comedia llena de caras conocidas",
-      "enlace": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPMXhnUEFLdzJ6dWxkbEhwSTRudng0Z095eEpBZkd2NzAzVV8zaUdjNlltZERzUjJBWTQ5Vm90UDVEc1Y2elhqT19icnl4WlItZHNUUXVlNkk1Vm1WZk5uVDlQaUFsYkQyR1dCa1R1QklOWTFVUDl3Yk9uZFFjNnUwcHBpOWZRVHZ2TUhzUnRSb1NCaXZoMnZsUHhSMDhvaWhaUldMWnZEQ1NUR01DWDZIb3VPckwzaXgxck5TbVczQTFONjB5UWRTc044SW04bU52M1l4blVydlN3dURBSW1UWGdxZGVsR0xNamVBcjh5ZkJLZGJsRUpneHdR0gH6AUFVX3lxTE8xeGdQQUt3Mnp1bGRsSHBJNG52eDRnT3l4SkFmR3Y3MDNVXzNpR2M2WW1kRHNSMkFZNDlWb3RQNURzVjZ6WGpPX2JyeXhaUi1kc1RRdWU2STVWbVZmTm5UOVBpQWxiRDJHV0JrVHVCSU5ZMVVQOXdiT25kUWM2dTBwcGk5ZlFUdnZNSHNSdFJvU0JpdmgydmxQeFIwOG9paFpSV0xadkRDU1RHTUNYNkhvdU9yTDNpeDFyTlNtVzNBMU42MHlRZFNzTjhJbThtTnYzWXhuVXJ2U3d1REFJbVRYZ3FkZWxHTE1qZUFyOHlmQktkYmxFSmd4d1E?oc=5",
-      "medio": "El Diario Sur",
-      "fecha": "2026-10-29T19:07+00:00",
+      "titulo": "Sociedad Italiana de Salliqueló: 120 años de historia, cultura y compromiso con la comunidad",
+      "enlace": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE41SnFmVURSLXZ0OFFZWnVyRUVZelBrTWRzNXNiNklWdVNwZXAxaEhFOXY0VkZFOTlUc0tIdzhLTzYyS1JlZF8wYjU5dkk1RURPS3RV?oc=5",
+      "medio": "Veradia.com",
+      "fecha": "2026-10-28T10:34+00:00",
       "tema": "Patrimonio"
     },
     {
-      "titulo": "Reciente en Embajada de Italia beca a 20 agentes de Politur",
-      "enlace": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZFpUVkowSXN3dEF1UklMeFFMaXc2NWFaODdCclp6X0RRdV9CWjNEeVZDb2p5aTdaRzNJVWdIcF8yRkxMWjlWSUdLeElLZ0NCYWVWelk3RWplcDRESEZpbGlac3Y0M2tLMmI2a3F0QTBWNFZYclMyOXc2VndxdjBlcjBsUmtDMlRxREcxOGJqNWo?oc=5",
-      "medio": "Diario Libre",
-      "fecha": "2026-10-29T19:52+00:00",
+      "titulo": "Embajada de Italia otorga becas a 20 policías turísticos para fortalecer la atención a visitantes italianos",
+      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbFlvUVJSeUJiN0p1Z3ppM0pqLVVUVjJIUXdPRU1nZ0hHY1hlQ2VXS21CZFE2WThPM2txNnA0OUNBQ01JQlE1NWRfZ3FSb3FUOFp0YmVqU2pyNzB3RmZZekxDQ25EM3lpUWpscjYxT2R5VFc5bHZXWUZ5RC1SdVpPc3l4cDFJaHg1SUlBaDhhZG1JZlJoWFBiemdBXzJ1U19nTER2QTV6VUhXU1VDdHlwOHkxdjlIcmlRU0ktcXVXQWZ2bTBTR0lTUFZZY09ULXRZeUlMMUg5MEXSAd4BQVVfeXFMTU13UV9EQzQzb1AyTFM3NEZWc3RKb1Z1Yk9LTHV2TFZqdnhybWlpYmpUenBWRkdYUWNkU0ZWazlWalFvNFdrWDUtVHNNVzhTekdZWm5QbjJKRE1tMjZNWEpQMEYzOERiUFRzdWM2Q0pWZkdsbVc5T3dtamtQOFRGS3NWeWl6WkEtYVFlWlBCdmFBYnRfeEVPdXg5eTlVSGtockxyT2JpTEtsd01MZHVGZURLT2YzNm9fUnlTWTdkTEFXZ1VjUkNwbFlUQTJDWEVaay1xa0dRazJVcXNiUE13?oc=5",
+      "medio": "El Nacional — La voz de todos",
+      "fecha": "2026-10-30T15:54+00:00",
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Quién era Eulalia \"Lali\" Marzetti, la mamá de Lionel Scaloni: \"Soy lo que soy gracias a ellos\"",
-      "enlace": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWm81ZnE3V3pCeWtVbmdXcUFVclZlRlBmT2pUSUFlV0NfS2dDVDQyWWtxeUxaVlFLVGJxSXlNWU0zUXpMaUFzZFdHbmg4eDBTQ2VkUWFYNWJNSkR3SzBfSXBCa0U2SmktN2dqZlVIN0VDbEk5TXdIWU9wSU1HNlNwOHFKNEoxMFh6OGhrekRXQm8xaTA2X3ZaNUpja0Z4MUVGYVY5UDhFTFhoeDRiVEVuYzdvdk43TWstUmkxNmI1YjZBOTRtZXfSAcYBQVVfeXFMT1pvNWZxN1d6QnlrVW5nV3FBVXJWZUZQZk9qVElBZVdDX0tnQ1Q0MllrcXlMWlZRS1RicUl5TVlNM1F6TGlBc2RXR25oOHgwU0NlZFFhWDViTUpEd0swX0lwQmtFNkppLTdnamZVSDdFQ2xJOU13SFlPcElNRzZTcDhxSjRKMTBYejhoa3pEV0JvMWkwNl92WjVKY2tGeDFFRmFWOVA4RUxYaHg0YlRFbmM3b3ZON01rLVJpMTZiNWI2QTk0bWV3?oc=5",
-      "medio": "Minutouno",
-      "fecha": "2026-10-28T12:56+00:00",
+      "titulo": "Llegaron a la Patagonia para trabajar la tierra y terminaron cultivando el fruto seco más buscado por los chocolateros",
+      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOLXZ6dVBSV3Q2VkVhbC1kT0NUVURrRHZUMzBaQXI2TjFXcjZjV2F5eG9xS1FfQ0hkS1h5NkkxVjh3UWpFcHZ2dFh6Ri1GNldYZUdoazNNTExhdUR1cG1aZzRYMUp1MkRvM3NsSjlPT3pRU1dRNFFfR0JDQWZyam9nRkVOZjAxYy1hVlpPUUlHUXZDbUYtdnItUGVUYjQxYlFHQlBCZDl0OTBFMXpsaDFCcFVxZ0lRNkNqbWRRY3oyREc2eGlWTW9lcHNKdk56SndlZmJSQW9VR2hrQU82SVNvR2ZBa9IB6AFBVV95cUxQMndmcmwxVU5rRlppYndkd2M2aXRuVmY1cWltbnJOWXkzVEtnOS1UZXNDZ2ZUQnVuRDlfQXR3TG50MW9LY3RxX21RTGVaQ3dmUFNmdzFWRWxRWVJxWlo0VFBFMldTSHpOaXpwUms4RkZkNF8wZko2amxOcXVVUlNaVEx4SHdUSU5kV3VMaVJiMU9YQVdlZ1pGaEs2X0ZPUGtHdVZNSWhkRXRYVk8zSjUyd0dZTUMzUjBRTW5SZkQ2RGlwOFliWFNSWGVuT2lLczJhaDF0dWxQaTNTb2kwbTNZUHJVYjhJNDI4?oc=5",
+      "medio": "Clarin.com",
+      "fecha": "2026-10-26T15:40+00:00",
       "tema": "Comunidad"
+    },
+    {
+      "titulo": "Ciudadanía italiana: realizarán una reunión informativa gratuita en Río Tercero",
+      "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVWVXUmlRak5xRW50WEFLenBPNFdoTzJVd3FROGZJTkk2cURORk0yT0t6Vy1nSTE3V1pVTjdTMDZFWnFZVFctNFlCX0hheTlIYUh4MnFfb25nSU0xdi1iaGJReTFZbHJUOHpZS09TNDdwN0M5OW5HTXNTRUU2OEMzdmFid1F2dnJEZUxDVEs3ZWx6ckJ3QkZyQmVlMjU2cHBSRm1HWUgtRmZzODhtX3hYRlpJR0l6ckpi?oc=5",
+      "medio": "Cadena Urbana ?97.5",
+      "fecha": "2026-10-29T21:26+00:00",
+      "tema": "Consulado"
     }
   ]
 };
