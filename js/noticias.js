@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-10-29T16:55+00:00",
+  "actualizado": "2026-10-30T01:57+00:00",
   "items": [
     {
       "titulo": "Poner un billete debajo del plato de ñoquis el día 29: para qué sirve y por qué lo recomiendan",
@@ -10,31 +10,31 @@ window.NOTICIAS = {
       "tema": "Comunidad"
     },
     {
-      "titulo": "Ciudadanía italiana",
-      "enlace": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5CeXRYaENsN2RaSnpUZTFha1B3MnAyZFl5b3NCa1VEMDJpT0twN2hDdVRrMVJJRjFjeERiRVFRbFdsVE9ZM2xnV1lZdkFiZ3IxRHU2c1podFQ5TTdTYWtzNXlBNzE?oc=5",
-      "medio": "Mejor Informado",
-      "fecha": "2026-10-29T00:14+00:00",
+      "titulo": "Independiente suma un refuerzo: Machuca cumplió la sanción de la FIFA y pelea por un lugar",
+      "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOY2lnTXF4LTd5cTUybDZMa2RiOUZSR1o2RmdUSWg1R2ozQ2N0ZndaNGNiUUlGaUFRdzZMMVpyYjlOcnllbmRMc1RNWmlsRU16TkFib0hNVWVnbEE5OUV5UmVRUU94Mm9BNlpOVEtaNHk2ZklNOURnMFU2RlJyT2h0Rm1rSWNfcXIySHRXblBzWFVZUmlCM09acHlZMlBKRmphc0toM1UxeFlEbVozN3podWlibXFGTWlMNWx4WG1NNVV1aTlqcXkxXzJWd2VSQ2RuX1NlS3l6VWU2bXQz?oc=5",
+      "medio": "FM Del Sol Pehuajo",
+      "fecha": "2026-10-29T23:10+00:00",
       "tema": "Consulado"
     },
     {
-      "titulo": "“Italia nel cuore”: el festival de cocina italiana que llega a Olavarría",
-      "enlace": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNVl9LUjA0NlJfczdjNmZGcUg2MGdkalA0ZHVkdGFUSU4wb3BqRmJBY01oaEFwY2lwb0J2Sjk5UGdFc0lQbTlGbV90R3JhajlYUGc0c1V0a2lxUFhfQkZ4MUI3WEozeFRtWGJUck8tdzlVLVpLWVhvam54ZmlmLXdrdGhfTnJEYUotQ3dzeEtTNzhSYmJJY1lSRFludnFDa1N5UHdVaXptTzJUWEFYaVduOUdhM2hWckFQWFMzSGFrNl9BVzZDTEx1ZTZR?oc=5",
-      "medio": "Verte",
-      "fecha": "2026-10-29T14:22+00:00",
+      "titulo": "Sergio Dalma vuelve a Tucumán con un show dedicado a la música italiana",
+      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeGlKaTlvMDRydGpkOGRfaDN6SXN4SGkzODZmMTZ2X0FBYnFlTk5LMGhDNGJzYnVXMHA5RnV2cXRUaWtKQnpfX0dNRTRPb2FWMFc4MlhibU9xME9Wbkp0UGpnR3hoendkY3dXRXppcTJrSVhpLUg2YlZUNGNBU0ZHMGFfdXg4LVM2TERMek9Za25WMFgzLS1rOWpXVHZkQXhSLXg4WS1VRS1hR0huZkHSAaYBQVVfeXFMUHJaLWZrUE0xUmFDRTNqZ2JVcVlxa3RLSGo3dWRMak5ZQV82eG5fbVdGcjBzSVBjbjdwSDVjZ1kxXzBvTFFsOFRlSl8yQWs1cjlpS29JVVJuRU91MkJwcEFuVHVkNGRJa21Tb0tfNUlFUl9uc3VLTWdCMUI0ZFN3TTlKbkFmeXVaYkZyemRIZ2IyYVRveDhvZHJnYlN3TU9fcVdPYUNGUQ?oc=5",
+      "medio": "Canal 10 Tucumán",
+      "fecha": "2026-10-29T16:54+00:00",
       "tema": "Cultura"
     },
     {
-      "titulo": "Sociedad Italiana de Salliqueló: 120 años de historia, cultura y compromiso con la comunidad",
-      "enlace": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE41SnFmVURSLXZ0OFFZWnVyRUVZelBrTWRzNXNiNklWdVNwZXAxaEhFOXY0VkZFOTlUc0tIdzhLTzYyS1JlZF8wYjU5dkk1RURPS3RV?oc=5",
-      "medio": "Veradia.com",
-      "fecha": "2026-10-28T10:34+00:00",
+      "titulo": "Propuestas teatrales de vecinos de San Vicente: una atrevida revista y una comedia llena de caras conocidas",
+      "enlace": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPMXhnUEFLdzJ6dWxkbEhwSTRudng0Z095eEpBZkd2NzAzVV8zaUdjNlltZERzUjJBWTQ5Vm90UDVEc1Y2elhqT19icnl4WlItZHNUUXVlNkk1Vm1WZk5uVDlQaUFsYkQyR1dCa1R1QklOWTFVUDl3Yk9uZFFjNnUwcHBpOWZRVHZ2TUhzUnRSb1NCaXZoMnZsUHhSMDhvaWhaUldMWnZEQ1NUR01DWDZIb3VPckwzaXgxck5TbVczQTFONjB5UWRTc044SW04bU52M1l4blVydlN3dURBSW1UWGdxZGVsR0xNamVBcjh5ZkJLZGJsRUpneHdR0gH6AUFVX3lxTE8xeGdQQUt3Mnp1bGRsSHBJNG52eDRnT3l4SkFmR3Y3MDNVXzNpR2M2WW1kRHNSMkFZNDlWb3RQNURzVjZ6WGpPX2JyeXhaUi1kc1RRdWU2STVWbVZmTm5UOVBpQWxiRDJHV0JrVHVCSU5ZMVVQOXdiT25kUWM2dTBwcGk5ZlFUdnZNSHNSdFJvU0JpdmgydmxQeFIwOG9paFpSV0xadkRDU1RHTUNYNkhvdU9yTDNpeDFyTlNtVzNBMU42MHlRZFNzTjhJbThtTnYzWXhuVXJ2U3d1REFJbVRYZ3FkZWxHTE1qZUFyOHlmQktkYmxFSmd4d1E?oc=5",
+      "medio": "El Diario Sur",
+      "fecha": "2026-10-29T19:07+00:00",
       "tema": "Patrimonio"
     },
     {
-      "titulo": "Embajada de Italia beca a 20 agentes de Politur para fortalecer la atención a visitantes italianos",
-      "enlace": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd3BLY1l5V0tsYWFfckx3Nnh3MDBIQzhsT3ktaVdib29SR0dYVXQ5R056LV8zd3h5XzJEYXlyT2dYOHl2Zm8yZ2pBSUhjZkJCLUd3MzJSSE9najVfdm9rS0thUTBBY0l4Vmd1V3NQXzlHQ2E0V1liRmpLQ3hBbGZFczc3WlREc3kyVzI4cGlrbzhIWUdNVjZ6dUNfcDdlOUpUdXZuVGM4N3dFSHdZUjVqStIBtgFBVV95cUxOREN5Ykl3eVpLUHBfQmpiYnEwOEJsWEtHc05kZVdKb2N5TkFGcnkxQWJ1VGhXLW5NblB4d0NDNEtyMXNJVEFmUXhleDdwZVZETUlSaEh6Q3g4eFZMUFlvS3gzc2ZaUTZueFA3MkxIenR5Y2syRlZrX1JFdHg3dEhfVkxCUldOU2NtdzZ3YWJacE1uVDNxYzd3UFFteFNBOXNJOWVuT0xENzd6T1VkOVFjODZhYy0ydw?oc=5",
+      "titulo": "Reciente en Embajada de Italia beca a 20 agentes de Politur",
+      "enlace": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZFpUVkowSXN3dEF1UklMeFFMaXc2NWFaODdCclp6X0RRdV9CWjNEeVZDb2p5aTdaRzNJVWdIcF8yRkxMWjlWSUdLeElLZ0NCYWVWelk3RWplcDRESEZpbGlac3Y0M2tLMmI2a3F0QTBWNFZYclMyOXc2VndxdjBlcjBsUmtDMlRxREcxOGJqNWo?oc=5",
       "medio": "Diario Libre",
-      "fecha": "2026-10-29T15:57+00:00",
+      "fecha": "2026-10-29T19:52+00:00",
       "tema": "Italia y Argentina"
     },
     {
