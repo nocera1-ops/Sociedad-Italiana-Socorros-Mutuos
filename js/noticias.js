@@ -1,20 +1,27 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-10-30T16:41+00:00",
+  "actualizado": "2026-10-31T01:35+00:00",
   "items": [
     {
-      "titulo": "Un vecino de Allen entregó al cónsul de Italia una medalla histórica de 1870 que perteneció a su padre",
-      "enlace": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRTAyQzB1c2dWY01pcWgwMU9KNVp5U0NUdU41OFVic0MzZDAyZ2U5TmlnbkNVSEpXc1BKSTZtUnZyYlhYeENNMlJXV09QYmoyMkdfM0dmV05QbjdRSlNCS2FfMm01RlJUQjZhbUJmbUZQSURwbjJ5c3pGRmNpZm1OQ1RvT3AwSnlzVExRbnlfVHV1bmxGTERKa3BsVU9pVmREQlJZeDlMeGYwazhmQzhtYXZaN01zZzFtUVZQdXdYZ1ExRW03NGc?oc=5",
-      "medio": "Neuquen Post",
-      "fecha": "2026-10-30T15:20+00:00",
+      "titulo": "La historia detrás de la reliquia que un vecino de Allen le entregó al Cónsul de Italia: \"Asombroso\"",
+      "enlace": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVnUyOGtfNElQazFGcl85V0hnNHA5SFEtOWljNUZDVThPWnBRZjdweS1idGJGbWNlblpMelZNZVZBOWRyZGl2NWFrS0RYd3dtZmUzRXhwT2pmcGtTTEdnWXpfZmM3QXRGT1AxSkpZNms4VjNOMW94dF9YTDN3Q2l5dFQ2b3hBQmdqU1g5ZTl5RVYtZzZJTE9KSE53eUliZk83ZmpQREkyNE94SmhZa3VJSjBLcUo4TG5UckNTRTVBcjRMU1JxTTRmUUNvRDZHSjhEN0HSAdcBQVVfeXFMT3BjQVZ1ZVN4MllFam1MY1drT3E1OE43WXBoYk84NzB5RHNkbDluNHprYV9xUndyUENWQW1CUG00MkJaZlpuQ0hUWHFxVTBHN3JCMzBQTlBGcHh3aDBYRnhKTl84aTNmUGxYaHVNVm9YaXhnNnZnR3JSQXdTbl80empiZFNFUlRPVVV2b09pUWpzLW1nQkswN1BuaDRJRzdBaTExb2ZrZ1plSHR2bHRQdTQzT0hDWXBicGZzV2pLdWhVcjNGZHFYZlJ3VFVvaWhfNDVINEVkcGM?oc=5",
+      "medio": "LM Cipolletti",
+      "fecha": "2026-10-30T19:33+00:00",
       "tema": "Comunidad"
     },
     {
       "titulo": "El Festival DegustArte llega al Torreón del Monje con gastronomía, cultura italiana y fin solidario",
       "enlace": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNHVjdGR0ajJWYkItNVdHVS13NkJRMWZEUlQxNGdBUTdwOWRhbUN5UFM3Z2VYd08yaWlZUkliUkNPZFptNzNlVmwwTkgxa05LWldIenNfVjBKUlV6STBfcW5EaXFJcjcxaWhlS3FPdEU0RGN3Rmp1cXYxTW5jRVdldTBMTXVnOVZhc2gtSm9aOC1NM0FDUHhvN1htQjZmZjVCZ1ZwaUJxV2lOel8yOTN3UWZuUFNQWjU3dG8xNWV5VzE?oc=5",
       "medio": "NoticiasMDQ",
-      "fecha": "2026-10-30T15:43+00:00",
+      "fecha": "2026-10-30T15:46+00:00",
       "tema": "Consulado"
+    },
+    {
+      "titulo": "Cine italiano toma protagonismo en el Festival Europeo de Puerto Rico",
+      "enlace": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQT1Nud2JySmpzUzNnV1lkOWw2dW5CN0hEN3FabTlncEk4Ym41NWZWNGotZmxKakkxcncxQ0ozY1VETTJwZi1vTHdwOWRGS1ViQ2s0MnlTTzl5cWtqVklmNzczbUZ0VkNsUFktZ25UdHBrM1VpdTFPaTBMUVkwcjFFeUxOem4ySnBhZkRIYWZNdXZBaXdxb3F1VzBCWDkzb25IWEhUbWYwRUlkaElYbDBrdDJhVlNkUFRnM2ZoYmxsZjRYekpleTM3RkdCcmVTUmw4YkI5TE9SeWR4MUZqM1I4aVBsMmFqekdTYUHSAe8BQVVfeXFMTjNKdm02S2YxQVJXOXhka2ZpdlphTW9aSEFSMDFSOXFHbEF0TmpHSXBJaE1HTzVqRDlVVGV6UUlQTkcweFpGcjBhV29FYkRfb2dtOTJtX3ZBX2hfR2NCVElXdE1qZUJYaVI4aS1sc25WLWN3OHZtVnZoYlpoQ2RxMHhPYlJuZGQxaDdsdVlncHF4ZE9BeVNjQ0FYVGJtRGpxSGJVVGZvYnFQZ1FuR0xCUXdSRVZ1YXotYjUwc1dFbkx3THlPUEtKU21TZWVzRXRDbVVXeFY3TkEwNDlmU293VjhCQzkzbWpPUHZHYVY3YjA?oc=5",
+      "medio": "El Vocero de Puerto Rico",
+      "fecha": "2026-10-30T19:15+00:00",
+      "tema": "Cultura"
     },
     {
       "titulo": "Sociedad Italiana de Salliqueló: 120 años de historia, cultura y compromiso con la comunidad",
@@ -31,18 +38,11 @@ window.NOTICIAS = {
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Llegaron a la Patagonia para trabajar la tierra y terminaron cultivando el fruto seco más buscado por los chocolateros",
-      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOLXZ6dVBSV3Q2VkVhbC1kT0NUVURrRHZUMzBaQXI2TjFXcjZjV2F5eG9xS1FfQ0hkS1h5NkkxVjh3UWpFcHZ2dFh6Ri1GNldYZUdoazNNTExhdUR1cG1aZzRYMUp1MkRvM3NsSjlPT3pRU1dRNFFfR0JDQWZyam9nRkVOZjAxYy1hVlpPUUlHUXZDbUYtdnItUGVUYjQxYlFHQlBCZDl0OTBFMXpsaDFCcFVxZ0lRNkNqbWRRY3oyREc2eGlWTW9lcHNKdk56SndlZmJSQW9VR2hrQU82SVNvR2ZBa9IB6AFBVV95cUxQMndmcmwxVU5rRlppYndkd2M2aXRuVmY1cWltbnJOWXkzVEtnOS1UZXNDZ2ZUQnVuRDlfQXR3TG50MW9LY3RxX21RTGVaQ3dmUFNmdzFWRWxRWVJxWlo0VFBFMldTSHpOaXpwUms4RkZkNF8wZko2amxOcXVVUlNaVEx4SHdUSU5kV3VMaVJiMU9YQVdlZ1pGaEs2X0ZPUGtHdVZNSWhkRXRYVk8zSjUyd0dZTUMzUjBRTW5SZkQ2RGlwOFliWFNSWGVuT2lLczJhaDF0dWxQaTNTb2kwbTNZUHJVYjhJNDI4?oc=5",
-      "medio": "Clarin.com",
-      "fecha": "2026-10-26T15:40+00:00",
+      "titulo": "Mónica Becerra archivos",
+      "enlace": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1Kanl4b21nSzFYajA3dXNiTVpFeUZSNjJwRTlERkl3QWdDNENqU0x0M05iU1NUYnFMdmVhZVlEYVJxcWtsUzVldC03ckU1UW9CSkQ2VXhTRElhMnRxMXc?oc=5",
+      "medio": "Parlamentario",
+      "fecha": "2026-10-30T15:26+00:00",
       "tema": "Comunidad"
-    },
-    {
-      "titulo": "Ciudadanía italiana: realizarán una reunión informativa gratuita en Río Tercero",
-      "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVWVXUmlRak5xRW50WEFLenBPNFdoTzJVd3FROGZJTkk2cURORk0yT0t6Vy1nSTE3V1pVTjdTMDZFWnFZVFctNFlCX0hheTlIYUh4MnFfb25nSU0xdi1iaGJReTFZbHJUOHpZS09TNDdwN0M5OW5HTXNTRUU2OEMzdmFid1F2dnJEZUxDVEs3ZWx6ckJ3QkZyQmVlMjU2cHBSRm1HWUgtRmZzODhtX3hYRlpJR0l6ckpi?oc=5",
-      "medio": "Cadena Urbana ?97.5",
-      "fecha": "2026-10-29T21:26+00:00",
-      "tema": "Consulado"
     }
   ]
 };
