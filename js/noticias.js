@@ -1,26 +1,26 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-01T01:08+00:00",
+  "actualizado": "2026-11-01T16:48+00:00",
   "items": [
     {
-      "titulo": "Giancarlo Perversi destacó el rol de la sociedad italiana en Corrientes",
-      "enlace": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOEtoU1BjNUkzOWNJZXZQTnlfY0VudGdlcHhTLW5WWHB6SHlhdDJvcUpOYkZJWVFudXhtUE04dFNYWnE1c2xmNlFVSjlrVmNnSGc2RENvc1dHS2sxcFBqajBpRS1ZUDFSREV0NTdxY3lfdWo4VXRqSi05a1hOd2cwekVPa05CNnRaXzhEWWtINk8zX3hwLTBtd3NqME1PangyZkdPeks4Nk96WXNIVHJ0cjJoWTdLVEpxLWw5NUFsdkVuZWI4ZEHSAcgBQVVfeXFMUE5fcDY2cEtLd3VqdXpoYUtvYzRMbVVLczlsSktmR2dfY2liblYwdzNpT29TVFpHVmJrR21udkpINE85TVpWbTlkcE1BaGdaVWtKZlBDSVliRW9tNXpSZUJRTEZrZVcxT1ZoN0VwWkNEblJjYnl6cm5wUEZoWV85R3FIa2lJNWlfSnpPQThtbmhlOTlhZjBmaVV3NGZwdjk5X09JaFRHUkxTaG5rMnh2Rl9IbjBSa0lpNU5hdHNRRkEtQ3lzcHc5V1g?oc=5",
-      "medio": "Radio Sudamericana",
-      "fecha": "2026-10-31T18:33+00:00",
+      "titulo": "El alcalde Mamdani homenajea a inmigrantes italianos en Nueva York en evento del 28 de octubre.",
+      "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPc2hxek1WYVZCRDJDQmZySE1JdE1iVnVzV0t4b214UlA1ZDloQkMteDZpa0R0bHBIM3lfbExhMjE2d1RrTGlkeVZobEFqamE5WlFyWUZDOUpiS1Y0Mnl3cGhrNFNKMWhDbURTM21FU0tZcHUycEpoc19ucWFMc3ZQNnV6cTZQZlhQdDlvSXd3Qng3UXZJY18w?oc=5",
+      "medio": "El Congresista",
+      "fecha": "2026-11-01T15:34+00:00",
       "tema": "Comunidad"
     },
     {
-      "titulo": "El Festival DegustArte llega al Torreón del Monje con gastronomía, cultura italiana y fin solidario",
-      "enlace": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNHVjdGR0ajJWYkItNVdHVS13NkJRMWZEUlQxNGdBUTdwOWRhbUN5UFM3Z2VYd08yaWlZUkliUkNPZFptNzNlVmwwTkgxa05LWldIenNfVjBKUlV6STBfcW5EaXFJcjcxaWhlS3FPdEU0RGN3Rmp1cXYxTW5jRVdldTBMTXVnOVZhc2gtSm9aOC1NM0FDUHhvN1htQjZmZjVCZ1ZwaUJxV2lOel8yOTN3UWZuUFNQWjU3dG8xNWV5VzE?oc=5",
-      "medio": "NoticiasMDQ",
-      "fecha": "2026-10-30T15:46+00:00",
+      "titulo": "¿Será un superclásico para la historia?",
+      "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWDh0U1ZsU19McUZlbW5hN0hvWnVsaUx1VnRsSXVnejE5UFZ1cFVnZDV4MnJndTNtTTFoX0w0ZWxKUE5JamttZG00bmtnTWZ3dVpZa0ZFZUlGYkZOTUQ3SExtY1k5bTQtVXpFaUpyZXlOVkVIcHNvRXp4NzI2U0dmNEFmOGt6NjNTa3UzMHNXUGRnUHJEVTBV?oc=5",
+      "medio": "FM Del Sol Pehuajo",
+      "fecha": "2026-11-01T01:02+00:00",
       "tema": "Consulado"
     },
     {
-      "titulo": "Ritrovo, el restaurante de Mataró que fusiona la cocina italiana y peruana en un espacio donde gastronomía y cultura van de la mano",
-      "enlace": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPdFlsTkdMTThnSy1Pc3ZaY0JwZW1mVVFMdzM2TUpSaGhuTlBrNGdBM2NSTE9rMFQyTUhuU2w3Y1d4RXV5ckhPQllGaFB6RXhYMWtuczd3RmdnWlN2UXhGbDE4aWIzaHd6M3g4M0ZXQ0ViXzlnbmJWcFRfWGdxT1NDUGdGdUJkOEJ1U1dmekE2RVdnODlfcUpjbGZ2NVB4N3VjRU8zVGZJMENWNUVmU1oxYkhzYm81akoxUDNmTjZyMF9UTEFPUW96SnJlOG9yeHd0TnB6REthR2l3el9QbjRfZ3RNTWR2TkNFcldPMlRNRzQ3ems5Q3VNRGhqOWlVTTFrRXVROFNqaThtN3kzOHJ1OFZiV3pzMTBBLU4w0gGbAkFVX3lxTE90WWxOR0xNOGdLLU9zdlpjQnBlbWZVUUx3MzZNSlJoaG5OUGs0Z0EzY1JMT2swVDJNSG5TbDdjV3hFdXlySE9CWUZoUHpFeFgxa25zN3dGZ2daU3ZReEZsMThpYjNod3ozeDgzRldDRWJfOWduYlZwVF9YZ3FPU0NQZ0Z1QmQ4QnVTV2Z6QTZFV2c4OV9xSmNsZnY1UHg3dWNFTzNUZkkwQ1Y1RWZTWjFiSHNibzVqSjFQM2ZONnIwX1RMQU9Rb3pKcmU4b3J4d3ROcHpES2FHaXd6X1BuNF9ndE1NZHZOQ0VyV08yVE1HNDd6azlDdU1EaGo5aVVNMWtFdVE4U2ppOG03eTM4cnU4VmJXenMxMEEtTjA?oc=5",
-      "medio": "Mundo Deportivo",
-      "fecha": "2026-10-31T14:13+00:00",
+      "titulo": "Mojar pan en la salsa estuvo mal visto en Italia hasta que en 2015 el padre de la alta cocina italiana lo defendió: es elegante si se hace con los dedos",
+      "enlace": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbXZnLXdNNjM0WHlwZURxMzJpd3V1Rk5ub0tMaFNFb3BzeG9uU3Fmb3hKUmRNN3dCUjhOaVVtU2pfYTlHZzBzVjdNeGpNTUFld0pGQm5lWjBFQUV1REJ4amIxMFJCMU52WkxSdlc4YmdITDFmTlM4RGF1NnBUZ3lQUXpHUUMxQm44S2hiQ1VaazhkcVFxdXFOSy1OY3UzS25vRkVaTFZRSW5zMU5lWExad19hNDVqdVlqWXlQS01VV2p1Y09kUUNQanRxUTZMOFVIOTZmSXhCbmU4NE43ODlCUNIB9AFBVV95cUxPenhMX3hHRzcxNE5wcGhJbzk5VzJTMWxKeTRPUktiWmd6d0ZiQ0cxaWVyTXVBY1FlNHhPTEhuVUVqd1BEM2tMVkdZVl85M3Y5NlB2WmliZEIyQnc1MTE5eDY5OUZhcTQyVHlTd0ZwRWliRG9DanRsS0JUeHg4UWZtSFE0WTJuVXYyVlJCVzdERGNKLWNTWTlNLWROVVhGb2RwMkZDbzNKc3BFVGk5RElWT1JXOEFYVHhnU3JkZmEtUHFmbllmTXZCWFIwQzI4Sk1XQTBxeWVqVm5NUE8zSndiWnFXb0I5dmt3NW9aVHFHSDQxeEJT?oc=5",
+      "medio": "El HuffPost",
+      "fecha": "2026-11-01T09:20+00:00",
       "tema": "Cultura"
     },
     {
@@ -38,10 +38,10 @@ window.NOTICIAS = {
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Noviembre cultural en la Dante de Buenos Aires",
-      "enlace": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOdzUyMDN4TTc5SWdmMjh0eExYcTdtZmdmVVBZVEE0eVRpWG5CeUo0SWk2bzFMVGFxcEhUVmVoZE9id3ZLanQ4ZkJLbTlHRTkzNlpqYy1qeDN0VUktNDNidEZ4X3l1bEN0czlpd0o3TWtxTUkyNl92UkxPUnY0cm90QkYzVXpVSEh5SnZtenNtcFlCTUVVdHNjQ0JUT084ckE1NDRUV3MwcW0wSC0wOEFSNEw1OVoycUltb0xwa3UxNTZMa2NabnQ1bEYtamdmSjc0WnhyWC1zQnBLR3NHTjZ6VEp1LTJrU3VWTUZ4TGZQQVNmcll3bnJHMkhkUdIB-wFBVV95cUxOdzUyMDN4TTc5SWdmMjh0eExYcTdtZmdmVVBZVEE0eVRpWG5CeUo0SWk2bzFMVGFxcEhUVmVoZE9id3ZLanQ4ZkJLbTlHRTkzNlpqYy1qeDN0VUktNDNidEZ4X3l1bEN0czlpd0o3TWtxTUkyNl92UkxPUnY0cm90QkYzVXpVSEh5SnZtenNtcFlCTUVVdHNjQ0JUT084ckE1NDRUV3MwcW0wSC0wOEFSNEw1OVoycUltb0xwa3UxNTZMa2NabnQ1bEYtamdmSjc0WnhyWC1zQnBLR3NHTjZ6VEp1LTJrU3VWTUZ4TGZQQVNmcll3bnJHMkhkUQ?oc=5",
-      "medio": "ANSA Latina",
-      "fecha": "2026-10-31T17:59+00:00",
+      "titulo": "Giancarlo Perversi destacó el rol de la sociedad italiana en Corrientes",
+      "enlace": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOEtoU1BjNUkzOWNJZXZQTnlfY0VudGdlcHhTLW5WWHB6SHlhdDJvcUpOYkZJWVFudXhtUE04dFNYWnE1c2xmNlFVSjlrVmNnSGc2RENvc1dHS2sxcFBqajBpRS1ZUDFSREV0NTdxY3lfdWo4VXRqSi05a1hOd2cwekVPa05CNnRaXzhEWWtINk8zX3hwLTBtd3NqME1PangyZkdPeks4Nk96WXNIVHJ0cjJoWTdLVEpxLWw5NUFsdkVuZWI4ZEHSAcgBQVVfeXFMUE5fcDY2cEtLd3VqdXpoYUtvYzRMbVVLczlsSktmR2dfY2liblYwdzNpT29TVFpHVmJrR21udkpINE85TVpWbTlkcE1BaGdaVWtKZlBDSVliRW9tNXpSZUJRTEZrZVcxT1ZoN0VwWkNEblJjYnl6cm5wUEZoWV85R3FIa2lJNWlfSnpPQThtbmhlOTlhZjBmaVV3NGZwdjk5X09JaFRHUkxTaG5rMnh2Rl9IbjBSa0lpNU5hdHNRRkEtQ3lzcHc5V1g?oc=5",
+      "medio": "Radio Sudamericana",
+      "fecha": "2026-10-31T18:40+00:00",
       "tema": "Comunidad"
     }
   ]
