@@ -1,47 +1,47 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-10-31T15:44+00:00",
+  "actualizado": "2026-11-01T01:08+00:00",
   "items": [
     {
-      "titulo": "Un vecino de Allen entregó al cónsul de Italia una medalla histórica de 1870 que perteneció a su padre",
-      "enlace": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRTAyQzB1c2dWY01pcWgwMU9KNVp5U0NUdU41OFVic0MzZDAyZ2U5TmlnbkNVSEpXc1BKSTZtUnZyYlhYeENNMlJXV09QYmoyMkdfM0dmV05QbjdRSlNCS2FfMm01RlJUQjZhbUJmbUZQSURwbjJ5c3pGRmNpZm1OQ1RvT3AwSnlzVExRbnlfVHV1bmxGTERKa3BsVU9pVmREQlJZeDlMeGYwazhmQzhtYXZaN01zZzFtUVZQdXdYZ1ExRW03NGc?oc=5",
-      "medio": "Neuquen Post",
-      "fecha": "2026-10-30T15:20+00:00",
+      "titulo": "Giancarlo Perversi destacó el rol de la sociedad italiana en Corrientes",
+      "enlace": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOEtoU1BjNUkzOWNJZXZQTnlfY0VudGdlcHhTLW5WWHB6SHlhdDJvcUpOYkZJWVFudXhtUE04dFNYWnE1c2xmNlFVSjlrVmNnSGc2RENvc1dHS2sxcFBqajBpRS1ZUDFSREV0NTdxY3lfdWo4VXRqSi05a1hOd2cwekVPa05CNnRaXzhEWWtINk8zX3hwLTBtd3NqME1PangyZkdPeks4Nk96WXNIVHJ0cjJoWTdLVEpxLWw5NUFsdkVuZWI4ZEHSAcgBQVVfeXFMUE5fcDY2cEtLd3VqdXpoYUtvYzRMbVVLczlsSktmR2dfY2liblYwdzNpT29TVFpHVmJrR21udkpINE85TVpWbTlkcE1BaGdaVWtKZlBDSVliRW9tNXpSZUJRTEZrZVcxT1ZoN0VwWkNEblJjYnl6cm5wUEZoWV85R3FIa2lJNWlfSnpPQThtbmhlOTlhZjBmaVV3NGZwdjk5X09JaFRHUkxTaG5rMnh2Rl9IbjBSa0lpNU5hdHNRRkEtQ3lzcHc5V1g?oc=5",
+      "medio": "Radio Sudamericana",
+      "fecha": "2026-10-31T18:33+00:00",
       "tema": "Comunidad"
     },
     {
-      "titulo": "SE REALIZA ESTE SÁBADO UNA CHARLA INFORMATIVA Y DE ASESORAMIENTO SOBRE LOS COMITES Y LOS SERVICIOS DEL CONSULADO ITALIANO EN LA PLATA",
-      "enlace": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNeWhMbGpOQzh2bmRpZHB6LTRqdE9lNXRZNFQ1WS13dUs4dlNFX0FfVXd2RWxZdnk1UExYUHNLR21scnJBMXpnWHVpSEpwa3ZUa2czT1FLQmxTTnNYR3BQSG1JNjJmaUkwUFphNjA2aDJjTjdsOVZrZTVxVHprbWQzRHdRMGdMWnBnVHVnSXVsZm5BUnZwSVhrWm14QUpuMnNKZzRLWUpyS2dUbHNlQ0JOVERGZmwwZGdsWHVsYTJvVXNrOUtQbHZtVk5qNF9Ic2w3NDRkTXpXQnFTdklGSXpUQjFPNDdyZGZpR2hkamwxYVl5MzB6dVBoZ2dDTW94T3RLNXJoZ0pLUXFhNmNBNHdJb1pKd0dVVm8?oc=5",
-      "medio": "FM Del Sol Pehuajo",
-      "fecha": "2026-10-29T18:29+00:00",
+      "titulo": "El Festival DegustArte llega al Torreón del Monje con gastronomía, cultura italiana y fin solidario",
+      "enlace": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNHVjdGR0ajJWYkItNVdHVS13NkJRMWZEUlQxNGdBUTdwOWRhbUN5UFM3Z2VYd08yaWlZUkliUkNPZFptNzNlVmwwTkgxa05LWldIenNfVjBKUlV6STBfcW5EaXFJcjcxaWhlS3FPdEU0RGN3Rmp1cXYxTW5jRVdldTBMTXVnOVZhc2gtSm9aOC1NM0FDUHhvN1htQjZmZjVCZ1ZwaUJxV2lOel8yOTN3UWZuUFNQWjU3dG8xNWV5VzE?oc=5",
+      "medio": "NoticiasMDQ",
+      "fecha": "2026-10-30T15:46+00:00",
       "tema": "Consulado"
     },
     {
       "titulo": "Ritrovo, el restaurante de Mataró que fusiona la cocina italiana y peruana en un espacio donde gastronomía y cultura van de la mano",
-      "enlace": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOY2tKYmF2c2o4RHhQVnNELUZwMVJvckpMeVdyR01PaVJUdlBVZkp6Y1Y4Ml9rTnFRVlpQZnJscWFkdkhjRGRuRTE5RXFYb2tyZjdZM2cwQnZBOGUySDBqVlJIMGt2aGVfSTVuRTFWR0NHakZZNEc0SWVPeVotQ0J5TlVEaFJTNWdsTUpTc0NNeTYxWDEtRUJ1Y2xHLWF2VE1CMHVPUnY5U3NTMEYyLUNPZXdIVmJNQnluVGtXZjZybFU3ZkZOZjJMMXA5R29sejFmdHVURmRQMENtNjB4bThSclhOMjFGbmRYNGNoaEM4MzhsdmVwQzZZdjlCRWljOWFzTUNGUVY0bXJ4Tjc2cEHSAZsCQVVfeXFMT3RZbE5HTE04Z0stT3N2WmNCcGVtZlVRTHczNk1KUmhobk5QazRnQTNjUkxPazBUMk1IblNsN2NXeEV1eXJIT0JZRmhQekV4WDFrbnM3d0ZnZ1pTdlF4RmwxOGliM2h3ejN4ODNGV0NFYl85Z25iVnBUX1hncU9TQ1BnRnVCZDhCdVNXZnpBNkVXZzg5X3FKY2xmdjVQeDd1Y0VPM1RmSTBDVjVFZlNaMWJIc2JvNWpKMVAzZk42cjBfVExBT1FvekpyZThvcnh3dE5wekRLYUdpd3pfUG40X2d0TU1kdk5DRXJXTzJUTUc0N3prOUN1TURoajlpVU0xa0V1UThTamk4bTd5MzhydThWYld6czEwQS1OMA?oc=5",
+      "enlace": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPdFlsTkdMTThnSy1Pc3ZaY0JwZW1mVVFMdzM2TUpSaGhuTlBrNGdBM2NSTE9rMFQyTUhuU2w3Y1d4RXV5ckhPQllGaFB6RXhYMWtuczd3RmdnWlN2UXhGbDE4aWIzaHd6M3g4M0ZXQ0ViXzlnbmJWcFRfWGdxT1NDUGdGdUJkOEJ1U1dmekE2RVdnODlfcUpjbGZ2NVB4N3VjRU8zVGZJMENWNUVmU1oxYkhzYm81akoxUDNmTjZyMF9UTEFPUW96SnJlOG9yeHd0TnB6REthR2l3el9QbjRfZ3RNTWR2TkNFcldPMlRNRzQ3ems5Q3VNRGhqOWlVTTFrRXVROFNqaThtN3kzOHJ1OFZiV3pzMTBBLU4w0gGbAkFVX3lxTE90WWxOR0xNOGdLLU9zdlpjQnBlbWZVUUx3MzZNSlJoaG5OUGs0Z0EzY1JMT2swVDJNSG5TbDdjV3hFdXlySE9CWUZoUHpFeFgxa25zN3dGZ2daU3ZReEZsMThpYjNod3ozeDgzRldDRWJfOWduYlZwVF9YZ3FPU0NQZ0Z1QmQ4QnVTV2Z6QTZFV2c4OV9xSmNsZnY1UHg3dWNFTzNUZkkwQ1Y1RWZTWjFiSHNibzVqSjFQM2ZONnIwX1RMQU9Rb3pKcmU4b3J4d3ROcHpES2FHaXd6X1BuNF9ndE1NZHZOQ0VyV08yVE1HNDd6azlDdU1EaGo5aVVNMWtFdVE4U2ppOG03eTM4cnU4VmJXenMxMEEtTjA?oc=5",
       "medio": "Mundo Deportivo",
       "fecha": "2026-10-31T14:13+00:00",
       "tema": "Cultura"
     },
     {
-      "titulo": "Sociedad Italiana de Salliqueló: 120 años de historia, cultura y compromiso con la comunidad",
-      "enlace": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE41SnFmVURSLXZ0OFFZWnVyRUVZelBrTWRzNXNiNklWdVNwZXAxaEhFOXY0VkZFOTlUc0tIdzhLTzYyS1JlZF8wYjU5dkk1RURPS3RV?oc=5",
+      "titulo": "Clayface se proyectará el domingo en el Cine de Salliqueló",
+      "enlace": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBiMHFiREppQktVUXdZZGljbUtEZnp2YjAyTDFFVnlkQVRCNG1QT25YNFREMnA3b3c2aHRDSGdSVDE1dzZjRHYwLTk5N19BcEhxbFc0?oc=5",
       "medio": "Veradia.com",
-      "fecha": "2026-10-28T10:34+00:00",
+      "fecha": "2026-10-31T10:31+00:00",
       "tema": "Patrimonio"
     },
     {
-      "titulo": "Embajada de Italia otorga becas a 20 policías turísticos para fortalecer la atención a visitantes italianos",
-      "enlace": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbFlvUVJSeUJiN0p1Z3ppM0pqLVVUVjJIUXdPRU1nZ0hHY1hlQ2VXS21CZFE2WThPM2txNnA0OUNBQ01JQlE1NWRfZ3FSb3FUOFp0YmVqU2pyNzB3RmZZekxDQ25EM3lpUWpscjYxT2R5VFc5bHZXWUZ5RC1SdVpPc3l4cDFJaHg1SUlBaDhhZG1JZlJoWFBiemdBXzJ1U19nTER2QTV6VUhXU1VDdHlwOHkxdjlIcmlRU0ktcXVXQWZ2bTBTR0lTUFZZY09ULXRZeUlMMUg5MEXSAd4BQVVfeXFMTU13UV9EQzQzb1AyTFM3NEZWc3RKb1Z1Yk9LTHV2TFZqdnhybWlpYmpUenBWRkdYUWNkU0ZWazlWalFvNFdrWDUtVHNNVzhTekdZWm5QbjJKRE1tMjZNWEpQMEYzOERiUFRzdWM2Q0pWZkdsbVc5T3dtamtQOFRGS3NWeWl6WkEtYVFlWlBCdmFBYnRfeEVPdXg5eTlVSGtockxyT2JpTEtsd01MZHVGZURLT2YzNm9fUnlTWTdkTEFXZ1VjUkNwbFlUQTJDWEVaay1xa0dRazJVcXNiUE13?oc=5",
-      "medio": "El Nacional — La voz de todos",
-      "fecha": "2026-10-30T15:54+00:00",
+      "titulo": "Embajada de Italia impulsa formación de agentes turísticos",
+      "enlace": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZUdkTC1yQzN0ZG83Y3hCMnA5VGZyVm8wTzN1dlVXME5qSk9JRm5JMFVMclJDZnBBV3ZJNmRsYUQ2WG9rT0piaU4xald5Vy15cUlpTzdCdUM0OUxScWtRRHJXNmZqbkRZMHpTT0l6MDBLZmFfVDJhVFpOaFVQSi1yYS1zLU91TVhXcm1rQVBB?oc=5",
+      "medio": "primicias.net",
+      "fecha": "2026-10-31T20:27+00:00",
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Llegaron a la Patagonia para trabajar la tierra y terminaron cultivando el fruto seco más buscado por los chocolateros",
-      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOLXZ6dVBSV3Q2VkVhbC1kT0NUVURrRHZUMzBaQXI2TjFXcjZjV2F5eG9xS1FfQ0hkS1h5NkkxVjh3UWpFcHZ2dFh6Ri1GNldYZUdoazNNTExhdUR1cG1aZzRYMUp1MkRvM3NsSjlPT3pRU1dRNFFfR0JDQWZyam9nRkVOZjAxYy1hVlpPUUlHUXZDbUYtdnItUGVUYjQxYlFHQlBCZDl0OTBFMXpsaDFCcFVxZ0lRNkNqbWRRY3oyREc2eGlWTW9lcHNKdk56SndlZmJSQW9VR2hrQU82SVNvR2ZBa9IB6AFBVV95cUxQMndmcmwxVU5rRlppYndkd2M2aXRuVmY1cWltbnJOWXkzVEtnOS1UZXNDZ2ZUQnVuRDlfQXR3TG50MW9LY3RxX21RTGVaQ3dmUFNmdzFWRWxRWVJxWlo0VFBFMldTSHpOaXpwUms4RkZkNF8wZko2amxOcXVVUlNaVEx4SHdUSU5kV3VMaVJiMU9YQVdlZ1pGaEs2X0ZPUGtHdVZNSWhkRXRYVk8zSjUyd0dZTUMzUjBRTW5SZkQ2RGlwOFliWFNSWGVuT2lLczJhaDF0dWxQaTNTb2kwbTNZUHJVYjhJNDI4?oc=5",
-      "medio": "Clarin.com",
-      "fecha": "2026-10-26T15:40+00:00",
+      "titulo": "Noviembre cultural en la Dante de Buenos Aires",
+      "enlace": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOdzUyMDN4TTc5SWdmMjh0eExYcTdtZmdmVVBZVEE0eVRpWG5CeUo0SWk2bzFMVGFxcEhUVmVoZE9id3ZLanQ4ZkJLbTlHRTkzNlpqYy1qeDN0VUktNDNidEZ4X3l1bEN0czlpd0o3TWtxTUkyNl92UkxPUnY0cm90QkYzVXpVSEh5SnZtenNtcFlCTUVVdHNjQ0JUT084ckE1NDRUV3MwcW0wSC0wOEFSNEw1OVoycUltb0xwa3UxNTZMa2NabnQ1bEYtamdmSjc0WnhyWC1zQnBLR3NHTjZ6VEp1LTJrU3VWTUZ4TGZQQVNmcll3bnJHMkhkUdIB-wFBVV95cUxOdzUyMDN4TTc5SWdmMjh0eExYcTdtZmdmVVBZVEE0eVRpWG5CeUo0SWk2bzFMVGFxcEhUVmVoZE9id3ZLanQ4ZkJLbTlHRTkzNlpqYy1qeDN0VUktNDNidEZ4X3l1bEN0czlpd0o3TWtxTUkyNl92UkxPUnY0cm90QkYzVXpVSEh5SnZtenNtcFlCTUVVdHNjQ0JUT084ckE1NDRUV3MwcW0wSC0wOEFSNEw1OVoycUltb0xwa3UxNTZMa2NabnQ1bEYtamdmSjc0WnhyWC1zQnBLR3NHTjZ6VEp1LTJrU3VWTUZ4TGZQQVNmcll3bnJHMkhkUQ?oc=5",
+      "medio": "ANSA Latina",
+      "fecha": "2026-10-31T17:59+00:00",
       "tema": "Comunidad"
     }
   ]
