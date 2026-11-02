@@ -1,19 +1,19 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-01T16:48+00:00",
+  "actualizado": "2026-11-02T01:30+00:00",
   "items": [
     {
-      "titulo": "El alcalde Mamdani homenajea a inmigrantes italianos en Nueva York en evento del 28 de octubre.",
-      "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPc2hxek1WYVZCRDJDQmZySE1JdE1iVnVzV0t4b214UlA1ZDloQkMteDZpa0R0bHBIM3lfbExhMjE2d1RrTGlkeVZobEFqamE5WlFyWUZDOUpiS1Y0Mnl3cGhrNFNKMWhDbURTM21FU0tZcHUycEpoc19ucWFMc3ZQNnV6cTZQZlhQdDlvSXd3Qng3UXZJY18w?oc=5",
-      "medio": "El Congresista",
-      "fecha": "2026-11-01T15:34+00:00",
+      "titulo": "Catriló: el Círculo Italiano celebró 96 años con una emotiva velada de gala",
+      "enlace": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPWDlZUDZnY2F3VXRMVlAyWUs0REZxWHVLOXYzWVZzWUtPLWRZRnJkT2E2M0N1a0U0MG1rd3VKaDYxZXMzbFdVQklBNHZaelB3MXlZLVNmeGg5YW5ncUZudzFxVndqaWRlRUM1cHFHQmdDZmNKNFItYkpZZzhDOXF2ZUtSS3RtdVptbm53amhHeDNuWGU5bXMtM3BtTExUeUFiTXBZa2JONlJ0VEdfUDFkR2tfV2RMWVRpOTRrbG81dkhhQkhaYW41cGg4N3dra1It?oc=5",
+      "medio": "La Arena",
+      "fecha": "2026-11-01T23:37+00:00",
       "tema": "Comunidad"
     },
     {
-      "titulo": "¿Será un superclásico para la historia?",
-      "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWDh0U1ZsU19McUZlbW5hN0hvWnVsaUx1VnRsSXVnejE5UFZ1cFVnZDV4MnJndTNtTTFoX0w0ZWxKUE5JamttZG00bmtnTWZ3dVpZa0ZFZUlGYkZOTUQ3SExtY1k5bTQtVXpFaUpyZXlOVkVIcHNvRXp4NzI2U0dmNEFmOGt6NjNTa3UzMHNXUGRnUHJEVTBV?oc=5",
-      "medio": "FM Del Sol Pehuajo",
-      "fecha": "2026-11-01T01:02+00:00",
+      "titulo": "Ciudadanía italiana: realizarán una reunión informativa gratuita en Río Tercero",
+      "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVWVXUmlRak5xRW50WEFLenBPNFdoTzJVd3FROGZJTkk2cURORk0yT0t6Vy1nSTE3V1pVTjdTMDZFWnFZVFctNFlCX0hheTlIYUh4MnFfb25nSU0xdi1iaGJReTFZbHJUOHpZS09TNDdwN0M5OW5HTXNTRUU2OEMzdmFid1F2dnJEZUxDVEs3ZWx6ckJ3QkZyQmVlMjU2cHBSRm1HWUgtRmZzODhtX3hYRlpJR0l6ckpi?oc=5",
+      "medio": "Cadena Urbana ?97.5",
+      "fecha": "2026-10-29T21:26+00:00",
       "tema": "Consulado"
     },
     {
@@ -38,10 +38,10 @@ window.NOTICIAS = {
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Giancarlo Perversi destacó el rol de la sociedad italiana en Corrientes",
-      "enlace": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOEtoU1BjNUkzOWNJZXZQTnlfY0VudGdlcHhTLW5WWHB6SHlhdDJvcUpOYkZJWVFudXhtUE04dFNYWnE1c2xmNlFVSjlrVmNnSGc2RENvc1dHS2sxcFBqajBpRS1ZUDFSREV0NTdxY3lfdWo4VXRqSi05a1hOd2cwekVPa05CNnRaXzhEWWtINk8zX3hwLTBtd3NqME1PangyZkdPeks4Nk96WXNIVHJ0cjJoWTdLVEpxLWw5NUFsdkVuZWI4ZEHSAcgBQVVfeXFMUE5fcDY2cEtLd3VqdXpoYUtvYzRMbVVLczlsSktmR2dfY2liblYwdzNpT29TVFpHVmJrR21udkpINE85TVpWbTlkcE1BaGdaVWtKZlBDSVliRW9tNXpSZUJRTEZrZVcxT1ZoN0VwWkNEblJjYnl6cm5wUEZoWV85R3FIa2lJNWlfSnpPQThtbmhlOTlhZjBmaVV3NGZwdjk5X09JaFRHUkxTaG5rMnh2Rl9IbjBSa0lpNU5hdHNRRkEtQ3lzcHc5V1g?oc=5",
-      "medio": "Radio Sudamericana",
-      "fecha": "2026-10-31T18:40+00:00",
+      "titulo": "En 1905 nació Boca entre barcos, conventillos e inmigrantes genoveses: 121 años después, una palabra genovesa sigue definiendo a sus hinchas",
+      "enlace": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPR1hiRHZQTExmdkRrMmNUWkpScWhyb3NmZGFaTVRXYmt4d2pkcnRReFA3cnhoeUNYSFJMTUtGSnlyMjU5LW41VXJ5NGNpUEh2YnlydEpQLXVRZmd5d19Jd2NSNllORlhKVU9EQW5ENkFVS1dxRmpteEZHNDY5VnJLUTVlN3haRDU1MGFhRUdmb0ktTVdaV2NnQTh3dERGazJNejRlTVNxWGdwYmJ6SGZkeE5JaFZ6MERLekIwSUJVREptckRidjJ4Z3EtQThhb1RFWWtabjVjdHROdHNpUnBRaHVjejNwUmlBeWd1Sk80RmdUc290UjJwX2VQWDVUWlhVenY0UnZuZUN6QjRkMzE0?oc=5",
+      "medio": "Canal26",
+      "fecha": "2026-11-01T21:33+00:00",
       "tema": "Comunidad"
     }
   ]
