@@ -1,47 +1,47 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-02T01:30+00:00",
+  "actualizado": "2026-11-02T20:21+00:00",
   "items": [
+    {
+      "titulo": "Atrayentes y variadas propuestas en el Círculo Italiano de Buenos Aires",
+      "enlace": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOcVRRSzh2bnktUGFkbGZwcVB1MUNIMVU5QlVLMTZkcF9EZ2ExaEczb05MMjNIa1RvMDBoX1U3amxQRzRybFhHaml1REJlQi1NYWwtd2c2T1pDQi0xT1h0TUE2bnVkMFdSRnFDVnp5V1VmMU5YVDlGMjNuT0JEbWs1RDAxVjJ3a2htQmtmakxSaUFqQUF4aDVGeURwTWI0UV92WlFBaUtLODdrRE9UV04waDIwR3RiWk9PdnFnS3BjZTY2MkZwUlk1cEQwU3ZfM3AzRExGZFN4WVR4RURCWWVUdFRNR2dQYjRPdWtqRTd5VUxnMEk5dnQwbUhVclVEZUFoRGV1V3h1YU9BbU9YOGVoUkxNbllrUi1SQi1rZ9IBnAJBVV95cUxOcVRRSzh2bnktUGFkbGZwcVB1MUNIMVU5QlVLMTZkcF9EZ2ExaEczb05MMjNIa1RvMDBoX1U3amxQRzRybFhHaml1REJlQi1NYWwtd2c2T1pDQi0xT1h0TUE2bnVkMFdSRnFDVnp5V1VmMU5YVDlGMjNuT0JEbWs1RDAxVjJ3a2htQmtmakxSaUFqQUF4aDVGeURwTWI0UV92WlFBaUtLODdrRE9UV04waDIwR3RiWk9PdnFnS3BjZTY2MkZwUlk1cEQwU3ZfM3AzRExGZFN4WVR4RURCWWVUdFRNR2dQYjRPdWtqRTd5VUxnMEk5dnQwbUhVclVEZUFoRGV1V3h1YU9BbU9YOGVoUkxNbllrUi1SQi1rZw?oc=5",
+      "medio": "ANSA Latina",
+      "fecha": "2026-11-02T13:32+00:00",
+      "tema": "Comunidad"
+    },
+    {
+      "titulo": "¿El pasado lo condena? El penal muy similar que Ramírez cobró, pero en el Súper no dio y se hizo viral",
+      "enlace": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQX28waTJHU0tvM1JrVEQzdjNyaE5RVmwtejlJdGdHOGlXRk1BTzJCTEU2enVvWVhHcGhxamJjUmRyWnEzTzV1SjRUTTNIRUhiUkRpMUFWeHByeng5TTZlT3haVVVDNUZDMWZqZ1RFUTRKVkxLaEFjUlQ5Vi1kYjRmSTdzd3lMaVVRdlR1OEU3U2dqQURSYU0yUTd5SEczaGlBd3Y0N25mMnU0a0ZIM0FZM1p1cU5IUGcxR3lBVzJLV09sRlV2OVMzOFJYaWo2X1hYWHpXa3JDc1hnMnJqSmxMRzVVNElRX0pDSUE?oc=5",
+      "medio": "FM Del Sol Pehuajo",
+      "fecha": "2026-11-02T20:04+00:00",
+      "tema": "Consulado"
+    },
+    {
+      "titulo": "Granada se abre a la literatura italiana contemporánea con la primera edición de Gralit",
+      "enlace": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8xNHAyM3NIWDY3NjJfUzF1WkJuUDdwNGc2dkZyd19iVTZTUWVkU3hUaFQzVXRNWkUwMDJTdFhQOW1ZTjl4aGFydm5RaE42RlFtSjNibGdncnNYei10WGVZR3dsc2ZaYWNDcDBUa3FyNUMwa3I0U3hNMk9naFdDVjg?oc=5",
+      "medio": "GranadaDigital",
+      "fecha": "2026-11-02T10:37+00:00",
+      "tema": "Cultura"
+    },
+    {
+      "titulo": "A la sala del Teatro Marconi se le impondrá el nombre de María Guillermina Saggión",
+      "enlace": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTHZQNUgtcVhOVElQVW5iaU1QMGFTNkwxYm44R0VBZ3k1OE9hSVNPQ001N1hwb3pCTjJVLUJpQi1sZ2tobVZRRW45c2xxa3V1dUl3TElDVW9fQkZVUGktU3hZXzl2c3Bhem5XWVQxZ3JFLWZ4WkpMdHNneVpSOGo3WUFXbjdiMzhoNVo4eFZXLXNLV0JFU3RpQ2FsSzF2SnQyT21yeTUyM3JaUlNrZkVXaVNkQWVHZFRXNnVJTW9uS2U?oc=5",
+      "medio": "La Síntesis",
+      "fecha": "2026-11-01T22:11+00:00",
+      "tema": "Patrimonio"
+    },
+    {
+      "titulo": "Estudiante IBERO gana tercer lugar en concurso de la Embajada de Italia en México",
+      "enlace": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNV1A3d1d1dmc5UDlDaHo2b1B2bWxHQ1g2dXYwN1NnbkJTOGJwd29MMlR5VGduME9VMEdpZlcxRHlXclRzZGNXUFdtbE5NSWZzUTl4ZnhFQ1VvQjJSMnRqZlJ2QThSOWlkdjY5c1NUQ1U1ZDN5QWdEdzBndS1NcVJUeG1uTFY3S3NFb0pqTW9sTTFvQjlfVzV2N1FiSzlneUxBeFlXbV8zMG55VGg3S0FTSlF6QUNqMVE?oc=5",
+      "medio": "Prensa Ibero",
+      "fecha": "2026-11-02T14:08+00:00",
+      "tema": "Italia y Argentina"
+    },
     {
       "titulo": "Catriló: el Círculo Italiano celebró 96 años con una emotiva velada de gala",
       "enlace": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPWDlZUDZnY2F3VXRMVlAyWUs0REZxWHVLOXYzWVZzWUtPLWRZRnJkT2E2M0N1a0U0MG1rd3VKaDYxZXMzbFdVQklBNHZaelB3MXlZLVNmeGg5YW5ncUZudzFxVndqaWRlRUM1cHFHQmdDZmNKNFItYkpZZzhDOXF2ZUtSS3RtdVptbm53amhHeDNuWGU5bXMtM3BtTExUeUFiTXBZa2JONlJ0VEdfUDFkR2tfV2RMWVRpOTRrbG81dkhhQkhaYW41cGg4N3dra1It?oc=5",
       "medio": "La Arena",
       "fecha": "2026-11-01T23:37+00:00",
-      "tema": "Comunidad"
-    },
-    {
-      "titulo": "Ciudadanía italiana: realizarán una reunión informativa gratuita en Río Tercero",
-      "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVWVXUmlRak5xRW50WEFLenBPNFdoTzJVd3FROGZJTkk2cURORk0yT0t6Vy1nSTE3V1pVTjdTMDZFWnFZVFctNFlCX0hheTlIYUh4MnFfb25nSU0xdi1iaGJReTFZbHJUOHpZS09TNDdwN0M5OW5HTXNTRUU2OEMzdmFid1F2dnJEZUxDVEs3ZWx6ckJ3QkZyQmVlMjU2cHBSRm1HWUgtRmZzODhtX3hYRlpJR0l6ckpi?oc=5",
-      "medio": "Cadena Urbana ?97.5",
-      "fecha": "2026-10-29T21:26+00:00",
-      "tema": "Consulado"
-    },
-    {
-      "titulo": "Mojar pan en la salsa estuvo mal visto en Italia hasta que en 2015 el padre de la alta cocina italiana lo defendió: es elegante si se hace con los dedos",
-      "enlace": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbXZnLXdNNjM0WHlwZURxMzJpd3V1Rk5ub0tMaFNFb3BzeG9uU3Fmb3hKUmRNN3dCUjhOaVVtU2pfYTlHZzBzVjdNeGpNTUFld0pGQm5lWjBFQUV1REJ4amIxMFJCMU52WkxSdlc4YmdITDFmTlM4RGF1NnBUZ3lQUXpHUUMxQm44S2hiQ1VaazhkcVFxdXFOSy1OY3UzS25vRkVaTFZRSW5zMU5lWExad19hNDVqdVlqWXlQS01VV2p1Y09kUUNQanRxUTZMOFVIOTZmSXhCbmU4NE43ODlCUNIB9AFBVV95cUxPenhMX3hHRzcxNE5wcGhJbzk5VzJTMWxKeTRPUktiWmd6d0ZiQ0cxaWVyTXVBY1FlNHhPTEhuVUVqd1BEM2tMVkdZVl85M3Y5NlB2WmliZEIyQnc1MTE5eDY5OUZhcTQyVHlTd0ZwRWliRG9DanRsS0JUeHg4UWZtSFE0WTJuVXYyVlJCVzdERGNKLWNTWTlNLWROVVhGb2RwMkZDbzNKc3BFVGk5RElWT1JXOEFYVHhnU3JkZmEtUHFmbllmTXZCWFIwQzI4Sk1XQTBxeWVqVm5NUE8zSndiWnFXb0I5dmt3NW9aVHFHSDQxeEJT?oc=5",
-      "medio": "El HuffPost",
-      "fecha": "2026-11-01T09:20+00:00",
-      "tema": "Cultura"
-    },
-    {
-      "titulo": "Clayface se proyectará el domingo en el Cine de Salliqueló",
-      "enlace": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBiMHFiREppQktVUXdZZGljbUtEZnp2YjAyTDFFVnlkQVRCNG1QT25YNFREMnA3b3c2aHRDSGdSVDE1dzZjRHYwLTk5N19BcEhxbFc0?oc=5",
-      "medio": "Veradia.com",
-      "fecha": "2026-10-31T10:31+00:00",
-      "tema": "Patrimonio"
-    },
-    {
-      "titulo": "Embajada de Italia impulsa formación de agentes turísticos",
-      "enlace": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZUdkTC1yQzN0ZG83Y3hCMnA5VGZyVm8wTzN1dlVXME5qSk9JRm5JMFVMclJDZnBBV3ZJNmRsYUQ2WG9rT0piaU4xald5Vy15cUlpTzdCdUM0OUxScWtRRHJXNmZqbkRZMHpTT0l6MDBLZmFfVDJhVFpOaFVQSi1yYS1zLU91TVhXcm1rQVBB?oc=5",
-      "medio": "primicias.net",
-      "fecha": "2026-10-31T20:27+00:00",
-      "tema": "Italia y Argentina"
-    },
-    {
-      "titulo": "En 1905 nació Boca entre barcos, conventillos e inmigrantes genoveses: 121 años después, una palabra genovesa sigue definiendo a sus hinchas",
-      "enlace": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPR1hiRHZQTExmdkRrMmNUWkpScWhyb3NmZGFaTVRXYmt4d2pkcnRReFA3cnhoeUNYSFJMTUtGSnlyMjU5LW41VXJ5NGNpUEh2YnlydEpQLXVRZmd5d19Jd2NSNllORlhKVU9EQW5ENkFVS1dxRmpteEZHNDY5VnJLUTVlN3haRDU1MGFhRUdmb0ktTVdaV2NnQTh3dERGazJNejRlTVNxWGdwYmJ6SGZkeE5JaFZ6MERLekIwSUJVREptckRidjJ4Z3EtQThhb1RFWWtabjVjdHROdHNpUnBRaHVjejNwUmlBeWd1Sk80RmdUc290UjJwX2VQWDVUWlhVenY0UnZuZUN6QjRkMzE0?oc=5",
-      "medio": "Canal26",
-      "fecha": "2026-11-01T21:33+00:00",
       "tema": "Comunidad"
     }
   ]
