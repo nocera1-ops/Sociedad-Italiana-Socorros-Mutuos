@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-04T02:19+00:00",
+  "actualizado": "2026-11-04T17:59+00:00",
   "items": [
     {
       "titulo": "Inauguración de la muestra colectiva “Insieme: El arte que nos une con Italia”",
@@ -10,24 +10,24 @@ window.NOTICIAS = {
       "tema": "Comunidad"
     },
     {
-      "titulo": "Hasta cuándo hay tiempo para inscribirse y votar en las elecciones de los italianos en Cuyo",
-      "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTHdTSHFpbGdTU2xsWlg5OWtZOGFUVFFRZm50QVZtT00wc09iNUk1RVQ3WEZzS0pQc2RIOGlnNmJQZlQwSGh6NGluZzY2b3hsVTFkcEtlb0szTVJublZxcGhOTTZYYl9OcUtkQnZkSXFoTm5RSDBkVVZYZHRRQWU2WDdYSlY3bGtFRTVpb3Azd3NzWkI5X3Q2WTRJTmhOWXVVUDNyRjdTYUtwTWhRbWJ1cU5wY3FDNllv0gG-AUFVX3lxTE83cXNQWlo0dTFpTHYzMXg3ZTZNZi1VWXFSby1VaTktUFZmNWl2TU1VZGRDbUVaczJsZnk5WEoxUl94UktudUlpOG1ybUJxRE9RWENtN0hiR1Q5OEpNU2pMcUxLakdiYmhxLXNaTnUtWmVsODlwd1BDTEUtN1g3VERCbDhXV0k0MjRSY2VjQ0owTUJxcnpMd1V6cjNYbnVHZTdwUG1jX0RmNS1zOFdCUUlacUR4UnVjTkNHWVRna3c?oc=5",
-      "medio": "Diario Mendoza",
-      "fecha": "2026-11-03T20:53+00:00",
+      "titulo": "Te alquilo mi amor T1 capítulo 20: La recepción del consulado italiano",
+      "enlace": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1QcXJEWTdjNXlveUV2bUt2eVRfb2I2ZkZpR0REUVhIckxFTUVWS185LVVWTmpyVXcxRk1VWmVKVTU3d1UxSHBvS3BSbktJLVAyQmdzdk45V0xqZF9Mb3QycmRmcS02MnhuWnU5eFpXdkJ6dldwdk80T2U2ckE?oc=5",
+      "medio": "FormulaTV",
+      "fecha": "2026-11-03T09:03+00:00",
       "tema": "Consulado"
     },
     {
-      "titulo": "Coronel Suárez celebra la Semana de la Cocina Italiana en el Mundo",
-      "enlace": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbEUwZVRYZmVjMmt1SE1EVWt6VktaajdNTHVTYWxKeEM3VENONWxoSWVVdnl4WVlXWkZST2JOMnN6NkM1Q3kxVlZSWTRneWVqRWh4dlBnWlBjRmN1Q3lLaVBVbnVKWUJQYWZLd3VOYVFwOUZCQjA2SWNoV1NkTFk0OE1kbmlXekZDYkdNXzRiRWhiZDQ1c0tqQXd5U2w3UFJ4OXFVMy1HWEhYRWlUMDFPb0RNRFNMRTdIWTBBU3Y0WmRtcEc0VEVwNw?oc=5",
-      "medio": "La Nueva Radio Suárez",
-      "fecha": "2026-11-04T00:02+00:00",
+      "titulo": "Murió Tinto Brass, el director de “Calígula” y figura del cine italiano",
+      "enlace": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUXhPeFdqV2tlaTFyZVczN1FfTTFReFc5WnNZdWlwTThodTg2WExYLUk0TkxPUkxMbmxhMnJFMEpnSUxuUm8tdVMtSGEwUXM0UVVkTFFXLXNJZ00yZlg2R2VaRmgyNHowcF9vRm00WUt1LWJPU2NQekpDVmdkTWdRV3N2ME9tMWwwcFk2Q1pUMlZIbWowV1ltdTRhaWkwOFM5ZVEzeC1hb1VNY0FDbkV0bFBvYnZNZw?oc=5",
+      "medio": "Radio Mitre",
+      "fecha": "2026-11-04T17:50+00:00",
       "tema": "Cultura"
     },
     {
-      "titulo": "Música, teatro y danza en la agenda de junio del Teatro 3 de Febrero",
-      "enlace": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTWU3ZXFiMmNxWTBtVmN6aHRnVF9NM1prUHBlRnNoWnNsRGpRSXA2dFZvbUxMMVFuc3JORjhuRVRDbE5xZU0xM0JRTUgtZW1VZy0wMlhuVHRETTBqaFFpcE1pN0NuemdHRG9WUUc5bVlVQUM0SU0xT2ZHZnk5aERMdHBzLVVtclhRNG9Ed0pKbW1Tbk5fSWlUZ3NMLXpOSXZDLWVTUg?oc=5",
-      "medio": "Municipalidad de Paraná",
-      "fecha": "2026-11-02T12:03+00:00",
+      "titulo": "Tres días de arte y cultura con actividades gratuitas en el departamento San Martín",
+      "enlace": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcExBMS0wRC04dk5nOEVjRHVSWHhpNmRpYnpjX0lkYlRtMUNqS3hiclRMeVBoNFBpbGFkQmlmaUxCenF1ZFZ4aXQxX3lUZnVqbnBZZEtHc2RNNlJqakt3N21WRGZObktJa2JaZDlTSlo2Q0V2NEg2cUlrTGhkUFVmQ25WMGJQN0FfUHVLcnF5VWpsZUdPTExINGN0RDY1SVdvZ1BzV0V4NHRDbHNvOWk2WmkydXFmWmdJMUxyWVlJMFJaWFExVjM4N2Jsd9IBywFBVV95cUxOcExBMS0wRC04dk5nOEVjRHVSWHhpNmRpYnpjX0lkYlRtMUNqS3hiclRMeVBoNFBpbGFkQmlmaUxCenF1ZFZ4aXQxX3lUZnVqbnBZZEtHc2RNNlJqakt3N21WRGZObktJa2JaZDlTSlo2Q0V2NEg2cUlrTGhkUFVmQ25WMGJQN0FfUHVLcnF5VWpsZUdPTExINGN0RDY1SVdvZ1BzV0V4NHRDbHNvOWk2WmkydXFmWmdJMUxyWVlJMFJaWFExVjM4N2Jsdw?oc=5",
+      "medio": "La Capital",
+      "fecha": "2026-11-03T18:40+00:00",
       "tema": "Patrimonio"
     },
     {
@@ -38,10 +38,10 @@ window.NOTICIAS = {
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Atrayentes y variadas propuestas en el Círculo Italiano de Buenos Aires",
-      "enlace": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOcVRRSzh2bnktUGFkbGZwcVB1MUNIMVU5QlVLMTZkcF9EZ2ExaEczb05MMjNIa1RvMDBoX1U3amxQRzRybFhHaml1REJlQi1NYWwtd2c2T1pDQi0xT1h0TUE2bnVkMFdSRnFDVnp5V1VmMU5YVDlGMjNuT0JEbWs1RDAxVjJ3a2htQmtmakxSaUFqQUF4aDVGeURwTWI0UV92WlFBaUtLODdrRE9UV04waDIwR3RiWk9PdnFnS3BjZTY2MkZwUlk1cEQwU3ZfM3AzRExGZFN4WVR4RURCWWVUdFRNR2dQYjRPdWtqRTd5VUxnMEk5dnQwbUhVclVEZUFoRGV1V3h1YU9BbU9YOGVoUkxNbllrUi1SQi1rZ9IBnAJBVV95cUxOcVRRSzh2bnktUGFkbGZwcVB1MUNIMVU5QlVLMTZkcF9EZ2ExaEczb05MMjNIa1RvMDBoX1U3amxQRzRybFhHaml1REJlQi1NYWwtd2c2T1pDQi0xT1h0TUE2bnVkMFdSRnFDVnp5V1VmMU5YVDlGMjNuT0JEbWs1RDAxVjJ3a2htQmtmakxSaUFqQUF4aDVGeURwTWI0UV92WlFBaUtLODdrRE9UV04waDIwR3RiWk9PdnFnS3BjZTY2MkZwUlk1cEQwU3ZfM3AzRExGZFN4WVR4RURCWWVUdFRNR2dQYjRPdWtqRTd5VUxnMEk5dnQwbUhVclVEZUFoRGV1V3h1YU9BbU9YOGVoUkxNbllrUi1SQi1rZw?oc=5",
-      "medio": "ANSA Latina",
-      "fecha": "2026-11-02T13:32+00:00",
+      "titulo": "Giancarlo Perversi destacó el rol de la Sociedad Dante Alighieri en Corrientes",
+      "enlace": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRmNEY2ZiNHRsYzI3RGRGLThzOWI2ZUpqOXMyUXQta3VDUUFoUTRxSnNTaS1wdUVFVU4wZFpjQ1NzeTBxc2NZeEtLN2l4Sm5QWmVNYXprVXRpSTZEdWhhbmJGem1GUHRPc2JwQXg4UGxjZkxmbExKS2lEeTN6T2JORmhLMm5aZEEyamx6cUc1cGxOamxJb3ZHeGFJVEs0U3NUVVh2clNoQzlBT2sxUWxiXzVPSzBPbHkxOUhPaGV5T2M3MVh1eUtLRmc3dUZGcXcxb1HSAdIBQVVfeXFMT0ZjRGNmYjR0bGMyN0RkRi04czliNmVKajlzMlF0LWt1Q1FBaFE0cUpzU2ktcHVFRVVOMGRaY0NTc3kwcXNjWXhLSzdpeEpuUFplTWF6a1V0aUk2RHVoYW5iRnptRlB0T3NicEF4OFBsY2ZMZmxMSktpRHkzek9iTkZoSzJuWmRBMmpsenFHNXBsTmpsSW92R3hhSVRLNFNzVFVYdnJTaEM5QU9rMVFsYl81T0swT2x5MTlIT2hleU9jNzFYdXlLS0ZnN3VGRnF3MW9R?oc=5",
+      "medio": "Radio Sudamericana",
+      "fecha": "2026-10-31T07:00+00:00",
       "tema": "Comunidad"
     }
   ]
