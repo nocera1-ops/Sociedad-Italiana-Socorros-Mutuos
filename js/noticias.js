@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-05T02:27+00:00",
+  "actualizado": "2026-11-05T18:00+00:00",
   "items": [
     {
       "titulo": "Inauguración de la muestra colectiva “Insieme: El arte que nos une con Italia”",
@@ -17,17 +17,17 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "Muere a los 93 años Tinto Brass, referente del cine italiano",
-      "enlace": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbUh6azZ3WFpCTHFvZEdMMHhDNDBEQTR1RUk4U3I3bG5uRGNEZ0s5YnRXUmJiV2Rtak1ySy1BeWpRUlItcExueHUwRzNFbjRFQVJ0eXZmOEdsU0xHTHRBNzVsc2Jvc0o1OWRNMk5lajh6N0hkUUdJMXZlS29KZUN2MENPcldWbzB0M1FuQ3BoaEVQZWM1NUdCYTM1b2VaQ0VSb1E?oc=5",
-      "medio": "Diario La Libertad",
-      "fecha": "2026-11-05T01:17+00:00",
+      "titulo": "El restaurante de Las Palmas de Gran Canaria que fusiona cocina italiana y sabores argentinos: una propuesta casera con personalidad",
+      "enlace": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdmZJbExXbVBQR2lCS3BreXNiUmNwY2FRUGJKWVR0UHNYY25PM05ENTdibl9pcW9RS0RDel9ObnVkanFCUjFSS2ZQNXp5bEpXejBqWnI3ZEIxMDNBdlRrSHRfODhqZE9TRno2QjFCWUVRVVlfTXZIUEFrNEdrc20zbGlZT1N3VzZJTkVsRlJsT3RIcjhlQlo2WUU5enY0ek92bmwtc0I3VzNNYmRzSU9fTEtzWTB3SnhMdXBVQWI2SUdPUDBQajltc21LMEnSAdIBQVVfeXFMUHhmRVg1WktUUnNqSTFreXgzUFRUZkJZZnRLaGs5YlI2S3ZJVno5aXI3TzhyR1Q5SXFVNXFnam5Id240TXZBckNod0VLa0RHaFV5Rko4QjA3dURWZXNoWExsNGZ2QXlUNmY5eXVuRWFmTXdwV0M2QmhraThQRHpzb0tla2ZzLWUxdzFOUTRaV1lVbGNWLTh0Z3JydHBETjZEVWlFa19YLWI3V3p0RW9uRFJLQXJmSGR0UDdNOEN6MlcwMXdOdDh2ZFk5Yzczb28zd3dR?oc=5",
+      "medio": "La Provincia",
+      "fecha": "2026-11-05T08:37+00:00",
       "tema": "Cultura"
     },
     {
-      "titulo": "Tres días de arte y cultura con actividades gratuitas en el departamento San Martín",
-      "enlace": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcExBMS0wRC04dk5nOEVjRHVSWHhpNmRpYnpjX0lkYlRtMUNqS3hiclRMeVBoNFBpbGFkQmlmaUxCenF1ZFZ4aXQxX3lUZnVqbnBZZEtHc2RNNlJqakt3N21WRGZObktJa2JaZDlTSlo2Q0V2NEg2cUlrTGhkUFVmQ25WMGJQN0FfUHVLcnF5VWpsZUdPTExINGN0RDY1SVdvZ1BzV0V4NHRDbHNvOWk2WmkydXFmWmdJMUxyWVlJMFJaWFExVjM4N2Jsd9IBywFBVV95cUxOcExBMS0wRC04dk5nOEVjRHVSWHhpNmRpYnpjX0lkYlRtMUNqS3hiclRMeVBoNFBpbGFkQmlmaUxCenF1ZFZ4aXQxX3lUZnVqbnBZZEtHc2RNNlJqakt3N21WRGZObktJa2JaZDlTSlo2Q0V2NEg2cUlrTGhkUFVmQ25WMGJQN0FfUHVLcnF5VWpsZUdPTExINGN0RDY1SVdvZ1BzV0V4NHRDbHNvOWk2WmkydXFmWmdJMUxyWVlJMFJaWFExVjM4N2Jsdw?oc=5",
-      "medio": "La Capital",
-      "fecha": "2026-11-03T18:40+00:00",
+      "titulo": "Un teatro que resiste: Marcelo Di Gennaro y «Rojos globos rojos»",
+      "enlace": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWUFCTUtqdmdaeFJqaC1YbjlmNnYtZXZuTTlEaTdsVjU2d1VfT3h6SzNsOTFra3BZVHpPWkFWZTdzZjFLN1kwQVYyaVJCT0VUVEI2LVN4cGk3OWp0Z1FLM1dFN0JkQVhlOHM4UHBGZmRUc1lrRGdIdnduZXhOYmxLcjhrbElmS18teUwydXBFTnVzZw?oc=5",
+      "medio": "DePolítica",
+      "fecha": "2026-11-05T15:23+00:00",
       "tema": "Patrimonio"
     },
     {
