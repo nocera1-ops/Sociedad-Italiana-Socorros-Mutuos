@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-04T17:59+00:00",
+  "actualizado": "2026-11-05T02:27+00:00",
   "items": [
     {
       "titulo": "Inauguración de la muestra colectiva “Insieme: El arte que nos une con Italia”",
@@ -10,17 +10,17 @@ window.NOTICIAS = {
       "tema": "Comunidad"
     },
     {
-      "titulo": "Te alquilo mi amor T1 capítulo 20: La recepción del consulado italiano",
-      "enlace": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1QcXJEWTdjNXlveUV2bUt2eVRfb2I2ZkZpR0REUVhIckxFTUVWS185LVVWTmpyVXcxRk1VWmVKVTU3d1UxSHBvS3BSbktJLVAyQmdzdk45V0xqZF9Mb3QycmRmcS02MnhuWnU5eFpXdkJ6dldwdk80T2U2ckE?oc=5",
-      "medio": "FormulaTV",
-      "fecha": "2026-11-03T09:03+00:00",
+      "titulo": "La Comisión Europea analiza el límite del 30 % para los alumnos sin ciudadanía italiana, introducido por el Gobierno dirigido por Giorgia Meloni",
+      "enlace": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQM3pEVFpFVTY5R05sVThtVko2TTZiR19EOU5OX0Z0dkxZOXRHbUlUdWNHU1JjM191cEhxT3BTNFppVGdDbUFFRjRqeEpHNE81TUJZcFdEZFRWNUpUTm9QTF94cGVqdkN6ckVmSzVuS3BoVUZ4UG0tdEZVUzZ5X3o2dnlwWEVBd2w1dy1TQzRSVnlVUWs0NnBWTXhVRndHTXkxQmw4QjY2SWQ5TDB0YWkxWTFB?oc=5",
+      "medio": "Informat.ro",
+      "fecha": "2026-11-04T17:27+00:00",
       "tema": "Consulado"
     },
     {
-      "titulo": "Murió Tinto Brass, el director de “Calígula” y figura del cine italiano",
-      "enlace": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUXhPeFdqV2tlaTFyZVczN1FfTTFReFc5WnNZdWlwTThodTg2WExYLUk0TkxPUkxMbmxhMnJFMEpnSUxuUm8tdVMtSGEwUXM0UVVkTFFXLXNJZ00yZlg2R2VaRmgyNHowcF9vRm00WUt1LWJPU2NQekpDVmdkTWdRV3N2ME9tMWwwcFk2Q1pUMlZIbWowV1ltdTRhaWkwOFM5ZVEzeC1hb1VNY0FDbkV0bFBvYnZNZw?oc=5",
-      "medio": "Radio Mitre",
-      "fecha": "2026-11-04T17:50+00:00",
+      "titulo": "Muere a los 93 años Tinto Brass, referente del cine italiano",
+      "enlace": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbUh6azZ3WFpCTHFvZEdMMHhDNDBEQTR1RUk4U3I3bG5uRGNEZ0s5YnRXUmJiV2Rtak1ySy1BeWpRUlItcExueHUwRzNFbjRFQVJ0eXZmOEdsU0xHTHRBNzVsc2Jvc0o1OWRNMk5lajh6N0hkUUdJMXZlS29KZUN2MENPcldWbzB0M1FuQ3BoaEVQZWM1NUdCYTM1b2VaQ0VSb1E?oc=5",
+      "medio": "Diario La Libertad",
+      "fecha": "2026-11-05T01:17+00:00",
       "tema": "Cultura"
     },
     {
