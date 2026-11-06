@@ -1,12 +1,12 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-06T02:25+00:00",
+  "actualizado": "2026-11-06T17:28+00:00",
   "items": [
     {
-      "titulo": "Inauguración de la muestra colectiva “Insieme: El arte que nos une con Italia”",
-      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQa2ZBSFd6RjlHR2ZHdTdaVzczeEhOZDNUVVE5UVBoY0NLX1poZWozTEJtdEJGNDFOdGlWRDZpRlo1WF9ETEhRYTVpbW11X2poX2FIbW5pVDJLM1JDcFJCamdkdVdPODFHOVFRU254T0NpMmU1T0FMU1VNUmhrZkZxWU9NSEhzaG1lU3JZaFJLUG5fMGRyN09rdWlWci1oNnluQktRZ2NfdGg1WUdvRFE?oc=5",
-      "medio": "Rosario.gob",
-      "fecha": "2026-11-03T14:58+00:00",
+      "titulo": "Suardi comenzó a vivir la previa de los 20 años de hermanamiento con piscina",
+      "enlace": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOEplWFFOMUF2U1pkYzV2X0JJXzJ5OHhKcWpoalp2dVM2blRSNmF5bDBHeFVaeHhKVFRKb05GZnFlYXFFaUR1ME5VOTdnSUtNeUZxZl9QMnIwVUxjczd0SEQ5emhKUzdLZ3A2Ql9pR2FWMERjbWUwMjNZNnJScjNVanVHbGxMcm1VQW1CRHRmSi1oVWx2bVl4SFZYSWczNll0RExPVlRzTXdDR19WRG9TeFZTeFRBWlNTbmQ5WlBRVV8zb1o1LV9BNWlJYw?oc=5",
+      "medio": "Diario Castellanos",
+      "fecha": "2026-11-06T15:59+00:00",
       "tema": "Comunidad"
     },
     {
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "Presentan la XI Edición de la Semana de la Cocina Italiana en el Mundo",
-      "enlace": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQWdLMWRUVks5VXhQNWpKd1pybHB4ZHBDeW9wcXR0Y1VORkRxVXVDOExsSTE1Zk1wOVdyOE53a2tBa2w4TFppWjAtRmE0WERLazZQNDdiMng4S2V4Qml0ald2djdJZUJncjlWU1Rxdng4ZVhfMzVwRjdVMko3UXlHRU5ULWV2QjlXZTZIcXRkN2NLMk1YLUlmaGdDTGptU0k4TTdTWjdxQWM0QQ?oc=5",
-      "medio": "emsavalles.com",
-      "fecha": "2026-11-06T01:16+00:00",
+      "titulo": "Más de 40 restaurantes se suman a la Semana de la Cocina Italiana en Buenos Aires",
+      "enlace": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVk5lVGE5RDJ5Wi13S0ZrOWEwQ1puLS00UU15OHFoUWh0bU5ZX0ZVWHl1MWNWc0R5MkJ0WTN5OTlPWnViR3NPaHZJQU9zYTRLSlVRdlE0dG5XaThJejdCclhMR19qUGx6Z0FDX3ZWbU1Mel9BTHFrQzEtMXJxcDc1YlZzQmpTYjFSaU93QjZRM2VxdXdRZHpEYmRwR25wN2NKYWtrWGtGanItNF95eGpPWDhyTmZhTGZmWi1rVEt3Q1NaU29VTFVV0gHiAUFVX3lxTFA3dHB1aktNVk5XQnRNVW1BQ3dRS0lYeEU0U0gwQ0UyRkNNb253dXlPUC1iWXNJQTlGNTRfdHBESFJxakJaczFFRl9wQlprbmFqbFNYN0tPbWduaUQ5dzV1N2ZjQ2J4OFZvODVKUkgzX1hmdlJ4N2tkQVBzT0ZfS3NjczFERkdRT0tvRHp3TzlqTWtvYjduZ01xeGh2MFFTUGFPUFZwNVpVeHBhWWhVS0FlRzBQQi01cC1SQWpsVXFzbzZ6ZGZ2U1VYdWNQVExnNnBmZWlIUV9va1pfakd2WURvcFE?oc=5",
+      "medio": "Infobae",
+      "fecha": "2026-11-06T15:32+00:00",
       "tema": "Cultura"
     },
     {
@@ -38,10 +38,10 @@ window.NOTICIAS = {
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Giancarlo Perversi destacó el rol de la Sociedad Dante Alighieri en Corrientes",
-      "enlace": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRmNEY2ZiNHRsYzI3RGRGLThzOWI2ZUpqOXMyUXQta3VDUUFoUTRxSnNTaS1wdUVFVU4wZFpjQ1NzeTBxc2NZeEtLN2l4Sm5QWmVNYXprVXRpSTZEdWhhbmJGem1GUHRPc2JwQXg4UGxjZkxmbExKS2lEeTN6T2JORmhLMm5aZEEyamx6cUc1cGxOamxJb3ZHeGFJVEs0U3NUVVh2clNoQzlBT2sxUWxiXzVPSzBPbHkxOUhPaGV5T2M3MVh1eUtLRmc3dUZGcXcxb1HSAdIBQVVfeXFMT0ZjRGNmYjR0bGMyN0RkRi04czliNmVKajlzMlF0LWt1Q1FBaFE0cUpzU2ktcHVFRVVOMGRaY0NTc3kwcXNjWXhLSzdpeEpuUFplTWF6a1V0aUk2RHVoYW5iRnptRlB0T3NicEF4OFBsY2ZMZmxMSktpRHkzek9iTkZoSzJuWmRBMmpsenFHNXBsTmpsSW92R3hhSVRLNFNzVFVYdnJTaEM5QU9rMVFsYl81T0swT2x5MTlIT2hleU9jNzFYdXlLS0ZnN3VGRnF3MW9R?oc=5",
-      "medio": "Radio Sudamericana",
-      "fecha": "2026-10-31T07:00+00:00",
+      "titulo": "Con una charla, Suardi inició las actividades de los 20 años de Hermanamiento con Pisicina",
+      "enlace": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9LNXJhd1ppaGc0dFl2OTRRLUZ1NlRWS0Vad2VoZndMNVZHMm95a0RmR1IycTI2dC1lUHg3YzVqdzdJdEUwNkFhbXZMU01aRHV6ZnJqU2laYmF1RkY5LURfd3BR?oc=5",
+      "medio": "Morteros",
+      "fecha": "2026-11-06T12:37+00:00",
       "tema": "Comunidad"
     }
   ]
