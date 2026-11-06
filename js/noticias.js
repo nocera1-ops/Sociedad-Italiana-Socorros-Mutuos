@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-05T18:00+00:00",
+  "actualizado": "2026-11-06T02:25+00:00",
   "items": [
     {
       "titulo": "Inauguración de la muestra colectiva “Insieme: El arte que nos une con Italia”",
@@ -17,17 +17,17 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "El restaurante de Las Palmas de Gran Canaria que fusiona cocina italiana y sabores argentinos: una propuesta casera con personalidad",
-      "enlace": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdmZJbExXbVBQR2lCS3BreXNiUmNwY2FRUGJKWVR0UHNYY25PM05ENTdibl9pcW9RS0RDel9ObnVkanFCUjFSS2ZQNXp5bEpXejBqWnI3ZEIxMDNBdlRrSHRfODhqZE9TRno2QjFCWUVRVVlfTXZIUEFrNEdrc20zbGlZT1N3VzZJTkVsRlJsT3RIcjhlQlo2WUU5enY0ek92bmwtc0I3VzNNYmRzSU9fTEtzWTB3SnhMdXBVQWI2SUdPUDBQajltc21LMEnSAdIBQVVfeXFMUHhmRVg1WktUUnNqSTFreXgzUFRUZkJZZnRLaGs5YlI2S3ZJVno5aXI3TzhyR1Q5SXFVNXFnam5Id240TXZBckNod0VLa0RHaFV5Rko4QjA3dURWZXNoWExsNGZ2QXlUNmY5eXVuRWFmTXdwV0M2QmhraThQRHpzb0tla2ZzLWUxdzFOUTRaV1lVbGNWLTh0Z3JydHBETjZEVWlFa19YLWI3V3p0RW9uRFJLQXJmSGR0UDdNOEN6MlcwMXdOdDh2ZFk5Yzczb28zd3dR?oc=5",
-      "medio": "La Provincia",
-      "fecha": "2026-11-05T08:37+00:00",
+      "titulo": "Presentan la XI Edición de la Semana de la Cocina Italiana en el Mundo",
+      "enlace": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQWdLMWRUVks5VXhQNWpKd1pybHB4ZHBDeW9wcXR0Y1VORkRxVXVDOExsSTE1Zk1wOVdyOE53a2tBa2w4TFppWjAtRmE0WERLazZQNDdiMng4S2V4Qml0ald2djdJZUJncjlWU1Rxdng4ZVhfMzVwRjdVMko3UXlHRU5ULWV2QjlXZTZIcXRkN2NLMk1YLUlmaGdDTGptU0k4TTdTWjdxQWM0QQ?oc=5",
+      "medio": "emsavalles.com",
+      "fecha": "2026-11-06T01:16+00:00",
       "tema": "Cultura"
     },
     {
-      "titulo": "Un teatro que resiste: Marcelo Di Gennaro y «Rojos globos rojos»",
-      "enlace": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWUFCTUtqdmdaeFJqaC1YbjlmNnYtZXZuTTlEaTdsVjU2d1VfT3h6SzNsOTFra3BZVHpPWkFWZTdzZjFLN1kwQVYyaVJCT0VUVEI2LVN4cGk3OWp0Z1FLM1dFN0JkQVhlOHM4UHBGZmRUc1lrRGdIdnduZXhOYmxLcjhrbElmS18teUwydXBFTnVzZw?oc=5",
-      "medio": "DePolítica",
-      "fecha": "2026-11-05T15:23+00:00",
+      "titulo": "La Bomba de Tiempo, Peteco Carabajal, Karamelo Santo, ferias del libro y más planes para hacer el fin de semana en zona norte",
+      "enlace": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOZ2VOM3VfaDFyRlV2S3pXNU0tRS1CZERvQkdidkZuQU96SXdRSnlIY3gxaUNjSE0wY0NFSGo5NXBHSWhlUjg0X0g4akZiSXJlUlI3ZEFxZGJVRkZ6RGNrSFhQY3JhVVNRYlRqYW1nUE1UM2k1czluZndzSDE0WW1WYzFpTkplQlg1WEl0TE5iQ0s5X0xpN1NBWklqMVZhMC1JbVNDa0Fmejk0dlcxRElFT0szMld6cVJXMEp1SHBXbmZNRE5VZVQ2ZWpFZUZiYTJNUHlPYzNTV2NQemxjdUltZ2l4aFFWQUFwWEZrYTJTYw?oc=5",
+      "medio": "Que Pasa Web",
+      "fecha": "2026-11-05T20:08+00:00",
       "tema": "Patrimonio"
     },
     {
