@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-07T01:55+00:00",
+  "actualizado": "2026-11-07T16:25+00:00",
   "items": [
     {
       "titulo": "Suardi comenzó a vivir la previa de los 20 años de hermanamiento con piscina",
@@ -10,17 +10,17 @@ window.NOTICIAS = {
       "tema": "Comunidad"
     },
     {
-      "titulo": "Los hermanos Bolsonaro obtuvieron ciudadanía italiana en tiempo récord",
-      "enlace": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTVZndUk1VVhyOFdTOG1KSlFSd24yVGE4cGxqWGVhdDYxZ1g2VWFFdnhIZTFlZUtHVnB1d2R5UXlNWkNHcW02cnozV2ZOUFB0Tzdremlnam5BWTVuVTkyeFNHd1NLY1hmSVg1WjZVTFVWcHE0eVoxQjNGR2RYU1QzSk9vRzZYaDZoZEdjSlgtcDF2WjJ0VnA2N29fOGJ6RVNWZFJSSUFOQ1Q2c2ZaNUdiR1B6cmVyTFl4LXQ4STV5VENHc1lnRnA4aWhWSUw?oc=5",
-      "medio": "Flipr.news",
-      "fecha": "2026-11-06T20:45+00:00",
+      "titulo": "Ciudadanía italiana: una familia recibe un cobro con sanción del 70% antes de la sentencia",
+      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSjZzR3JkTDJlNjV6RXVlRFV5MWlrdkRiVE4zaFJQWkdzTmNlVVJOWTVqUEU0ZmFFREZPUWhWZ3FmazJiWTNEMS1MdWtxb2w4b2ZieEpfV2NnQ3pxcDhqVWVuM1VLYVB2YlV6N2x5Szg4SGYxNGZBQkZvME5uN09ZY3VkV1JjbWYwU3pqS3MzYW1ra25yam4tMU1KRW9pdkJnbTlCcm5vQU8ySl9oWFE?oc=5",
+      "medio": "Revista Insieme",
+      "fecha": "2026-11-07T00:26+00:00",
       "tema": "Consulado"
     },
     {
-      "titulo": "Más de 40 restaurantes se suman a la Semana de la Cocina Italiana en Buenos Aires",
-      "enlace": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVk5lVGE5RDJ5Wi13S0ZrOWEwQ1puLS00UU15OHFoUWh0bU5ZX0ZVWHl1MWNWc0R5MkJ0WTN5OTlPWnViR3NPaHZJQU9zYTRLSlVRdlE0dG5XaThJejdCclhMR19qUGx6Z0FDX3ZWbU1Mel9BTHFrQzEtMXJxcDc1YlZzQmpTYjFSaU93QjZRM2VxdXdRZHpEYmRwR25wN2NKYWtrWGtGanItNF95eGpPWDhyTmZhTGZmWi1rVEt3Q1NaU29VTFVV0gHiAUFVX3lxTFA3dHB1aktNVk5XQnRNVW1BQ3dRS0lYeEU0U0gwQ0UyRkNNb253dXlPUC1iWXNJQTlGNTRfdHBESFJxakJaczFFRl9wQlprbmFqbFNYN0tPbWduaUQ5dzV1N2ZjQ2J4OFZvODVKUkgzX1hmdlJ4N2tkQVBzT0ZfS3NjczFERkdRT0tvRHp3TzlqTWtvYjduZ01xeGh2MFFTUGFPUFZwNVpVeHBhWWhVS0FlRzBQQi01cC1SQWpsVXFzbzZ6ZGZ2U1VYdWNQVExnNnBmZWlIUV9va1pfakd2WURvcFE?oc=5",
-      "medio": "Infobae",
-      "fecha": "2026-11-06T15:32+00:00",
+      "titulo": "Alberto e Silvana: el cine italiano revive en el Off Off Theatre de Roma",
+      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUi1LXzVIQzlKRU5CRUg4a1l5cTdhU183TjRoN041cnltSFZPODVjWTdKV1ZqSU9RblRCNFZTQVhtNFFBSWFlUmhabU51TmVOWFMzUjVSQUlacEs0WFZfV3c1T25BUGp4WElhZy1UR2NjY0MxaU8zYU5IV3hOanFrSzFtLWxpbVRwRWx1dGR1dm9CWWdmeUMtall0aUxCNklmX0pWampuTkY3YWxqVEE?oc=5",
+      "medio": "Foro3D",
+      "fecha": "2026-11-07T03:23+00:00",
       "tema": "Cultura"
     },
     {
@@ -31,18 +31,18 @@ window.NOTICIAS = {
       "tema": "Patrimonio"
     },
     {
+      "titulo": "Más de 40 restaurantes se suman a la Semana de la Cocina Italiana en Buenos Aires",
+      "enlace": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQN3RwdWpLTVZOV0J0TVVtQUN3UUtJWHhFNFNIMENFMkZDTW9ud3V5T1AtYllzSUE5RjU0X3RwREhScWpCWnMxRUZfcEJaa25hamxTWDdLT21nbmlEOXc1dTdmY0NieDhWbzg1SlJIM19YZnZSeDdrZEFQc09GX0tzY3MxREZHUU9Lb0R6d085ak1rb2I3bmdNcXhodjBRU1BhT1BWcDVaVXhwYVloVUtBZUcwUEItNXAtUkFqbFVxc282emRmdlNVWHVjUFRMZzZwZmVpSFFfb2taX2pHdllEb3BR0gHiAUFVX3lxTFA3dHB1aktNVk5XQnRNVW1BQ3dRS0lYeEU0U0gwQ0UyRkNNb253dXlPUC1iWXNJQTlGNTRfdHBESFJxakJaczFFRl9wQlprbmFqbFNYN0tPbWduaUQ5dzV1N2ZjQ2J4OFZvODVKUkgzX1hmdlJ4N2tkQVBzT0ZfS3NjczFERkdRT0tvRHp3TzlqTWtvYjduZ01xeGh2MFFTUGFPUFZwNVpVeHBhWWhVS0FlRzBQQi01cC1SQWpsVXFzbzZ6ZGZ2U1VYdWNQVExnNnBmZWlIUV9va1pfakd2WURvcFE?oc=5",
+      "medio": "Infobae",
+      "fecha": "2026-11-06T15:32+00:00",
+      "tema": "Italia y Argentina"
+    },
+    {
       "titulo": "Con una charla, Suardi inició las actividades de los 20 años de Hermanamiento con Pisicina",
       "enlace": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9LNXJhd1ppaGc0dFl2OTRRLUZ1NlRWS0Vad2VoZndMNVZHMm95a0RmR1IycTI2dC1lUHg3YzVqdzdJdEUwNkFhbXZMU01aRHV6ZnJqU2laYmF1RkY5LURfd3BR?oc=5",
       "medio": "Morteros",
       "fecha": "2026-11-06T12:37+00:00",
       "tema": "Comunidad"
-    },
-    {
-      "titulo": "Confirman que Flávio Bolsonaro obtuvo ciudadanía italiana en 58 días",
-      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbzRaX0J6aVZOeE1QaWEtR0lpT1JqY0lBUFZuajYzNzFqWG4wai1CUER4RVJqdk1DaU1BVXRkSFlKTGVKT2ZpNjdiLVp3Z0ZNSmNpNkxTREhHUDhtWlpFUE9hVUZVSms1dlUzOWtHQThKUzJrZXd4ckl2WWVYblBSSFQyV05vNUdMNzNEU1U4MGx0Tjh3angyV2dVVDd1Qm1oSkplajBqaWVLWFVNRXc?oc=5",
-      "medio": "Prensa Latina",
-      "fecha": "2026-11-06T19:54+00:00",
-      "tema": "Consulado"
     }
   ]
 };
