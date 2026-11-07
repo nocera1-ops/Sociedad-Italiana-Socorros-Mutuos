@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-06T17:28+00:00",
+  "actualizado": "2026-11-07T01:55+00:00",
   "items": [
     {
       "titulo": "Suardi comenzó a vivir la previa de los 20 años de hermanamiento con piscina",
@@ -10,10 +10,10 @@ window.NOTICIAS = {
       "tema": "Comunidad"
     },
     {
-      "titulo": "La Comisión Europea analiza el límite del 30 % para los alumnos sin ciudadanía italiana, introducido por el Gobierno dirigido por Giorgia Meloni",
-      "enlace": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQM3pEVFpFVTY5R05sVThtVko2TTZiR19EOU5OX0Z0dkxZOXRHbUlUdWNHU1JjM191cEhxT3BTNFppVGdDbUFFRjRqeEpHNE81TUJZcFdEZFRWNUpUTm9QTF94cGVqdkN6ckVmSzVuS3BoVUZ4UG0tdEZVUzZ5X3o2dnlwWEVBd2w1dy1TQzRSVnlVUWs0NnBWTXhVRndHTXkxQmw4QjY2SWQ5TDB0YWkxWTFB?oc=5",
-      "medio": "Informat.ro",
-      "fecha": "2026-11-04T17:27+00:00",
+      "titulo": "Los hermanos Bolsonaro obtuvieron ciudadanía italiana en tiempo récord",
+      "enlace": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTVZndUk1VVhyOFdTOG1KSlFSd24yVGE4cGxqWGVhdDYxZ1g2VWFFdnhIZTFlZUtHVnB1d2R5UXlNWkNHcW02cnozV2ZOUFB0Tzdremlnam5BWTVuVTkyeFNHd1NLY1hmSVg1WjZVTFVWcHE0eVoxQjNGR2RYU1QzSk9vRzZYaDZoZEdjSlgtcDF2WjJ0VnA2N29fOGJ6RVNWZFJSSUFOQ1Q2c2ZaNUdiR1B6cmVyTFl4LXQ4STV5VENHc1lnRnA4aWhWSUw?oc=5",
+      "medio": "Flipr.news",
+      "fecha": "2026-11-06T20:45+00:00",
       "tema": "Consulado"
     },
     {
@@ -24,18 +24,11 @@ window.NOTICIAS = {
       "tema": "Cultura"
     },
     {
-      "titulo": "La Bomba de Tiempo, Peteco Carabajal, Karamelo Santo, ferias del libro y más planes para hacer el fin de semana en zona norte",
-      "enlace": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOZ2VOM3VfaDFyRlV2S3pXNU0tRS1CZERvQkdidkZuQU96SXdRSnlIY3gxaUNjSE0wY0NFSGo5NXBHSWhlUjg0X0g4akZiSXJlUlI3ZEFxZGJVRkZ6RGNrSFhQY3JhVVNRYlRqYW1nUE1UM2k1czluZndzSDE0WW1WYzFpTkplQlg1WEl0TE5iQ0s5X0xpN1NBWklqMVZhMC1JbVNDa0Fmejk0dlcxRElFT0szMld6cVJXMEp1SHBXbmZNRE5VZVQ2ZWpFZUZiYTJNUHlPYzNTV2NQemxjdUltZ2l4aFFWQUFwWEZrYTJTYw?oc=5",
-      "medio": "Que Pasa Web",
-      "fecha": "2026-11-05T20:08+00:00",
+      "titulo": "El hall del Teatro Marconi llevará el nombre “Guillermina Saggión”",
+      "enlace": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVDlKT3lvS3BCd1dpSDVhZ0w4Ynl4aE9OclJDMDJMTGV2aHhkNjhaNjNGcldVNVRSQ3hRalpWcFpNajlrRlplRlBhN0Y0RWRnWXJfMFRJNmJEVFdoWldZZVNWbXRSb3EyNmVWcUVzM3FsaFByNmhBcnpjSlhXN3c2TGhpcU5FTkNZa1JZUWNQMUFBRm82Zkt5NGtn0gGaAUFVX3lxTE9UOUpPeW9LcEJ3V2lINWFnTDhieXhoT05yUkMwMkxMZXZoeGQ2OFo2M0ZyV1U1VFJDeFFqWlZwWk1qOWtGWmVGUGE3RjRFZGdZcl8wVEk2YkRUV2haV1llU1ZtdFJvcTI2ZVZxRXMzcWxoUHI2aEFyemNKWFc3dzZMaGlxTkVOQ1lrUllRY1AxQUFGbzZmS3k0a2c?oc=5",
+      "medio": "InfoSaladillo",
+      "fecha": "2026-11-06T14:44+00:00",
       "tema": "Patrimonio"
-    },
-    {
-      "titulo": "La presidenta Claudia Sheinbaum muestra respuesta de embajador Genaro Lozano sobre supuesta fiesta en Italia",
-      "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNzFUaVloNjRrWk9xRGd5UW1fMlh0VE01Tm94Z0xBNmR2S3ZBenVpTjhGaHBKSnZjQXlCVXhKSlY5V3hNeEtWUU5ESzlOYm93dV92dkNUbjctTlBYY3QydFpRNUhLVlM4cXAxa2s2RWQ0alpTd1JJOUN1QTIyX3dlNWw4N0ZKdXdheXJZNFplOWE2TXFPU2M0?oc=5",
-      "medio": "El Congresista",
-      "fecha": "2026-11-03T19:04+00:00",
-      "tema": "Italia y Argentina"
     },
     {
       "titulo": "Con una charla, Suardi inició las actividades de los 20 años de Hermanamiento con Pisicina",
@@ -43,6 +36,13 @@ window.NOTICIAS = {
       "medio": "Morteros",
       "fecha": "2026-11-06T12:37+00:00",
       "tema": "Comunidad"
+    },
+    {
+      "titulo": "Confirman que Flávio Bolsonaro obtuvo ciudadanía italiana en 58 días",
+      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbzRaX0J6aVZOeE1QaWEtR0lpT1JqY0lBUFZuajYzNzFqWG4wai1CUER4RVJqdk1DaU1BVXRkSFlKTGVKT2ZpNjdiLVp3Z0ZNSmNpNkxTREhHUDhtWlpFUE9hVUZVSms1dlUzOWtHQThKUzJrZXd4ckl2WWVYblBSSFQyV05vNUdMNzNEU1U4MGx0Tjh3angyV2dVVDd1Qm1oSkplajBqaWVLWFVNRXc?oc=5",
+      "medio": "Prensa Latina",
+      "fecha": "2026-11-06T19:54+00:00",
+      "tema": "Consulado"
     }
   ]
 };
