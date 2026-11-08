@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-07T16:25+00:00",
+  "actualizado": "2026-11-08T16:39+00:00",
   "items": [
     {
       "titulo": "Suardi comenzó a vivir la previa de los 20 años de hermanamiento con piscina",
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "Alberto e Silvana: el cine italiano revive en el Off Off Theatre de Roma",
-      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUi1LXzVIQzlKRU5CRUg4a1l5cTdhU183TjRoN041cnltSFZPODVjWTdKV1ZqSU9RblRCNFZTQVhtNFFBSWFlUmhabU51TmVOWFMzUjVSQUlacEs0WFZfV3c1T25BUGp4WElhZy1UR2NjY0MxaU8zYU5IV3hOanFrSzFtLWxpbVRwRWx1dGR1dm9CWWdmeUMtall0aUxCNklmX0pWampuTkY3YWxqVEE?oc=5",
+      "titulo": "MittelCinemaFest llega a Szeged con cine italiano contemporáneo y un clásico",
+      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaUZYQjRVUGhNcXVWM0oyOFNaQWROdVNiQVVGaEo4Mk4ydTJzanZLV0JaSnBHdmpTcU9GSmJxcTBlZkhSem1hMHZCa214cXBiaGVnbXVCR0c1MWxhT1NrZlM5QXhRY1hBMXJsdzhONEVLRVFocEFnQkJaN1MxY3Y0WUdkaXRzYkVISWtSZmhfbm5DMUhtZHFPbFBTcXFDdEgzOWtOYTU2ajdmbHhCLXc?oc=5",
       "medio": "Foro3D",
-      "fecha": "2026-11-07T03:23+00:00",
+      "fecha": "2026-11-08T03:11+00:00",
       "tema": "Cultura"
     },
     {
