@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-08T16:39+00:00",
+  "actualizado": "2026-11-09T01:43+00:00",
   "items": [
     {
       "titulo": "Suardi comenzó a vivir la previa de los 20 años de hermanamiento con piscina",
@@ -10,17 +10,17 @@ window.NOTICIAS = {
       "tema": "Comunidad"
     },
     {
-      "titulo": "Ciudadanía italiana: una familia recibe un cobro con sanción del 70% antes de la sentencia",
-      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSjZzR3JkTDJlNjV6RXVlRFV5MWlrdkRiVE4zaFJQWkdzTmNlVVJOWTVqUEU0ZmFFREZPUWhWZ3FmazJiWTNEMS1MdWtxb2w4b2ZieEpfV2NnQ3pxcDhqVWVuM1VLYVB2YlV6N2x5Szg4SGYxNGZBQkZvME5uN09ZY3VkV1JjbWYwU3pqS3MzYW1ra25yam4tMU1KRW9pdkJnbTlCcm5vQU8ySl9oWFE?oc=5",
-      "medio": "Revista Insieme",
-      "fecha": "2026-11-07T00:26+00:00",
+      "titulo": "Los hermanos Bolsonaro obtuvieron ciudadanía italiana en tiempo récord",
+      "enlace": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTVZndUk1VVhyOFdTOG1KSlFSd24yVGE4cGxqWGVhdDYxZ1g2VWFFdnhIZTFlZUtHVnB1d2R5UXlNWkNHcW02cnozV2ZOUFB0Tzdremlnam5BWTVuVTkyeFNHd1NLY1hmSVg1WjZVTFVWcHE0eVoxQjNGR2RYU1QzSk9vRzZYaDZoZEdjSlgtcDF2WjJ0VnA2N29fOGJ6RVNWZFJSSUFOQ1Q2c2ZaNUdiR1B6cmVyTFl4LXQ4STV5VENHc1lnRnA4aWhWSUw?oc=5",
+      "medio": "Flipr.news",
+      "fecha": "2026-11-06T20:45+00:00",
       "tema": "Consulado"
     },
     {
-      "titulo": "MittelCinemaFest llega a Szeged con cine italiano contemporáneo y un clásico",
-      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaUZYQjRVUGhNcXVWM0oyOFNaQWROdVNiQVVGaEo4Mk4ydTJzanZLV0JaSnBHdmpTcU9GSmJxcTBlZkhSem1hMHZCa214cXBiaGVnbXVCR0c1MWxhT1NrZlM5QXhRY1hBMXJsdzhONEVLRVFocEFnQkJaN1MxY3Y0WUdkaXRzYkVISWtSZmhfbm5DMUhtZHFPbFBTcXFDdEgzOWtOYTU2ajdmbHhCLXc?oc=5",
-      "medio": "Foro3D",
-      "fecha": "2026-11-08T03:11+00:00",
+      "titulo": "La cocina italiana festeja en México el reconocimiento de la UNESCO",
+      "enlace": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQbnZKX3N5RUpfT0RLQmhab3RKSXdnbTNjYlFlTnQ1a3VHTlBiNGd0QW4yNzVwNUp0Sy1td0pwbEdDbEp2dlo2ckl5U3NDOTNHYVBrdy1ranJMQzFlWnc2dV9HMVpSNjVCd2FSVE0xUTlVa2VsS3BmcDBUZU5OcVpscmtjSllnYjg3M19NTFpWWnVHVXpYY1REcG13MnVLeEFTSHV0S3VRVVR2d1YyY3FoTHg5aFRRMVVsZ0tPaDhILVlrSkd5QXA3VjNMbDJFeWQzNVpiWTJPQVZkejRWbU5LQlJqMUwxSmtJTjhHQWFCYlAxU0Yydm01VHhBNFV1V0NxeFNaRXFNRERheE1EVEtCYXJZanVPaUXSAZwCQVVfeXFMTXc4Y2lJbW0xNERIcW9MYzhjVjM1SW1uQnk4eklBcmZ6bzdSV2NQcGRtVFlYSk5rb3FnX2JQVHhfYWVhckxQb3dsQk5qMTNuZEs4ZHMzcXFjQTQ0MTR6N1VUQ1N3a1AyUkZPaWNhakdzeExDLUV0YWdOQVA0TUh2Uno3a2xPSzV0Uy05N3dVdlphbDJrbFJUYzUzdk5RdUdBNUdEY2VaMjBsZmN4amFLY01tYzJqbWNpdmhObFkwbW45MkJvM3FjQTRoOVBPcnZzeVcxU0F3cldzYmduMnVPVVZ1dGlmVzh1V3ZYbm4zRXl1VW1Pa3NzUjhwSDJpSl9NVXR1WFRRTnA4aV9vR1haQXRWWTBnRV9HX3pEQjg?oc=5",
+      "medio": "ANSA Latina",
+      "fecha": "2026-11-08T22:00+00:00",
       "tema": "Cultura"
     },
     {
