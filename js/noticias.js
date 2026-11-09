@@ -1,26 +1,26 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-09T01:43+00:00",
+  "actualizado": "2026-11-09T20:43+00:00",
   "items": [
     {
-      "titulo": "Suardi comenzó a vivir la previa de los 20 años de hermanamiento con piscina",
-      "enlace": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOEplWFFOMUF2U1pkYzV2X0JJXzJ5OHhKcWpoalp2dVM2blRSNmF5bDBHeFVaeHhKVFRKb05GZnFlYXFFaUR1ME5VOTdnSUtNeUZxZl9QMnIwVUxjczd0SEQ5emhKUzdLZ3A2Ql9pR2FWMERjbWUwMjNZNnJScjNVanVHbGxMcm1VQW1CRHRmSi1oVWx2bVl4SFZYSWczNll0RExPVlRzTXdDR19WRG9TeFZTeFRBWlNTbmQ5WlBRVV8zb1o1LV9BNWlJYw?oc=5",
-      "medio": "Diario Castellanos",
-      "fecha": "2026-11-06T15:59+00:00",
+      "titulo": "Comites 2026: la disputa entre listas llega al perfil de los 150 años de la inmigración italiana en SC",
+      "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMUdjTFlwQUdDLUJRTjZDSmpvZTduVlBSa1dSQ2RQckNXUUw3a2FrVjAzaGNGa2NPeEhTSEM1NHY4TWV1bkw5NHJEUld3dFpXZ0hoNlRFWmtXNk01dXZvc0xhaEszalhFUWY4ZmprbUliVUszVHAtMUd2RlZvMXdqWDZkZ3I3ZEV1SUpNeg?oc=5",
+      "medio": "Revista Insieme",
+      "fecha": "2026-11-08T21:39+00:00",
       "tema": "Comunidad"
     },
     {
-      "titulo": "Los hermanos Bolsonaro obtuvieron ciudadanía italiana en tiempo récord",
-      "enlace": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTVZndUk1VVhyOFdTOG1KSlFSd24yVGE4cGxqWGVhdDYxZ1g2VWFFdnhIZTFlZUtHVnB1d2R5UXlNWkNHcW02cnozV2ZOUFB0Tzdremlnam5BWTVuVTkyeFNHd1NLY1hmSVg1WjZVTFVWcHE0eVoxQjNGR2RYU1QzSk9vRzZYaDZoZEdjSlgtcDF2WjJ0VnA2N29fOGJ6RVNWZFJSSUFOQ1Q2c2ZaNUdiR1B6cmVyTFl4LXQ4STV5VENHc1lnRnA4aWhWSUw?oc=5",
-      "medio": "Flipr.news",
-      "fecha": "2026-11-06T20:45+00:00",
+      "titulo": "Confirman que Flávio Bolsonaro obtuvo ciudadanía italiana en 58 días",
+      "enlace": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbzRaX0J6aVZOeE1QaWEtR0lpT1JqY0lBUFZuajYzNzFqWG4wai1CUER4RVJqdk1DaU1BVXRkSFlKTGVKT2ZpNjdiLVp3Z0ZNSmNpNkxTREhHUDhtWlpFUE9hVUZVSms1dlUzOWtHQThKUzJrZXd4ckl2WWVYblBSSFQyV05vNUdMNzNEU1U4MGx0Tjh3angyV2dVVDd1Qm1oSkplajBqaWVLWFVNRXc?oc=5",
+      "medio": "Prensa Latina",
+      "fecha": "2026-11-06T19:54+00:00",
       "tema": "Consulado"
     },
     {
-      "titulo": "La cocina italiana festeja en México el reconocimiento de la UNESCO",
-      "enlace": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQbnZKX3N5RUpfT0RLQmhab3RKSXdnbTNjYlFlTnQ1a3VHTlBiNGd0QW4yNzVwNUp0Sy1td0pwbEdDbEp2dlo2ckl5U3NDOTNHYVBrdy1ranJMQzFlWnc2dV9HMVpSNjVCd2FSVE0xUTlVa2VsS3BmcDBUZU5OcVpscmtjSllnYjg3M19NTFpWWnVHVXpYY1REcG13MnVLeEFTSHV0S3VRVVR2d1YyY3FoTHg5aFRRMVVsZ0tPaDhILVlrSkd5QXA3VjNMbDJFeWQzNVpiWTJPQVZkejRWbU5LQlJqMUwxSmtJTjhHQWFCYlAxU0Yydm01VHhBNFV1V0NxeFNaRXFNRERheE1EVEtCYXJZanVPaUXSAZwCQVVfeXFMTXc4Y2lJbW0xNERIcW9MYzhjVjM1SW1uQnk4eklBcmZ6bzdSV2NQcGRtVFlYSk5rb3FnX2JQVHhfYWVhckxQb3dsQk5qMTNuZEs4ZHMzcXFjQTQ0MTR6N1VUQ1N3a1AyUkZPaWNhakdzeExDLUV0YWdOQVA0TUh2Uno3a2xPSzV0Uy05N3dVdlphbDJrbFJUYzUzdk5RdUdBNUdEY2VaMjBsZmN4amFLY01tYzJqbWNpdmhObFkwbW45MkJvM3FjQTRoOVBPcnZzeVcxU0F3cldzYmduMnVPVVZ1dGlmVzh1V3ZYbm4zRXl1VW1Pa3NzUjhwSDJpSl9NVXR1WFRRTnA4aV9vR1haQXRWWTBnRV9HX3pEQjg?oc=5",
-      "medio": "ANSA Latina",
-      "fecha": "2026-11-08T22:00+00:00",
+      "titulo": "CIAK! 2025: cuatro días de cine italiano en Raon-l Étape",
+      "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM3BTMzdBeTl4X2JMUjVGbm5pWXpSeHR4LTRYdllEX1AyS1o1QzZQaFVPbG9rRGxaU1UxZEw0aEFVYUY4cVhORzBieGdNOFlYZnNUd2EzTFYteDNqWk1rcFZFNW9YX28zb0hiWDkwWU1NQmI5cU5GRFRvd3FIeDk4SW5VbXJWbXRUM245WThEZk50YUV2cEdWUw?oc=5",
+      "medio": "Foro3D",
+      "fecha": "2026-11-09T04:13+00:00",
       "tema": "Cultura"
     },
     {
@@ -38,10 +38,10 @@ window.NOTICIAS = {
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Con una charla, Suardi inició las actividades de los 20 años de Hermanamiento con Pisicina",
-      "enlace": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9LNXJhd1ppaGc0dFl2OTRRLUZ1NlRWS0Vad2VoZndMNVZHMm95a0RmR1IycTI2dC1lUHg3YzVqdzdJdEUwNkFhbXZMU01aRHV6ZnJqU2laYmF1RkY5LURfd3BR?oc=5",
-      "medio": "Morteros",
-      "fecha": "2026-11-06T12:37+00:00",
+      "titulo": "Suardi comenzó a vivir la previa de los 20 años de hermanamiento con piscina",
+      "enlace": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOEplWFFOMUF2U1pkYzV2X0JJXzJ5OHhKcWpoalp2dVM2blRSNmF5bDBHeFVaeHhKVFRKb05GZnFlYXFFaUR1ME5VOTdnSUtNeUZxZl9QMnIwVUxjczd0SEQ5emhKUzdLZ3A2Ql9pR2FWMERjbWUwMjNZNnJScjNVanVHbGxMcm1VQW1CRHRmSi1oVWx2bVl4SFZYSWczNll0RExPVlRzTXdDR19WRG9TeFZTeFRBWlNTbmQ5WlBRVV8zb1o1LV9BNWlJYw?oc=5",
+      "medio": "Diario Castellanos",
+      "fecha": "2026-11-06T15:59+00:00",
       "tema": "Comunidad"
     }
   ]
