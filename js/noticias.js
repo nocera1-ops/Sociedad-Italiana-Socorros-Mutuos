@@ -1,11 +1,11 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-10T04:06+00:00",
+  "actualizado": "2026-11-10T17:48+00:00",
   "items": [
     {
       "titulo": "Comites 2026: la disputa entre listas llega al perfil de los 150 años de la inmigración italiana en SC",
       "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMUdjTFlwQUdDLUJRTjZDSmpvZTduVlBSa1dSQ2RQckNXUUw3a2FrVjAzaGNGa2NPeEhTSEM1NHY4TWV1bkw5NHJEUld3dFpXZ0hoNlRFWmtXNk01dXZvc0xhaEszalhFUWY4ZmprbUliVUszVHAtMUd2RlZvMXdqWDZkZ3I3ZEV1SUpNeg?oc=5",
-      "medio": "Revista Insieme",
+      "medio": "Insieme",
       "fecha": "2026-11-08T21:39+00:00",
       "tema": "Comunidad"
     },
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "La cocina italiana les pasó la cuenta: ¿Quiénes se pondrán el delantal negro?",
-      "enlace": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNT2VOX0FVY0NfaDBDUmZ1S0xDWm9VM2c4NllmWkxyUTB6R3hKUFMwd2Y5TjE0cm9iQ3RkU3EwZXlzWW4xd01ETWpzUDNJRU1ycjJxM21IRUV1TjFJc2NidjY4TDlRQnUtOEoyTVNyZS1ZOVVzb01CLWszUDZqS2UwVGpNOHItRk1ueEtBazV3N19VVHMxTW1KdFNjYmQ0RXppWW05QWJaX1F2ZlpQ?oc=5",
-      "medio": "Señal En VIVO TVN",
-      "fecha": "2026-11-10T02:42+00:00",
+      "titulo": "Uruguay celebra la cocina italiana con dos semanas de sabores, tradición y grandes referentes",
+      "enlace": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdDlSanNqM3hNM2hac0YzNGZUNGgyY0xxM3NGdXF0blZCTW5BOGhENVlyaVI1Ni1tTzBGc09vZ1lTdGVuT3RzMk16M1gtV1JHMEc3Z0JlaVY5OTl0aUFkcm9oWFVZYW9FeXZJdGhWckNjekw5VW9NdUtFY0ZZX3Y5ckROcjFzeW9ELTQ1OVN4dEVxdVpHTGR1WWYzQTVyRGhnX1FJZXVsNFZTOWwyVW5Vci1fTDVDWDVsOWFsa1Y2TkZZMkRp?oc=5",
+      "medio": "Portada Punta",
+      "fecha": "2026-11-10T16:35+00:00",
       "tema": "Cultura"
     },
     {
