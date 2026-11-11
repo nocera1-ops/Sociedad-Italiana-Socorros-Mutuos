@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-10T17:48+00:00",
+  "actualizado": "2026-11-11T17:53+00:00",
   "items": [
     {
       "titulo": "Comites 2026: la disputa entre listas llega al perfil de los 150 años de la inmigración italiana en SC",
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "Uruguay celebra la cocina italiana con dos semanas de sabores, tradición y grandes referentes",
-      "enlace": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdDlSanNqM3hNM2hac0YzNGZUNGgyY0xxM3NGdXF0blZCTW5BOGhENVlyaVI1Ni1tTzBGc09vZ1lTdGVuT3RzMk16M1gtV1JHMEc3Z0JlaVY5OTl0aUFkcm9oWFVZYW9FeXZJdGhWckNjekw5VW9NdUtFY0ZZX3Y5ckROcjFzeW9ELTQ1OVN4dEVxdVpHTGR1WWYzQTVyRGhnX1FJZXVsNFZTOWwyVW5Vci1fTDVDWDVsOWFsa1Y2TkZZMkRp?oc=5",
-      "medio": "Portada Punta",
-      "fecha": "2026-11-10T16:35+00:00",
+      "titulo": "El Parque Belgrano será sede de la Semana de la Cocina Italiana",
+      "enlace": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRmZkVVBWQ05fRHh5STBZQWp4ZlJ6N0s3dVVDUks1WGVZQ25iMGJmTkxXMVc1ZVktUS1Ib1A2aVFJVTc0c2tDVFlqbDlqRGNNR0d2amZCR3VaT3Q4RS1zM205MnctRHVsOG1ONkxNQTdZRldWWTNUcUU0QlE4Q2VtSDUydUI3Q3ZRVllwUUtpNEszQWtNTk15SmdJRkp2VF9DSmpNOWZXcUtJN1Z2aWxsT1NRdzg2NVNRdEtoN0k3bkZCTTM0SEowaURR?oc=5",
+      "medio": "Flipr.news",
+      "fecha": "2026-11-11T14:11+00:00",
       "tema": "Cultura"
     },
     {
