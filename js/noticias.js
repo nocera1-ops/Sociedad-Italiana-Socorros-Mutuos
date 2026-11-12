@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-11T17:53+00:00",
+  "actualizado": "2026-11-12T02:58+00:00",
   "items": [
     {
       "titulo": "Comites 2026: la disputa entre listas llega al perfil de los 150 años de la inmigración italiana en SC",
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "El Parque Belgrano será sede de la Semana de la Cocina Italiana",
-      "enlace": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRmZkVVBWQ05fRHh5STBZQWp4ZlJ6N0s3dVVDUks1WGVZQ25iMGJmTkxXMVc1ZVktUS1Ib1A2aVFJVTc0c2tDVFlqbDlqRGNNR0d2amZCR3VaT3Q4RS1zM205MnctRHVsOG1ONkxNQTdZRldWWTNUcUU0QlE4Q2VtSDUydUI3Q3ZRVllwUUtpNEszQWtNTk15SmdJRkp2VF9DSmpNOWZXcUtJN1Z2aWxsT1NRdzg2NVNRdEtoN0k3bkZCTTM0SEowaURR?oc=5",
-      "medio": "Flipr.news",
-      "fecha": "2026-11-11T14:11+00:00",
+      "titulo": "Pergamino celebrará la Semana de la Cocina Italiana con gastronomía, música y danzas",
+      "enlace": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU29aRVpfUmF2OUJwZVp0THpXYzQydk1LNzB4bWhVaXFZSzMwUGFUMHJTdHJwV19aeGNyWC1MS3hfT19YV3JPai1lZmhoVVFYQ0pxQ05zeEhndWRsRGJzU0hKTG1vWmhuczM1d2tFTXloMm9FUkhlMlhqWTBKSUFCT2tXVjRnVUhFdTlGRlBIdGQ5em52Mk9uc2pSMkxzN3E5S3c?oc=5",
+      "medio": "Diario Núcleo",
+      "fecha": "2026-11-11T14:52+00:00",
       "tema": "Cultura"
     },
     {
@@ -31,10 +31,10 @@ window.NOTICIAS = {
       "tema": "Patrimonio"
     },
     {
-      "titulo": "La presidenta Claudia Sheinbaum muestra respuesta de embajador Genaro Lozano sobre supuesta fiesta en Italia",
-      "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNzFUaVloNjRrWk9xRGd5UW1fMlh0VE01Tm94Z0xBNmR2S3ZBenVpTjhGaHBKSnZjQXlCVXhKSlY5V3hNeEtWUU5ESzlOYm93dV92dkNUbjctTlBYY3QydFpRNUhLVlM4cXAxa2s2RWQ0alpTd1JJOUN1QTIyX3dlNWw4N0ZKdXdheXJZNFplOWE2TXFPU2M0?oc=5",
-      "medio": "El Congresista",
-      "fecha": "2026-11-03T19:04+00:00",
+      "titulo": "¿Quién se quedará con Nicolò Tresoldi?: Alemania, Italia y Argentina se lo disputan",
+      "enlace": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNeEQ2Y1dCU3pkWjdCSHRSMzZpczVodUZnUlpiQklRUVloT2N4TXd0Y1VQeGlZSF9QSU92OUxxbkJIS1JSTzNzTjF6b3dFRzk2YUxCMmU1eFVMa1NDUE8xeDEtbGMyZU9ER0JCeVJ6S3dYVGtlVnUyMXNubV9CU2lyM1dpcEg3Njh1dUNOeEIxa0lwX09IejVoejU2OWEwd2JPd2dIcW9pajJGUGVmRTFtaEJLeG9iY0RmdFBnTGxhbWVMWGhqWGRVUTIwWXVtQQ?oc=5",
+      "medio": "Transfermarkt",
+      "fecha": "2026-11-11T17:00+00:00",
       "tema": "Italia y Argentina"
     },
     {
