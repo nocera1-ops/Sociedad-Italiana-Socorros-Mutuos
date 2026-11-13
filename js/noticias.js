@@ -1,12 +1,12 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-12T18:18+00:00",
+  "actualizado": "2026-11-13T02:37+00:00",
   "items": [
     {
-      "titulo": "Comites 2026: la disputa entre listas llega al perfil de los 150 años de la inmigración italiana en SC",
-      "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMUdjTFlwQUdDLUJRTjZDSmpvZTduVlBSa1dSQ2RQckNXUUw3a2FrVjAzaGNGa2NPeEhTSEM1NHY4TWV1bkw5NHJEUld3dFpXZ0hoNlRFWmtXNk01dXZvc0xhaEszalhFUWY4ZmprbUliVUszVHAtMUd2RlZvMXdqWDZkZ3I3ZEV1SUpNeg?oc=5",
-      "medio": "Insieme",
-      "fecha": "2026-11-08T21:39+00:00",
+      "titulo": "Comidas típicas, música y danzas: llega a Zona Oeste la Fiesta de las Colectividades Italianas",
+      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOSW5TSjZDTkFuc3VTd0FrQWR4S2FHSk5mdFMzb1RSVzZEM0hFaXVBUHFDRUNLMlpvN2NpbjFaemtNcUFRZGs2cTR2MXhBY0h0c0hRZkJpQ2hqZWJBVzFXVWk5akktYzN6REZsT054Uzh2NE9hWkRkZnFwalNnX0llYV93NmpQVEZia01nQlUyZVJDMXNkaWwxYnN0RjBOakRFQjk1bEI5anc4MDEyeWdrZEx2NERfUURLajc5ZVQwempjMUZtcm9Yc0I0NGZ0N1Zlbm9oLW1WelF4OUY2MWlBaVBjMNIB6AFBVV95cUxPTk8zQ3FSZFFnQWlhRjFoQmh0andXMTNBdTQzdzQ4VGZFT19mdUs4UTdjekNMdFhqQ3E4ZE1sYVd0UWVSWjR0VmNpY00zSU0tdC1kSWFsNWFrRFE3REJvM0g2U3hLZGpUd0t2ajRNUWZRaTVXQUFzYm5tUEVuOU1hMEM5c1VNLVB6M2NfS09mNkpkY0NOcHhMV1lpX0JfVmgtLWtjVE9kSWVUMExRU3ZGS0ctTXZTNl9CYUNnQldZU1JBT2hzM0xUQWh5Q2ZXYi1aNlRReTMyX0pjMnRuZGlxRnlveU9UaE1B?oc=5",
+      "medio": "Viví el Oeste",
+      "fecha": "2026-11-12T12:53+00:00",
       "tema": "Comunidad"
     },
     {
@@ -17,31 +17,31 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "SABORES Y TRADICIÓN: ESTE DOMINGO SE REALIZARÁ LA SEMANA DE LA COCINA ITALIANA EN EL PARQUE BELGRANO",
-      "enlace": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1faUtqaDdjN0VHTlVSMzBxREl1d21VUXR2NGlxNUN3ek5xSFlRME9HWnJBTE1odVRPVWFNd1RqbzVubTBSRkIxVmczV042SVJEYm1SeDk0ZzhnblJCLW5z?oc=5",
-      "medio": "Pergamino Verdad",
-      "fecha": "2026-11-12T15:40+00:00",
+      "titulo": "Redefiniendo el cine italiano: el Palladium Film Festival - CineMaOltre",
+      "enlace": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOTB5bmJQeGpQQWZ6RFNZS21BTC1uaFVYNDkweGRud0s1NnpDaklCY1dxcHlVelVIRVp1b1ZvdkItVzMyM0dNWHhGWmlCWGhtSzdfSTl5T3N0ODNtU1lpRUxVTmxXMlNtTTRLdVoxOVhMTHRFSlBJNWwyUWJPdUpSMk1qR3BRLWd4eHRwZzdldVpFQTZMRjRFLVJuNE9jTzZnbXAtZ3RfWFlmdDFobno5WVNB0gG3AUFVX3lxTE50eDhZMVNKTFNxenNxNTZiRnBxT1RSd1J3MjlpTlhwejVFbFRzRDdLTWxCWVRKdE9uT0FsOU03RmY4Nm1TUk14cE5ibjFVVDNTa2dEVExITWxsakpiX016bmVtazVhUmJxOGlIajhIeXFFd0ROaTJwZ2htYnJaWkxaWVNIRkNPTGNaZEV6SE1UVlBrR0dkYnRjbUVEWHgwQnUyOUVESUIwTzF3VUQ3S3FjSjZLSHNGSQ?oc=5",
+      "medio": "Il Messaggero",
+      "fecha": "2026-11-13T00:28+00:00",
       "tema": "Cultura"
     },
     {
-      "titulo": "Puesta en valor de la Sociedad Italiana",
-      "enlace": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTjByVllzREpLcjJzeVF3d0lLX1lHUlRKZUxRbVVBOHJ3aGJxNDNxWmYtZEs3SThnb01pbUNmZ1A5NWYyU3YwdU9FMUU3bVlSME9COFFNUHJGZi1xMEVrUGVuVndYanNOWnA2NmZXTGpKQmVnQVZPM1JqS3lvSU1CZ2JpczB2RE42Nkh3ZE9EaGxyc2FLTng4dEMwb0QyMENXc0Z2LVpMMA?oc=5",
-      "medio": "El Diario del centro del país",
-      "fecha": "2026-11-12T11:30+00:00",
+      "titulo": "“Tocó Teatro” /cierra el año con un viaje al mundo del tango",
+      "enlace": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZkswOWJIZF9sb00xWkppZUlncS0zeHRWa2w4TFlscHJUWWd0SzZTOFNDdG5UaWkyRWFzdVVsekJmWDhVa2pTWWUzeVB3a1lmc3NQTlZrbEx3TWFIdmZGUFZidjBMd0VYSlE5VW9IOFljMTJUUl9HZWFxNjRCOVdLWWNsUWkxWWozR2VPMlA2NWVxaHlOdnhwRExVLWdXZFFtYXh2WFBlOGpNejg4eVhJ?oc=5",
+      "medio": "laprensa.com.uy",
+      "fecha": "2026-11-12T17:01+00:00",
       "tema": "Patrimonio"
     },
     {
-      "titulo": "¿Quién se quedará con Nicolò Tresoldi?: Alemania, Italia y Argentina se lo disputan",
-      "enlace": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNeEQ2Y1dCU3pkWjdCSHRSMzZpczVodUZnUlpiQklRUVloT2N4TXd0Y1VQeGlZSF9QSU92OUxxbkJIS1JSTzNzTjF6b3dFRzk2YUxCMmU1eFVMa1NDUE8xeDEtbGMyZU9ER0JCeVJ6S3dYVGtlVnUyMXNubV9CU2lyM1dpcEg3Njh1dUNOeEIxa0lwX09IejVoejU2OWEwd2JPd2dIcW9pajJGUGVmRTFtaEJLeG9iY0RmdFBnTGxhbWVMWGhqWGRVUTIwWXVtQQ?oc=5",
-      "medio": "Transfermarkt",
-      "fecha": "2026-11-11T17:00+00:00",
+      "titulo": "Quesada palpita duelo entre Italia y Argentina por el Nations Championship",
+      "enlace": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPbGFkc0h2WmJlTUJPVzJic2FGOEUyTkdMLXhwcHJYSXYtUGdxT1QyeXdfTzctS1pMZkpUNklYMW5HMFh0Wm41RDlUeDhNQ2NBS2RaTTN0VDZkc3dibkJvUXVFWjJyaHI5bTg4dktCU194ZmNqNG5LVlNrSW1Zd3AtVkhwMFJpTzN5YUZvMTBHcEJmYjBlenBubG9hbDd4enV1MFhZeTB3YlR5U3IzQ1NuRXRkdXVpbjY4ZVlMaUZBQVZZc3BiOG9XdFVLdVExY19CS3RhWlI3V2ZBVEI5UUVCYkhYdDFCRkFwbmVuVk1GZDU2WGMzbHJQT2lnRmU2Y1R6ekx3UFd0Mk10bGpZYXIyTmUzcExfNlVK0gGYAkFVX3lxTE9sYWRzSHZaYmVNQk9XMmJzYUY4RTJOR0wteHBwclhJdi1QZ3FPVDJ5d19PNy1LWkxmSlQ2SVgxbkcwWHRabjVEOVR4OE1DY0FLZFpNM3RUNmRzd2JuQm9RdUVaMnJocjltODh2S0JTX3hmY2o0bktWU2tJbVl3cC1WSHAwUmlPM3lhRm8xMEdwQmZiMGV6cG5sb2FsN3h6dXUwWFl5MHdiVHlTcjNDU25FdGR1dWluNjhlWUxpRkFBVllzcGI4b1d0VUt1UTFjX0JLdGFaUjdXZkFUQjlRRUJiSFh0MUJGQXBuZW5WTUZkNTZYYzNsclBPaWdGZTZjVHp6THdQV3QyTXRsallhcjJOZTNwTF82VUo?oc=5",
+      "medio": "ANSA Latina",
+      "fecha": "2026-11-12T19:47+00:00",
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Suardi comenzó a vivir la previa de los 20 años de hermanamiento con piscina",
-      "enlace": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOEplWFFOMUF2U1pkYzV2X0JJXzJ5OHhKcWpoalp2dVM2blRSNmF5bDBHeFVaeHhKVFRKb05GZnFlYXFFaUR1ME5VOTdnSUtNeUZxZl9QMnIwVUxjczd0SEQ5emhKUzdLZ3A2Ql9pR2FWMERjbWUwMjNZNnJScjNVanVHbGxMcm1VQW1CRHRmSi1oVWx2bVl4SFZYSWczNll0RExPVlRzTXdDR19WRG9TeFZTeFRBWlNTbmQ5WlBRVV8zb1o1LV9BNWlJYw?oc=5",
-      "medio": "Diario Castellanos",
-      "fecha": "2026-11-06T15:59+00:00",
+      "titulo": "Comites 2026: la disputa entre listas llega al perfil de los 150 años de la inmigración italiana en SC",
+      "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMUdjTFlwQUdDLUJRTjZDSmpvZTduVlBSa1dSQ2RQckNXUUw3a2FrVjAzaGNGa2NPeEhTSEM1NHY4TWV1bkw5NHJEUld3dFpXZ0hoNlRFWmtXNk01dXZvc0xhaEszalhFUWY4ZmprbUliVUszVHAtMUd2RlZvMXdqWDZkZ3I3ZEV1SUpNeg?oc=5",
+      "medio": "Insieme",
+      "fecha": "2026-11-08T21:39+00:00",
       "tema": "Comunidad"
     }
   ]
