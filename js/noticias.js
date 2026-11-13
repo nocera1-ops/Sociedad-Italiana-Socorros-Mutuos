@@ -1,12 +1,12 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-13T02:37+00:00",
+  "actualizado": "2026-11-13T17:43+00:00",
   "items": [
     {
-      "titulo": "Comidas típicas, música y danzas: llega a Zona Oeste la Fiesta de las Colectividades Italianas",
-      "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOSW5TSjZDTkFuc3VTd0FrQWR4S2FHSk5mdFMzb1RSVzZEM0hFaXVBUHFDRUNLMlpvN2NpbjFaemtNcUFRZGs2cTR2MXhBY0h0c0hRZkJpQ2hqZWJBVzFXVWk5akktYzN6REZsT054Uzh2NE9hWkRkZnFwalNnX0llYV93NmpQVEZia01nQlUyZVJDMXNkaWwxYnN0RjBOakRFQjk1bEI5anc4MDEyeWdrZEx2NERfUURLajc5ZVQwempjMUZtcm9Yc0I0NGZ0N1Zlbm9oLW1WelF4OUY2MWlBaVBjMNIB6AFBVV95cUxPTk8zQ3FSZFFnQWlhRjFoQmh0andXMTNBdTQzdzQ4VGZFT19mdUs4UTdjekNMdFhqQ3E4ZE1sYVd0UWVSWjR0VmNpY00zSU0tdC1kSWFsNWFrRFE3REJvM0g2U3hLZGpUd0t2ajRNUWZRaTVXQUFzYm5tUEVuOU1hMEM5c1VNLVB6M2NfS09mNkpkY0NOcHhMV1lpX0JfVmgtLWtjVE9kSWVUMExRU3ZGS0ctTXZTNl9CYUNnQldZU1JBT2hzM0xUQWh5Q2ZXYi1aNlRReTMyX0pjMnRuZGlxRnlveU9UaE1B?oc=5",
-      "medio": "Viví el Oeste",
-      "fecha": "2026-11-12T12:53+00:00",
+      "titulo": "10 cosas que debes saber sobre Santa Francisca Javier Cabrini",
+      "enlace": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PdEVyZnRuZVBQUWMxY21pZGhCRl9IZkh2RzVOenZqNmJjc3dQSi1kOHdoQzBBU1RVaU9Ta2hfZ180dE1JUENSSkYzQl9tUGpGQ0IyMTV6QXhKZVh5TVVpWnlhYkJ3WW9tMmVxTm44Z0VlMGR3QmhES2NOZ196Zw?oc=5",
+      "medio": "EWTN News",
+      "fecha": "2026-11-13T13:34+00:00",
       "tema": "Comunidad"
     },
     {
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "Redefiniendo el cine italiano: el Palladium Film Festival - CineMaOltre",
-      "enlace": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOTB5bmJQeGpQQWZ6RFNZS21BTC1uaFVYNDkweGRud0s1NnpDaklCY1dxcHlVelVIRVp1b1ZvdkItVzMyM0dNWHhGWmlCWGhtSzdfSTl5T3N0ODNtU1lpRUxVTmxXMlNtTTRLdVoxOVhMTHRFSlBJNWwyUWJPdUpSMk1qR3BRLWd4eHRwZzdldVpFQTZMRjRFLVJuNE9jTzZnbXAtZ3RfWFlmdDFobno5WVNB0gG3AUFVX3lxTE50eDhZMVNKTFNxenNxNTZiRnBxT1RSd1J3MjlpTlhwejVFbFRzRDdLTWxCWVRKdE9uT0FsOU03RmY4Nm1TUk14cE5ibjFVVDNTa2dEVExITWxsakpiX016bmVtazVhUmJxOGlIajhIeXFFd0ROaTJwZ2htYnJaWkxaWVNIRkNPTGNaZEV6SE1UVlBrR0dkYnRjbUVEWHgwQnUyOUVESUIwTzF3VUQ3S3FjSjZLSHNGSQ?oc=5",
-      "medio": "Il Messaggero",
-      "fecha": "2026-11-13T00:28+00:00",
+      "titulo": "Campana celebra la XI Semana de la Cocina Italiana con talleres infantiles y menús especiales",
+      "enlace": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPQ2s5NUpjcWFraXBIYUNEUzQ0Y1lVZFFoc3ZOZEFvcGpSNHRoZVRYSHRHRlBqVURqMUdFZ21WdXdnT3cxQ2xFWmFrWFlrTXI4aG9KOWgtWVVCTDk0ekhaMzkxbkh6cU1UOHVCeDF3cldoT1ZicS1qLVVSb1A4UnA0REFEbFFHQmg1U2c1Q0RldHlESUJVTWJpZG5YUzhDYV9SN1dPSnNoLXZQZkx6cGZuMm5yNFVKRVFqQVQySU9TWTYtTlNlOHVVMktseFExekd6cTNrdg?oc=5",
+      "medio": "Campana Noticias",
+      "fecha": "2026-11-13T16:49+00:00",
       "tema": "Cultura"
     },
     {
@@ -38,10 +38,10 @@ window.NOTICIAS = {
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Comites 2026: la disputa entre listas llega al perfil de los 150 años de la inmigración italiana en SC",
-      "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMUdjTFlwQUdDLUJRTjZDSmpvZTduVlBSa1dSQ2RQckNXUUw3a2FrVjAzaGNGa2NPeEhTSEM1NHY4TWV1bkw5NHJEUld3dFpXZ0hoNlRFWmtXNk01dXZvc0xhaEszalhFUWY4ZmprbUliVUszVHAtMUd2RlZvMXdqWDZkZ3I3ZEV1SUpNeg?oc=5",
-      "medio": "Insieme",
-      "fecha": "2026-11-08T21:39+00:00",
+      "titulo": "Antonio Malatesta será el único candidato de Balcarce en las elecciones del COM.IT.ES",
+      "enlace": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOaHJUUkVKSkd6eGstMTEydFp5MlZjY1o0MUJOdWVId1hrcDFkRjNVMGxPQ0g2cTVMaXZTUGZONXNjbTl1a0FJT1V3bklud1l2MGVlQXE1cGdjOFBvUFB0SzFzSVoxS0lPTzFCcXJDcWdIbzEzRXRtQjJJMGJkTlJIQVZicXRNSGZ2aHhtd2V5WFkxVFV2ZE1zVy1RZ3RmVmFJTW40c1RFMlBtZVhkY3kxc2NGSVdnUTJ5MHNrYWR5blE1N3JJRDY1eU5lWm9mUkItU2c?oc=5",
+      "medio": "diariolavanguardia.com",
+      "fecha": "2026-11-13T11:03+00:00",
       "tema": "Comunidad"
     }
   ]
