@@ -1,12 +1,12 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-14T02:25+00:00",
+  "actualizado": "2026-11-14T16:35+00:00",
   "items": [
     {
-      "titulo": "10 cosas que debes saber sobre Santa Francisca Javier Cabrini",
-      "enlace": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PdEVyZnRuZVBQUWMxY21pZGhCRl9IZkh2RzVOenZqNmJjc3dQSi1kOHdoQzBBU1RVaU9Ta2hfZ180dE1JUENSSkYzQl9tUGpGQ0IyMTV6QXhKZVh5TVVpWnlhYkJ3WW9tMmVxTm44Z0VlMGR3QmhES2NOZ196Zw?oc=5",
-      "medio": "EWTN News",
-      "fecha": "2026-11-13T13:34+00:00",
+      "titulo": "Llegan los sobres para votar por el COM.IT.ES: qué deben tener en cuenta los ciudadanos italianos de Mar del Plata",
+      "enlace": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPUUowYWdBMGhDak9iMkVZWUJQTkd4clA1N2dKQjBmZlBGdmVNLVFNVXhPZFNTb1loT3h2a0hIeER0d1BGZmZlNk1WRE4wREZKUkRhamltcG1mTnlKTGZyU3Z3OFFDOGN1UEJtengwRE9uWmNQb3VnMF9Yb2V4dGNkMVRwSmxxc28wZVdXZ2JzaDB2bFBSU1Y0YW9oZV9UQk51ZmdCdmlWM1FVOXB6TUl5NV9paU5PYVJLXzM5TkNRNWtpNFFLcDlkcDUwWE1JSENrNDhkWUpJODB4TGFQSGJ3VlNYc185NUF1R2g1QmVmQlZnVWM?oc=5",
+      "medio": "0223.com.ar",
+      "fecha": "2026-11-14T14:45+00:00",
       "tema": "Comunidad"
     },
     {
@@ -17,31 +17,31 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "Pizza, pastas y café: Bahía Blanca se prepara para celebrar la cocina italiana",
-      "enlace": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPT3I5N1QxcjNNeTBDOWIwS0xmZHFxamJnbkRaSGtRS3lHa3c3NWhvaXNuc08xTzlHMEJXVkR4bHM2RG12dHctQ211UnBVNXpKbFA0bW5HNlBqSjdOSWI0TERWaVZQTGFwLWViNFVZQ0xzR1Q1WG5HcEdBcllnejV6TkFCeGpFZVJONTRVYll2RlB6NVhURDRUbjRrMjJ6WElaY1ktaUxTLWttVDJsOHNBSnQ3VXN5bTZkOWVLMGVfWWNVRF9fOUdyV3dxQ2FaWDQ?oc=5",
-      "medio": "La Nueva Provincia",
-      "fecha": "2026-11-13T21:07+00:00",
+      "titulo": "A Tavola! La cocina italiana y la identidad nacional en Turín",
+      "enlace": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMW9lMFF6NUtXdy1tWXJrVFZ2RGIwRFlYQmRJMkFMdlBMZzZvTG5qVExaVVJRSWtxeFNrRXU5OFlzdjhQYmFpS21lWTdDM2ZoR2xLMEt2amxMMFN0bEZkcEtMdzl1Q0ZNLUFFZUV1aXkwMTlLc0FiMG1vSUwtQ281QW1Bd0Q3SHlQVWlqYTFrelFLaEFOU1lKMUlJdFFQOE4x?oc=5",
+      "medio": "Foro3D",
+      "fecha": "2026-11-14T10:00+00:00",
       "tema": "Cultura"
     },
     {
-      "titulo": "“Tocó Teatro” /cierra el año con un viaje al mundo del tango",
-      "enlace": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZkswOWJIZF9sb00xWkppZUlncS0zeHRWa2w4TFlscHJUWWd0SzZTOFNDdG5UaWkyRWFzdVVsekJmWDhVa2pTWWUzeVB3a1lmc3NQTlZrbEx3TWFIdmZGUFZidjBMd0VYSlE5VW9IOFljMTJUUl9HZWFxNjRCOVdLWWNsUWkxWWozR2VPMlA2NWVxaHlOdnhwRExVLWdXZFFtYXh2WFBlOGpNejg4eVhJ?oc=5",
-      "medio": "laprensa.com.uy",
-      "fecha": "2026-11-12T17:01+00:00",
+      "titulo": "Música, teatro y danza en la agenda de junio del Teatro 3 de Febrero",
+      "enlace": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTWU3ZXFiMmNxWTBtVmN6aHRnVF9NM1prUHBlRnNoWnNsRGpRSXA2dFZvbUxMMVFuc3JORjhuRVRDbE5xZU0xM0JRTUgtZW1VZy0wMlhuVHRETTBqaFFpcE1pN0NuemdHRG9WUUc5bVlVQUM0SU0xT2ZHZnk5aERMdHBzLVVtclhRNG9Ed0pKbW1Tbk5fSWlUZ3NMLXpOSXZDLWVTUg?oc=5",
+      "medio": "Municipalidad de Paraná",
+      "fecha": "2026-11-14T14:12+00:00",
       "tema": "Patrimonio"
     },
     {
-      "titulo": "Quesada palpita duelo entre Italia y Argentina por el Nations Championship",
-      "enlace": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPbGFkc0h2WmJlTUJPVzJic2FGOEUyTkdMLXhwcHJYSXYtUGdxT1QyeXdfTzctS1pMZkpUNklYMW5HMFh0Wm41RDlUeDhNQ2NBS2RaTTN0VDZkc3dibkJvUXVFWjJyaHI5bTg4dktCU194ZmNqNG5LVlNrSW1Zd3AtVkhwMFJpTzN5YUZvMTBHcEJmYjBlenBubG9hbDd4enV1MFhZeTB3YlR5U3IzQ1NuRXRkdXVpbjY4ZVlMaUZBQVZZc3BiOG9XdFVLdVExY19CS3RhWlI3V2ZBVEI5UUVCYkhYdDFCRkFwbmVuVk1GZDU2WGMzbHJQT2lnRmU2Y1R6ekx3UFd0Mk10bGpZYXIyTmUzcExfNlVK0gGYAkFVX3lxTE9sYWRzSHZaYmVNQk9XMmJzYUY4RTJOR0wteHBwclhJdi1QZ3FPVDJ5d19PNy1LWkxmSlQ2SVgxbkcwWHRabjVEOVR4OE1DY0FLZFpNM3RUNmRzd2JuQm9RdUVaMnJocjltODh2S0JTX3hmY2o0bktWU2tJbVl3cC1WSHAwUmlPM3lhRm8xMEdwQmZiMGV6cG5sb2FsN3h6dXUwWFl5MHdiVHlTcjNDU25FdGR1dWluNjhlWUxpRkFBVllzcGI4b1d0VUt1UTFjX0JLdGFaUjdXZkFUQjlRRUJiSFh0MUJGQXBuZW5WTUZkNTZYYzNsclBPaWdGZTZjVHp6THdQV3QyTXRsallhcjJOZTNwTF82VUo?oc=5",
-      "medio": "ANSA Latina",
-      "fecha": "2026-11-12T19:47+00:00",
+      "titulo": "Roldán: reúne 85 familiares en un cumpleaños con emotivo asado",
+      "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5qWEc0TGlQbE1vdDdoMDAtVzJiU2lkZURrMVY5RVAwclBtRXlYQkNDa2txVkZ4Ym1kb0JDcGxjcW4tZ09oMmtSdXB6Ykw4ZDltaTNsSF8yUThMSWlmTjBMUTYyUWx5Zm9wVTJmdlg0RGRBNERYWHdTY0NZYw?oc=5",
+      "medio": "El Congresista",
+      "fecha": "2026-11-14T13:44+00:00",
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Antonio Malatesta será el único candidato de Balcarce en las elecciones del COM.IT.ES",
-      "enlace": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOaHJUUkVKSkd6eGstMTEydFp5MlZjY1o0MUJOdWVId1hrcDFkRjNVMGxPQ0g2cTVMaXZTUGZONXNjbTl1a0FJT1V3bklud1l2MGVlQXE1cGdjOFBvUFB0SzFzSVoxS0lPTzFCcXJDcWdIbzEzRXRtQjJJMGJkTlJIQVZicXRNSGZ2aHhtd2V5WFkxVFV2ZE1zVy1RZ3RmVmFJTW40c1RFMlBtZVhkY3kxc2NGSVdnUTJ5MHNrYWR5blE1N3JJRDY1eU5lWm9mUkItU2c?oc=5",
-      "medio": "diariolavanguardia.com",
-      "fecha": "2026-11-13T11:03+00:00",
+      "titulo": "10 cosas que debes saber sobre Santa Francisca Javier Cabrini",
+      "enlace": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PdEVyZnRuZVBQUWMxY21pZGhCRl9IZkh2RzVOenZqNmJjc3dQSi1kOHdoQzBBU1RVaU9Ta2hfZ180dE1JUENSSkYzQl9tUGpGQ0IyMTV6QXhKZVh5TVVpWnlhYkJ3WW9tMmVxTm44Z0VlMGR3QmhES2NOZ196Zw?oc=5",
+      "medio": "EWTN News",
+      "fecha": "2026-11-13T13:34+00:00",
       "tema": "Comunidad"
     }
   ]
