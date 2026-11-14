@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-13T17:43+00:00",
+  "actualizado": "2026-11-14T02:25+00:00",
   "items": [
     {
       "titulo": "10 cosas que debes saber sobre Santa Francisca Javier Cabrini",
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "Campana celebra la XI Semana de la Cocina Italiana con talleres infantiles y menús especiales",
-      "enlace": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPQ2s5NUpjcWFraXBIYUNEUzQ0Y1lVZFFoc3ZOZEFvcGpSNHRoZVRYSHRHRlBqVURqMUdFZ21WdXdnT3cxQ2xFWmFrWFlrTXI4aG9KOWgtWVVCTDk0ekhaMzkxbkh6cU1UOHVCeDF3cldoT1ZicS1qLVVSb1A4UnA0REFEbFFHQmg1U2c1Q0RldHlESUJVTWJpZG5YUzhDYV9SN1dPSnNoLXZQZkx6cGZuMm5yNFVKRVFqQVQySU9TWTYtTlNlOHVVMktseFExekd6cTNrdg?oc=5",
-      "medio": "Campana Noticias",
-      "fecha": "2026-11-13T16:49+00:00",
+      "titulo": "Pizza, pastas y café: Bahía Blanca se prepara para celebrar la cocina italiana",
+      "enlace": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPT3I5N1QxcjNNeTBDOWIwS0xmZHFxamJnbkRaSGtRS3lHa3c3NWhvaXNuc08xTzlHMEJXVkR4bHM2RG12dHctQ211UnBVNXpKbFA0bW5HNlBqSjdOSWI0TERWaVZQTGFwLWViNFVZQ0xzR1Q1WG5HcEdBcllnejV6TkFCeGpFZVJONTRVYll2RlB6NVhURDRUbjRrMjJ6WElaY1ktaUxTLWttVDJsOHNBSnQ3VXN5bTZkOWVLMGVfWWNVRF9fOUdyV3dxQ2FaWDQ?oc=5",
+      "medio": "La Nueva Provincia",
+      "fecha": "2026-11-13T21:07+00:00",
       "tema": "Cultura"
     },
     {
