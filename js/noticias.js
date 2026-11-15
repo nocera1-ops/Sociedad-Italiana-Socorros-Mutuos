@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-15T01:54+00:00",
+  "actualizado": "2026-11-15T17:08+00:00",
   "items": [
     {
       "titulo": "Cacho Báez presentó En sepia en una emotiva noche en Catriló",
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "Cine italiano en la Biblioteca José Ingenieros",
-      "enlace": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMlMzaTFjQUhYNnJmYVc4XzJjdnhvNm9wOWZVcTdWMk9DY1d4QmZGWUItSktuWjJGSG5nUEViOS1vVUxtbDZlQmtyQ2tUbjd4RE9ZVmxYQWxZeXlRZFlublhaNHdURmhTZEV5U1FWdGtWdGRMUTB5ZHB2dkliSENtZE12dUFjeDdPSWlYMU1td0pmZ1FYb0VDWUFZTUZCdlFNMHc?oc=5",
-      "medio": "Diario Tiempo Digital - 9 de Julio",
-      "fecha": "2026-11-15T00:42+00:00",
+      "titulo": "Cita con Italia en la Quinta",
+      "enlace": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBTYWlQRlNLbXNORDIxdzUwSi1TcFlPM2VJV3kwSnhyUDdtcU0wbTBMWEV0VUE2OFY1dUcxX3VMVi1XUy1OcU9LN3liUjJKZGh4X3RjV0xIRWQtUzhXLUx1MHFB?oc=5",
+      "medio": "Tribuna de La Habana",
+      "fecha": "2026-11-15T15:41+00:00",
       "tema": "Cultura"
     },
     {
@@ -31,10 +31,10 @@ window.NOTICIAS = {
       "tema": "Patrimonio"
     },
     {
-      "titulo": "Roldán: reúne 85 familiares en un cumpleaños con emotivo asado",
-      "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5qWEc0TGlQbE1vdDdoMDAtVzJiU2lkZURrMVY5RVAwclBtRXlYQkNDa2txVkZ4Ym1kb0JDcGxjcW4tZ09oMmtSdXB6Ykw4ZDltaTNsSF8yUThMSWlmTjBMUTYyUWx5Zm9wVTJmdlg0RGRBNERYWHdTY0NZYw?oc=5",
-      "medio": "El Congresista",
-      "fecha": "2026-11-14T13:44+00:00",
+      "titulo": "Quesada palpita duelo entre Italia y Argentina por el Nations Championship",
+      "enlace": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPbGFkc0h2WmJlTUJPVzJic2FGOEUyTkdMLXhwcHJYSXYtUGdxT1QyeXdfTzctS1pMZkpUNklYMW5HMFh0Wm41RDlUeDhNQ2NBS2RaTTN0VDZkc3dibkJvUXVFWjJyaHI5bTg4dktCU194ZmNqNG5LVlNrSW1Zd3AtVkhwMFJpTzN5YUZvMTBHcEJmYjBlenBubG9hbDd4enV1MFhZeTB3YlR5U3IzQ1NuRXRkdXVpbjY4ZVlMaUZBQVZZc3BiOG9XdFVLdVExY19CS3RhWlI3V2ZBVEI5UUVCYkhYdDFCRkFwbmVuVk1GZDU2WGMzbHJQT2lnRmU2Y1R6ekx3UFd0Mk10bGpZYXIyTmUzcExfNlVK0gGYAkFVX3lxTE9sYWRzSHZaYmVNQk9XMmJzYUY4RTJOR0wteHBwclhJdi1QZ3FPVDJ5d19PNy1LWkxmSlQ2SVgxbkcwWHRabjVEOVR4OE1DY0FLZFpNM3RUNmRzd2JuQm9RdUVaMnJocjltODh2S0JTX3hmY2o0bktWU2tJbVl3cC1WSHAwUmlPM3lhRm8xMEdwQmZiMGV6cG5sb2FsN3h6dXUwWFl5MHdiVHlTcjNDU25FdGR1dWluNjhlWUxpRkFBVllzcGI4b1d0VUt1UTFjX0JLdGFaUjdXZkFUQjlRRUJiSFh0MUJGQXBuZW5WTUZkNTZYYzNsclBPaWdGZTZjVHp6THdQV3QyTXRsallhcjJOZTNwTF82VUo?oc=5",
+      "medio": "ANSA Latina",
+      "fecha": "2026-11-12T19:47+00:00",
       "tema": "Italia y Argentina"
     },
     {
