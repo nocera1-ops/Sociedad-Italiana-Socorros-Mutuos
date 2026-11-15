@@ -1,12 +1,12 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-14T16:35+00:00",
+  "actualizado": "2026-11-15T01:54+00:00",
   "items": [
     {
-      "titulo": "Llegan los sobres para votar por el COM.IT.ES: qué deben tener en cuenta los ciudadanos italianos de Mar del Plata",
-      "enlace": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPUUowYWdBMGhDak9iMkVZWUJQTkd4clA1N2dKQjBmZlBGdmVNLVFNVXhPZFNTb1loT3h2a0hIeER0d1BGZmZlNk1WRE4wREZKUkRhamltcG1mTnlKTGZyU3Z3OFFDOGN1UEJtengwRE9uWmNQb3VnMF9Yb2V4dGNkMVRwSmxxc28wZVdXZ2JzaDB2bFBSU1Y0YW9oZV9UQk51ZmdCdmlWM1FVOXB6TUl5NV9paU5PYVJLXzM5TkNRNWtpNFFLcDlkcDUwWE1JSENrNDhkWUpJODB4TGFQSGJ3VlNYc185NUF1R2g1QmVmQlZnVWM?oc=5",
-      "medio": "0223.com.ar",
-      "fecha": "2026-11-14T14:45+00:00",
+      "titulo": "Cacho Báez presentó En sepia en una emotiva noche en Catriló",
+      "enlace": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaTZEV3F5MWRoMF80ei1FRG11Y2M4aGxMWjJacVk0bVhKZ3JiSkJlOUV2YjQzeHNyYmR4dG9rdUJ3d3J0UGJCUmtqeU0yaUUwZFFSN2Eta0pQNXJ4NkVZbHlmclBMTFVzZkVDOTlNNDAxMkVxXzZvamVkLWlYNGtQX0dqMnpiQUFjMWJXUi1Kc1pONEJrSkUycU9HeWFLNVIyNnpVNjRYTQ?oc=5",
+      "medio": "Impacto Castex",
+      "fecha": "2026-11-14T23:30+00:00",
       "tema": "Comunidad"
     },
     {
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "A Tavola! La cocina italiana y la identidad nacional en Turín",
-      "enlace": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMW9lMFF6NUtXdy1tWXJrVFZ2RGIwRFlYQmRJMkFMdlBMZzZvTG5qVExaVVJRSWtxeFNrRXU5OFlzdjhQYmFpS21lWTdDM2ZoR2xLMEt2amxMMFN0bEZkcEtMdzl1Q0ZNLUFFZUV1aXkwMTlLc0FiMG1vSUwtQ281QW1Bd0Q3SHlQVWlqYTFrelFLaEFOU1lKMUlJdFFQOE4x?oc=5",
-      "medio": "Foro3D",
-      "fecha": "2026-11-14T10:00+00:00",
+      "titulo": "Cine italiano en la Biblioteca José Ingenieros",
+      "enlace": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMlMzaTFjQUhYNnJmYVc4XzJjdnhvNm9wOWZVcTdWMk9DY1d4QmZGWUItSktuWjJGSG5nUEViOS1vVUxtbDZlQmtyQ2tUbjd4RE9ZVmxYQWxZeXlRZFlublhaNHdURmhTZEV5U1FWdGtWdGRMUTB5ZHB2dkliSENtZE12dUFjeDdPSWlYMU1td0pmZ1FYb0VDWUFZTUZCdlFNMHc?oc=5",
+      "medio": "Diario Tiempo Digital - 9 de Julio",
+      "fecha": "2026-11-15T00:42+00:00",
       "tema": "Cultura"
     },
     {
@@ -38,10 +38,10 @@ window.NOTICIAS = {
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "10 cosas que debes saber sobre Santa Francisca Javier Cabrini",
-      "enlace": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PdEVyZnRuZVBQUWMxY21pZGhCRl9IZkh2RzVOenZqNmJjc3dQSi1kOHdoQzBBU1RVaU9Ta2hfZ180dE1JUENSSkYzQl9tUGpGQ0IyMTV6QXhKZVh5TVVpWnlhYkJ3WW9tMmVxTm44Z0VlMGR3QmhES2NOZ196Zw?oc=5",
-      "medio": "EWTN News",
-      "fecha": "2026-11-13T13:34+00:00",
+      "titulo": "En 1884, dos inmigrantes italianos fundaron un pueblo en Argentina que llegó a tener 40 manzanas, iglesia, escuela y comercios, pero una inundación cambió su destino",
+      "enlace": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxPNkdWTjZBNFJSbHlaSnFXd3JKbzVEeWNueFRweTJtdE5oX1BhRk1jSkh4UHNzdG0zMXFJZWp1TVJMamNmUjlFdmNsSUpoQTBFRVgybW1nRGRhNlpITEpqdXROa05QSDY1TkxyUTQ1N2doY2lWVHRIY3lKZm1adU9QS3Q3aVZqblNIUGx6Y2hwTWp3TUg3NlVfUDJUQTVWMkplM0liNHVBRllpLWw1OGNYWE9hWVB4RmN3TzBPcGI4RFhLanlpa29vT0lSMVV5RUVfUHlnLWlWUlVkdDQwcEdRYVJXZy1QYWtPcDRvWDB3VXhfa05XbzRUZnBtNU82UWY1bjFhcHBiUkEwbnpnMUZPRjZId1dnZDZjd1ZJUVV6QWx1aHB1ZW1HLVo1Z9IBsAJBVV95cUxOQVo3RGZtaFVmWGUyY3VoblRMal82RUNCazRsb2RGNWdndGh2OTFZc3B6Z05sdlo0a0k1TUtTT19pNHdwaFlxc3BSRUFzMkg5dXIwWTQzTkJmMmdoNFY4bXY4eGxJQTFCLXVXMnd4X29MWVJKTVlvQ3hQQThxdm9CNUpJejRPME5RWnZQdFJZTDhvN20xZ0lOa1JNN0VHcVNWZmhSNjVDS1NfT2ZaX2lUYUJOZ2JmYjZtdndhbEdOb25kWHFGUHR0SWpQcGJtalRKaGFISWtKV1BjV2poVDN6T3hwUDNFSlgwRHZacUVDWlJXSVVDM2EzMGhwM3lub3VqemYzUkRwMGNJWkFzbzhOY21Od3VGT0ZHQTNfMFExRkJSaGJQazV2ZDg3Ty1oWUZk?oc=5",
+      "medio": "La República",
+      "fecha": "2026-11-14T21:00+00:00",
       "tema": "Comunidad"
     }
   ]
