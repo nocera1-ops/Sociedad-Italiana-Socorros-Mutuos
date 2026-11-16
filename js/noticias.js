@@ -1,12 +1,12 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-15T17:08+00:00",
+  "actualizado": "2026-11-16T02:04+00:00",
   "items": [
     {
-      "titulo": "Cacho Báez presentó En sepia en una emotiva noche en Catriló",
-      "enlace": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaTZEV3F5MWRoMF80ei1FRG11Y2M4aGxMWjJacVk0bVhKZ3JiSkJlOUV2YjQzeHNyYmR4dG9rdUJ3d3J0UGJCUmtqeU0yaUUwZFFSN2Eta0pQNXJ4NkVZbHlmclBMTFVzZkVDOTlNNDAxMkVxXzZvamVkLWlYNGtQX0dqMnpiQUFjMWJXUi1Kc1pONEJrSkUycU9HeWFLNVIyNnpVNjRYTQ?oc=5",
-      "medio": "Impacto Castex",
-      "fecha": "2026-11-14T23:30+00:00",
+      "titulo": "En 1884, dos inmigrantes italianos fundaron un pueblo en Argentina que llegó a tener 40 manzanas, iglesia, escuela y comercios, pero una inundación cambió su destino",
+      "enlace": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxPNkdWTjZBNFJSbHlaSnFXd3JKbzVEeWNueFRweTJtdE5oX1BhRk1jSkh4UHNzdG0zMXFJZWp1TVJMamNmUjlFdmNsSUpoQTBFRVgybW1nRGRhNlpITEpqdXROa05QSDY1TkxyUTQ1N2doY2lWVHRIY3lKZm1adU9QS3Q3aVZqblNIUGx6Y2hwTWp3TUg3NlVfUDJUQTVWMkplM0liNHVBRllpLWw1OGNYWE9hWVB4RmN3TzBPcGI4RFhLanlpa29vT0lSMVV5RUVfUHlnLWlWUlVkdDQwcEdRYVJXZy1QYWtPcDRvWDB3VXhfa05XbzRUZnBtNU82UWY1bjFhcHBiUkEwbnpnMUZPRjZId1dnZDZjd1ZJUVV6QWx1aHB1ZW1HLVo1Z9IBsAJBVV95cUxOQVo3RGZtaFVmWGUyY3VoblRMal82RUNCazRsb2RGNWdndGh2OTFZc3B6Z05sdlo0a0k1TUtTT19pNHdwaFlxc3BSRUFzMkg5dXIwWTQzTkJmMmdoNFY4bXY4eGxJQTFCLXVXMnd4X29MWVJKTVlvQ3hQQThxdm9CNUpJejRPME5RWnZQdFJZTDhvN20xZ0lOa1JNN0VHcVNWZmhSNjVDS1NfT2ZaX2lUYUJOZ2JmYjZtdndhbEdOb25kWHFGUHR0SWpQcGJtalRKaGFISWtKV1BjV2poVDN6T3hwUDNFSlgwRHZacUVDWlJXSVVDM2EzMGhwM3lub3VqemYzUkRwMGNJWkFzbzhOY21Od3VGT0ZHQTNfMFExRkJSaGJQazV2ZDg3Ty1oWUZk?oc=5",
+      "medio": "La República",
+      "fecha": "2026-11-14T21:00+00:00",
       "tema": "Comunidad"
     },
     {
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "Cita con Italia en la Quinta",
-      "enlace": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBTYWlQRlNLbXNORDIxdzUwSi1TcFlPM2VJV3kwSnhyUDdtcU0wbTBMWEV0VUE2OFY1dUcxX3VMVi1XUy1OcU9LN3liUjJKZGh4X3RjV0xIRWQtUzhXLUx1MHFB?oc=5",
-      "medio": "Tribuna de La Habana",
-      "fecha": "2026-11-15T15:41+00:00",
+      "titulo": "La auténtica cocina italiana la encontrarás en un Mercado de Madrid a un precio increíble",
+      "enlace": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQREJ6Q3JjMUZiOUVEeWpVQjRCTS1iMThIVTUySUM3THhtOVNDMExLd253ckdMLTBUMTY2eUF4WTBPTWo3Mm1nbzNmM3hVd1E3blRtOFZiRktfb0gzRXFGSEtoOHlXUW8xV2VHU3NWMDFCS05tT0l6VlozSXp6Z2ZkbTQ5Y1pkcGtwYXFmMUxRSzE3ZzlwdGQ3ZFd3?oc=5",
+      "medio": "Madrid Happy People",
+      "fecha": "2026-11-15T19:15+00:00",
       "tema": "Cultura"
     },
     {
@@ -38,10 +38,10 @@ window.NOTICIAS = {
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "En 1884, dos inmigrantes italianos fundaron un pueblo en Argentina que llegó a tener 40 manzanas, iglesia, escuela y comercios, pero una inundación cambió su destino",
-      "enlace": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxPNkdWTjZBNFJSbHlaSnFXd3JKbzVEeWNueFRweTJtdE5oX1BhRk1jSkh4UHNzdG0zMXFJZWp1TVJMamNmUjlFdmNsSUpoQTBFRVgybW1nRGRhNlpITEpqdXROa05QSDY1TkxyUTQ1N2doY2lWVHRIY3lKZm1adU9QS3Q3aVZqblNIUGx6Y2hwTWp3TUg3NlVfUDJUQTVWMkplM0liNHVBRllpLWw1OGNYWE9hWVB4RmN3TzBPcGI4RFhLanlpa29vT0lSMVV5RUVfUHlnLWlWUlVkdDQwcEdRYVJXZy1QYWtPcDRvWDB3VXhfa05XbzRUZnBtNU82UWY1bjFhcHBiUkEwbnpnMUZPRjZId1dnZDZjd1ZJUVV6QWx1aHB1ZW1HLVo1Z9IBsAJBVV95cUxOQVo3RGZtaFVmWGUyY3VoblRMal82RUNCazRsb2RGNWdndGh2OTFZc3B6Z05sdlo0a0k1TUtTT19pNHdwaFlxc3BSRUFzMkg5dXIwWTQzTkJmMmdoNFY4bXY4eGxJQTFCLXVXMnd4X29MWVJKTVlvQ3hQQThxdm9CNUpJejRPME5RWnZQdFJZTDhvN20xZ0lOa1JNN0VHcVNWZmhSNjVDS1NfT2ZaX2lUYUJOZ2JmYjZtdndhbEdOb25kWHFGUHR0SWpQcGJtalRKaGFISWtKV1BjV2poVDN6T3hwUDNFSlgwRHZacUVDWlJXSVVDM2EzMGhwM3lub3VqemYzUkRwMGNJWkFzbzhOY21Od3VGT0ZHQTNfMFExRkJSaGJQazV2ZDg3Ty1oWUZk?oc=5",
-      "medio": "La República",
-      "fecha": "2026-11-14T21:00+00:00",
+      "titulo": "10 cosas que debes saber sobre Santa Francisca Javier Cabrini",
+      "enlace": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PdEVyZnRuZVBQUWMxY21pZGhCRl9IZkh2RzVOenZqNmJjc3dQSi1kOHdoQzBBU1RVaU9Ta2hfZ180dE1JUENSSkYzQl9tUGpGQ0IyMTV6QXhKZVh5TVVpWnlhYkJ3WW9tMmVxTm44Z0VlMGR3QmhES2NOZ196Zw?oc=5",
+      "medio": "EWTN News",
+      "fecha": "2026-11-13T13:34+00:00",
       "tema": "Comunidad"
     }
   ]
