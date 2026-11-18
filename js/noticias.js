@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-18T03:42+00:00",
+  "actualizado": "2026-11-18T18:50+00:00",
   "items": [
     {
       "titulo": "Avellaneda revalorizó el Paseo de las Raíces en homenaje a sus inmigrantes italianos",
@@ -10,17 +10,17 @@ window.NOTICIAS = {
       "tema": "Comunidad"
     },
     {
-      "titulo": "José Palmiotti: “No es solamente sacar la ciudadanía italiana para recorrer Europa, sino sentirse realmente italiano”",
-      "enlace": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNOE5qOVVZdTBmLTFwT0tFM2NhQm9vWllDVHVHbUxIdXVfOEJnSnY5X0N3OUtIWlJtRXpkR1hnb3hjbDJRM2VZTVpvSW0zaWs5UnIzUDlMZm5iYnEyOEhkdk9FUWhKb3Z3NERIWHRRVExoTm5qa1AtS2t0VWgtUTlPdklsTVZFeUdLMDV6UEItNzRCOWd5bVhXcXA3LVU4bEM1MXRFbTlmLXZzSURERElCUk5ka3lkZ2dpa0FNVWxvVG5SWUF1bGY0QXZ4LUxBN2p6QUFybWJaZC10RU0?oc=5",
-      "medio": "La RZ",
-      "fecha": "2026-11-17T17:15+00:00",
+      "titulo": "Ciudadanía italiana por descendencia: cambian los trámites iniciados desde el exterior",
+      "enlace": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTzBUTGo1ZU9zTGdlQl9MNFlHVmU2MWY3Nzh1MUh2NVc5QnVqMlJ0b2VMREpBRnZPZ3JMUzBFUWxpUE91SjB4R1VYWDZVbkxMTktQeWwxTmFiTzM3cFFSRTBWOG1zR09URGF4VW94OUhtalBrY3Y0SWNWb1Z5MnFEMHMtQXJQRm5VY0paUjdFWEw3a0swRDRYZnVoYU5QVW43SHE0cko5d25CSHd5bXVKNmt3T25fMkRNeGt0bXpPdHpiYXdB0gHKAUFVX3lxTE01X09rUGozOU1MNzZGZTZuS3B6VDRva3AtTEdfNGtKMGRPdV91QTBoQmVLMmdKWFVlWmx3Si0yOERfc0gwd1oweTRIRkdmcGd6elVDOENSRWZVNUd4SHI2elcxVVpUaXZCOTBkTHRSd3pLN0RFaDFZaTdJb294QlZzdzNXdVhkekpobktYNENfeDdCTEFpNlU2cHZRUm41SlRoMW1qWndIQm1BOWVGQ3dVaUotai1jbVZiSmlQS09wb0RzNFBINGprWlE?oc=5",
+      "medio": "El Observador",
+      "fecha": "2026-11-18T15:29+00:00",
       "tema": "Consulado"
     },
     {
-      "titulo": "SABORES Y TRADICIÓN: ESTE DOMINGO SE REALIZARÁ LA SEMANA DE LA COCINA ITALIANA EN EL PARQUE BELGRANO",
-      "enlace": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1faUtqaDdjN0VHTlVSMzBxREl1d21VUXR2NGlxNUN3ek5xSFlRME9HWnJBTE1odVRPVWFNd1RqbzVubTBSRkIxVmczV042SVJEYm1SeDk0ZzhnblJCLW5z?oc=5",
-      "medio": "Pergamino Verdad",
-      "fecha": "2026-11-18T02:24+00:00",
+      "titulo": "Superseis celebra la cocina italiana con una clase en vivo del chef Leonardo Fumarola",
+      "enlace": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOV2h2NEc0TmtiQjZKWVBoYW56ci1tSmNMR1pGdTJQZ1NiZDU2b2JrSkZRN0NoTlp5eXNLQThsM3Z1TkxOQnRFQ09Oak8yZkNpUWU3WW5oMFhoUmc2eEc3MTBfTzdvNmNEMzZraTE4RHZhcG9YWkN3MVdJRG5ld2hrNEs0SGJsZVhjd3BELThGdlpabHlSYXFuSGlUSm5SSWJlWHUyV0VWWFRBMFByRzZaYWR0LS0?oc=5",
+      "medio": "5Días Paraguay",
+      "fecha": "2026-11-18T16:55+00:00",
       "tema": "Cultura"
     },
     {
@@ -31,16 +31,16 @@ window.NOTICIAS = {
       "tema": "Patrimonio"
     },
     {
-      "titulo": "Tucumán y la Embajada de Italia avanzan en una agenda de cooperación industrial",
-      "enlace": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObUdiVW1sSXVoM0RGWkQwUHpoV1VSRk4tMVR2c3pTTmZCRUEzbm9rTWh1cVpDbmhMdlRpd0s5M1Y2anRSbEtlSkVaZ1hUZTNVWUJPXzh0S3ZZTmZmdGtoWEpPcWt6V2xkdTlld0w3WUdpb29XMEt6RUFGR3pBbVdud0V3aHdVR04xN253WkpUN0JGQkpuYTRGdG1JV0N1MWwxZWhWT0pVaHJXM2J0VW9uM0ZFSTFjWVYtdFdZdzBjd2l3dXhjNm80NDlhOHlFeU16?oc=5",
-      "medio": "Comunicación Tucumán",
-      "fecha": "2026-11-17T20:18+00:00",
+      "titulo": "Seminario \"Derecho y ciudades en movimiento. Perfiles de comparación entre Italia y Argentina. El derecho a la ciudad entre los gemelos digitales y los derechos fundamentales\" | Consiglio Nazionale delle Ricerche",
+      "enlace": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOUUZVRFRxRVNZZHk3MXdONFU3SkdjN3VuMk5HQjFZR1ZmQ1JjT1AxWE0xV2NpbW5uanZHX2ZZS2FWNU04SG5UTWxGd3ozLVZaTkFOMXhwbjFielVZcDRnZEI0VTFZU0duVXU1T2Q5OFBmejVnek1vRGpMZ3R5dHp3RWwzSnJ5T1gwd2ZveFA0Z1hxbzloLVVpODc2RFdadUFETmhURUZOSGVwX3lXZXRUNVR3cXRlWk9XSWdLOXZGbl9IT3hFNGZyNklRN1JkRnVOaHNoalNaX1k5MExadW9idmNWV0tTNHpKSXA1MHhmRkEwN0NIZGRiRkJtTUV6WVhtMVNZMVY4TGx3V0R5NXpNaFNXWEZram1ib3E5SGhNT0IzUTZpV3ZkRHJjTC1JZw?oc=5",
+      "medio": "Consiglio Nazionale delle Ricerche",
+      "fecha": "2026-11-18T15:33+00:00",
       "tema": "Italia y Argentina"
     },
     {
       "titulo": "Muestra \"Insieme: el arte que nos une con Italia\"",
       "enlace": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOb3pNWlg2M3FqR1U1LUgwM3BLc1Jyejl5SHI3S3BEWVd1NmlqbkpuNk4yZm5Ba1B6Ti11WUZhM0JPS0VjNDRQdlBFLXdPUF94UzROQXJGQWdhV0ppbG5fRlBXVjkwSXBYWm1xX2sxSnRhSUNHUWYtMGRmSnhDMkZEZVkwbmNYYWs?oc=5",
-      "medio": "Rosario.gob",
+      "medio": "rosario.gob.ar",
       "fecha": "2026-11-17T12:48+00:00",
       "tema": "Comunidad"
     }
