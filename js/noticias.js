@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-18T18:50+00:00",
+  "actualizado": "2026-11-19T03:25+00:00",
   "items": [
     {
       "titulo": "Avellaneda revalorizó el Paseo de las Raíces en homenaje a sus inmigrantes italianos",
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "Superseis celebra la cocina italiana con una clase en vivo del chef Leonardo Fumarola",
-      "enlace": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOV2h2NEc0TmtiQjZKWVBoYW56ci1tSmNMR1pGdTJQZ1NiZDU2b2JrSkZRN0NoTlp5eXNLQThsM3Z1TkxOQnRFQ09Oak8yZkNpUWU3WW5oMFhoUmc2eEc3MTBfTzdvNmNEMzZraTE4RHZhcG9YWkN3MVdJRG5ld2hrNEs0SGJsZVhjd3BELThGdlpabHlSYXFuSGlUSm5SSWJlWHUyV0VWWFRBMFByRzZaYWR0LS0?oc=5",
-      "medio": "5Días Paraguay",
-      "fecha": "2026-11-18T16:55+00:00",
+      "titulo": "Semana de la Cocina Italiana en Miramar",
+      "enlace": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbURVNWF6UW4wNmdDTjRKN0lHMkcxeXJJZGN3cENMQ21YOGVQR3hPOHhEM0ZZbk9QTklHaXZyekcyRk5UMkdMbHd5RXk4ZTM0V3UxcFZzS0ZRWWVFSFpiNGM1YWl1aVlOTlJRdmQta0NTQWlPaHkzSmRPbW9QcDRHTG1zQ0owRkJNT0VncQ?oc=5",
+      "medio": "Diario El Atlántico",
+      "fecha": "2026-11-19T00:34+00:00",
       "tema": "Cultura"
     },
     {
@@ -38,10 +38,10 @@ window.NOTICIAS = {
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Muestra \"Insieme: el arte que nos une con Italia\"",
-      "enlace": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOb3pNWlg2M3FqR1U1LUgwM3BLc1Jyejl5SHI3S3BEWVd1NmlqbkpuNk4yZm5Ba1B6Ti11WUZhM0JPS0VjNDRQdlBFLXdPUF94UzROQXJGQWdhV0ppbG5fRlBXVjkwSXBYWm1xX2sxSnRhSUNHUWYtMGRmSnhDMkZEZVkwbmNYYWs?oc=5",
-      "medio": "rosario.gob.ar",
-      "fecha": "2026-11-17T12:48+00:00",
+      "titulo": "Tandil Celebra Italia: tres jornadas de cultura, gastronomía y tradiciones italianas",
+      "enlace": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUGR2MGVCMW9jOXRtemdSLTI4T0hsTXZfUllDUnNUZHZENGlaQTFweGZ4UzdKSlA4czFISzJUM3pmdklxelp1eVExaVkxNGVmT1RGMTgtUVBDUGRVSFhNR3RPSG4zeDVhVlpBTzY5SDZXS2JISGhyRUcyMVdjbl8wUjlMM0NGa3d2MkdSbjlUUi1BZUNQQ1BmM2JYLVJTN0lOeTZ2aTBTMzg5am83RGxvR2VwM2V5ODJuc2JlU0ludWtZeC1Q?oc=5",
+      "medio": "ABCHoy",
+      "fecha": "2026-11-16T17:21+00:00",
       "tema": "Comunidad"
     }
   ]
