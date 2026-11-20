@@ -1,6 +1,6 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-20T03:12+00:00",
+  "actualizado": "2026-11-20T18:36+00:00",
   "items": [
     {
       "titulo": "Tras 78 años de historia ponen a la venta la tradicional Cerámica Artística Los Andes",
@@ -10,24 +10,24 @@ window.NOTICIAS = {
       "tema": "Comunidad"
     },
     {
-      "titulo": "Ciudadanía italiana por descendencia: cambian los trámites iniciados desde el exterior",
-      "enlace": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTzBUTGo1ZU9zTGdlQl9MNFlHVmU2MWY3Nzh1MUh2NVc5QnVqMlJ0b2VMREpBRnZPZ3JMUzBFUWxpUE91SjB4R1VYWDZVbkxMTktQeWwxTmFiTzM3cFFSRTBWOG1zR09URGF4VW94OUhtalBrY3Y0SWNWb1Z5MnFEMHMtQXJQRm5VY0paUjdFWEw3a0swRDRYZnVoYU5QVW43SHE0cko5d25CSHd5bXVKNmt3T25fMkRNeGt0bXpPdHpiYXdB0gHKAUFVX3lxTE01X09rUGozOU1MNzZGZTZuS3B6VDRva3AtTEdfNGtKMGRPdV91QTBoQmVLMmdKWFVlWmx3Si0yOERfc0gwd1oweTRIRkdmcGd6elVDOENSRWZVNUd4SHI2elcxVVpUaXZCOTBkTHRSd3pLN0RFaDFZaTdJb294QlZzdzNXdVhkekpobktYNENfeDdCTEFpNlU2cHZRUm41SlRoMW1qWndIQm1BOWVGQ3dVaUotai1jbVZiSmlQS09wb0RzNFBINGprWlE?oc=5",
-      "medio": "El Observador",
-      "fecha": "2026-11-18T15:29+00:00",
+      "titulo": "Elecciones ante el consulado italiano: qué deben tener en cuenta quienes recibieron el sobre electoral",
+      "enlace": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUERrVTVZT2U0R0lHZUJ0bnJrU0RhbjhpdFVuN01Pd0JwWnBYaXlDQXJzdTI1emJIcTVNMWhDOVlMcnh6czdzUFQxSzZsZ2FFZG1PbGdLZkw2bGFOb1VuVDFFRWNjUklmQzhkYW5hNEhnTS1NNTV3a3IyQkstbEdaeGg4MGFzSGliLURjQ0NWQ1RndzYyQnJfUjlVRVBfWWpzYTFSbUtqWFNZWlJXMlItVXFNR1JEaXRpa081TFdQcFdwcHUxYVI4VA?oc=5",
+      "medio": "Radio Facundo Quiroga",
+      "fecha": "2026-11-20T10:30+00:00",
       "tema": "Consulado"
     },
     {
-      "titulo": "XI Semana de la Cocina Italiana en Ciudad: convocan a locales gastronómicos",
-      "enlace": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUHFmeGdlT2xLMjFsaS1hUk1oYkF4UE9iUm9EMXhJZlAtQ1lnRmd3MmdlLVBLbjBiUlUwbV9uZEFvXzU3TWxINFhYTlhOallhR0FRYVB6YW1LTGlYMDBnT2ZVTkRScHZ3NEJxRDVlNUR1b29XSXFvZ005R3RMaGd6dmZzMm85djl4OUNCYXQ1cjlXVjdSQ3dselJxOEdnTFpGZGZSNWM3SDRlZEhYbVNEMGF2ZVpnUVZENUxZ?oc=5",
-      "medio": "Mnews",
-      "fecha": "2026-11-19T23:31+00:00",
+      "titulo": "La cocina italiana toma un giro argentino en Lucia Pizzeria",
+      "enlace": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNanVlUHBrdzUxYXROMkhicmc5MzJ2SHB0eHJ0bDJtNDV5a25lTXVZMzV2T21pd1ZSeUJEd3dlUVh1TGlvYXdLVFg0X19HNkJrdWdtem43eGsxNlpMcTNqSEZBN21OWndYUzdxdFRtVTNEZ2EyNUZmZUJJUGxvWEdEWFdqTDJVZ0E5Y2s0Ym5namYwWjU5QXhGMVE1RHNWV1lYU1pzU1F2LWJMbmRaTVp0RzJqLU5EUDFZRkHSAcIBQVVfeXFMUFpJYU5WVlJZWDY5YzhmNTYzWXl4SVBjd1hEU0MzR0ZGYmI1SmYyY2VZNHlCY2NkSTNfMHRNWWNOWWlYNnc1elhtaFFWQTRHUEl3cVdLa0I3WG9PVUxFRkF5WEc2bkpmZHVyalB1alE2amJBZ2Q2Y2loNlNPSUJhRmVYU2pESnpBcmVvc2RMVi1JQUFpeFhOVG96U0wwRUFUNVRCd3JHV3N4ZGlpWTZneTMzRE9vRndPS0I0Wmw1OE1laHc?oc=5",
+      "medio": "Telemundo Miami",
+      "fecha": "2026-11-20T17:08+00:00",
       "tema": "Cultura"
     },
     {
-      "titulo": "La Sociedad Italiana realizará un nuevo taller de cocina con risotto al funghi y tiramisú",
-      "enlace": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNDNkRVJBS05NdFlXekJZOU1XQ2x1TkwtWUxweDZjWGpsN0xkOGJuYUR5cVBXQTRSanoySHZkLXZVWFVtZUhLY05JVVhlVVl5Nm9pUElVX2dyaUlveFQwbkx4RWI2WmJILXFlU0FrQmJmZ1RReTJsRHlPQlV2WUp4d21tSzNRX2FzdHp2ZVhCN1dRSENPNG1McnI2OWFaTFhseFNVSk1IRXRnQXNrZUM5ekduQkhZRElJM2Q5elBUdWs?oc=5",
-      "medio": "La Voz del Pueblo",
-      "fecha": "2026-11-19T11:36+00:00",
+      "titulo": "La Sociedad Italiana propone un nuevo encuentro de “Cucina con noi”",
+      "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRk1jNzJ5b1dMQzRyNFZqN25rNTgxVGszWi1iR0ZVTDJseloxN3l3ZzBYbHFZYkxJc01IZFE5SFlURkw3bG1BRnFwLUhxRlIxTUEybHJDdG5NS0RrNFk2Ti1ZV2xQY3JjYmh4Y2VYdVVVOXpJV1FheXJNNTBQODl0bkdqU0lfY0tJSll4ZlFUYVlubC1zOFI1Rg?oc=5",
+      "medio": "Diario 3",
+      "fecha": "2026-11-20T13:43+00:00",
       "tema": "Patrimonio"
     },
     {
