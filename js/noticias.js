@@ -1,12 +1,12 @@
 /* Archivo generado automáticamente por .github/workflows/noticias.yml (scripts/actualizar_noticias.py). No editar a mano. */
 window.NOTICIAS = {
-  "actualizado": "2026-11-19T18:58+00:00",
+  "actualizado": "2026-11-20T03:12+00:00",
   "items": [
     {
-      "titulo": "Tras 78 años de funcionamiento ponen a la venta la tradicional Cerámica Artística Los Andes (CALA)",
-      "enlace": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQnQxMHNwT0ZHR0p0WldZaXpkSkVfTzBDMXhTSzhqVEdzYTU4UFIyZ3FlZENIZ3p3cU9vUlQ5OEdCVXZjWU5SSTR6V1pHZGZlU18wemJzLVd4dHhialZQNy14RGhfbkc2Z2NpMnlQQWpQUUh2cWJ2SVF6ZzRHZ1BkRWJDQlAxcktGcGxmblB4ZGpXLWtuNElTVVZ4SDRCSlRUOFB6SjdBWlhQS2o1YnFwbVFGWFhrMkxSU2pKZzdxcVcwWlEwUGRHUE8ybjZaXzRfaTdaUkdJQl9ldw?oc=5",
-      "medio": "Andes on line",
-      "fecha": "2026-11-18T17:11+00:00",
+      "titulo": "Tras 78 años de historia ponen a la venta la tradicional Cerámica Artística Los Andes",
+      "enlace": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWnNTMV9mck1XNnl4ci1FQ1RNRldTeU1OV0JScGFHWElJa3BOUWpNRllfRnVnTTkyNHgydENrNkZfLTNxODBIbzhDdkhQNTRHaS15aW5kVlpoNEFRU2lIVGcwUUdMSENSRXUwX1FtSTh2M2MxdFZBYy1oRXdLRGZTQjZ1dGhoT284S2hnMWlPX2pVU0gtSm9KTHQ5SnVXS2w4ckE4WTFTTXlWM0NXaWVOcndfUThxVW1aeVNUZmxOU1ZCVXA4YkFoVl9n?oc=5",
+      "medio": "El Dínamo",
+      "fecha": "2026-11-20T01:36+00:00",
       "tema": "Comunidad"
     },
     {
@@ -17,10 +17,10 @@ window.NOTICIAS = {
       "tema": "Consulado"
     },
     {
-      "titulo": "Llega la Semana de la Cocina Italiana a la Ciudad de Mendoza: cómo participar",
-      "enlace": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWFh3V2V0eElZbzJwckkzWkNHY283MXAyV01MZjlSVHN0ZmtZZFBPN3JSVEswMGxQaTVKXzFhSVRLUzh5R1VBX3hucHFzV0EtbWt6SjJhSDMxdlJhQ3BUZV9wNDUtZkU0dnA4cVM1WWdqQnJ4cXZ2ZzVTTzduenpmQ1NfUDI5am1WMnBnYWx5dl9wa1lfa3dwLTNqb0hUUWlCMVljRktlY2hZM284aEJ5Mg?oc=5",
-      "medio": "ADNPais",
-      "fecha": "2026-11-19T17:54+00:00",
+      "titulo": "XI Semana de la Cocina Italiana en Ciudad: convocan a locales gastronómicos",
+      "enlace": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUHFmeGdlT2xLMjFsaS1hUk1oYkF4UE9iUm9EMXhJZlAtQ1lnRmd3MmdlLVBLbjBiUlUwbV9uZEFvXzU3TWxINFhYTlhOallhR0FRYVB6YW1LTGlYMDBnT2ZVTkRScHZ3NEJxRDVlNUR1b29XSXFvZ005R3RMaGd6dmZzMm85djl4OUNCYXQ1cjlXVjdSQ3dselJxOEdnTFpGZGZSNWM3SDRlZEhYbVNEMGF2ZVpnUVZENUxZ?oc=5",
+      "medio": "Mnews",
+      "fecha": "2026-11-19T23:31+00:00",
       "tema": "Cultura"
     },
     {
@@ -31,17 +31,17 @@ window.NOTICIAS = {
       "tema": "Patrimonio"
     },
     {
-      "titulo": "Roldán: reúne 85 familiares en un cumpleaños con emotivo asado",
-      "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5qWEc0TGlQbE1vdDdoMDAtVzJiU2lkZURrMVY5RVAwclBtRXlYQkNDa2txVkZ4Ym1kb0JDcGxjcW4tZ09oMmtSdXB6Ykw4ZDltaTNsSF8yUThMSWlmTjBMUTYyUWx5Zm9wVTJmdlg0RGRBNERYWHdTY0NZYw?oc=5",
-      "medio": "El Congresista",
-      "fecha": "2026-11-14T13:44+00:00",
+      "titulo": "Acuerdo entre Italia y Argentina para incorporar fragatas, patrulleros y buques anfibios",
+      "enlace": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNXJXWFdwOUxUUDlVYVc3MTcyaklFRU1ROUdKOUlTMV96OEltVjctQXYwek9iVG5jcTgtLW9Kd0l5ak5CNjlzVzFFelBGMWhiQ3g5T2xrcXdjNjhiZVduY21JX3hMQ1VCWGRYUTJ4SHhOTmEyS09nODRfNDBwQmtET011akQ3TjZXd3lCSHc4ejdyNjloZEhZTWh2YmJzVXFsUEI5aVFHVXlsMXdYLU5iRmszWHRGU193TWc4a3d3?oc=5",
+      "medio": "LA17",
+      "fecha": "2026-11-19T18:26+00:00",
       "tema": "Italia y Argentina"
     },
     {
-      "titulo": "Avellaneda revalorizó el Paseo de las Raíces en homenaje a sus inmigrantes italianos",
-      "enlace": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZWdtS0ctYVFsb0NRbTRvMTFxSlYxdkw4aEdYVDJHQ1R6Y0dJYlRUQm5WNjNYUkwzRlNOYWRzaHZiQmd3NkhlZWg1cEtaRmJGYVZGaEZuV0R5LTVVR1ZpVS1ybXNwV3NNNGNCOEQ3cDRHNVFQYmNwTVFvcUhQVEZkbXd1RGprTjhHdmJ0NC1iLVNNSlVQZFRMNk9EaG9aSUhsY2pUT1NfUVZQZllyWkdFQWlB?oc=5",
-      "medio": "SEPER NOTICIAS",
-      "fecha": "2026-11-17T13:05+00:00",
+      "titulo": "COMITES 2026: una lista se suma a la disputa por la representación italiana en Buenos Aires",
+      "enlace": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNDVJVjhNTU9SM3RlM0daZkh3eG5ud2JEbFNEOGF3Y0Nwa19uNGF1TzVuUzdRTm9ReW5BT19xSXBCaFAwVjdzUHJGeUFIYk4wWmJJTG9pVWUtY05LT0FXQ0ppOFJPUmxuOEdSMkJiNktkZ2FSY1hNTlF4XzUxbEowSHQ0eHlIbEVvMlFfajFpS1dRYWhlVWZNUjd5aG8zenRvOFdtbXhoOHl5QmYxM013aWRGcjZZWUZOSVUwSdIBvAFBVV95cUxNNDVJVjhNTU9SM3RlM0daZkh3eG5ud2JEbFNEOGF3Y0Nwa19uNGF1TzVuUzdRTm9ReW5BT19xSXBCaFAwVjdzUHJGeUFIYk4wWmJJTG9pVWUtY05LT0FXQ0ppOFJPUmxuOEdSMkJiNktkZ2FSY1hNTlF4XzUxbEowSHQ0eHlIbEVvMlFfajFpS1dRYWhlVWZNUjd5aG8zenRvOFdtbXhoOHl5QmYxM013aWRGcjZZWUZOSVUwSQ?oc=5",
+      "medio": "Agencia DIB",
+      "fecha": "2026-11-19T20:41+00:00",
       "tema": "Comunidad"
     }
   ]
